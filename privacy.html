@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Kroma</title>
+<meta name="description" content="How Kroma handles your data. Short version: your wardrobe stays on your phone.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="/">Kroma</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy" class="active">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Privacy Policy</h1>
+    <p class="muted"><em>Last updated: TODO insert date before publishing</em></p>
+
+    <p>
+      Kroma is a local-first wardrobe app. The short version: your wardrobe
+      data lives on your phone. We don't run a server that stores it, we
+      don't have user accounts, and we don't track your usage. This page
+      explains the details — including the few places where data does leave
+      your device, and what we do with any email you choose to send us.
+    </p>
+
+    <p>
+      If you're reading this to decide whether to use the app, the most
+      important sentence on the page is: <strong>nothing leaves your device
+      unless you take an action that sends it.</strong>
+    </p>
+
+    <hr>
+
+    <h2>Who we are</h2>
+    <p>
+      Kroma is operated by <strong>TODO: your name or registered business
+      name</strong>, <strong>TODO: country of establishment</strong> (the
+      <em>data controller</em> for the purposes of UK GDPR and EU GDPR).
+    </p>
+    <p>You can contact us at <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>.</p>
+
+    <hr>
+
+    <h2>What data the app collects about you</h2>
+    <p><strong>Nothing on its own.</strong></p>
+    <p>
+      There are no accounts, no login, no analytics SDKs, no crash
+      reporters, no advertising IDs. The app does not send device
+      identifiers, location, usage data, or personally identifiable
+      information to any server we run. We don't run a server.
+    </p>
+    <p>
+      Everything you enter into the app — your wardrobe items, outfit
+      photos, colour analysis results, preferences — is stored on your
+      device. Nothing about that data is visible to us.
+    </p>
+
+    <hr>
+
+    <h2>Where data does leave your device</h2>
+    <p>
+      There are four places where information can leave your phone, and all
+      of them require a deliberate action on your part. We list them here
+      exhaustively.
+    </p>
+
+    <h3>1. The AI provider you choose (opt-in)</h3>
+    <p>
+      To use features that analyse photos (auto-tagging garments,
+      identifying items in an outfit photo, colour analysis, body
+      analysis, pattern detection), you provide your own API key for one of
+      these providers:
+    </p>
+    <ul>
+      <li>Google Gemini</li>
+      <li>Anthropic Claude (if configured)</li>
+      <li>OpenAI (if configured)</li>
+      <li>Ollama (self-hosted — runs on your own machine, sends nothing
+      to a third party)</li>
+    </ul>
+    <p>
+      When you use an AI feature, the relevant photo and prompt are sent
+      <strong>from your device, using your API key, directly to the
+      provider you chose</strong>. The data travels to their servers, not
+      ours. The provider processes the image under their terms of service
+      and privacy policy, which you should review:
+    </p>
+    <ul>
+      <li>Google Gemini: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Anthropic: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
+      <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a></li>
+      <li>Ollama: runs locally, no external transmission</li>
+    </ul>
+    <p>Your API key is stored only on your device. We do not have access to it.</p>
+
+    <h3>2. Weather (opt-in)</h3>
+    <p>
+      The "Auto-fetch weather" setting is off by default. If you turn it on
+      and enter a city name, the app makes <strong>one request per
+      morning</strong> to <strong>Open-Meteo</strong>
+      (<a href="https://open-meteo.com">open-meteo.com</a>) asking for the
+      forecast at those coordinates. Open-Meteo is a free, independently
+      operated, no-account weather service that does not require an API key
+      and states it does not log identifying data about callers. We do not
+      proxy or log this request.
+    </p>
+    <p>
+      If "Auto-fetch weather" is off (the default), no weather requests are
+      made. You can enter how today feels with in-app chips instead,
+      completely offline.
+    </p>
+
+    <h3>3. Shared product pages (opt-in)</h3>
+    <p>
+      If you use the share-to-app import (e.g. sharing a product URL from
+      Chrome or Instagram), the app fetches that URL directly from the
+      retailer's server to read the product page (image, brand, price,
+      fabric composition). This request is made from your device, not via
+      our servers. We don't record the URLs you share.
+    </p>
+
+    <h3>4. Email to us (opt-in)</h3>
+    <p>
+      If you tap a <strong>"Something off?"</strong> or
+      <strong>"Know a tradition we're missing?"</strong> link inside the
+      app, your email client opens a pre-filled message to
+      <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>. Nothing is sent
+      until <strong>you</strong> press send in your email app. See the
+      <em>Feedback emails</em> section below for what happens if you do
+      send it.
+    </p>
+
+    <hr>
+
+    <h2>Backup and restore</h2>
+    <p>
+      The in-app backup / export feature writes a file containing your
+      wardrobe data to your device (Documents folder on Android, equivalent
+      elsewhere). If you choose to share that file via your device's share
+      sheet (email, cloud drive, AirDrop), it travels through whichever
+      service you pick. We never see it.
+    </p>
+    <p>
+      Importing a backup reads a file on your device. The file contents are
+      not transmitted anywhere by the app.
+    </p>
+
+    <hr>
+
+    <h2>Feedback emails</h2>
+    <p>
+      When you email <a href="mailto:hello@kroma.fit">hello@kroma.fit</a> —
+      whether via the in-app feedback links or directly — the following
+      happens:
+    </p>
+    <ul>
+      <li>The email travels through your own email provider (Gmail, iCloud,
+      Outlook etc.) over standard SMTP/IMAP.</li>
+      <li>It is forwarded via <strong>Namecheap Email Forwarding</strong>
+      (our domain registrar's free forwarding service), which acts as a
+      <strong>sub-processor</strong> under GDPR.</li>
+      <li>It arrives in a personal Gmail inbox operated by the data
+      controller (see <em>Who we are</em> above).</li>
+    </ul>
+    <p>
+      <strong>What we collect from the email</strong>: the sending address
+      (so we can reply) and the content you chose to write. The in-app
+      feedback templates don't auto-attach any wardrobe data, device
+      information, photos, or other identifiers — only what you type.
+    </p>
+    <p>
+      <strong>What we use it for</strong>: answering you, and referencing
+      suggestions when adding or correcting traditions, colours, or fabrics
+      in future app updates. If your message helps us add or fix something,
+      we may quote the content in commit messages, release notes, or
+      internal notes — without your email address unless you've given us
+      specific permission.
+    </p>
+    <p>
+      <strong>What we don't do with it</strong>: sell it, share it with
+      advertisers, feed it into training data, or cross-reference it with
+      anything else about you (we don't have anything else about you).
+    </p>
+    <p>
+      <strong>Retention</strong>: emails are kept for as long as they're
+      useful for answering you and informing future updates. You can
+      request deletion at any time — see <em>Your rights</em> below.
+    </p>
+    <p>
+      <strong>Lawful basis (GDPR)</strong>: legitimate interest in
+      answering correspondence you voluntarily initiated.
+    </p>
+
+    <hr>
+
+    <h2>Cookies and local storage</h2>
+    <ul>
+      <li>The mobile app uses the device's native storage (Capacitor
+      Filesystem on Android, equivalent elsewhere) to save your wardrobe
+      data. No cookies are set by the app.</li>
+      <li>The website at <strong>kroma.fit</strong> does not use cookies,
+      analytics, or embedded trackers. If that ever changes, this policy
+      will be updated before the change goes live.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Children</h2>
+    <p>
+      The app is not directed at children under 13 (or under 16, in
+      jurisdictions where that is the applicable age of digital consent).
+      We do not knowingly process personal data from children. Because we
+      do not collect data about users, we cannot identify a user's age; if
+      you are a parent or guardian and believe your child has used the app
+      in a way that concerns you, email us and we will help.
+    </p>
+
+    <hr>
+
+    <h2>Your rights (UK GDPR / EU GDPR)</h2>
+    <p>
+      Because we do not maintain a server-side record of you, most GDPR
+      data subject rights are satisfied by design: we don't have data about
+      you to access, rectify, port, restrict, or object to. The one
+      exception is any email correspondence you have sent us.
+    </p>
+    <p>For that correspondence specifically, you have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — ask us to send you a copy of any email
+      you've sent us.</li>
+      <li><strong>Rectification</strong> — ask us to correct anything in
+      that correspondence.</li>
+      <li><strong>Erasure</strong> — ask us to delete any email you've
+      sent us, and we'll delete it from our inbox.</li>
+      <li><strong>Restriction / objection</strong> — ask us to stop
+      processing it.</li>
+      <li><strong>Complain</strong> — to the UK Information Commissioner's
+      Office (<a href="https://ico.org.uk">ico.org.uk</a>) or your local
+      EU data protection authority.</li>
+    </ul>
+    <p>
+      To exercise any of these rights, email
+      <a href="mailto:hello@kroma.fit">hello@kroma.fit</a> with the
+      request. We aim to respond within 30 days.
+    </p>
+
+    <hr>
+
+    <h2>International transfers</h2>
+    <p>
+      The app runs on your device, so data you generate with it does not
+      transfer internationally through us.
+    </p>
+    <p>
+      AI providers you choose to use (see above) may process your data in
+      regions outside your own. The provider's own privacy policy governs
+      this, not ours. If your regulator's data-transfer rules matter to
+      you, choose Ollama (self-hosted) and no data leaves your device at
+      all.
+    </p>
+    <p>
+      Feedback emails, when forwarded through Namecheap and landing in
+      Gmail, are processed on infrastructure primarily operated in the
+      United States. Standard contractual clauses apply for transfers from
+      the UK / EU to the US under those providers' published terms.
+    </p>
+
+    <hr>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We'll update this page if how the app treats data changes. The
+      "Last updated" date at the top reflects the most recent change. We
+      won't retroactively reduce protections for data already collected
+      under an earlier version.
+    </p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@kroma.fit">hello@kroma.fit</a></p>
+    <p>
+      If you don't get a reply within 30 days, that's a bug — try again or
+      contact the <strong>Information Commissioner's Office</strong> at
+      <a href="https://ico.org.uk/make-a-complaint">ico.org.uk/make-a-complaint</a>
+      (UK) or your local data protection authority (EU).
+    </p>
+
+  </main>
+
+  <footer class="site">
+    <span>Kroma — made with care</span>
+    <span>
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a> &middot;
+      <a href="mailto:hello@kroma.fit">Contact</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>

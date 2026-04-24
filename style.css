@@ -1,0 +1,229 @@
+/* Shared styles for kroma.fit — keep this minimal. No frameworks, no
+   trackers, no external fonts. Matches the app's warm palette. */
+
+:root {
+  --bg:        #f8f6f1;
+  --bg-card:   #fffdf7;
+  --text:     #2a2420;
+  --text-soft: #5a524c;
+  --text-mute: #8a8079;
+  --accent:   #8b5a2b;
+  --accent-soft: #c4956a;
+  --border:   #e8e1d5;
+  --max-w:    680px;
+  --ff:       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fd:       Georgia, "Times New Roman", serif;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff);
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------- layout ---------------- */
+
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 24px 20px 80px;
+}
+
+header.site {
+  padding: 20px 0 32px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+header.site .brand {
+  font-family: var(--fd);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+header.site nav {
+  display: flex;
+  gap: 18px;
+  font-size: 0.92rem;
+}
+
+header.site nav a {
+  color: var(--text-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+header.site nav a:hover,
+header.site nav a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+footer.site {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--text-mute);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+footer.site a {
+  color: var(--text-soft);
+  text-decoration: none;
+}
+footer.site a:hover { color: var(--accent); }
+
+/* ---------------- type ---------------- */
+
+h1, h2, h3 {
+  font-family: var(--fd);
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin: 2em 0 0.6em;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 0.2em;
+}
+
+h2 {
+  font-size: 1.35rem;
+  padding-top: 8px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: var(--ff);
+  color: var(--text-soft);
+}
+
+p, ul, ol {
+  margin: 0.8em 0;
+}
+
+ul, ol {
+  padding-left: 1.4em;
+}
+
+li { margin: 0.3em 0; }
+
+a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--accent-soft);
+  text-decoration-thickness: 1px;
+}
+
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 40px 0;
+}
+
+.muted {
+  color: var(--text-mute);
+  font-size: 0.88rem;
+}
+
+/* ---------------- landing-specific ---------------- */
+
+.hero {
+  padding: 16px 0 24px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  margin: 0 0 12px;
+}
+
+.hero .tag {
+  font-size: 1.15rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin: 32px 0 16px;
+}
+
+.feature {
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.feature p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+/* ---------------- responsive ---------------- */
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .wrap { padding: 20px 16px 60px; }
+  h1 { font-size: 1.7rem; }
+  .hero h1 { font-size: 2rem; }
+  header.site { padding: 16px 0 20px; margin-bottom: 24px; }
+  header.site nav { gap: 14px; font-size: 0.88rem; }
+}
