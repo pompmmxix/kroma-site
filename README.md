@@ -13,8 +13,26 @@ the `CNAME` file. No build step — plain HTML and CSS.
 | `index.html`  | Landing page                                   |
 | `privacy.html`| Privacy policy (GDPR-compliant)                |
 | `terms.html`  | Terms of use                                   |
-| `style.css`   | Shared stylesheet                              |
+| `style.css`   | Shared stylesheet — system fonts only, no external requests |
+| `favicon.svg` | Brand mark — **must stay byte-identical to `wardrobe-app/public/icon.svg`** |
 | `CNAME`       | `kroma.fit` — tells GitHub Pages the domain    |
+
+## Brand mark sync
+
+The favicon **is** the app icon. They must stay identical so the brand
+reads consistently in the browser tab, on the home screen, and in the
+header of every page.
+
+If you change `favicon.svg` here, also update
+`pompmmxix/wardrobe-app/public/icon.svg` to match (and regenerate
+Android PNGs — see that repo's `public/icon.README.md`).
+
+A simple way to keep them in sync if you have both repos cloned side by
+side:
+
+```bash
+cp ../wardrobe-app/public/icon.svg ./favicon.svg
+```
 
 ## Before publishing
 

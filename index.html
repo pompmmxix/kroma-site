@@ -4,7 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kroma — your wardrobe, private by design</title>
-<meta name="description" content="A local-first wardrobe app. Catalogue your clothes, log what you wear, get outfit suggestions. Your data stays on your device.">
+<meta name="description" content="A local-first wardrobe app that catalogues your clothes, learns what you actually wear, and credits the textile traditions you live in. Your data never leaves your phone.">
+
+<!-- Favicons. Source of truth: favicon.svg (cream serif K on warm brown). -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="alternate icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#8b5a2b">
+
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,87 +28,134 @@
 
   <main>
 
+    <!-- ────────── hero ────────── -->
     <section class="hero">
-      <h1>Your wardrobe, private by design.</h1>
-      <p class="tag">
-        Catalogue your clothes. See what you actually wear. Get outfit
-        suggestions that fit your weather, your body, and your palette.
-        Your data never leaves your phone unless you choose to send it.
+      <h1>Most wardrobe apps want your data. We just want to help you wear what you own.</h1>
+      <p class="lede">
+        Kroma is a private, local-first wardrobe app. Catalogue your
+        clothes, log what you actually wear, get outfit suggestions
+        tuned to your weather, body, and palette — <strong>all on your
+        device, nothing tracked, no account required.</strong>
       </p>
     </section>
 
+    <div class="divider">weft</div>
+
+    <!-- ────────── features ────────── -->
     <section>
-      <h2>What Kroma does</h2>
+      <h2>What it does</h2>
       <div class="features">
 
         <div class="feature">
           <h3>Catalogue everything</h3>
-          <p>Photograph each garment. AI auto-tags the type, colour, pattern,
-          weave, and fabric where visible. 120+ garment types across world
-          traditions.</p>
+          <p>Photograph each garment. AI auto-tags type, colour,
+          pattern, weave, and fabric where visible. 120+ garment types
+          drawing on world dress traditions, not just Western.</p>
         </div>
 
         <div class="feature">
           <h3>Log what you wear</h3>
-          <p>Snap an outfit photo and AI identifies which items from your
-          wardrobe you're wearing. See real cost-per-wear, not guesses.</p>
+          <p>Snap an outfit photo and the app identifies which items
+          from your wardrobe you're wearing. Real cost-per-wear, not
+          guesses. Honest data on what you actually reach for.</p>
         </div>
 
         <div class="feature">
           <h3>Weather-aware outfits</h3>
-          <p>Manual chips by default (zero network), or opt in to Open-Meteo
-          once a morning using a city you type. Personal comfort calibration
-          means your "warm" isn't someone else's.</p>
+          <p>Manual chips by default — zero network. Or opt in to
+          Open-Meteo once a morning using a city you type. Personal
+          comfort calibration so your "warm" isn't someone else's.</p>
         </div>
 
         <div class="feature">
-          <h3>Colour &amp; body analysis</h3>
+          <h3>Five colour-analysis systems</h3>
           <p>12-season Western, Ritu (South Asian), Shikisai (Japanese),
-          Korean Tonal, and Wu Xing (Chinese) analysis systems — plus Kibbe
-          and proportion-based body analysis.</p>
+          Korean Tonal, and Wu Xing (Chinese). Plus Kibbe and
+          proportion-based body analysis — pick the framework that
+          fits you.</p>
         </div>
 
         <div class="feature">
-          <h3>Learn what you own</h3>
-          <p>Tap a pattern, colour, or fabric on any garment to see its
-          origin, transmission, and cultural context — with attribution
-          honest to where traditions actually come from.</p>
+          <h3>Bring your own AI</h3>
+          <p>You provide your Gemini, Claude, OpenAI, or Ollama key.
+          Photos go directly from your device to the provider you
+          chose. We never see them. Or run Ollama locally —
+          fully offline.</p>
         </div>
 
         <div class="feature">
-          <h3>Private by architecture</h3>
-          <p>No account. No server. No tracking. Bring your own AI API key
-          so photos go direct to the provider you choose. Or run it fully
-          offline with Ollama.</p>
+          <h3>Backup, restore, migrate</h3>
+          <p>Export your entire wardrobe to a single file. Move to a
+          new phone with one tap. Coming from Whering, Indyx, Acloset,
+          or a spreadsheet? Bring your data with the CSV importer.</p>
         </div>
 
       </div>
     </section>
 
+    <div class="divider">warp</div>
+
+    <!-- ────────── opinionated section: cultural attribution ────────── -->
+    <section>
+      <h2>Where your clothes actually come from</h2>
+
+      <div class="opinion">
+        <p class="claim">Most apps treat <em>paisley</em> as a Scottish pattern. It isn't.</p>
+        <p>
+          The teardrop motif — <em>boteh, ambi, kairi</em> — comes from
+          the Indian subcontinent, refined to its highest form in
+          Mughal-era Kashmiri shawls. It got its English name because
+          19th-century Scottish mills mass-produced cheap copies. Kroma
+          tells that story, and dozens like it, inside the app.
+        </p>
+        <p>
+          Tap any pattern, colour, or fabric on a garment and the
+          attribution opens up: where it actually originates, how it
+          travelled, what its English name is really a record of.
+          Indigo, Banarasi silk, Kuba cloth, Tatreez, Bandhani,
+          Phulkari, Huipil, Mola, Kente, Aran, Sashiko — 74 textile
+          traditions, each credited honestly, each translated into all
+          seven app languages.
+        </p>
+        <p>
+          If we got something wrong, especially about your community's
+          tradition, there's a button inside every info modal that
+          opens a pre-filled email straight to us. We'd rather hear
+          from you and fix it than guess.
+        </p>
+      </div>
+    </section>
+
+    <div class="divider">selvedge</div>
+
+    <!-- ────────── privacy explainer ────────── -->
     <section>
       <h2>How the privacy piece actually works</h2>
       <p>
-        Kroma does not run a backend. Your wardrobe data lives on your phone.
-        There are no accounts, no analytics, no advertising IDs, no crash
-        reporters. The few places data can leave your device — the AI
-        provider you chose, the weather service you opted in to, a product
-        page you shared to the app — are listed exhaustively in the
+        Kroma does not run a backend. Your wardrobe data lives on your
+        phone. There are no accounts, no analytics, no advertising IDs,
+        no crash reporters. The few places data <em>can</em> leave your
+        device — the AI provider you chose, the weather service you
+        opted in to, a product page you shared into the app — are
+        listed exhaustively in the
         <a href="/privacy">privacy policy</a>.
       </p>
       <p>
-        If something in the app's attribution of a cultural tradition looks
-        wrong to you, or if we're missing a tradition that should be there,
-        tap the <em>"Something off?"</em> or <em>"Know a tradition we're
-        missing?"</em> links on any info modal, or email
-        <a href="mailto:hello@kroma.fit">hello@kroma.fit</a> directly. We'd
-        rather hear from you and get it right.
+        That's not a marketing position. It's the architecture. There's
+        no server we'd have to shut down to honour a deletion request,
+        because there's no server.
       </p>
     </section>
 
+    <div class="divider">·</div>
+
+    <!-- ────────── get the app ────────── -->
     <section>
       <h2>Get the app</h2>
       <p class="muted">
-        Android build in progress. Links will appear here once published.
+        Android build in progress. Links will appear here once
+        published. iOS planned — needs a Mac and an Apple Developer
+        account, both being lined up.
       </p>
     </section>
 
