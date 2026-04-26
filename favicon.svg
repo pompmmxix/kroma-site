@@ -1,22 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap');
+    </style>
+  </defs>
   <rect width="512" height="512" rx="108" fill="#8b5a2b"/>
-  <!--
-    Cursive lowercase k, drawn as stroked paths so it renders identically
-    everywhere (no font dependency). Two subpaths:
-      1) ascending stem with top loop, descending to baseline
-      2) the upper arm + middle kink + descending arm
-    Stroke is round-cap / round-join to feel handwritten.
-  -->
-  <g fill="none" stroke="white" stroke-width="34" stroke-linecap="round" stroke-linejoin="round">
-    <!-- Ascender loop + vertical stem -->
-    <path d="M 195 380
-             L 195 175
-             C 195 130, 215 95, 240 105
-             C 260 113, 245 145, 215 165"/>
-    <!-- Upper arm + kink + descending arm -->
-    <path d="M 220 285
-             C 260 270, 305 250, 335 245
-             C 305 270, 270 295, 240 305
-             C 270 320, 320 360, 365 395"/>
-  </g>
+  <text x="256" y="400"
+        text-anchor="middle"
+        font-family="'Great Vibes','Snell Roundhand','Apple Chancery',cursive,Georgia,serif"
+        font-size="480"
+        font-weight="400"
+        fill="white">K</text>
 </svg>
