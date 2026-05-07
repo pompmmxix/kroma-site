@@ -3,14 +3,32 @@
 
    Design notes
    -----------
-   • No web fonts. We use system serif (ui-serif) for headings and
-     system sans for body. Cleaner privacy story, faster load,
-     consistent across all platforms.
+   • System serif for headings, system sans for body — no web font
+     fetch on those surfaces. Italianno (the calligraphic brand
+     wordmark) is self-hosted from italianno-latin.woff2 in this
+     repo; no third-party font CDN is contacted at any point on the
+     deployed site. Keeps the privacy story honest end-to-end.
    • Warm cream / brown palette matches the app exactly.
    • Subtle textile-weave background motif at section breaks ties
      the visual to the app's content focus.
    • Mobile-first; max-width 720px keeps long-form readable.
    ============================================================ */
+
+/* Italianno is the brand calligraphic wordmark face — used on the
+   "kroma" header text and matches the app's bundled Italianno. We
+   self-host the woff2 (Latin subset, ~37kB) so no request to
+   fonts.googleapis.com or fonts.gstatic.com is made when the site
+   loads. font-display:swap renders system-serif until the font is
+   ready (typically <100ms on first load, instant on repeat visits
+   thanks to the browser cache); avoids a flash of invisible text. */
+@font-face {
+  font-family: 'Italianno';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('italianno-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 :root {
   --bg:           #f8f6f1;
@@ -29,6 +47,7 @@
 
   --ff-body:    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --ff-display: ui-serif, Charter, "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
+  --ff-brand:   'Italianno', cursive, Georgia, serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -64,13 +83,22 @@ header.site {
   flex-wrap: wrap;
 }
 
+/* Brand wordmark — matches the app's header treatment exactly:
+   Italianno calligraphic script, lowercase ("kroma"), warm-brown
+   accent. Italianno glyphs are tall and narrow, so we bump the
+   font-size up vs the system-serif sibling treatments to read at
+   comparable optical size. text-transform on CSS rather than
+   changing the HTML literal so SEO / screen readers still see
+   "Kroma" as a proper noun. */
 header.site .brand {
-  font-family: var(--ff-display);
-  font-size: 1.7rem;
-  font-weight: 500;
-  color: var(--text);
+  font-family: var(--ff-brand);
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1;
+  color: var(--accent);
   text-decoration: none;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
+  text-transform: lowercase;
   display: inline-flex;
   align-items: center;
   gap: 10px;
