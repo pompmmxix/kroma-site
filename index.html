@@ -6,6 +6,50 @@
 <title>Kroma — your wardrobe, private by design</title>
 <meta name="description" content="A local-first wardrobe app that catalogues your clothes, learns what you actually wear, and credits the textile traditions you live in. Your data never leaves your phone.">
 
+<!-- Canonical URL.  Helps search engines pick a single authoritative URL
+     when the site is reachable via apex + www + http variants. -->
+<link rel="canonical" href="https://kroma.fit/">
+
+<!-- Open Graph — controls how the page renders when shared into iMessage,
+     WhatsApp, Slack, LinkedIn, Facebook etc.  Without these the platforms
+     fall back to scraped <title> + truncated body text, which is rarely
+     flattering.  og:image is the brand favicon for now; swap to a 1200x630
+     PNG hero once we have one. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kroma">
+<meta property="og:title" content="Kroma — your wardrobe, private by design">
+<meta property="og:description" content="A local-first wardrobe app that catalogues your clothes, learns what you actually wear, and credits the textile traditions you live in. Your data never leaves your phone.">
+<meta property="og:url" content="https://kroma.fit/">
+<meta property="og:image" content="https://kroma.fit/favicon.svg">
+<meta property="og:locale" content="en_GB">
+
+<!-- Twitter / X card.  summary_large_image gets the bigger preview when an
+     image is set.  No @site or @creator handle yet — add later. -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kroma — your wardrobe, private by design">
+<meta name="twitter:description" content="Local-first wardrobe app. Your clothes, your colour and body analysis, your AI of choice — all on your phone.">
+<meta name="twitter:image" content="https://kroma.fit/favicon.svg">
+
+<!-- JSON-LD structured data.  Tells Google + other engines this page is
+     about a software app, enabling rich-result rendering in search
+     listings once the app is in the stores and Google joins the data up. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Kroma",
+  "description": "A local-first wardrobe app that catalogues your clothes, learns what you actually wear, and credits the textile traditions you live in. Your data never leaves your phone.",
+  "applicationCategory": "LifestyleApplication",
+  "operatingSystem": "Android",
+  "url": "https://kroma.fit/",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
 <!-- Favicons. Source of truth: favicon.svg (cream serif K on warm brown). -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="alternate icon" href="favicon.svg">
@@ -84,10 +128,12 @@
         </div>
 
         <div class="feature">
-          <h3>Backup, restore, migrate</h3>
-          <p>Export your entire wardrobe to a single file. Move to a
-          new phone with one tap. Coming from Whering, Indyx, Acloset,
-          or a spreadsheet? Bring your data with the CSV importer.</p>
+          <h3>No accounts, no servers</h3>
+          <p>Open the app and start cataloguing — no sign-up, no email,
+          no profile waiting on someone else's database. Your wardrobe
+          lives in encrypted storage on your phone. There's no server
+          we'd have to shut down to honour a deletion request, because
+          there's no server.</p>
         </div>
 
       </div>
