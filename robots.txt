@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kroma.fit/sitemap.xml
