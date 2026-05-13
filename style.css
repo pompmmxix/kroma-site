@@ -246,15 +246,27 @@ hr {
 /* ────────── hero ────────── */
 
 .hero {
-  padding: 24px 0 8px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 56px;
+  align-items: center;
+  padding: 24px 0 32px;
+}
+
+.hero-content {
+  /* min-width:0 prevents the column from blowing out on long unbroken
+     words; without it grid items default to min-content sizing and the
+     headline can push the visual column off the right edge. */
+  min-width: 0;
 }
 
 .hero h1 {
   font-size: 2.8rem;
   letter-spacing: -0.03em;
   margin: 0 0 18px;
-  max-width: 14ch;
   line-height: 1.05;
+  /* The grid column constrains the headline now; explicit max-width
+     removed so the text fills the column it was given. */
 }
 
 .hero .lede {
@@ -262,10 +274,42 @@ hr {
   color: var(--text-soft);
   line-height: 1.55;
   margin: 0 0 24px;
-  max-width: 38ch;
+  /* Same as h1 — column constraint replaces explicit max-width. */
 }
 
 .hero .lede strong { color: var(--text); }
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  /* aspect-ratio reserves the slot's height before the image loads so
+     the rest of the page doesn't jump when it arrives — keeps CLS at 0. */
+  aspect-ratio: 320 / 640;
+  /* Soft drop shadow gives the phone mockup depth without a hard border.
+     Remove or soften if the AI-generated image bakes its own shadow in. */
+  filter: drop-shadow(0 12px 32px rgba(30, 27, 22, 0.18));
+}
+
+/* Mobile: stack vertically, image below text. Breakpoint matches the
+   layout transition used elsewhere in the file. */
+@media (max-width: 720px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 12px 0 20px;
+  }
+  .hero-visual img {
+    max-width: 260px;
+  }
+}
 
 /* ────────── feature grid ────────── */
 
