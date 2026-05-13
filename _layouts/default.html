@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.description }}">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+{% seo %}
+</head>
+<body class="doc">
+<header class="site-hd">
+<a href="/" class="brand">Kroma</a>
+<nav><a href="/privacy">Privacy</a></nav>
+</header>
+<main class="prose">
+{{ content }}
+</main>
+<footer class="site-ft">
+<p>© {{ site.time | date: "%Y" }} Kroma. Local-first wardrobe tools.</p>
+<p><a href="/privacy">Privacy policy</a></p>
+</footer>
+</body>
+</html>

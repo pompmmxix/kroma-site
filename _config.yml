@@ -1,0 +1,26 @@
+title: Kroma
+description: Catalogue what you own. Wear what you have. Style with intention.
+url: https://kroma.fit
+lang: en
+
+# Use a minimal theme — our custom CSS handles the visual design.
+theme: null
+plugins:
+  - jekyll-seo-tag
+
+# Jekyll will render markdown files through _layouts/default.html.
+# Raw .html files (like index.html) are served as-is.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+
+# Exclude files that shouldn't be published.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
