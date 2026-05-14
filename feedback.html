@@ -169,9 +169,10 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 .feedback-pending strong { color: rgb(80, 50, 0); }
 </style>
 </head>
-<body class="doc">
+<body>
+<div class="wrap">
 
-<header class="site">
+  <header class="site">
   <a class="brand" href="/">Kroma</a>
   <nav>
     <a href="/">Home</a>
@@ -284,10 +285,16 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   </p>
 </main>
 
-<footer class="site-ft">
-  <p>© <script>document.write(new Date().getFullYear())</script><noscript>2026</noscript> Kroma. Local-first wardrobe tools.</p>
-  <p><a href="/">Home</a> · <a href="/feedback/">Feedback</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
-</footer>
+  <footer class="site">
+    <span>Kroma — made with care</span>
+    <span>
+      <a href="/privacy">Privacy</a> &middot;
+      <a href="/terms">Terms</a> &middot;
+      <a href="/feedback/">Feedback</a>
+    </span>
+  </footer>
+
+</div>
 
 {% if api_url and api_url != "" and api_url contains "://" and turnstile_key and turnstile_key != "" %}
 <script>
