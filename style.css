@@ -225,65 +225,22 @@ hr {
 /* ────────── ornament: textile-weave divider ──────────
    A subtle SVG motif used between major sections. Echoes
    the warp/weft structure that's the foundation of every
-   tradition the app catalogues, without being twee.
-
-   Three flavours — weft (horizontal threads), warp (vertical
-   threads), selvedge (the woven edge where the weft loops
-   back). Each carries a one-line gloss because early readers
-   parsed the bare term as a section heading rather than a
-   decorative break. The SVG turns the divider into a tiny
-   teaching diagram. */
+   tradition the app catalogues, without being twee. */
 
 .divider {
   margin: 56px 0;
   text-align: center;
   color: var(--accent-soft);
+  font-size: 1rem;
+  letter-spacing: 0.5em;
   font-family: var(--ff-display);
   user-select: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
 }
-.divider-icon {
-  width: 44px;
-  height: 44px;
-  stroke: var(--accent-soft);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-  fill: none;
-}
-/* Faint threads (the perpendicular structure under the emphasised set) */
-.divider-icon .warp-faint line,
-.divider-icon .weft-faint line,
-.divider-icon .fabric-grid line {
-  stroke-opacity: 0.32;
-}
-/* Strong threads (the named direction in this divider) */
-.divider-icon .warp-strong line,
-.divider-icon .weft-strong line {
-  stroke-opacity: 0.9;
-  stroke-width: 1.7;
-}
-/* Selvedge: the looping edge is the educational moment, render boldly */
-.divider-icon .selvedge-loops path {
-  stroke-opacity: 0.95;
-  stroke-width: 1.7;
-}
-.divider-term {
-  font-size: 0.95rem;
-  letter-spacing: 0.5em;
-}
-.divider-gloss {
-  font-size: 0.72rem;
-  color: var(--text-mute);
-  letter-spacing: 0.02em;
-  font-family: var(--ff-body);
-  font-style: italic;
-  /* Indented half a letter-spacing to optically counter the term's
-     wide tracking — keeps the gloss visually under the term, not
-     pulled right by the trailing space the tracking creates. */
-  margin-right: 0.5em;
+.divider::before, .divider::after {
+  content: "·";
+  display: inline-block;
+  margin: 0 0.5em;
+  opacity: 0.6;
 }
 
 /* ────────── hero ────────── */
