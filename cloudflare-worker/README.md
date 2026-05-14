@@ -104,60 +104,202 @@ In the Cloudflare dashboard (your usual account, not the bot's):
 - Copy the **Site Key** (public, goes in `_config.yml`)
 - Copy the **Secret Key** (private, goes into the worker as a secret)
 
-### 7. Install wrangler
+### 7. Install Node.js (if you don't have it)
 
-```bash
+Wrangler is a Node.js tool, so you need Node.js installed first. Check
+whether you already have it:
+
+1. Press the **Windows key**, type `powershell`, hit Enter. A blue
+   window opens with a `>` prompt.
+2. Type the following and hit Enter:
+   ```powershell
+   node --version
+   ```
+3. If you see something like `v20.10.0` (any number is fine, as long
+   as it's v18 or higher), you have Node.js. Skip to step 8.
+4. If you see a red error saying "node is not recognized" or similar,
+   you need to install Node.js.
+
+To install:
+
+1. Go to <https://nodejs.org>.
+2. Click the green **LTS** button (it'll show a version number like
+   "20.11.0 LTS" or similar — the exact number doesn't matter).
+3. Run the downloaded installer. Click Next through everything; the
+   defaults are correct. The installer takes a couple of minutes.
+4. **Close and re-open PowerShell** after install — otherwise the new
+   `node` command won't be available in your existing session.
+5. Verify by typing `node --version` again — should show the version.
+
+### 8. Install wrangler
+
+In the same PowerShell window:
+
+```powershell
 npm install -g wrangler@latest
-wrangler login                        # opens a browser, authorises wrangler
 ```
 
-### 8. Deploy the worker
+You'll see a stream of text as npm downloads and installs. It takes
+about a minute. When it's done you'll be back at the `>` prompt with
+no error message.
 
-First check the REPO value in `wrangler.toml` matches the bot's
-username and repo name from steps 1 and 2. Default is
-`kroma-feedback-bot/kroma-feedback` — edit if different.
+Verify it installed correctly:
 
-Then:
+```powershell
+wrangler --version
+```
 
-```bash
-cd cloudflare-worker
+You should see something like `wrangler 3.95.0` or similar.
 
-# Secrets — these go into Cloudflare's encrypted secret store, never
-# the source tree. Each command prompts you to paste the value.
-wrangler secret put GITHUB_TOKEN      # → paste the bot's fine-grained PAT
-wrangler secret put TURNSTILE_SECRET  # → paste Turnstile secret key
+### 9. Sign in to Cloudflare from wrangler
 
+```powershell
+wrangler login
+```
+
+This opens your default browser to a Cloudflare page asking "Allow
+Wrangler to access your account?" — click **Allow**. The browser will
+show "Successfully logged in" and the PowerShell window will say so too.
+You can close the browser tab.
+
+### 10. Navigate to the worker directory
+
+This is the directory in your kroma-site repo that holds the worker
+code. Type **exactly** this (replace the path if your kroma-site repo
+is elsewhere; the path below is what we've been using):
+
+```powershell
+cd C:\Projects\Wardrobe\kroma-site\cloudflare-worker
+```
+
+Hit Enter. The prompt should now show that path. You're now "inside"
+the cloudflare-worker directory — wrangler will read `wrangler.toml`
+from your current directory, so being here matters.
+
+To double-check, type:
+
+```powershell
+dir
+```
+
+You should see `feedback-worker.js`, `wrangler.toml`, `README.md`,
+`.gitignore`, and `issue-templates/`. If you don't, you're in the
+wrong directory.
+
+### 11. Confirm the REPO setting
+
+Open `wrangler.toml` in any text editor (Notepad will do; right-click
+the file in File Explorer → Open with → Notepad). Look for the line:
+
+```toml
+REPO = "kroma-feedback-bot/kroma-feedback"
+```
+
+If your bot's GitHub username or repo name is different from
+`kroma-feedback-bot/kroma-feedback`, change it now. Save and close.
+
+### 12. Set the two secrets
+
+Back in PowerShell, still in the `cloudflare-worker` directory, type:
+
+```powershell
+wrangler secret put GITHUB_TOKEN
+```
+
+Hit Enter. Wrangler prompts:
+
+```
+✔ Enter a secret value: ›
+```
+
+Paste your bot's fine-grained PAT (from step 5) — it'll appear as dots
+or be hidden; that's fine. Hit Enter. You'll see "Success!" or similar.
+
+Now do the second secret:
+
+```powershell
+wrangler secret put TURNSTILE_SECRET
+```
+
+Same pattern: paste the Turnstile **secret** key (from step 6, NOT the
+site key — the secret is the one labelled with a "click to reveal"
+toggle in the Cloudflare Turnstile dashboard). Hit Enter.
+
+To verify both are set (you can't see the values, just that they
+exist):
+
+```powershell
+wrangler secret list
+```
+
+You should see both `GITHUB_TOKEN` and `TURNSTILE_SECRET` listed.
+
+### 13. Deploy
+
+Same PowerShell window, same directory:
+
+```powershell
 wrangler deploy
 ```
 
-Note the deployed URL — something like:
+Wrangler bundles the worker and uploads it. After ~15 seconds you'll
+see something like:
 
 ```
-https://kroma-feedback.<your-cloudflare-subdomain>.workers.dev
+Total Upload: 4.50 KiB / gzip: 1.85 KiB
+Worker Startup Time: 5 ms
+Uploaded kroma-feedback (3.21 sec)
+Deployed kroma-feedback triggers (0.78 sec)
+  https://kroma-feedback.<your-subdomain>.workers.dev
 ```
 
-### 9. (Optional) Bind a custom domain
+**Copy that `https://...workers.dev` URL** — that's your `feedback_api_url`.
+You'll paste it into `_config.yml` in the next section.
+
+### 14. (Optional) Bind a custom domain
 
 Cleaner final URL. Cloudflare dashboard → Workers & Pages →
 kroma-feedback → Triggers → Custom Domains → Add Custom Domain →
 e.g. `feedback-api.kroma.fit`.
 
-Requires `kroma.fit` to be on Cloudflare's nameservers. If you haven't
-moved DNS to Cloudflare yet, skip this step — the `.workers.dev` URL
-works fine.
+Requires `kroma.fit` to be on Cloudflare's nameservers. **Skip this
+step if your DNS is on Namecheap or elsewhere** — the `.workers.dev`
+URL works fine and the form on kroma.fit can post to it.
 
-### 10. Wire the site up to the worker
+### 15. Wire the site up to the worker
 
-Edit `_config.yml` at the root of the kroma-site repo:
+The kroma-site repo's `_config.yml` has two placeholder lines around
+line 55:
 
 ```yaml
-# Replace the placeholders with the values from steps 6 and 8–9.
-feedback_api_url: "https://kroma-feedback.<your-subdomain>.workers.dev"
-turnstile_site_key: "0x...your-public-site-key"
+feedback_api_url: ""
+turnstile_site_key: ""
 ```
 
-Commit and push the kroma-site repo. The `/feedback/` page rebuilds
-and starts using the live worker.
+You can edit this two ways:
+
+**Via the GitHub web UI (easiest if you've been using GitHub.com)**:
+
+1. Go to <https://github.com/pompmmxix/kroma-site/blob/main/_config.yml>
+2. Click the pencil icon (top-right of the file view).
+3. Fill in the two lines with your values from steps 6 and 13:
+   ```yaml
+   feedback_api_url: "https://kroma-feedback.<your-subdomain>.workers.dev"
+   turnstile_site_key: "0x...your-public-site-key"
+   ```
+4. Scroll to the bottom → Commit changes → Commit directly to the `main` branch → green button.
+
+**Via the terminal (if you're already in the kroma-site repo locally)**:
+
+1. Edit `_config.yml` in your text editor.
+2. Fill in the two lines (same values).
+3. `git add _config.yml`
+4. `git commit -m "Wire feedback page to live Worker"`
+5. `git push origin main`
+
+Either way, GitHub Pages rebuilds in ~60 seconds. Visit
+<https://kroma.fit/feedback/> — the "coming soon" notice should be
+replaced by the live form.
 
 ## Testing
 
