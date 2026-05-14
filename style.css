@@ -109,15 +109,26 @@ header.site .brand {
 /* Inset K mark next to wordmark. Scales with the wordmark via the
    same clamp — proportions stay constant whether the header is
    320px wide or 720px wide. Border-radius bumped slightly at the
-   larger size so the rounded corners read at a glance. */
+   larger size so the rounded corners read at a glance.
+
+   Optical-centring caveat: Italianno has deep descenders, so the
+   text's line-box centre sits visually HIGHER than the centre of
+   the cap/x-height zone the eye reads as "the middle of kroma".
+   align-items:center on the flex parent puts the icon on the
+   geometric line-box centre, which optically renders the icon as
+   floating ABOVE the wordmark. translateY pushes the icon down
+   roughly half a descender's depth to land on the visual middle.
+   Size also nudged down a touch — at the previous 48px the icon
+   was heavier than the airy script needed. */
 header.site .brand::before {
   content: "";
-  width: clamp(36px, 4.5vw, 48px);
-  height: clamp(36px, 4.5vw, 48px);
+  width: clamp(32px, 4vw, 42px);
+  height: clamp(32px, 4vw, 42px);
   background: var(--accent) url("favicon.svg") center/contain no-repeat;
-  border-radius: 9px;
+  border-radius: 8px;
   display: inline-block;
   flex-shrink: 0;
+  transform: translateY(0.1em);
 }
 
 header.site nav {
