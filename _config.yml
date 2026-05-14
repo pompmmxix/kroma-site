@@ -17,6 +17,22 @@ defaults:
     values:
       layout: default
 
+# ───────── Feedback page wiring ─────────
+# kroma.fit/feedback posts to a Cloudflare Worker that proxies the
+# submission into a public GitHub issue under a bot account. The page
+# detects when these values are placeholders and shows a "coming soon"
+# notice instead of a broken form.
+#
+# Set these once the Worker is deployed:
+#   1. feedback_api_url — the deployed worker URL (e.g.
+#      https://kroma-feedback.<subdomain>.workers.dev OR a custom
+#      domain like https://feedback-api.kroma.fit).
+#   2. turnstile_site_key — the PUBLIC Cloudflare Turnstile site key
+#      (the secret key is set as a Cloudflare Worker secret, not here).
+# See cloudflare-worker/README.md for the full setup checklist.
+feedback_api_url: ""
+turnstile_site_key: ""
+
 # Exclude files that shouldn't be published.
 exclude:
   - Gemfile
@@ -24,3 +40,4 @@ exclude:
   - README.md
   - node_modules
   - vendor
+  - "cloudflare-worker"

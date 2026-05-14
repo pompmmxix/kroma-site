@@ -1,0 +1,408 @@
+---
+layout: none
+permalink: /feedback/
+title: Send feedback
+description: Tell us about gaps, mistakes, or things that aren't working — anonymously, no account, no email collected.
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send feedback · Kroma</title>
+<meta name="description" content="{{ page.description }}">
+
+<link rel="canonical" href="https://kroma.fit/feedback/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kroma">
+<meta property="og:title" content="Send feedback — Kroma">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:url" content="https://kroma.fit/feedback/">
+<meta property="og:image" content="https://kroma.fit/favicon.svg">
+
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/style.css">
+
+<!-- Cloudflare Turnstile script.  Privacy-friendly captcha; no Google
+     reCAPTCHA-style fingerprinting.  Loaded only on this page so the
+     rest of the site stays third-party-script-free. -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<style>
+/* Feedback-page-specific styling.  Form lives inside .prose, so most
+   type styles inherit; these rules cover only the controls + status UI. */
+.feedback-form { margin: 24px 0; }
+
+.feedback-form fieldset {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px 14px;
+  margin: 0 0 20px;
+}
+.feedback-form legend {
+  font-weight: 500;
+  padding: 0 8px;
+  font-size: 0.95rem;
+}
+.feedback-form label.radio {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+  border-bottom: 1px solid var(--border-soft, var(--border));
+}
+.feedback-form label.radio:last-child { border-bottom: 0; }
+.feedback-form label.radio input { margin-right: 10px; }
+.feedback-form label.radio .radio-title {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 2px;
+}
+.feedback-form label.radio .radio-help {
+  display: block;
+  font-size: 0.86rem;
+  color: var(--text-mute);
+  margin-left: 24px;
+}
+
+.feedback-form .field-label {
+  display: block;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+.feedback-form textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 12px 14px;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  line-height: 1.5;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-card);
+  color: var(--text);
+  resize: vertical;
+  box-sizing: border-box;
+}
+.feedback-form textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.feedback-form .turnstile-slot {
+  margin-top: 18px;
+}
+
+.feedback-form .submit-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 14px;
+  font-family: var(--ff-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+.feedback-form .submit-btn:hover:not(:disabled) { background: var(--accent-deep); }
+.feedback-form .submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.feedback-form .status {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  display: none;
+}
+.feedback-form .status.show { display: block; }
+.feedback-form .status.success {
+  background: rgba(64, 138, 84, 0.08);
+  border: 1px solid rgba(64, 138, 84, 0.4);
+  color: rgb(36, 88, 52);
+}
+.feedback-form .status.error {
+  background: rgba(176, 52, 52, 0.06);
+  border: 1px solid rgba(176, 52, 52, 0.3);
+  color: rgb(120, 36, 36);
+}
+.feedback-form .status a { color: inherit; text-decoration: underline; }
+
+.feedback-helper {
+  background: var(--bg-soft);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 24px 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+.feedback-helper h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+  color: var(--accent-deep);
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--ff-display);
+  font-weight: 500;
+}
+.feedback-helper ul { margin: 6px 0 0; padding-left: 22px; }
+.feedback-helper li { margin: 4px 0; }
+.feedback-helper strong { color: var(--text); }
+
+/* "Form not yet wired up" notice — shown only when _config.yml still
+   has placeholder values. Goes away once feedback_api_url is set. */
+.feedback-pending {
+  background: rgba(214, 158, 46, 0.08);
+  border: 1px solid rgba(214, 158, 46, 0.4);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 24px 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: rgb(120, 80, 16);
+}
+.feedback-pending strong { color: rgb(80, 50, 0); }
+</style>
+</head>
+<body class="doc">
+
+<header class="site">
+  <a class="brand" href="/">Kroma</a>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/feedback/" class="active">Feedback</a>
+    <a href="/privacy">Privacy</a>
+    <a href="/terms">Terms</a>
+  </nav>
+</header>
+
+<main class="prose">
+  <h1>Send feedback</h1>
+  <p class="lede">
+    We read every report. You won't get a reply — we don't take an email
+    address. <strong>Please don't include your name, contact details, or
+    photos in the description</strong> — we don't want them, and they'd
+    become part of a public record.
+  </p>
+
+  {% comment %}
+    The form is only rendered if both the Worker URL and the Turnstile
+    site key are configured in _config.yml. Until those are set, we show
+    a "coming soon" notice instead so the page can ship before the
+    infrastructure is wired up. Once both are filled in and the site
+    rebuilds, the form lights up automatically.
+  {% endcomment %}
+  {% assign api_url = site.feedback_api_url %}
+  {% assign turnstile_key = site.turnstile_site_key %}
+  {% if api_url and api_url != "" and api_url contains "://" and turnstile_key and turnstile_key != "" %}
+
+  <form class="feedback-form" id="feedbackForm" data-api-url="{{ api_url }}">
+    <fieldset>
+      <legend>What kind of feedback?</legend>
+
+      <label class="radio">
+        <input type="radio" name="kind" value="missing" required>
+        <span class="radio-title">Something is missing</span>
+        <span class="radio-help">A textile tradition, garment type, colour, or feature you'd expect to be there.</span>
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="kind" value="factually-wrong" required>
+        <span class="radio-title">Something is factually wrong</span>
+        <span class="radio-help">Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.</span>
+      </label>
+
+      <label class="radio">
+        <input type="radio" name="kind" value="not-working" required>
+        <span class="radio-title">Something isn't working as I'd expect</span>
+        <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
+      </label>
+    </fieldset>
+
+    <label class="field-label" for="description">Describe it</label>
+    <textarea
+      id="description"
+      name="description"
+      required
+      minlength="10"
+      maxlength="2000"
+      placeholder="What did you see, what did you expect, and where in the app — be as specific as you can. No names, emails, or contact details, please."
+    ></textarea>
+
+    <div class="turnstile-slot">
+      <div class="cf-turnstile" data-sitekey="{{ turnstile_key }}"></div>
+    </div>
+
+    <button type="submit" class="submit-btn" id="submitBtn">Send →</button>
+
+    <div class="status" id="statusBox" role="status" aria-live="polite"></div>
+  </form>
+
+  {% else %}
+
+  <div class="feedback-pending">
+    <strong>Feedback form coming soon.</strong>
+    The submission infrastructure is being wired up; once it's live, this
+    page will let you send a feedback note anonymously. In the meantime,
+    if you've spotted something urgent you can raise it directly on the
+    <a href="https://github.com/pompmmxix/wardrobe-app/issues">public GitHub issues list</a>.
+  </div>
+
+  {% endif %}
+
+  <div class="feedback-helper">
+    <h3>How this works</h3>
+    <ul>
+      <li><strong>You don't need to create an account.</strong> A dedicated bot account posts your message to the public feedback list on our behalf, so you stay anonymous.</li>
+      <li><strong>The message becomes public.</strong> The feedback list is open to anyone — that's the trade-off for not running a private server. Don't put anything in the description you wouldn't say in public.</li>
+      <li><strong>No attachments.</strong> Don't paste photos, screenshots, or files. Describe in words instead — "the saree was tagged as Cotton when the label said 100% silk" is more useful than a screenshot anyway.</li>
+      <li><strong>No identifying information.</strong> Don't put your name, email, phone number, or address in the description. We don't need them and they'd be public.</li>
+    </ul>
+  </div>
+
+  <h2>A note about AI accuracy</h2>
+  <p>
+    If the AI misread your photo — wrong colour, fabric, garment type, anything
+    visual — that's the model, not Kroma. We connect you to your chosen
+    provider (Gemini, Claude, OpenAI, or a local model). We don't train, run,
+    or improve any of them.
+  </p>
+  <p>Two things usually help:</p>
+  <ul>
+    <li><strong>Edit the fields by hand.</strong> The AI's reading is a starting point, not the final word — every field is editable. You have the last say.</li>
+    <li><strong>Use a more capable model.</strong> If you're on a free tier (e.g. Gemini Flash), a paid tier of the same provider often reads photos far better. That usually means an API key with credits — costs vary by provider, and what you pay goes to them, not to us.</li>
+  </ul>
+  <p>
+    Please don't report AI mis-reads on this form — they're a limit of the
+    model you're using, not a bug we can fix on the Kroma side. The feedback
+    list is for things we can act on.
+  </p>
+</main>
+
+<footer class="site-ft">
+  <p>© <script>document.write(new Date().getFullYear())</script><noscript>2026</noscript> Kroma. Local-first wardrobe tools.</p>
+  <p><a href="/">Home</a> · <a href="/feedback/">Feedback</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a></p>
+</footer>
+
+{% if api_url and api_url != "" and api_url contains "://" and turnstile_key and turnstile_key != "" %}
+<script>
+/*
+ * Feedback form submission.
+ *
+ * Posts the form contents (kind, description, captcha token, and any
+ * app metadata passed via ?v= / ?l= URL params) as JSON to the
+ * Cloudflare Worker.  The Worker forwards to GitHub Issues via a
+ * dedicated bot account; we never see who the submitter is.
+ *
+ * The Turnstile captcha widget renders inline (data-sitekey reads from
+ * Jekyll site config).  Its token is read from the page's form element
+ * via the cf-turnstile-response hidden input that Turnstile auto-injects.
+ *
+ * On success we replace the form with a thank-you message that links to
+ * the public issue.  On failure we show an inline error and let the user
+ * try again (Turnstile resets its token after a failure, so they'll need
+ * to redo the captcha).
+ */
+(function () {
+  var form        = document.getElementById('feedbackForm');
+  var submitBtn   = document.getElementById('submitBtn');
+  var statusBox   = document.getElementById('statusBox');
+  var apiUrl      = form.getAttribute('data-api-url');
+
+  // Read optional app context from URL params. Kroma's "Send feedback"
+  // button in Settings appends ?v= and ?l= so we can attach the app
+  // version and locale to the issue body without asking the user.
+  var search = new URLSearchParams(window.location.search);
+  var appVersion = (search.get('v') || '').trim().slice(0, 60);
+  var locale     = (search.get('l') || '').trim().slice(0, 32);
+
+  function showStatus(kind, html) {
+    statusBox.className = 'status show ' + kind;
+    statusBox.innerHTML = html;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    statusBox.className = 'status';
+    statusBox.innerHTML = '';
+
+    var kindEl = form.querySelector('input[name="kind"]:checked');
+    var kind   = kindEl ? kindEl.value : '';
+    var desc   = (document.getElementById('description').value || '').trim();
+
+    // Turnstile injects a hidden input named cf-turnstile-response into
+    // the form.  If it's not there yet the user hasn't passed the
+    // challenge (or the script hasn't loaded).
+    var captchaInput = form.querySelector('input[name="cf-turnstile-response"]');
+    var captcha = captchaInput ? captchaInput.value : '';
+
+    if (!kind || desc.length < 10) {
+      showStatus('error', 'Pick a feedback type and write at least a sentence about what you saw.');
+      return;
+    }
+    if (!captcha) {
+      showStatus('error', 'Please complete the captcha to continue.');
+      return;
+    }
+
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    fetch(apiUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        kind: kind,
+        description: desc,
+        captcha: captcha,
+        appVersion: appVersion,
+        locale: locale,
+      }),
+    })
+      .then(function (r) {
+        return r.json().then(function (data) {
+          return { ok: r.ok, status: r.status, data: data };
+        });
+      })
+      .then(function (res) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send →';
+
+        if (res.ok && res.data && res.data.ok) {
+          form.querySelector('fieldset').setAttribute('disabled', 'disabled');
+          document.getElementById('description').setAttribute('disabled', 'disabled');
+          submitBtn.style.display = 'none';
+          var url = res.data.url || '';
+          var link = url
+            ? ' You can view it on GitHub: <a href="' + url + '" target="_blank" rel="noopener noreferrer">' + url + '</a>'
+            : '';
+          showStatus('success', '<strong>Thanks — your feedback has been posted.</strong>' + link);
+        } else {
+          var msg = (res.data && res.data.error) || 'Something went wrong. Please try again.';
+          showStatus('error', msg);
+          // Reset the Turnstile widget so the user gets a fresh challenge
+          if (window.turnstile && typeof window.turnstile.reset === 'function') {
+            try { window.turnstile.reset(); } catch (_) {}
+          }
+        }
+      })
+      .catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send →';
+        showStatus('error', 'Network error — could not reach the feedback service. Try again in a moment.');
+        if (window.turnstile && typeof window.turnstile.reset === 'function') {
+          try { window.turnstile.reset(); } catch (_) {}
+        }
+      });
+  });
+})();
+</script>
+{% endif %}
+
+</body>
+</html>

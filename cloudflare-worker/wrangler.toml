@@ -1,0 +1,31 @@
+# Cloudflare Worker config for the Kroma feedback proxy.
+#
+# Deploy:
+#   cd cloudflare-worker
+#   wrangler login                          # one-time, opens browser
+#   wrangler secret put GITHUB_TOKEN        # paste the bot's fine-grained PAT
+#   wrangler secret put TURNSTILE_SECRET    # paste Turnstile secret key
+#   wrangler deploy                          # ships the worker
+#
+# After deploy, the worker is reachable at:
+#   https://kroma-feedback.<your-cloudflare-subdomain>.workers.dev
+#
+# Optional: bind a custom domain via Cloudflare dashboard → Workers →
+# kroma-feedback → Triggers → Custom Domains. e.g. feedback-api.kroma.fit.
+# That URL then goes into kroma-site/_config.yml as `feedback_api_url`.
+
+name = "kroma-feedback"
+main = "feedback-worker.js"
+compatibility_date = "2024-09-01"
+
+# Non-secret environment vars are inlined here. Secrets — GITHUB_TOKEN
+# and TURNSTILE_SECRET — go through `wrangler secret put` instead and
+# are never visible in this file or in source control.
+[vars]
+REPO = "pompmmxix/wardrobe-app"
+
+# Observability is off by default. Cloudflare's dashboard still shows
+# real-time invocation counts and error rates, but we don't enable any
+# log retention or send anything off-platform.
+[observability]
+enabled = false

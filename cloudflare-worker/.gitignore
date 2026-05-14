@@ -1,0 +1,5 @@
+# Wrangler-managed local state — none of this should ever be committed.
+.wrangler/
+.dev.vars
+node_modules/
+package-lock.json
