@@ -30,7 +30,7 @@ defaults:
 #   2. turnstile_site_key — the PUBLIC Cloudflare Turnstile site key
 #      (the secret key is set as a Cloudflare Worker secret, not here).
 # See cloudflare-worker/README.md for the full setup checklist.
-feedback_api_url: ""
+feedback_api_url: "https://kroma-feedback.kroma-fit-app.workers.dev"
 turnstile_site_key: "0x4AAAAAADPaJlhSA6FA11nD"
 
 # Exclude files that shouldn't be published.
