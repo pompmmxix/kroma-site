@@ -33,22 +33,22 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
    type styles inherit; these rules cover only the controls + status UI. */
 .feedback-form { margin: 24px 0; }
 
-/* The fieldset acts as a card around the three radio options. No
-   internal padding on the fieldset itself — each radio item provides
-   its own padding, so the visual baseline of the radio text matches
-   the "Describe it" label that sits outside the fieldset further down.
-   This keeps all form content visually left-aligned. */
-.feedback-form fieldset {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 0;
+/* Each labelled section of the form: label-above-content. Used for
+   both the radio group and the textarea so the two sections read as
+   visually parallel. Bottom margin separates one section from the
+   next. */
+.feedback-form .form-section {
   margin: 0 0 24px;
 }
-.feedback-form legend {
-  font-weight: 500;
-  padding: 0 8px;
-  margin-left: 10px;
-  font-size: 0.95rem;
+
+/* Card around the three radio options. Sits below the section label
+   (not a fieldset/legend), so the label uses the same .field-label
+   styling as the textarea label below — visually consistent treatment
+   for both sections of the form. */
+.feedback-form .radio-group {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 /* Each radio row: flex with the radio input on the left and the
@@ -89,10 +89,15 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   line-height: 1.45;
 }
 
+/* Standard section label — used identically for "What kind of
+   feedback?" (above the radio group) and "Describe it" (above the
+   textarea). Same font-size, weight, and spacing in both places so
+   the form reads as a consistent series of labelled sections. */
 .feedback-form .field-label {
   display: block;
   font-weight: 500;
-  margin: 0 0 6px;
+  font-size: 1rem;
+  margin: 0 0 10px;
 }
 .feedback-form textarea {
   width: 100%;
@@ -228,34 +233,44 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   {% if api_url and api_url != "" and api_url contains "://" and turnstile_key and turnstile_key != "" %}
 
   <form class="feedback-form" id="feedbackForm" data-api-url="{{ api_url }}">
-    <fieldset>
-      <legend>What kind of feedback?</legend>
+    {%- comment -%}
+      The two sections (radio group + textarea) use a consistent
+      label-above-content pattern. <fieldset>/<legend> would be the
+      "more semantic" HTML choice but visually pushes the label inside
+      the border with different sizing — inconsistent with the textarea
+      label below. role="radiogroup" + aria-labelledby preserves the
+      screen-reader grouping behaviour without the visual quirks.
+    {%- endcomment -%}
+    <div class="form-section">
+      <div class="field-label" id="kindLabel">What kind of feedback?</div>
+      <div class="radio-group" role="radiogroup" aria-labelledby="kindLabel">
+        <label class="radio">
+          <input type="radio" name="kind" value="missing" required>
+          <span class="radio-content">
+            <span class="radio-title">Something is missing</span>
+            <span class="radio-help">A textile tradition, garment type, colour, or feature you'd expect to be there.</span>
+          </span>
+        </label>
 
-      <label class="radio">
-        <input type="radio" name="kind" value="missing" required>
-        <span class="radio-content">
-          <span class="radio-title">Something is missing</span>
-          <span class="radio-help">A textile tradition, garment type, colour, or feature you'd expect to be there.</span>
-        </span>
-      </label>
+        <label class="radio">
+          <input type="radio" name="kind" value="factually-wrong" required>
+          <span class="radio-content">
+            <span class="radio-title">Something is factually wrong</span>
+            <span class="radio-help">Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.</span>
+          </span>
+        </label>
 
-      <label class="radio">
-        <input type="radio" name="kind" value="factually-wrong" required>
-        <span class="radio-content">
-          <span class="radio-title">Something is factually wrong</span>
-          <span class="radio-help">Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.</span>
-        </span>
-      </label>
+        <label class="radio">
+          <input type="radio" name="kind" value="not-working" required>
+          <span class="radio-content">
+            <span class="radio-title">Something isn't working as I'd expect</span>
+            <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
+          </span>
+        </label>
+      </div>
+    </div>
 
-      <label class="radio">
-        <input type="radio" name="kind" value="not-working" required>
-        <span class="radio-content">
-          <span class="radio-title">Something isn't working as I'd expect</span>
-          <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
-        </span>
-      </label>
-    </fieldset>
-
+    <div class="form-section">
     <label class="field-label" for="description">Describe it</label>
     <textarea
       id="description"
@@ -265,6 +280,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
       maxlength="2000"
       placeholder="What did you see, what did you expect, and where in the app — be as specific as you can. No names, emails, or contact details, please."
     ></textarea>
+    </div>
 
     <div class="turnstile-slot">
       <div class="cf-turnstile" data-sitekey="{{ turnstile_key }}"></div>
