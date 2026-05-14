@@ -95,7 +95,27 @@
       </div>
     </section>
 
-    <div class="divider">weft</div>
+    <!-- Section divider: weft. Tiny SVG diagram + gloss reads as a
+         decorative break with a teaching moment; earlier feedback was
+         that the bare term read like a heading. The SVG shows the
+         horizontal weft threads passing over/under a faint warp. -->
+    <div class="divider" role="separator" aria-label="Section break: weft, the threads woven across the loom">
+      <svg class="divider-icon" viewBox="0 0 40 40" aria-hidden="true">
+        <g class="warp-faint">
+          <line x1="8"  y1="6" x2="8"  y2="34"/>
+          <line x1="16" y1="6" x2="16" y2="34"/>
+          <line x1="24" y1="6" x2="24" y2="34"/>
+          <line x1="32" y1="6" x2="32" y2="34"/>
+        </g>
+        <g class="weft-strong">
+          <line x1="4" y1="12" x2="36" y2="12"/>
+          <line x1="4" y1="20" x2="36" y2="20"/>
+          <line x1="4" y1="28" x2="36" y2="28"/>
+        </g>
+      </svg>
+      <span class="divider-term">weft</span>
+      <span class="divider-gloss">horizontal threads, woven across</span>
+    </div>
 
     <!-- ────────── features ────────── -->
     <section>
@@ -151,7 +171,25 @@
       </div>
     </section>
 
-    <div class="divider">warp</div>
+    <!-- Section divider: warp.  Vertical threads emphasised, horizontal
+         weft faint.  Mirror-image of the weft divider so the pair reads
+         as a structural conversation across the page. -->
+    <div class="divider" role="separator" aria-label="Section break: warp, the threads stretched lengthwise on the loom">
+      <svg class="divider-icon" viewBox="0 0 40 40" aria-hidden="true">
+        <g class="weft-faint">
+          <line x1="6" y1="12" x2="34" y2="12"/>
+          <line x1="6" y1="20" x2="34" y2="20"/>
+          <line x1="6" y1="28" x2="34" y2="28"/>
+        </g>
+        <g class="warp-strong">
+          <line x1="12" y1="4" x2="12" y2="36"/>
+          <line x1="20" y1="4" x2="20" y2="36"/>
+          <line x1="28" y1="4" x2="28" y2="36"/>
+        </g>
+      </svg>
+      <span class="divider-term">warp</span>
+      <span class="divider-gloss">vertical threads, stretched lengthwise</span>
+    </div>
 
     <!-- ────────── opinionated section: cultural attribution ────────── -->
     <section>
@@ -184,7 +222,28 @@
       </div>
     </section>
 
-    <div class="divider">selvedge</div>
+    <!-- Section divider: selvedge.  The visual moment that's worth a
+         diagram — the selvedge is the FINISHED edge of woven cloth,
+         where the weft threads loop back instead of being cut.  Curves
+         on the left show those loops; the fabric grid extends to the
+         right. -->
+    <div class="divider" role="separator" aria-label="Section break: selvedge, the finished edge of woven cloth">
+      <svg class="divider-icon" viewBox="0 0 40 40" aria-hidden="true">
+        <g class="fabric-grid">
+          <line x1="14" y1="8"  x2="36" y2="8"/>
+          <line x1="14" y1="14" x2="36" y2="14"/>
+          <line x1="14" y1="20" x2="36" y2="20"/>
+          <line x1="14" y1="26" x2="36" y2="26"/>
+          <line x1="14" y1="32" x2="36" y2="32"/>
+        </g>
+        <g class="selvedge-loops">
+          <path d="M14 8 Q8 8 8 11 Q8 14 14 14"/>
+          <path d="M14 20 Q8 20 8 23 Q8 26 14 26"/>
+        </g>
+      </svg>
+      <span class="divider-term">selvedge</span>
+      <span class="divider-gloss">the woven edge where the weft loops back</span>
+    </div>
 
     <!-- ────────── privacy explainer ────────── -->
     <section>
