@@ -33,35 +33,60 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
    type styles inherit; these rules cover only the controls + status UI. */
 .feedback-form { margin: 24px 0; }
 
+/* The fieldset acts as a card around the three radio options. No
+   internal padding on the fieldset itself — each radio item provides
+   its own padding, so the visual baseline of the radio text matches
+   the "Describe it" label that sits outside the fieldset further down.
+   This keeps all form content visually left-aligned. */
 .feedback-form fieldset {
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 18px 20px 14px;
-  margin: 0 0 20px;
+  padding: 0;
+  margin: 0 0 24px;
 }
 .feedback-form legend {
   font-weight: 500;
   padding: 0 8px;
+  margin-left: 10px;
   font-size: 0.95rem;
 }
+
+/* Each radio row: flex with the radio input on the left and the
+   title+help stacked on the right. align-items:flex-start so the
+   radio circle sits next to the title's optical centre rather than
+   floating above it. */
 .feedback-form label.radio {
-  display: block;
-  padding: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
   cursor: pointer;
   border-bottom: 1px solid var(--border-soft, var(--border));
 }
 .feedback-form label.radio:last-child { border-bottom: 0; }
-.feedback-form label.radio input { margin-right: 10px; }
+
+.feedback-form label.radio input {
+  margin: 4px 0 0;
+  flex-shrink: 0;
+  /* Native radio is small (~13px); nudging it down 4px aligns its
+     centre with the title's x-height roughly. */
+}
+
+.feedback-form label.radio .radio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
 .feedback-form label.radio .radio-title {
   font-weight: 500;
-  display: block;
-  margin-bottom: 2px;
 }
 .feedback-form label.radio .radio-help {
-  display: block;
   font-size: 0.86rem;
   color: var(--text-mute);
-  margin-left: 24px;
+  line-height: 1.45;
 }
 
 .feedback-form .field-label {
@@ -208,20 +233,26 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 
       <label class="radio">
         <input type="radio" name="kind" value="missing" required>
-        <span class="radio-title">Something is missing</span>
-        <span class="radio-help">A textile tradition, garment type, colour, or feature you'd expect to be there.</span>
+        <span class="radio-content">
+          <span class="radio-title">Something is missing</span>
+          <span class="radio-help">A textile tradition, garment type, colour, or feature you'd expect to be there.</span>
+        </span>
       </label>
 
       <label class="radio">
         <input type="radio" name="kind" value="factually-wrong" required>
-        <span class="radio-title">Something is factually wrong</span>
-        <span class="radio-help">Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.</span>
+        <span class="radio-content">
+          <span class="radio-title">Something is factually wrong</span>
+          <span class="radio-help">Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.</span>
+        </span>
       </label>
 
       <label class="radio">
         <input type="radio" name="kind" value="not-working" required>
-        <span class="radio-title">Something isn't working as I'd expect</span>
-        <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
+        <span class="radio-content">
+          <span class="radio-title">Something isn't working as I'd expect</span>
+          <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
+        </span>
       </label>
     </fieldset>
 
