@@ -1,0 +1,39 @@
+# Copy into the kroma-feedback repo at
+# .github/ISSUE_TEMPLATE/factually-wrong.yml
+name: Something is factually wrong
+description: Cultural attribution we got wrong, an origin we mis-stated, an incorrect claim.
+title: "[Factual error] "
+labels: ["factual-error"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most users send feedback via [kroma.fit/feedback](https://kroma.fit/feedback/) — no GitHub account needed. Use this template if you'd prefer to post directly.
+
+        **Don't include your name, email, phone number, or anything that identifies you.** This issue becomes part of a public list.
+
+        Cultural-attribution corrections in particular: please point us to a source if you can (a book, a museum, a scholarly article). We'd rather correct based on a verifiable reference than a "we got it wrong" with no follow-up.
+  - type: textarea
+    id: what
+    attributes:
+      label: What did we get wrong?
+      description: Which field, screen, or piece of information.
+      placeholder: e.g. "The InfoModal for Banarasi describes the origin as 'Bengal' — it should be Varanasi, Uttar Pradesh."
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should it say instead?
+      description: Your suggested correction.
+      placeholder: e.g. "Banarasi brocade originates from Varanasi (formerly Banaras) in Uttar Pradesh, India — a tradition documented from Mughal times."
+    validations:
+      required: false
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or reference
+      description: Where can we verify this? Book, article, museum record, primary source. URL is fine; no formatting required.
+      placeholder: e.g. "Crill, Rosemary. 'The Fabric of India' (V&A 2015) — chapter on Mughal court textiles."
+    validations:
+      required: false

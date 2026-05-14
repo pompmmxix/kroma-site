@@ -1,0 +1,19 @@
+# Copy this file into the kroma-feedback repo at
+# .github/ISSUE_TEMPLATE/config.yml — it controls what users see when
+# they click "New issue" on github.com.
+#
+# blank_issues_enabled: false means a visitor can't bypass the templates
+# and open a freeform issue.  Everyone goes through one of the three
+# structured templates, matching what kroma.fit/feedback emits.
+#
+# The contact_links section steers visitors back to the website as the
+# preferred entry point — submitting via kroma.fit/feedback doesn't
+# require a GitHub account, so it's a friendlier path for most users.
+blank_issues_enabled: false
+
+contact_links:
+  - name: Submit feedback without a GitHub account
+    url: https://kroma.fit/feedback/
+    about: >-
+      If you'd rather not create a GitHub account, the feedback form on
+      kroma.fit/feedback posts on your behalf — fully anonymously.

@@ -1,0 +1,21 @@
+# Copy into the kroma-feedback repo at
+# .github/ISSUE_TEMPLATE/missing.yml
+name: Something is missing
+description: A textile tradition, garment type, colour, or feature you'd expect to be there.
+title: "[Missing] "
+labels: ["missing"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most users send feedback via [kroma.fit/feedback](https://kroma.fit/feedback/) — no GitHub account needed. Use this template if you'd prefer to post directly.
+
+        **Don't include your name, email, phone number, or anything that identifies you.** This issue becomes part of a public list.
+  - type: textarea
+    id: description
+    attributes:
+      label: What's missing?
+      description: What did you expect to be there? Be as specific as you can — where in the app, what you tried to do, what was missing.
+      placeholder: e.g. "I expected to find a Bhutanese kira / kushuthara tradition in the cataloguing flow but couldn't find it in the tradition dropdown."
+    validations:
+      required: true

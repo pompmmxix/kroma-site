@@ -1,0 +1,36 @@
+# Copy into the kroma-feedback repo at
+# .github/ISSUE_TEMPLATE/not-working.yml
+name: Something isn't working as I'd expect
+description: A button does the wrong thing, the app crashes, a feature behaves oddly.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Most users send feedback via [kroma.fit/feedback](https://kroma.fit/feedback/) — no GitHub account needed. Use this template if you'd prefer to post directly.
+
+        **Don't include your name, email, phone number, or anything that identifies you.** This issue becomes part of a public list.
+
+        **Don't paste photos or screenshots.** We don't accept attachments — describe what was on the screen in words instead.
+
+        If the issue is that the AI mis-read your photo (wrong colour / fabric / type), please don't file it here. That's a limit of whichever AI model you've configured, not a Kroma bug. See the AI accuracy note on [kroma.fit/feedback](https://kroma.fit/feedback/).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you see, and what did you expect to see instead?
+      placeholder: |
+        e.g. "On the Wardrobe tab, I tapped a garment to open the detail view. The detail view opened but the image was missing — it showed only a colour square. I expected the garment photo to be there.
+
+        I added the garment yesterday via the share-import flow from Chrome on Android."
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version (if known)
+      description: Optional — Settings → About → Version, if you have it handy.
+      placeholder: e.g. 1.0.3
+    validations:
+      required: false

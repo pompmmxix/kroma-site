@@ -21,8 +21,15 @@ compatibility_date = "2024-09-01"
 # Non-secret environment vars are inlined here. Secrets — GITHUB_TOKEN
 # and TURNSTILE_SECRET — go through `wrangler secret put` instead and
 # are never visible in this file or in source control.
+#
+# REPO is the target repo for posted issues. It MUST be a public repo
+# owned by the feedback-bot account (so the bot's fine-grained PAT can
+# write to it without cross-account permission gymnastics).
+#
+# Update this value before `wrangler deploy` if your bot username
+# differs from the placeholder below.
 [vars]
-REPO = "pompmmxix/wardrobe-app"
+REPO = "kroma-feedback-bot/kroma-feedback"
 
 # Observability is off by default. Cloudflare's dashboard still shows
 # real-time invocation counts and error rates, but we don't enable any
