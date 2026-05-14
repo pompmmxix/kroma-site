@@ -85,14 +85,16 @@ header.site {
 
 /* Brand wordmark — matches the app's header treatment exactly:
    Italianno calligraphic script, lowercase ("kroma"), warm-brown
-   accent. Italianno glyphs are tall and narrow, so we bump the
-   font-size up vs the system-serif sibling treatments to read at
-   comparable optical size. text-transform on CSS rather than
-   changing the HTML literal so SEO / screen readers still see
-   "Kroma" as a proper noun. */
+   accent. Italianno glyphs are tall, narrow, and visually airy —
+   they need real scale to read as elegant rather than spidery, so
+   the wordmark size sits ABOVE h1 (2.6rem) on the same page. Fluid
+   clamp gives min 2.8rem on tiny screens, max 4rem on wide screens,
+   growing with viewport so the brand never looks lost or oversized.
+   text-transform on CSS rather than changing the HTML literal so
+   SEO / screen readers still see "Kroma" as a proper noun. */
 header.site .brand {
   font-family: var(--ff-brand);
-  font-size: 2.4rem;
+  font-size: clamp(2.8rem, 6.5vw, 4rem);
   font-weight: 400;
   line-height: 1;
   color: var(--accent);
@@ -101,16 +103,19 @@ header.site .brand {
   text-transform: lowercase;
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
-/* small inset K mark next to wordmark */
+/* Inset K mark next to wordmark. Scales with the wordmark via the
+   same clamp — proportions stay constant whether the header is
+   320px wide or 720px wide. Border-radius bumped slightly at the
+   larger size so the rounded corners read at a glance. */
 header.site .brand::before {
   content: "";
-  width: 28px;
-  height: 28px;
+  width: clamp(36px, 4.5vw, 48px);
+  height: clamp(36px, 4.5vw, 48px);
   background: var(--accent) url("favicon.svg") center/contain no-repeat;
-  border-radius: 6px;
+  border-radius: 9px;
   display: inline-block;
   flex-shrink: 0;
 }
