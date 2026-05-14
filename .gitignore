@@ -1,0 +1,11 @@
+# Local-only: source PNGs for the section-divider macro-fabric images.
+# The compressed WebPs (divider-*.webp) ARE committed; the sources are
+# 5-7 MB each and too large for a marketing-site repo. Regenerate
+# locally with Gemini if needed — see README for the prompt.
+images/*-source.*
+
+# Local dev artefacts that occasionally sneak in
+node_modules/
+package.json
+package-lock.json
+*.gen.js

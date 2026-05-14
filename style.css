@@ -223,24 +223,50 @@ hr {
 }
 
 /* ────────── ornament: textile-weave divider ──────────
-   A subtle SVG motif used between major sections. Echoes
-   the warp/weft structure that's the foundation of every
-   tradition the app catalogues, without being twee. */
+   Three macro-fabric photos sit between major sections —
+   weft (horizontal threads), warp (vertical threads),
+   selvedge (the finished edge of woven cloth).  Image is
+   the visual; the term sits under it as a small caption.
+
+   Image renders at ~120px on screen (source 300×300 for
+   2× retina) so the divider stays a divider, not a hero
+   photograph.  Border-radius softens the square crop;
+   subtle shadow lifts it off the cream page background. */
 
 .divider {
-  margin: 56px 0;
-  text-align: center;
-  color: var(--accent-soft);
-  font-size: 1rem;
-  letter-spacing: 0.5em;
-  font-family: var(--ff-display);
+  margin: 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   user-select: none;
 }
-.divider::before, .divider::after {
-  content: "·";
-  display: inline-block;
-  margin: 0 0.5em;
-  opacity: 0.6;
+
+.divider img {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  /* The Gemini fabric photos are already warm cream + brown,
+     so a soft sepia-ish drop-shadow keeps them rooted to the
+     page rather than floating on a hard rectangle.  No border
+     — the slight irregularity of the natural-fabric edge does
+     better visual work than a 1px line would. */
+  box-shadow: 0 2px 12px -2px rgba(94, 58, 24, 0.18);
+  object-fit: cover;
+  display: block;
+}
+
+.divider-term {
+  color: var(--accent-soft);
+  font-size: 0.85rem;
+  letter-spacing: 0.45em;
+  font-family: var(--ff-display);
+  text-transform: lowercase;
+  /* Optical centring: the wide tracking creates trailing
+     space on the right that visually pulls the word.  A
+     half-em right margin counter-shifts it back to centre
+     under the image above. */
+  margin-right: -0.45em;
 }
 
 /* ────────── hero ────────── */
