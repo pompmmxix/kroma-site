@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Last updated:** 1 May 2026
+**Last updated:** 15 May 2026
 **Applies to:** Kroma (the "app") and [kroma.fit](https://kroma.fit) (the "site").
 
 Kroma is a local-first wardrobe app provided free of charge to individual users for personal use. By installing and using the app you agree to these terms. If you do not agree, please do not use the app.
@@ -52,6 +52,18 @@ The app uses AI models to auto-tag garments, identify outfit items, and analyse 
 - Should not be relied on for important decisions — including significant garment purchases, dressing for high-stakes events, or any decision with financial or social consequences.
 
 You acknowledge that AI outputs are non-deterministic and that the same input may produce different results on different runs. You can edit any AI output inside the app. **You waive any claims against us arising from the content, accuracy, completeness, or consequences of AI-generated outputs.**
+
+## Prices and cost calculations
+
+Kroma stores prices and costs you enter — or that the AI extracts from product-page photos you share into the app — as part of your wardrobe record. These figures are a personal record of what you paid at a point in time, **not a live or maintained price quote**. You acknowledge that:
+
+- **Prices are a snapshot.** They reflect what was entered or detected at the moment of entry, nothing more. Retailer prices change. Sale events and discounts happen. We don't track, refresh, or update prices after they're stored.
+- **AI extraction can misread.** When the AI reads a price from a photo, it may transpose digits, miss a decimal point, confuse a sale price with the original, or get the currency wrong. Any extracted price is a starting suggestion — you should verify and correct it before relying on it.
+- **Currency conversions are approximate.** Cost-per-wear figures, wishlist totals, and any other calculation that mixes currencies uses exchange rates that update at most once per day. Conversions are for personal reflection only — they do not reflect transaction-level rates, payment-processor fees, or the actual amount that left your account in any given currency.
+- **No retail or financial reliance.** Cost-per-wear, total-spend, and similar figures are personal-reflection tools. Don't rely on them for budgeting decisions, accounting, insurance valuations, tax submissions, or any decision with financial or legal consequence.
+- **Vendor changes are not reflected.** Retailer-side changes — restocks, price drops, discontinuations, sale events — happen invisibly to us. The price in your wardrobe record is what you (or the AI on your behalf) said it was at entry; check the vendor directly for any current question about pricing or availability.
+
+We do not display, fetch, or maintain live retailer prices. Where the app shows a price, it is surfacing what you or the AI on your behalf entered — nothing more.
 
 ## Aesthetic frameworks
 
