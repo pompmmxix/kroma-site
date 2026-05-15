@@ -69,9 +69,22 @@ We do not display, fetch, or maintain live retailer prices. Where the app shows 
 
 Kroma includes colour-analysis frameworks (12-Season, Korean tonal, Ritu, Shikisai, Wu Xing) and body-shape frameworks (Kibbe, Kitchener, Method-to-Measure). These are *interpretive aesthetic systems* — different practitioners and frameworks often produce different answers for the same person. Kroma surfaces them as suggestions; we don't claim they're objectively correct, scientifically validated, or universally agreed.
 
+## Fabric scores
+
+Kroma displays 1–10 ratings for each fabric on three axes — **durability**, **breathability**, and **sustainability**. These are editorial estimates, not measurements:
+
+- **Generalised, not product-specific.** A score for "Cotton" reflects the fibre in general, not the specific shirt or trousers you own. Weave density, weight, blend ratio, dye process, finish, and care regime all change real-world performance. Two T-shirts both labelled "100% Cotton" can perform very differently.
+- **Sustainability is a contested axis.** No single number captures supply-chain transparency, carbon intensity, water use, microplastic shedding, labour conditions, dyeing chemistry, garment lifespan, and end-of-life recycling — all of which matter and often pull in different directions. We've picked one composite score for readability; it's a judgement call. Different sources score the same fibres differently.
+- **Not a purchasing recommendation.** Don't use these scores as the basis for investment decisions, sustainability claims to others, marketing copy, or formal compliance reporting. They are personal-reflection tools, not certifications.
+- **Brand and certification matter more than fibre.** "GOTS-certified organic cotton from a transparent supplier" is different from "cotton from an undisclosed supplier", even though both show the same fibre score. Use context — provenance, certification, supplier transparency — for any decision that matters; our number is a starting prompt, not the answer.
+
+You can flag a score you disagree with via the feedback flow, but we are usually unable to verify scoring at the brand or supplier level — that isn't what Kroma is for.
+
 ## Cultural attribution
 
-Kroma includes educational content about textile traditions (origin, transmission, cultural context), and style rules drawn from many traditions (South Asian, East Asian, MENA, West African, Hawaiian, Western). We've written this content with care, prioritising accurate attribution and naming colonial disruption where relevant, but we are not the authority on any of these traditions. If you see an error — especially if you're from a community whose tradition is represented — please email us using the in-app *"Something off?"* link or [hello@kroma.fit](mailto:hello@kroma.fit?subject=Style%20rules%20feedback). We will review and update.
+Kroma includes editorial content about textile traditions (origin, transmission, cultural context), and style rules drawn from many traditions (South Asian, East Asian, MENA, West African, Hawaiian, Western). We've written this content with care, prioritising accurate attribution and naming colonial disruption where relevant, but we are not the authority on any of these traditions. If you see an error — especially if you're from a community whose tradition is represented — please use the [/feedback](/feedback/) form (anonymous, no email collected) or the in-app *"Tell us what's wrong"* link. We will review and update.
+
+The app's AI may also auto-suggest a textile tradition when it analyses a garment photo. These suggestions are particularly fragile for cultural attribution — a paisley-printed modern T-shirt is not a Madhubani garment even if the AI tags it as one, and a Kente-coloured cotton scarf is not Kente unless it was made within Ashanti or Ewe weaving lineage. **Don't rely on AI-suggested traditions to make claims about your garment's cultural origin.** If you don't have provenance from the maker or seller, the AI's tag is a guess — edit it manually or leave it blank, rather than carrying an inaccurate one forward.
 
 ## External services and links
 
