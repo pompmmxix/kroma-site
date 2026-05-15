@@ -171,6 +171,33 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   font-size: 0.94rem;
   line-height: 1.6;
 }
+
+/* The "AI got my photo wrong" reveal — shown only when the fourth
+   radio option is selected. Soft amber background distinguishes it
+   from the regular submission flow; the same .feedback-helper card
+   shape so it reads as a related-but-different kind of info panel. */
+.ai-note {
+  background: rgba(214, 158, 46, 0.06);
+  border: 1px solid rgba(214, 158, 46, 0.3);
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 8px 0 24px;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+.ai-note p { margin: 0 0 0.85em; }
+.ai-note p:last-child { margin-bottom: 0; }
+.ai-note ul { margin: 6px 0 10px; padding-left: 22px; }
+.ai-note li { margin: 4px 0; }
+.ai-note strong { color: var(--text); }
+.ai-note .ai-note-foot {
+  font-style: italic;
+  color: var(--text-soft);
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(214, 158, 46, 0.25);
+}
 .feedback-helper h3 {
   margin: 0 0 8px;
   font-size: 1rem;
@@ -215,10 +242,8 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 <main class="prose">
   <h1>Send feedback</h1>
   <p class="lede">
-    We read every report. You won't get a reply — we don't take an email
-    address. <strong>Please don't include your name, contact details, or
-    photos in the description</strong> — we don't want them, and they'd
-    become part of a public record.
+    Tell us what's up. Pick a category to begin — the form expands once
+    you've chosen.
   </p>
 
   {% comment %}
@@ -267,28 +292,79 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
             <span class="radio-help">A button does the wrong thing, the app crashes, a feature behaves oddly.</span>
           </span>
         </label>
+
+        <label class="radio">
+          <input type="radio" name="kind" value="ai-misread" required>
+          <span class="radio-content">
+            <span class="radio-title">The AI got my photo wrong</span>
+            <span class="radio-help">Wrong colour, wrong fabric, wrong garment type, or similar.</span>
+          </span>
+        </label>
       </div>
     </div>
 
-    <div class="form-section">
-    <label class="field-label" for="description">Describe it</label>
-    <textarea
-      id="description"
-      name="description"
-      required
-      minlength="10"
-      maxlength="2000"
-      placeholder="What did you see, what did you expect, and where in the app — be as specific as you can. No names, emails, or contact details, please."
-    ></textarea>
+    {%- comment -%}
+      Conditional reveal — only one of these two blocks is visible at a
+      time, controlled by which radio option the user picks.
+
+      #submitFlow holds the actual submission UI (describe + helper card
+      + captcha + send button). Hidden until the user picks one of the
+      first three radio options.
+
+      #aiNote holds the "this isn't a Kroma issue" explanation. Shown
+      ONLY when the user picks the fourth option (AI mis-read). No
+      submission UI here — there's nothing to file because nothing in
+      the report would be actionable on our side.
+    {%- endcomment -%}
+    <div id="submitFlow" hidden>
+      <div class="form-section">
+        <label class="field-label" for="description">Describe it</label>
+        <textarea
+          id="description"
+          name="description"
+          minlength="10"
+          maxlength="2000"
+          placeholder="What did you see, what did you expect, and where in the app — be as specific as you can. No names, emails, or contact details, please."
+        ></textarea>
+      </div>
+
+      <div class="feedback-helper">
+        <h3>How this works</h3>
+        <ul>
+          <li><strong>You don't need to create an account.</strong> A dedicated bot account posts your message to the public feedback list on our behalf, so you stay anonymous.</li>
+          <li><strong>The message becomes public.</strong> The feedback list is open to anyone — that's the trade-off for not running a private server. Don't put anything in the description you wouldn't say in public.</li>
+          <li><strong>No attachments.</strong> Don't paste photos, screenshots, or files. Describe in words instead — "the cultural-info screen for Banarasi lists Bengal as the origin, but Banarasi is from Varanasi in Uttar Pradesh" is more useful than a screenshot anyway.</li>
+          <li><strong>No identifying information.</strong> Don't put your name, email, phone number, or address in the description. We don't need them and they'd be public.</li>
+        </ul>
+      </div>
+
+      <div class="turnstile-slot">
+        <div class="cf-turnstile" data-sitekey="{{ turnstile_key }}"></div>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Send →</button>
+
+      <div class="status" id="statusBox" role="status" aria-live="polite"></div>
     </div>
 
-    <div class="turnstile-slot">
-      <div class="cf-turnstile" data-sitekey="{{ turnstile_key }}"></div>
+    <div id="aiNote" class="ai-note" hidden>
+      <p>
+        That's not something we can help with from the Kroma side. Kroma
+        connects you to whichever AI model you've configured (Gemini, Claude,
+        OpenAI, or a local model). We don't train, run, or improve any of
+        them — they belong to their respective providers.
+      </p>
+      <p>Two things usually help:</p>
+      <ul>
+        <li><strong>Edit the fields by hand.</strong> The AI's reading is a starting point, not the final word — every field is editable. You have the last say.</li>
+        <li><strong>Use a more capable model.</strong> If you're on a free tier (e.g. Gemini Flash), a paid tier of the same provider often reads photos far better. That usually means an API key with credits — costs vary by provider, and what you pay goes to them, not to us.</li>
+      </ul>
+      <p class="ai-note-foot">
+        If your concern is actually about something Kroma controls — a UI
+        bug, a missing tradition, a factual error on our side — pick one of
+        the other three options instead.
+      </p>
     </div>
-
-    <button type="submit" class="submit-btn" id="submitBtn">Send →</button>
-
-    <div class="status" id="statusBox" role="status" aria-live="polite"></div>
   </form>
 
   {% else %}
@@ -302,34 +378,6 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   </div>
 
   {% endif %}
-
-  <div class="feedback-helper">
-    <h3>How this works</h3>
-    <ul>
-      <li><strong>You don't need to create an account.</strong> A dedicated bot account posts your message to the public feedback list on our behalf, so you stay anonymous.</li>
-      <li><strong>The message becomes public.</strong> The feedback list is open to anyone — that's the trade-off for not running a private server. Don't put anything in the description you wouldn't say in public.</li>
-      <li><strong>No attachments.</strong> Don't paste photos, screenshots, or files. Describe in words instead — "the cultural-info screen for Banarasi lists Bengal as the origin, but Banarasi is from Varanasi in Uttar Pradesh" is more useful than a screenshot anyway.</li>
-      <li><strong>No identifying information.</strong> Don't put your name, email, phone number, or address in the description. We don't need them and they'd be public.</li>
-    </ul>
-  </div>
-
-  <h2>A note about AI accuracy</h2>
-  <p>
-    If the AI misread your photo — wrong colour, fabric, garment type, anything
-    visual — that's the model, not Kroma. We connect you to your chosen
-    provider (Gemini, Claude, OpenAI, or a local model). We don't train, run,
-    or improve any of them.
-  </p>
-  <p>Two things usually help:</p>
-  <ul>
-    <li><strong>Edit the fields by hand.</strong> The AI's reading is a starting point, not the final word — every field is editable. You have the last say.</li>
-    <li><strong>Use a more capable model.</strong> If you're on a free tier (e.g. Gemini Flash), a paid tier of the same provider often reads photos far better. That usually means an API key with credits — costs vary by provider, and what you pay goes to them, not to us.</li>
-  </ul>
-  <p>
-    Please don't report AI mis-reads on this form — they're a limit of the
-    model you're using, not a bug we can fix on the Kroma side. The feedback
-    list is for things we can act on.
-  </p>
 </main>
 
   <footer class="site">
@@ -366,6 +414,9 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   var form        = document.getElementById('feedbackForm');
   var submitBtn   = document.getElementById('submitBtn');
   var statusBox   = document.getElementById('statusBox');
+  var submitFlow  = document.getElementById('submitFlow');
+  var aiNote      = document.getElementById('aiNote');
+  var description = document.getElementById('description');
   var apiUrl      = form.getAttribute('data-api-url');
 
   // Read optional app context from URL params. Kroma's "Send feedback"
@@ -380,6 +431,35 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
     statusBox.innerHTML = html;
   }
 
+  /*
+   * Toggle which post-radio section is visible. The radio group has
+   * four options:
+   *   missing / factually-wrong / not-working  → submit flow
+   *   ai-misread                                → AI accuracy note
+   *
+   * Toggling the description's `required` attribute matters: when the
+   * AI note is showing, the textarea is hidden but it'd still block
+   * form submission if it were `required`-empty. We don't expect any
+   * submission to happen in that state (the Send button is also
+   * hidden), but defensively we clear `required` to avoid surprise
+   * validation errors if the user somehow triggers a submit.
+   */
+  function applyKind(kind) {
+    if (kind === 'ai-misread') {
+      submitFlow.hidden = true;
+      aiNote.hidden = false;
+      description.removeAttribute('required');
+    } else if (kind) {
+      submitFlow.hidden = false;
+      aiNote.hidden = true;
+      description.setAttribute('required', '');
+    }
+  }
+  Array.prototype.forEach.call(
+    form.querySelectorAll('input[name="kind"]'),
+    function (r) { r.addEventListener('change', function () { applyKind(r.value); }); }
+  );
+
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     statusBox.className = 'status';
@@ -388,6 +468,17 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
     var kindEl = form.querySelector('input[name="kind"]:checked');
     var kind   = kindEl ? kindEl.value : '';
     var desc   = (document.getElementById('description').value || '').trim();
+
+    // Defensive guard: the "ai-misread" option doesn't lead to a
+    // submission — its UI doesn't include a Send button — but if a
+    // submit event fires anyway (Enter key in a hidden field, etc.)
+    // we refuse to forward it to the Worker. The Worker would also
+    // reject "ai-misread" as an unknown kind, but failing fast in the
+    // client avoids the round-trip and the misleading error message.
+    if (kind === 'ai-misread') {
+      showStatus('error', 'AI mis-reads aren’t something we can act on — see the note above for what usually helps.');
+      return;
+    }
 
     // Turnstile injects a hidden input named cf-turnstile-response into
     // the form.  If it's not there yet the user hasn't passed the
