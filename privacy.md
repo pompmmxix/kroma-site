@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Last updated:** 1 May 2026
+**Last updated:** 23 September 2026
 **Applies to:** Kroma (the "app") and [kroma.fit](https://kroma.fit) (the "site").
 
 Kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and we don't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.
@@ -31,7 +31,7 @@ Everything you enter into the app — your wardrobe items, outfit photos, colour
 
 ## Where data does leave your device
 
-There are four places where information can leave your phone, and all of them require a deliberate action on your part. We list them here exhaustively.
+There are five places where information can leave your phone. Four require a deliberate action on your part; the fifth is an automatic check that happens only when you use AI features and carries nothing about you. We list them here exhaustively.
 
 ### 1. The AI provider you choose (opt-in)
 
@@ -40,13 +40,21 @@ To use features that analyse photos (auto-tagging garments, identifying items in
 - Google Gemini
 - Anthropic Claude (if configured)
 - OpenAI (if configured)
+- Mistral AI (if configured)
+- OpenRouter (if configured) — OpenRouter forwards each request to the model provider you select in your OpenRouter account (Anthropic by default), so both OpenRouter and that provider receive it
 - Ollama (self-hosted — runs on your own machine, sends nothing to a third party)
 
-When you use an AI feature, the relevant photo and prompt are sent **from your device, using your API key, directly to the provider you chose**. The data travels to their servers, not ours. The provider processes the image under their terms of service and privacy policy, which you should review:
+When you use an AI feature, the photo being analysed and a text prompt are sent **from your device, using your API key, directly to the provider you chose**. The prompt can include details you've entered in your profile, such as measurements or style preferences. Nothing else from your wardrobe is sent, and there are no account details to send — Kroma has no accounts. The data travels to their servers, not ours.
+
+Before the first photo is sent, the app names the provider it will go to and asks you to confirm. If you switch to a different provider, it asks again. You can withdraw that confirmation at any time in Settings.
+
+The provider processes the image under their terms of service and privacy policy, which you should review:
 
 - Google Gemini: [policies.google.com/privacy](https://policies.google.com/privacy)
 - Anthropic: [anthropic.com/legal/privacy](https://www.anthropic.com/legal/privacy)
 - OpenAI: [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy)
+- Mistral AI: [legal.mistral.ai/terms/privacy-policy](https://legal.mistral.ai/terms/privacy-policy)
+- OpenRouter: [openrouter.ai/privacy](https://openrouter.ai/privacy), plus the policy of whichever model provider it routes to
 - Ollama: runs locally, no external transmission
 
 We strongly recommend reading your chosen provider's policy before uploading sensitive images. In particular, note whether they reserve the right to use your inputs to train future models. Most paid tiers explicitly opt out of this; most free tiers do not.
@@ -66,6 +74,12 @@ If you use the share-to-app import (e.g. sharing a product URL from Chrome or In
 ### 4. Email to us (opt-in)
 
 If you tap a **"Something off?"** or **"Know a tradition we're missing?"** link inside the app, your email client opens a pre-filled message to [hello@kroma.fit](mailto:hello@kroma.fit). Nothing is sent until **you** press send in your email app. See the *Feedback emails* section below for what happens if you do send it.
+
+### 5. Model list check (automatic, when you use AI)
+
+AI providers regularly retire model versions, sometimes without warning. So that AI features keep working without an app update, the app downloads a small public file from our website ([kroma.fit/models.json](https://kroma.fit/models.json)) listing which model versions to use. This happens at most once a day, and only when you use an AI feature or check an API key in Settings.
+
+The request contains no identifiers, API key, photos or wardrobe data — it is a plain download of a public file. Like any web request, it reveals your device's IP address to our website host (GitHub Pages), which may keep standard server logs under its own privacy policy. We do not receive or keep those logs.
 
 ## Photos specifically
 
