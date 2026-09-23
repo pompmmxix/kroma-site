@@ -1,16 +1,26 @@
 {
   "version": 1,
-  "updated": "2026-07-29",
+  "updated": "2026-09-17",
   "notice": "",
   "providers": {
     "gemini": {
-      "text": ["gemini-3.5-flash", "gemini-3.1-flash-lite", "gemini-2.5-flash"],
+      "text": ["gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-2.5-flash"],
       "image": ["gemini-3.1-flash-image", "gemini-2.5-flash-image"]
     },
-    "openai": { "text": ["gpt-4o"] },
-    "claude": { "text": ["claude-sonnet-4-0", "claude-sonnet-4-20250514"] },
-    "mistral": { "text": ["pixtral-12b-2409"] },
-    "openrouter": { "text": ["anthropic/claude-sonnet-4"] },
-    "ollama": { "text": ["llava"] }
+    "openai": {
+      "text": ["gpt-4o"]
+    },
+    "claude": {
+      "text": ["claude-sonnet-4-6", "claude-sonnet-5"]
+    },
+    "mistral": {
+      "text": ["pixtral-12b-2409", "mistral-small-latest"]
+    },
+    "openrouter": {
+      "text": ["anthropic/claude-sonnet-4.6", "anthropic/claude-sonnet-5"]
+    },
+    "ollama": {
+      "text": ["llava"]
+    }
   }
 }
