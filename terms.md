@@ -6,7 +6,7 @@ permalink: /terms/
 
 # Terms of Use
 
-**Last updated:** 15 May 2026
+**Last updated:** 8 October 2026
 **Applies to:** Kroma (the "app") and [kroma.fit](https://kroma.fit) (the "site").
 
 Kroma is a local-first wardrobe app provided free of charge to individual users for personal use. By installing and using the app you agree to these terms. If you do not agree, please do not use the app.
@@ -130,11 +130,11 @@ Nothing in these terms excludes, restricts, or modifies any consumer rights you 
 
 ## Data you store in the app
 
-The app stores your wardrobe data on your device. We recommend using the in-app backup / export feature periodically. Uninstalling the app, resetting your device, or losing your device may delete this data without recovery — because we don't have a server-side copy, we cannot restore it for you.
+The app stores your wardrobe data on your device. Uninstalling the app, resetting your device, or losing your device may delete this data without recovery — because we don't have a server-side copy, we cannot restore it for you.
 
 ## Termination
 
-You can stop using the app at any time by uninstalling it. We may withdraw or discontinue the app, or any feature of it, with reasonable notice where practical. If we discontinue the app, any data stored on your device remains yours — the backup / export feature will continue to work for as long as the app runs.
+You can stop using the app at any time by uninstalling it. We may withdraw or discontinue the app, or any feature of it, with reasonable notice where practical. If we discontinue the app, any data stored on your device remains yours.
 
 Sections that by their nature should survive termination — including Limitation of Liability, Indemnification, Governing Law, and Your statutory rights — survive.
 

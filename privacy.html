@@ -26,7 +26,7 @@
   <main>
 
     <h1>Privacy Policy</h1>
-    <p class="muted"><em>Last updated: 1 May 2026</em></p>
+    <p class="muted"><em>Last updated: 8 October 2026</em></p>
     <p class="muted"><em>Applies to: Kroma (the "app") and <a href="https://kroma.fit">kroma.fit</a> (the "site").</em></p>
 
     <p>Kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and we don't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.</p>
@@ -49,20 +49,26 @@
     <hr>
 
     <h2>Where data does leave your device</h2>
-    <p>There are four places where information can leave your phone, and all of them require a deliberate action on your part. We list them here exhaustively.</p>
+    <p>There are five places where information can leave your phone. Four require a deliberate action on your part; the fifth is an automatic check that happens only when you use AI features and carries nothing about you. We list them here exhaustively.</p>
     <h3>1. The AI provider you choose (opt-in)</h3>
     <p>To use features that analyse photos (auto-tagging garments, identifying items in an outfit photo, colour analysis, body analysis, pattern detection), you provide your own API key for one of these providers:</p>
     <ul>
       <li>Google Gemini</li>
       <li>Anthropic Claude (if configured)</li>
       <li>OpenAI (if configured)</li>
+      <li>Mistral AI (if configured)</li>
+      <li>OpenRouter (if configured) — OpenRouter forwards each request to the model provider you select in your OpenRouter account (Anthropic by default), so both OpenRouter and that provider receive it</li>
       <li>Ollama (self-hosted — runs on your own machine, sends nothing to a third party)</li>
     </ul>
-    <p>When you use an AI feature, the relevant photo and prompt are sent <strong>from your device, using your API key, directly to the provider you chose</strong>. The data travels to their servers, not ours. The provider processes the image under their terms of service and privacy policy, which you should review:</p>
+    <p>When you use an AI feature, the photo being analysed and a text prompt are sent <strong>from your device, using your API key, directly to the provider you chose</strong>. The prompt can include details you've entered in your profile, such as measurements or style preferences. Nothing else from your wardrobe is sent, and there are no account details to send — Kroma has no accounts. The data travels to their servers, not ours.</p>
+    <p>Before the first photo is sent, the app names the provider it will go to and asks you to confirm. If you switch to a different provider, it asks again. You can withdraw that confirmation at any time in Settings.</p>
+    <p>The provider processes the image under their terms of service and privacy policy, which you should review:</p>
     <ul>
       <li>Google Gemini: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
       <li>Anthropic: <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
       <li>OpenAI: <a href="https://openai.com/policies/privacy-policy">openai.com/policies/privacy-policy</a></li>
+      <li>Mistral AI: <a href="https://legal.mistral.ai/terms/privacy-policy">legal.mistral.ai/terms/privacy-policy</a></li>
+      <li>OpenRouter: <a href="https://openrouter.ai/privacy">openrouter.ai/privacy</a>, plus the policy of whichever model provider it routes to</li>
       <li>Ollama: runs locally, no external transmission</li>
     </ul>
     <p>We strongly recommend reading your chosen provider's policy before uploading sensitive images. In particular, note whether they reserve the right to use your inputs to train future models. Most paid tiers explicitly opt out of this; most free tiers do not.</p>
@@ -74,6 +80,9 @@
     <p>If you use the share-to-app import (e.g. sharing a product URL from Chrome or Instagram), the app fetches that URL directly from the retailer's server to read the product page (image, brand, price, fabric composition). This request is made from your device, not via our servers. We don't record the URLs you share.</p>
     <h3>4. Email to us (opt-in)</h3>
     <p>If you tap a <strong>"Something off?"</strong> or <strong>"Know a tradition we're missing?"</strong> link inside the app, your email client opens a pre-filled message to <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>. Nothing is sent until <strong>you</strong> press send in your email app. See the <em>Feedback emails</em> section below for what happens if you do send it.</p>
+    <h3>5. Model list check (automatic, when you use AI)</h3>
+    <p>AI providers regularly retire model versions, sometimes without warning. So that AI features keep working without an app update, the app downloads a small public file from our website (<a href="https://kroma.fit/models.json">kroma.fit/models.json</a>) listing which model versions to use. This happens at most once a day, and only when you use an AI feature or check an API key in Settings.</p>
+    <p>The request contains no identifiers, API key, photos or wardrobe data — it is a plain download of a public file. Like any web request, it reveals your device's IP address to our website host (GitHub Pages), which may keep standard server logs under its own privacy policy. We do not receive or keep those logs.</p>
 
     <hr>
 
@@ -81,7 +90,7 @@
     <p>Because photos of your face and body are inherently more sensitive than wardrobe data, a few extra notes:</p>
     <ul>
       <li>You choose when to take a photo. Kroma never accesses your camera or photo library without an explicit tap.</li>
-      <li>Profile selfies and body photos are stored locally the same way as garment photos. They're embedded in your backup when you export one.</li>
+      <li>Profile selfies and body photos are stored locally the same way as garment photos.</li>
       <li>Face-shape analysis and body-type analysis both require a clear view of you. If that's not comfortable for you in any given context, manual mode is the right alternative — every analysis can be done by entering values yourself.</li>
       <li>We don't generate, store, or use face embeddings, biometric templates, or any other identifier derived from your photos. The AI provider may — check their policy.</li>
       <li>Before any photo is sent to a third-party AI provider, the app prompts for your explicit confirmation that you are 13 or over (or have parental permission). That confirmation is timestamped and recorded on your device for audit.</li>
@@ -89,18 +98,12 @@
 
     <hr>
 
-    <h2>Backup and restore</h2>
-    <p>The in-app backup / export feature writes a file containing your wardrobe data to your device (Documents folder on Android, equivalent elsewhere). If you choose to share that file via your device's share sheet (email, cloud drive, AirDrop), it travels through whichever service you pick. We never see it.</p>
-    <p>Importing a backup reads a file on your device. The file contents are not transmitted anywhere by the app.</p>
-
-    <hr>
-
     <h2>Permissions</h2>
     <p>The app requests the following device permissions, and only uses them for the purposes described:</p>
     <ul>
       <li><strong>Camera</strong> — to take garment, care-label, selfie, and body photos when you tap a photo button</li>
-      <li><strong>Photo library / Files</strong> — to import existing photos you choose, and to save backup files</li>
-      <li><strong>Storage</strong> — to persist your wardrobe data between sessions</li>
+      <li><strong>Photo library</strong> — to import photos you pick, and to save images you choose (such as colour cards) to your photos. On Android, picking uses the system photo picker, so Kroma never has access to your whole library</li>
+      <li><strong>Storage (Android 12 and earlier only)</strong> — older Android versions need this to read the photos you pick and to save images to your gallery</li>
       <li><strong>Haptics</strong> — to provide tactile feedback on button taps</li>
     </ul>
     <p>No permissions are used for background tracking, location, contacts, microphone, or anything else. Kroma does not run background services.</p>

@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Last updated:** 23 September 2026
+**Last updated:** 8 October 2026
 **Applies to:** Kroma (the "app") and [kroma.fit](https://kroma.fit) (the "site").
 
 Kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and we don't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.
@@ -86,24 +86,18 @@ The request contains no identifiers, API key, photos or wardrobe data — it is 
 Because photos of your face and body are inherently more sensitive than wardrobe data, a few extra notes:
 
 - You choose when to take a photo. Kroma never accesses your camera or photo library without an explicit tap.
-- Profile selfies and body photos are stored locally the same way as garment photos. They're embedded in your backup when you export one.
+- Profile selfies and body photos are stored locally the same way as garment photos.
 - Face-shape analysis and body-type analysis both require a clear view of you. If that's not comfortable for you in any given context, manual mode is the right alternative — every analysis can be done by entering values yourself.
 - We don't generate, store, or use face embeddings, biometric templates, or any other identifier derived from your photos. The AI provider may — check their policy.
 - Before any photo is sent to a third-party AI provider, the app prompts for your explicit confirmation that you are 13 or over (or have parental permission). That confirmation is timestamped and recorded on your device for audit.
-
-## Backup and restore
-
-The in-app backup / export feature writes a file containing your wardrobe data to your device (Documents folder on Android, equivalent elsewhere). If you choose to share that file via your device's share sheet (email, cloud drive, AirDrop), it travels through whichever service you pick. We never see it.
-
-Importing a backup reads a file on your device. The file contents are not transmitted anywhere by the app.
 
 ## Permissions
 
 The app requests the following device permissions, and only uses them for the purposes described:
 
 - **Camera** — to take garment, care-label, selfie, and body photos when you tap a photo button
-- **Photo library / Files** — to import existing photos you choose, and to save backup files
-- **Storage** — to persist your wardrobe data between sessions
+- **Photo library** — to import photos you pick, and to save images you choose (such as colour cards) to your photos. On Android, picking uses the system photo picker, so Kroma never has access to your whole library
+- **Storage (Android 12 and earlier only)** — older Android versions need this to read the photos you pick and to save images to your gallery
 - **Haptics** — to provide tactile feedback on button taps
 
 No permissions are used for background tracking, location, contacts, microphone, or anything else. Kroma does not run background services.
