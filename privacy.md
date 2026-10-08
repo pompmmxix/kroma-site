@@ -129,7 +129,7 @@ When you email [hello@kroma.fit](mailto:hello@kroma.fit) — whether via the in-
 
 The app is not directed at children under 13 (or under 16, in jurisdictions where that is the applicable age of digital consent). We do not knowingly process personal data from children. Because we do not collect data about users, we cannot identify a user's age; if you are a parent or guardian and believe your child has used the app in a way that concerns you, email us and we will help.
 
-The app's onboarding flow asks each user whether they are 13 or over. If they answer no, AI photo features are disabled by default; the app continues to work in manual mode.
+The app's onboarding asks whether you are 13 or over. Before any photo is sent to an AI provider, the app asks you to confirm that you are 13 or over or have a parent or guardian's permission. Until you do, AI photo features stay off and the app works in manual mode.
 
 ## Your rights (UK GDPR / EU GDPR)
 
