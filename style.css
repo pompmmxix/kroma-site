@@ -334,7 +334,7 @@ hr {
   max-width: 320px;
   /* aspect-ratio reserves the slot's height before the image loads so
      the rest of the page doesn't jump when it arrives — keeps CLS at 0. */
-  aspect-ratio: 320 / 640;
+  aspect-ratio: 780 / 1360;
   /* Soft drop shadow gives the phone mockup depth without a hard border.
      Remove or soften if the AI-generated image bakes its own shadow in. */
   filter: drop-shadow(0 12px 32px rgba(30, 27, 22, 0.18));
@@ -384,6 +384,46 @@ hr {
   font-size: 0.94rem;
   color: var(--text-soft);
   line-height: 1.5;
+}
+
+/* ────────── screenshot strip ──────────
+   Play Store screenshots in a sideways scroll-snap row. The strip
+   bleeds into the .wrap side padding so cards scroll edge to edge,
+   while scroll-padding keeps the first card aligned with the text. */
+
+.screens {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 24px -22px 0;
+  padding: 6px 22px 22px;
+  scroll-padding-inline: 22px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-soft) transparent;
+}
+
+.screens:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 12px;
+}
+
+.screens figure {
+  flex: 0 0 216px;
+  margin: 0;
+  scroll-snap-align: start;
+}
+
+.screens img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 540 / 960;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 20px -8px rgba(94, 58, 24, 0.25);
+  background: var(--bg-soft);
 }
 
 /* ────────── pull-quote / opinionated section ────────── */
@@ -436,6 +476,8 @@ hr {
   header.site .brand { font-size: 2.4rem; gap: 10px; }
   header.site .brand::before { width: 30px; height: 30px; border-radius: 7px; }
   .features { grid-template-columns: 1fr; gap: 14px; }
+  .screens { margin-inline: -18px; padding-inline: 18px; scroll-padding-inline: 18px; gap: 12px; }
+  .screens figure { flex-basis: 70vw; max-width: 240px; }
   .opinion { padding: 22px; }
   .opinion .claim { font-size: 1.25rem; }
   hr, .divider { margin: 36px 0; }

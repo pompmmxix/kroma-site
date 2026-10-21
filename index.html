@@ -13,14 +13,17 @@
 <!-- Open Graph — controls how the page renders when shared into iMessage,
      WhatsApp, Slack, LinkedIn, Facebook etc.  Without these the platforms
      fall back to scraped <title> + truncated body text, which is rarely
-     flattering.  og:image is the brand favicon for now; swap to a 1200x630
-     PNG hero once we have one. -->
+     flattering.  og:image is the Play Store feature graphic (1024x500,
+     JPEG — most platforms ignore SVG previews). -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kroma">
 <meta property="og:title" content="Kroma — your wardrobe, private by design">
 <meta property="og:description" content="A local-first wardrobe app that catalogues your clothes, learns what you actually wear, and credits the textile traditions you live in. Your data never leaves your phone.">
 <meta property="og:url" content="https://kroma.fit/">
-<meta property="og:image" content="https://kroma.fit/favicon.svg">
+<meta property="og:image" content="https://kroma.fit/images/og-image.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:image:alt" content="The kroma wordmark beside two phones showing the Kroma wardrobe grid and colour analysis. Your wardrobe, private by design.">
 <meta property="og:locale" content="en_GB">
 
 <!-- Twitter / X card.  summary_large_image gets the bigger preview when an
@@ -28,7 +31,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Kroma — your wardrobe, private by design">
 <meta name="twitter:description" content="Local-first wardrobe app. Your clothes, your colour and body analysis, your AI of choice — all on your phone.">
-<meta name="twitter:image" content="https://kroma.fit/favicon.svg">
+<meta name="twitter:image" content="https://kroma.fit/images/og-image.jpg">
+<meta name="twitter:image:alt" content="The kroma wordmark beside two phones showing the Kroma wardrobe grid and colour analysis. Your wardrobe, private by design.">
 
 <!-- JSON-LD structured data.  Tells Google + other engines this page is
      about a software app, enabling rich-result rendering in search
@@ -42,6 +46,15 @@
   "applicationCategory": "LifestyleApplication",
   "operatingSystem": "Android",
   "url": "https://kroma.fit/",
+  "image": "https://kroma.fit/images/og-image.jpg",
+  "screenshot": [
+    "https://kroma.fit/images/screens/1-wardrobe.webp",
+    "https://kroma.fit/images/screens/2-outfits.webp",
+    "https://kroma.fit/images/screens/3-analysis.webp",
+    "https://kroma.fit/images/screens/4-wishlist.webp",
+    "https://kroma.fit/images/screens/5-colours.webp",
+    "https://kroma.fit/images/screens/6-story.webp"
+  ],
   "offers": {
     "@type": "Offer",
     "price": "0",
@@ -53,7 +66,7 @@
 <!-- Favicons. Source of truth: favicon.svg (cream serif K on warm brown). -->
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="alternate icon" href="favicon.svg">
-<link rel="apple-touch-icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#8b5a2b">
 
 <link rel="stylesheet" href="style.css">
@@ -85,12 +98,12 @@
         </p>
       </div>
       <div class="hero-visual">
-        <!-- Phone mockup placeholder. width/height attrs prevent layout
-             shift; loading=eager because it's above the fold. Swap src
-             when the real AI-generated demo-wardrobe screenshot is ready. -->
+        <!-- Phone cut from Play Store screenshot 1 (corners transparent so
+             the drop shadow follows the phone). width/height attrs prevent
+             layout shift; loading=eager because it's above the fold. -->
         <img src="/images/hero-wardrobe.webp"
-             alt="Kroma wardrobe grid showing a colourful, culturally diverse collection of garments — including a saree, kurta, hanbok, and Western pieces — tiled with completion rings and fit-score badges."
-             width="320" height="640"
+             alt="The Kroma wardrobe tab: a grid of garments — a terracotta paisley scarf, a mustard polka-dot skirt, black jeans and a burgundy hoodie — each with a fit-score badge, price and wear count."
+             width="780" height="1360"
              loading="eager"
              decoding="async">
       </div>
@@ -145,10 +158,11 @@
 
         <div class="feature">
           <h3>Bring your own AI</h3>
-          <p>You provide your Gemini, Claude, OpenAI, or Ollama key.
-          Photos go directly from your device to the provider you
-          chose. We never see them. Or run Ollama locally —
-          fully offline.</p>
+          <p>Use your own key for Gemini, Claude, OpenAI, Mistral or
+          OpenRouter, or point Kroma at an Ollama server you run
+          yourself. Photos go straight from your phone to the
+          provider you chose, and Kroma asks before the first one is
+          sent. We never see them.</p>
         </div>
 
         <div class="feature">
@@ -160,6 +174,41 @@
           there's no server.</p>
         </div>
 
+      </div>
+    </section>
+
+
+    <!-- ────────── screenshots ──────────
+         The six Play Store screenshots (headlines baked in), resized to
+         540x960 WebP. Horizontal scroll-snap strip; tabindex makes it
+         keyboard-scrollable. -->
+    <section>
+      <h2>A look inside</h2>
+      <div class="screens" tabindex="0" role="region" aria-label="App screenshots, scroll sideways for more">
+        <figure>
+          <img src="/images/screens/1-wardrobe.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="Your whole wardrobe, in one place. Catalogue what you own; AI tags type, colour and fabric. Shows the wardrobe grid with fit scores.">
+        </figure>
+        <figure>
+          <img src="/images/screens/2-outfits.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="Outfit ideas from what you actually wear. Suggestions that learn from your own wear log. Shows today's weather chips and outfit suggestions.">
+        </figure>
+        <figure>
+          <img src="/images/screens/3-analysis.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="See what you wear and what it costs. Cost per wear, forgotten pieces, palette fit. Shows wardrobe stats and a colour palette fit bar.">
+        </figure>
+        <figure>
+          <img src="/images/screens/4-wishlist.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="Know if it suits you before you buy. Projected spend, fit scores and duplicates. Shows wishlist analysis with an average fit score.">
+        </figure>
+        <figure>
+          <img src="/images/screens/5-colours.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="Your colours, in five traditions: 12-season, Ritu, Shikisai, Korean Tonal, Wu Xing. Shows a Warm Autumn colour story.">
+        </figure>
+        <figure>
+          <img src="/images/screens/6-story.webp" width="540" height="960" loading="lazy" decoding="async"
+               alt="The real story behind your clothes. 74 textile traditions, credited honestly. Shows the Paisley info sheet with its Indian origin and how the name travelled.">
+        </figure>
       </div>
     </section>
 
