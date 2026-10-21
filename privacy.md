@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Privacy Policy
 
-**Last updated:** 8 October 2026
+**Last updated:** 22 October 2026
 **Applies to:** Kroma (the "app") and [kroma.fit](https://kroma.fit) (the "site").
 
 Kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and we don't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.
@@ -42,7 +42,7 @@ To use features that analyse photos (auto-tagging garments, identifying items in
 - OpenAI (if configured)
 - Mistral AI (if configured)
 - OpenRouter (if configured) — OpenRouter forwards each request to the model provider you select in your OpenRouter account (Anthropic by default), so both OpenRouter and that provider receive it
-- Ollama (self-hosted — runs on your own machine, sends nothing to a third party)
+- Ollama (self-hosted) — the photo goes to a computer you run on your own network and reaches no third party. Kroma only lets you choose models that run on that computer: Ollama's cloud models, which run on Ollama's servers, are shown but can't be selected
 
 When you use an AI feature, the photo being analysed and a text prompt are sent **from your device, using your API key, directly to the provider you chose**. The prompt can include details you've entered in your profile, such as measurements or style preferences. Nothing else from your wardrobe is sent, and there are no account details to send — Kroma has no accounts. The data travels to their servers, not ours.
 
@@ -55,7 +55,7 @@ The provider processes the image under their terms of service and privacy policy
 - OpenAI: [openai.com/policies/privacy-policy](https://openai.com/policies/privacy-policy)
 - Mistral AI: [legal.mistral.ai/terms/privacy-policy](https://legal.mistral.ai/terms/privacy-policy)
 - OpenRouter: [openrouter.ai/privacy](https://openrouter.ai/privacy), plus the policy of whichever model provider it routes to
-- Ollama: runs locally, no external transmission
+- Ollama: with a model running on your own computer, nothing leaves your network, so no third-party policy applies. On your home network the connection uses plain http unless you set up https yourself, so it is protected by your Wi-Fi's own security
 
 We strongly recommend reading your chosen provider's policy before uploading sensitive images. In particular, note whether they reserve the right to use your inputs to train future models. Most paid tiers explicitly opt out of this; most free tiers do not.
 
@@ -149,7 +149,7 @@ To exercise any of these rights, email [hello@kroma.fit](mailto:hello@kroma.fit)
 
 The app runs on your device, so data you generate with it does not transfer internationally through us.
 
-AI providers you choose to use (see above) may process your data in regions outside your own. The provider's own privacy policy governs this, not ours. If your regulator's data-transfer rules matter to you, choose Ollama (self-hosted) and no data leaves your device at all.
+AI providers you choose to use (see above) may process your data in regions outside your own. The provider's own privacy policy governs this, not ours. If your regulator's data-transfer rules matter to you, choose Ollama (self-hosted) with a model running on your own computer, and your photos never leave your home network.
 
 Feedback emails, when forwarded through Namecheap and landing in Gmail, are processed on infrastructure primarily operated in the United States. Standard contractual clauses apply for transfers from the UK / EU to the US under those providers' published terms.
 
