@@ -334,7 +334,7 @@ hr {
   max-width: 320px;
   /* aspect-ratio reserves the slot's height before the image loads so
      the rest of the page doesn't jump when it arrives — keeps CLS at 0. */
-  aspect-ratio: 780 / 1360;
+  aspect-ratio: 678 / 1430;
   /* Soft drop shadow gives the phone mockup depth without a hard border.
      Remove or soften if the AI-generated image bakes its own shadow in. */
   filter: drop-shadow(0 12px 32px rgba(30, 27, 22, 0.18));
