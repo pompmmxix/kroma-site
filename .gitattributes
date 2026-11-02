@@ -1,0 +1,6 @@
+# Line endings: stored as LF in the repo, checked out in each platform's
+# native form, so a tool that rewrites files with CRLF doesn't make them
+# all show as modified.
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
