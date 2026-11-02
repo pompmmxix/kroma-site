@@ -1,0 +1,609 @@
+{
+  "kibbe": [
+    {
+      "id": "dramatic",
+      "name": "Dramatic",
+      "desc": "Sharp yang. Long, narrow bone structure with angular features. Best in long straight lines, geometric shapes, and bold monochromatic looks.",
+      "fits": [
+        "Tailored",
+        "Slim"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Boat",
+        "Square"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Long",
+        "Maxi"
+      ],
+      "weights": [
+        "Midweight",
+        "Heavyweight"
+      ],
+      "weaves": [
+        "Twill",
+        "Satin",
+        "Plain"
+      ]
+    },
+    {
+      "id": "soft-dramatic",
+      "name": "Soft Dramatic",
+      "desc": "Soft yang. Bold bone structure softened by fleshy features. Best in elongated draping, soft fabrics in dramatic silhouettes, and deep V-necks.",
+      "fits": [
+        "Tailored",
+        "Slim"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Scoop",
+        "Cowl"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Long",
+        "Maxi"
+      ],
+      "weights": [
+        "Midweight",
+        "Lightweight"
+      ],
+      "weaves": [
+        "Crêpe",
+        "Knit",
+        "Satin"
+      ]
+    },
+    {
+      "id": "flamboyant-natural",
+      "name": "Flamboyant Natural",
+      "desc": "Broad yang. Wide, blunt bone structure. Best in unconstructed, relaxed styles with long lines — oversized pieces and natural fabrics.",
+      "fits": [
+        "Relaxed",
+        "Oversized"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Scoop",
+        "Boat"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4",
+        "Rolled"
+      ],
+      "lengths": [
+        "Long",
+        "Maxi"
+      ],
+      "weights": [
+        "Midweight",
+        "Heavyweight"
+      ],
+      "weaves": [
+        "Knit",
+        "Twill",
+        "Denim"
+      ]
+    },
+    {
+      "id": "soft-natural",
+      "name": "Soft Natural",
+      "desc": "Soft broad yang. Moderate bone structure with overall softness. Best in relaxed, flowing shapes with gentle draping and organic textures.",
+      "fits": [
+        "Relaxed",
+        "Regular"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Scoop",
+        "Cowl"
+      ],
+      "sleeves": [
+        "3/4",
+        "Long",
+        "Rolled"
+      ],
+      "lengths": [
+        "Midi",
+        "Long"
+      ],
+      "weights": [
+        "Midweight",
+        "Lightweight"
+      ],
+      "weaves": [
+        "Knit",
+        "Crêpe",
+        "Jersey"
+      ]
+    },
+    {
+      "id": "dramatic-classic",
+      "name": "Dramatic Classic",
+      "desc": "Balanced with a yang edge. Moderate bone structure, slightly angular. Best in tailored, structured pieces with clean straight lines.",
+      "fits": [
+        "Tailored",
+        "Regular"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Boat",
+        "Square"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Regular",
+        "Midi",
+        "Long"
+      ],
+      "weights": [
+        "Midweight"
+      ],
+      "weaves": [
+        "Twill",
+        "Plain",
+        "Oxford"
+      ]
+    },
+    {
+      "id": "soft-classic",
+      "name": "Soft Classic",
+      "desc": "Balanced with a yin edge. Moderate bone structure, slightly rounded. Best in simple, elegant silhouettes with soft fabrics and minimal detail.",
+      "fits": [
+        "Tailored",
+        "Regular"
+      ],
+      "necklines": [
+        "Scoop",
+        "V-Neck",
+        "Cowl"
+      ],
+      "sleeves": [
+        "3/4",
+        "Long"
+      ],
+      "lengths": [
+        "Midi",
+        "Regular"
+      ],
+      "weights": [
+        "Midweight",
+        "Lightweight"
+      ],
+      "weaves": [
+        "Crêpe",
+        "Jersey",
+        "Satin"
+      ]
+    },
+    {
+      "id": "flamboyant-gamine",
+      "name": "Flamboyant Gamine",
+      "desc": "Mixed petite yang. Compact with angular features. Best in sharp, cropped shapes, bold colour contrast, and geometric details.",
+      "fits": [
+        "Tailored",
+        "Slim"
+      ],
+      "necklines": [
+        "Crew",
+        "Boat",
+        "V-Neck"
+      ],
+      "sleeves": [
+        "Cap",
+        "Short",
+        "3/4"
+      ],
+      "lengths": [
+        "Cropped",
+        "Short"
+      ],
+      "weights": [
+        "Midweight",
+        "Lightweight"
+      ],
+      "weaves": [
+        "Twill",
+        "Plain",
+        "Denim"
+      ]
+    },
+    {
+      "id": "soft-gamine",
+      "name": "Soft Gamine",
+      "desc": "Mixed petite yin. Compact with rounded features. Best in playful, fitted shapes with rounded details, mixing patterns and textures.",
+      "fits": [
+        "Slim",
+        "Tailored"
+      ],
+      "necklines": [
+        "Scoop",
+        "V-Neck",
+        "Square"
+      ],
+      "sleeves": [
+        "Cap",
+        "3/4",
+        "Puff"
+      ],
+      "lengths": [
+        "Cropped",
+        "Short"
+      ],
+      "weights": [
+        "Lightweight",
+        "Midweight"
+      ],
+      "weaves": [
+        "Crêpe",
+        "Knit",
+        "Satin"
+      ]
+    },
+    {
+      "id": "theatrical-romantic",
+      "name": "Theatrical Romantic",
+      "desc": "Delicate yin with slight sharpness. Narrow, curved bone structure. Best in ornate, figure-hugging styles with rich detail.",
+      "fits": [
+        "Slim",
+        "Tailored"
+      ],
+      "necklines": [
+        "Scoop",
+        "V-Neck",
+        "Halter"
+      ],
+      "sleeves": [
+        "3/4",
+        "Cap",
+        "Puff"
+      ],
+      "lengths": [
+        "Midi",
+        "Regular"
+      ],
+      "weights": [
+        "Lightweight",
+        "Midweight"
+      ],
+      "weaves": [
+        "Satin",
+        "Crêpe",
+        "Lace"
+      ]
+    },
+    {
+      "id": "romantic",
+      "name": "Romantic",
+      "desc": "Full yin. Rounded, soft bone structure throughout. Best in flowing, figure-skimming fabrics, soft draping, rounded necklines, and ornate details.",
+      "fits": [
+        "Slim",
+        "Tailored"
+      ],
+      "necklines": [
+        "Scoop",
+        "Cowl",
+        "Halter"
+      ],
+      "sleeves": [
+        "3/4",
+        "Bell",
+        "Puff"
+      ],
+      "lengths": [
+        "Midi"
+      ],
+      "weights": [
+        "Lightweight",
+        "Midweight"
+      ],
+      "weaves": [
+        "Satin",
+        "Crêpe",
+        "Jersey",
+        "Lace"
+      ]
+    }
+  ],
+  "kitchener": [
+    {
+      "id": "dramatic",
+      "name": "Dramatic",
+      "desc": "Bold, striking, powerful presence. Sharp features, strong bone structure. Drawn to structured, architectural clothing with clean lines and high contrast.",
+      "fits": [
+        "Tailored",
+        "Slim"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Square"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Long",
+        "Maxi"
+      ],
+      "weights": [
+        "Midweight",
+        "Heavyweight"
+      ],
+      "weaves": [
+        "Twill",
+        "Satin",
+        "Plain"
+      ]
+    },
+    {
+      "id": "natural",
+      "name": "Natural",
+      "desc": "Relaxed, approachable, open energy. Broad or blunt bone structure. Best in unconstructed, organic silhouettes — linen, cotton, earth tones.",
+      "fits": [
+        "Relaxed",
+        "Regular"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Scoop",
+        "Henley"
+      ],
+      "sleeves": [
+        "Rolled",
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Long",
+        "Midi"
+      ],
+      "weights": [
+        "Midweight"
+      ],
+      "weaves": [
+        "Knit",
+        "Twill",
+        "Denim"
+      ]
+    },
+    {
+      "id": "classic",
+      "name": "Classic",
+      "desc": "Balanced, symmetrical, refined. Even proportions and moderate features. Elegant in tailored, timeless pieces with understated quality.",
+      "fits": [
+        "Tailored",
+        "Regular"
+      ],
+      "necklines": [
+        "V-Neck",
+        "Crew",
+        "Collar"
+      ],
+      "sleeves": [
+        "Long",
+        "3/4"
+      ],
+      "lengths": [
+        "Regular",
+        "Midi"
+      ],
+      "weights": [
+        "Midweight"
+      ],
+      "weaves": [
+        "Twill",
+        "Plain",
+        "Oxford"
+      ]
+    },
+    {
+      "id": "gamine",
+      "name": "Gamine",
+      "desc": "Youthful, energetic, playful. Compact frame, often with contrasting features. Thrives in cropped shapes, bold prints, and unexpected combinations.",
+      "fits": [
+        "Tailored",
+        "Slim"
+      ],
+      "necklines": [
+        "Crew",
+        "Boat"
+      ],
+      "sleeves": [
+        "Cap",
+        "Short",
+        "3/4"
+      ],
+      "lengths": [
+        "Cropped",
+        "Short"
+      ],
+      "weights": [
+        "Lightweight",
+        "Midweight"
+      ],
+      "weaves": [
+        "Plain",
+        "Twill",
+        "Knit"
+      ]
+    },
+    {
+      "id": "romantic",
+      "name": "Romantic",
+      "desc": "Soft, sensual, flowing presence. Rounded features and curves. Beautiful in draping fabrics, ornate details, and rich textures.",
+      "fits": [
+        "Slim",
+        "Tailored"
+      ],
+      "necklines": [
+        "Scoop",
+        "Cowl",
+        "Halter"
+      ],
+      "sleeves": [
+        "3/4",
+        "Bell",
+        "Puff"
+      ],
+      "lengths": [
+        "Midi"
+      ],
+      "weights": [
+        "Lightweight"
+      ],
+      "weaves": [
+        "Satin",
+        "Crêpe",
+        "Lace"
+      ]
+    },
+    {
+      "id": "ingenue",
+      "name": "Ingenue",
+      "desc": "Delicate, youthful, fresh. Small-scale features with a gentle quality. Suits dainty details, soft colours, and feminine touches.",
+      "fits": [
+        "Slim",
+        "Tailored"
+      ],
+      "necklines": [
+        "Scoop",
+        "Square"
+      ],
+      "sleeves": [
+        "Cap",
+        "Puff",
+        "3/4"
+      ],
+      "lengths": [
+        "Short",
+        "Midi"
+      ],
+      "weights": [
+        "Lightweight"
+      ],
+      "weaves": [
+        "Lace",
+        "Crêpe",
+        "Satin"
+      ]
+    },
+    {
+      "id": "angelic",
+      "name": "Angelic",
+      "desc": "Ethereal, otherworldly, luminous. Elongated features with a dreamy quality. Drawn to flowing, diaphanous fabrics, soft metallics, and iridescent textures.",
+      "fits": [
+        "Slim",
+        "Regular"
+      ],
+      "necklines": [
+        "Scoop",
+        "V-Neck",
+        "Cowl"
+      ],
+      "sleeves": [
+        "Long",
+        "Bell"
+      ],
+      "lengths": [
+        "Long",
+        "Maxi"
+      ],
+      "weights": [
+        "Lightweight"
+      ],
+      "weaves": [
+        "Chiffon",
+        "Organza",
+        "Satin",
+        "Crêpe"
+      ]
+    }
+  ],
+  "glasses": {
+    "by_face": {
+      "oval": [
+        "Rectangular",
+        "Browline",
+        "Aviator",
+        "Round"
+      ],
+      "round": [
+        "Rectangular",
+        "Browline",
+        "Cat-eye",
+        "Oversized square"
+      ],
+      "square": [
+        "Round",
+        "Aviator",
+        "Oversized square",
+        "Browline"
+      ],
+      "heart": [
+        "Round",
+        "Aviator",
+        "Cat-eye",
+        "Browline"
+      ],
+      "oblong": [
+        "Oversized square",
+        "Round",
+        "Aviator",
+        "Browline"
+      ],
+      "rectangle": [
+        "Oversized square",
+        "Round",
+        "Aviator",
+        "Browline"
+      ],
+      "diamond": [
+        "Cat-eye",
+        "Round",
+        "Browline",
+        "Oversized square"
+      ],
+      "triangle": [
+        "Browline",
+        "Cat-eye",
+        "Aviator",
+        "Round"
+      ]
+    },
+    "material": {
+      "warm": [
+        "Tortoiseshell",
+        "Gold"
+      ],
+      "cool": [
+        "Black",
+        "Crystal"
+      ],
+      "neutral": [
+        "Tortoiseshell",
+        "Black"
+      ]
+    },
+    "shapes": [
+      "Round",
+      "Rectangular",
+      "Cat-eye",
+      "Aviator",
+      "Browline",
+      "Oversized square"
+    ]
+  }
+}

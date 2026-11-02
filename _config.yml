@@ -39,6 +39,17 @@ author:
   name: Kroma
   url: https://kroma.fit
 
+# ───────── App store links ─────────
+# Used by the "Get Kroma" buttons on every guide page and the quiz
+# result (_includes/app-buttons.html). Leave a link empty and its
+# button shows as "coming soon" instead of a broken link. Paste the
+# store URL here on launch day; nothing else needs to change.
+#   android: https://play.google.com/store/apps/details?id=fit.kroma.app
+#   ios:     the App Store URL from App Store Connect → App Information
+app_links:
+  android: ""
+  ios: ""
+
 # ───────── Feedback page wiring ─────────
 # kroma.fit/feedback posts to a Cloudflare Worker that proxies the
 # submission into a public GitHub issue under a bot account. The page
