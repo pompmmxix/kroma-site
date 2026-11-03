@@ -3,8 +3,12 @@ layout: season
 title: 'Deep Autumn Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Deep Autumn
 heading: Deep Autumn colour palette
-description: 'The Deep Autumn colour palette (also called Dark Autumn): best colours, neutrals and makeup, how to tell if you''re Deep Autumn, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Deep Autumn colour (color) palette (also called Dark Autumn): best colours, neutrals and makeup, how to tell if you''re Deep Autumn, and the seasons it''s often confused with.'
+image:
+  path: /images/og/deep-autumn.jpg
+  width: 1200
+  height: 630
+  alt: 'Deep Autumn colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Deep Autumn (also called Dark Autumn) is deep first and warm second: rich, dark colouring with a golden lean. Your best colours are deep and warm, like espresso, forest green, burgundy and rust.'
 palette: twelve-season.deep autumn

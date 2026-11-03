@@ -70,6 +70,19 @@ layout: guide
 <p class="muted">In Kroma, a skin analysis from your selfie adds a "Makeup that suits you" row with shades matched to your own skin. It's opt-in and stays tucked away until you open it.</p>
 {%- endif %}
 
+{%- for d in page.details %}
+<h2>{{ d.heading }}</h2>
+{{ d.body | markdownify }}
+{%- endfor %}
+
+{%- if page.faq %}
+<h2>{{ page.short_title }} questions</h2>
+{%- for q in page.faq %}
+<h3>{{ q.q }}</h3>
+{{ q.a | markdownify }}
+{%- endfor %}
+{%- endif %}
+
 {%- if page.sisters %}
 <h2>Not quite right? Try a neighbouring season</h2>
 <ul class="sisters">

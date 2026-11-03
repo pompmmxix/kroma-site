@@ -3,8 +3,12 @@ layout: season
 title: 'Warm Autumn Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Warm Autumn
 heading: Warm Autumn colour palette
-description: 'The Warm Autumn colour palette (also called True Autumn): best colours, neutrals and makeup, how to tell if you''re Warm Autumn, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Warm Autumn colour (color) palette (also called True Autumn): best colours, neutrals and makeup, how to tell if you''re Warm Autumn, and the seasons it''s often confused with.'
+image:
+  path: /images/og/warm-autumn.jpg
+  width: 1200
+  height: 630
+  alt: 'Warm Autumn colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Warm Autumn (also called True Autumn) is the warmest of the autumns: golden skin, copper or warm brown hair and warm eyes. Your best colours are rich, spicy and earthy.'
 palette: twelve-season.warm autumn

@@ -3,8 +3,12 @@ layout: season
 title: 'Bright Winter Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Bright Winter
 heading: Bright Winter colour palette
-description: 'The Bright Winter colour palette (also called Clear Winter): best colours, neutrals and makeup, how to tell if you''re Bright Winter, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Bright Winter colour (color) palette (also called Clear Winter): best colours, neutrals and makeup, how to tell if you''re Bright Winter, and the seasons it''s often confused with.'
+image:
+  path: /images/og/bright-winter.jpg
+  width: 1200
+  height: 630
+  alt: 'Bright Winter colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Bright Winter (also called Clear Winter) is bright first and cool second: vivid eyes, high contrast and colouring that can carry the boldest colours. Your best colours are clear, saturated and cool.'
 palette: twelve-season.bright winter

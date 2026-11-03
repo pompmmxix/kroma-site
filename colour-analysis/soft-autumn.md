@@ -3,8 +3,12 @@ layout: season
 title: 'Soft Autumn Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Soft Autumn
 heading: Soft Autumn colour palette
-description: 'The Soft Autumn colour palette: best colours, neutrals and makeup, how to tell if you''re Soft Autumn, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Soft Autumn colour (color) palette: best colours, neutrals and makeup, how to tell if you''re Soft Autumn, and the seasons it''s often confused with.'
+image:
+  path: /images/og/soft-autumn.jpg
+  width: 1200
+  height: 630
+  alt: 'Soft Autumn colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Soft Autumn colouring is soft first and warm second: blended, golden and gentle. Your best colours are muted and earthy, like moss, camel, salmon and soft teal.'
 palette: twelve-season.soft autumn

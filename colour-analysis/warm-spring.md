@@ -3,8 +3,12 @@ layout: season
 title: 'Warm Spring Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Warm Spring
 heading: Warm Spring colour palette
-description: 'The Warm Spring colour palette (also called True Spring): best colours, neutrals and makeup, how to tell if you''re Warm Spring, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Warm Spring colour (color) palette (also called True Spring): best colours, neutrals and makeup, how to tell if you''re Warm Spring, and the seasons it''s often confused with.'
+image:
+  path: /images/og/warm-spring.jpg
+  width: 1200
+  height: 630
+  alt: 'Warm Spring colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Warm Spring (also called True Spring) is the warmest of the springs: golden skin, golden or copper hair and lively eyes. Your best colours are warm, clear and sunny.'
 palette: twelve-season.warm spring

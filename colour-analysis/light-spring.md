@@ -3,8 +3,12 @@ layout: season
 title: 'Light Spring Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Light Spring
 heading: Light Spring colour palette
-description: 'The Light Spring colour palette: best colours, neutrals and makeup, how to tell if you''re Light Spring, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Light Spring colour (color) palette: best colours, neutrals and makeup, how to tell if you''re Light Spring, and the seasons it''s often confused with.'
+image:
+  path: /images/og/light-spring.jpg
+  width: 1200
+  height: 630
+  alt: 'Light Spring colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Light Spring colouring is light first and warm second: think peach, golden blonde and clear light eyes. Your best colours are fresh, light and warm, like a spring morning.'
 palette: twelve-season.light spring

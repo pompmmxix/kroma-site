@@ -3,8 +3,12 @@ layout: season
 title: 'Cool Summer Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Cool Summer
 heading: Cool Summer colour palette
-description: 'The Cool Summer colour palette (also called True Summer): best colours, neutrals and makeup, how to tell if you''re Cool Summer, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Cool Summer colour (color) palette (also called True Summer): best colours, neutrals and makeup, how to tell if you''re Cool Summer, and the seasons it''s often confused with.'
+image:
+  path: /images/og/cool-summer.jpg
+  width: 1200
+  height: 630
+  alt: 'Cool Summer colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Cool Summer (also called True Summer) is the coolest of the summers: rosy skin, ash hair and grey or blue eyes. Your best colours are cool, medium and gently muted.'
 palette: twelve-season.cool summer

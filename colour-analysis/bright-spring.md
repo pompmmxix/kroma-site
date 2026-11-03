@@ -3,8 +3,12 @@ layout: season
 title: 'Bright Spring Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Bright Spring
 heading: Bright Spring colour palette
-description: 'The Bright Spring colour palette (also called Clear Spring): best colours, neutrals and makeup, how to tell if you''re Bright Spring, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Bright Spring colour (color) palette (also called Clear Spring): best colours, neutrals and makeup, how to tell if you''re Bright Spring, and the seasons it''s often confused with.'
+image:
+  path: /images/og/bright-spring.jpg
+  width: 1200
+  height: 630
+  alt: 'Bright Spring colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Bright Spring (also called Clear Spring) is vivid colouring with a warm lean: clear eyes, high contrast and colours that pop. Your best colours are saturated, clear and warm.'
 palette: twelve-season.bright spring

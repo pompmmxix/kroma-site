@@ -3,8 +3,12 @@ layout: season
 title: 'Cool Winter Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Cool Winter
 heading: Cool Winter colour palette
-description: 'The Cool Winter colour palette (also called True Winter): best colours, neutrals and makeup, how to tell if you''re Cool Winter, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Cool Winter colour (color) palette (also called True Winter): best colours, neutrals and makeup, how to tell if you''re Cool Winter, and the seasons it''s often confused with.'
+image:
+  path: /images/og/cool-winter.jpg
+  width: 1200
+  height: 630
+  alt: 'Cool Winter colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Cool Winter (also called True Winter) is the coolest of all twelve seasons: high contrast, cool undertones and clear colouring. Your best colours are icy, crisp and cool, like pure white, black, royal blue and fuchsia.'
 palette: twelve-season.cool winter

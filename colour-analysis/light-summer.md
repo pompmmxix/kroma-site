@@ -3,8 +3,12 @@ layout: season
 title: 'Light Summer Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Light Summer
 heading: Light Summer colour palette
-description: 'The Light Summer colour palette: best colours, neutrals and makeup, how to tell if you''re Light Summer, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Light Summer colour (color) palette: best colours, neutrals and makeup, how to tell if you''re Light Summer, and the seasons it''s often confused with.'
+image:
+  path: /images/og/light-summer.jpg
+  width: 1200
+  height: 630
+  alt: 'Light Summer colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Light Summer is light first and cool second: rosy or porcelain skin, ash blonde or light brown hair and soft light eyes. Your best colours are airy, cool pastels.'
 palette: twelve-season.light summer

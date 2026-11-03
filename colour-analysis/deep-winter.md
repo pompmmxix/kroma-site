@@ -3,8 +3,12 @@ layout: season
 title: 'Deep Winter Colour Palette: Clothes, Makeup and Neutrals'
 short_title: Deep Winter
 heading: Deep Winter colour palette
-description: 'The Deep Winter colour palette (also called Dark Winter): best colours, neutrals and makeup, how to tell if you''re Deep Winter, and the seasons it''s often confused with.'
-image: /images/og-image.jpg
+description: 'The Deep Winter colour (color) palette (also called Dark Winter): best colours, neutrals and makeup, how to tell if you''re Deep Winter, and the seasons it''s often confused with.'
+image:
+  path: /images/og/deep-winter.jpg
+  width: 1200
+  height: 630
+  alt: 'Deep Winter colour palette swatches: power colours and neutrals'
 kicker: 12-season colour analysis
 lede: 'Deep Winter (also called Dark Winter) is deep first and cool second: dark hair, deep eyes and striking contrast. Your best colours are dark, cool and rich, like black, burgundy, emerald and sapphire.'
 palette: twelve-season.deep winter
