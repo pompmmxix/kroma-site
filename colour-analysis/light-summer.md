@@ -45,9 +45,69 @@ sisters:
 - url: /colour-analysis/soft-summer/
   name: Soft Summer
   why: if your colouring is more muted and smoky
+details:
+- heading: Best hair colours for Light Summer
+  body: |
+    Your natural hair is often ash blonde, light ash brown or pale, cool blonde. Light, cool colour suits you best.
+
+    - **Flattering:** ash blonde, cool beige blonde, platinum-tinged highlights, light ash brown and soft silver as it comes in.
+    - **Harder to wear:** jet black, dark brown, copper and golden or honey blonde. They're too dark or too warm for light, cool colouring.
+- heading: Jewellery and metals
+  body: |
+    Light, cool metals suit you: silver, white gold, platinum and soft rose gold. Delicate, fine pieces look better than chunky or dark ones.
+
+    For stones, choose light and cool ones: pearls, moonstone, aquamarine, rose quartz, blue topaz, light amethyst and clear crystal.
+- heading: Denim, prints and fabrics
+  body: |
+    - **Denim:** light and mid-wash blue, soft white and pale grey jeans. Very dark indigo and black denim look heavy on you.
+    - **Prints:** soft and airy: small florals, light stripes, pastel prints and soft watercolour patterns.
+    - **Fabrics:** light and fluid: chiffon, cotton voile, jersey, fine knits and silk.
+- heading: Colours Light Summer should avoid
+  body: |
+    The least flattering colours are dark, warm or very saturated: the opposite of light and cool.
+
+    - **Black** and very dark charcoal
+    - **Orange**, **rust**, **mustard** and **camel**
+    - **Dark jewel tones** like aubergine and pine
+    - **Neon** and very bright brights
+
+    Wear darker colours below the waist, and keep a light cool colour like powder blue, lilac or soft rose near your face.
+- heading: Light Summer vs Light Spring
+  body: |
+    Both are light first, so both suit pale, delicate colours. The difference is temperature.
+
+    | | Light Summer | Light Spring |
+    |---|---|---|
+    | Undertone | Cool | Warm |
+    | Best pinks | Powder pink, soft rose | Peach, warm pink, light coral |
+    | Best blues | Powder blue, periwinkle | Light aqua, warm sky blue |
+    | Best white | Soft white | Cream, warm ivory |
+    | Metals | Silver, white gold | Yellow and rose gold |
+
+    A quick test: hold powder pink and peach under your face in daylight. If powder pink looks fresh and peach looks sallow, you're more likely Light Summer.
+- heading: Light Summer vs Cool Summer and Soft Summer
+  body: |
+    All three Summers suit cool, gentle colours. **Cool Summer** is the most blue-based and a little deeper: rose, periwinkle and soft teal. **Soft Summer** is the most muted: sage, slate and dusty rose. Light Summer is the lightest of the three, with airy pastels like powder blue, lilac and mint.
+faq:
+- q: Can Light Summer wear black?
+  a: >-
+    It's the hardest colour for Light Summer, because it's far deeper than your colouring. Soft navy, grey and light charcoal give structure without weighing you down.
+- q: What white should Light Summer wear?
+  a: >-
+    Soft white or a cool off-white. Stark optic white can be a little harsh, and creamy ivory can look yellow next to cool skin.
+- q: Can Light Summer wear gold?
+  a: >-
+    Silver, white gold and platinum usually look better. Rose gold is a good compromise if you want a warmer metal.
+- q: Is Light Summer warm or cool?
+  a: >-
+    Cool, leaning neutral. It borders Light Spring, so it's the least blue of the Summers, but its best colours still lean cool.
+- q: What are the best neutrals for Light Summer?
+  a: >-
+    Soft navy, grey, light charcoal, soft white and cool beige. Build a capsule wardrobe from these, then add power colours like powder blue, lavender, soft pink and light teal.
 cta_heading: Check your clothes against the Light Summer palette
 cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Light Summer pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/light-summer/
+last_modified_at: 2026-11-03
 ---
 
 Light Summer's leading trait is lightness, so dark and heavy colours overwhelm it. Its second trait is coolness, which separates it from the golden Light Spring.
