@@ -3,8 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{{ page.description | default: site.description }}">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
 {% seo %}
@@ -14,8 +12,8 @@
 <a href="/" class="brand">Kroma</a>
 <nav>
 <a href="/">Home</a>
-<a href="/privacy">Privacy</a>
-<a href="/terms">Terms</a>
+<a href="/privacy/">Privacy</a>
+<a href="/terms/">Terms</a>
 </nav>
 </header>
 <main class="prose">
@@ -23,7 +21,7 @@
 </main>
 <footer class="site-ft">
 <p>© {{ site.time | date: "%Y" }} Kroma. Local-first wardrobe tools.</p>
-<p><a href="/">Home</a> &middot; <a href="/privacy">Privacy</a> &middot; <a href="/terms">Terms</a></p>
+<p><a href="/">Home</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="/terms/">Terms</a></p>
 <p><a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="Kroma on LinkedIn">LinkedIn</a> &middot; <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="Kroma on X">X</a> &middot; <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="Kroma on Instagram">Instagram</a></p>
 </footer>
 </body>

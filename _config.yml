@@ -8,6 +8,7 @@ theme: null
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+  - jekyll-sitemap
 
 # Jekyll will render markdown files through _layouts/default.html.
 # Raw .html files (like index.html) are served as-is.
