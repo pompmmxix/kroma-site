@@ -386,6 +386,17 @@ hr {
   line-height: 1.5;
 }
 
+a.feature {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.feature:hover,
+a.feature:focus-visible { border-color: var(--accent); }
+
+.nowrap { white-space: nowrap; }
+
 /* ────────── screenshot strip ──────────
    Play Store screenshots in a sideways scroll-snap row. The strip
    bleeds into the .wrap side padding so cards scroll edge to edge,
