@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/style.css">
 {% seo %}
+{% include lang-alternates.html %}
 </head>
 <body class="doc">
 <header class="site-hd">
@@ -15,6 +16,7 @@
 <a href="/privacy/">Privacy</a>
 <a href="/terms/">Terms</a>
 </nav>
+{% include lang-switch.html %}
 </header>
 <main class="prose">
 {{ content }}

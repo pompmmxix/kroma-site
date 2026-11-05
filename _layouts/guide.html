@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en' }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
   as the rest of the site.
 {%- endcomment -%}
 {% seo %}
+{% include lang-alternates.html %}
 <meta name="twitter:site" content="@kromafit">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -38,6 +39,7 @@
       <a href="/feedback/">Feedback</a>
       <a href="/privacy/">Privacy</a>
     </nav>
+    {% include lang-switch.html %}
   </header>
 
   <main class="guide">

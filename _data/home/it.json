@@ -1,0 +1,109 @@
+{
+ "title": "Kroma: guardaroba digitale e armocromia gratis",
+ "description": "Un'app di guardaroba privata: cataloga i tuoi vestiti, registra cosa indossi e ricevi consigli su colori e stile, senza account. Gratis, senza pubblicità e con i dati sul tuo telefono.",
+ "nav_home": "Home",
+ "nav_guides": "Guide",
+ "nav_privacy": "Privacy",
+ "hero_h1": "La maggior parte delle app di guardaroba vuole i tuoi dati. Kroma vuole solo aiutarti a indossare ciò che hai.",
+ "hero_lede": "Kroma è un'app di guardaroba privata che tiene tutto sul tuo telefono. Cataloga i tuoi vestiti, registra quello che indossi davvero e ricevi idee di outfit adatte al meteo, al tuo corpo e alla tua palette — <strong>tutto sul tuo dispositivo, senza tracciamento e senza account.</strong>",
+ "hero_alt": "La scheda Guardaroba di Kroma: una griglia di capi — un foulard paisley terracotta, una gonna a pois senape, jeans neri e una felpa bordeaux — ognuno con punteggio, prezzo e numero di utilizzi.",
+ "divider_weft": "trama",
+ "divider_weft_alt": "Primo piano di lino tessuto con un filo marrone caldo che attraversa in orizzontale la trama color crema.",
+ "divider_warp": "ordito",
+ "divider_warp_alt": "Primo piano di lino tessuto con un filo marrone caldo verticale tra i fili d'ordito color crema.",
+ "divider_selvedge": "cimosa",
+ "divider_selvedge_alt": "Primo piano della cimosa del lino, il bordo finito dove i fili di trama tornano indietro, accanto a un cordoncino marrone verticale.",
+ "features_h2": "Cosa fa",
+ "features": [
+  {
+   "h": "Cataloga tutto",
+   "p": "Fotografa ogni capo. L'IA ne riconosce tipo, colore, fantasia, armatura e tessuto quando sono visibili. Oltre 120 tipi di capo dalle tradizioni di tutto il mondo, non solo occidentali."
+  },
+  {
+   "h": "Registra cosa indossi",
+   "p": "Fotografa il tuo outfit e l'app riconosce quali capi del tuo guardaroba indossi. Costo per utilizzo reale, non stime. Dati onesti su ciò che scegli davvero."
+  },
+  {
+   "h": "Outfit in base al meteo",
+   "p": "Di base indichi tu la sensazione della giornata, senza rete. Oppure attiva Open-Meteo una volta al mattino per la città che scrivi. Una calibrazione del comfort personale, perché il tuo \"caldo\" non è quello di un altro."
+  },
+  {
+   "h": "Cinque sistemi di armocromia",
+   "p": "12 stagioni occidentale, Ritu (Asia meridionale), Shikisai (giapponese), Tonale coreano e Wu Xing (cinese). In più analisi del corpo Kibbe e per proporzioni: scegli il modello che ti somiglia."
+  },
+  {
+   "h": "La tua IA",
+   "p": "Usa la tua chiave Gemini, Claude, OpenAI, Mistral o OpenRouter, oppure un tuo server Ollama. Le foto vanno direttamente dal telefono al provider che scegli, e Kroma chiede prima di inviare la prima. Noi non le vediamo mai."
+  },
+  {
+   "h": "Niente account, niente server",
+   "p": "Apri l'app e inizia: niente registrazione, niente email, nessun profilo nel database di qualcun altro. Il tuo guardaroba vive in uno spazio cifrato sul telefono. Non c'è un server da spegnere per cancellare i tuoi dati, perché il server non c'è."
+  }
+ ],
+ "guides_h2": "Guide gratuite",
+ "guides_lede": "Senza registrazione né email. Per ora le guide sono in inglese.",
+ "local_pages": [],
+ "guides": [
+  {
+   "href": "/colour-analysis/",
+   "h": "Test di armocromia gratis",
+   "p": "Che stagione sono? Dieci domande nel browser e la tua palette tra 12 stagioni."
+  },
+  {
+   "href": "/colour-analysis/#seasons",
+   "h": "Le 12 palette stagionali",
+   "p": "Colori, neutri, trucco, capelli e metalli per ogni stagione."
+  },
+  {
+   "href": "/kibbe-body-types/",
+   "h": "Tipi fisici Kibbe",
+   "p": "Tutti e dieci i tipi, da Dramatic a Romantic, con i tagli e i tessuti giusti."
+  },
+  {
+   "href": "/glasses-for-face-shape/",
+   "h": "Occhiali per la forma del viso",
+   "p": "Le montature e i colori che valorizzano ogni forma del viso."
+  },
+  {
+   "href": "/laundry-symbols/",
+   "h": "Simboli di lavaggio",
+   "p": "Ogni simbolo dell'etichetta e cosa significa."
+  },
+  {
+   "href": "/compare/",
+   "h": "App di guardaroba a confronto",
+   "p": "Kroma, Whering, Indyx, Acloset e Stylebook fianco a fianco."
+  }
+ ],
+ "guides_all": "Tutte le guide (in inglese) →",
+ "screens_h2": "Uno sguardo all'app",
+ "screens_note": "Screenshot in inglese; l'app è disponibile in italiano.",
+ "screens_aria": "Screenshot dell'app, scorri per vederne altri",
+ "screens_alt": [
+  "Tutto il tuo guardaroba in un posto: la griglia dei capi con i punteggi.",
+  "Idee di outfit da ciò che indossi davvero, con il meteo di oggi.",
+  "Cosa indossi e quanto costa: costo per utilizzo, capi dimenticati e armonia con la palette.",
+  "Prima di comprare: spesa prevista, punteggio medio e doppioni nella lista desideri.",
+  "I tuoi colori in cinque tradizioni, con una storia di colore Autunno Caldo.",
+  "La vera storia dei tuoi vestiti: la scheda del paisley con la sua origine indiana."
+ ],
+ "attr_h2": "Da dove vengono davvero i tuoi vestiti",
+ "attr_claim": "Molte app trattano il <em>paisley</em> come una fantasia scozzese. Non lo è.",
+ "attr_paras": [
+  "Il motivo a goccia — <em>boteh, ambi, kairi</em> — viene dal subcontinente indiano e raggiunse la sua forma più raffinata negli scialli del Kashmir dell'epoca moghul. Il nome inglese si deve alle filande scozzesi dell'Ottocento che ne produssero copie economiche in serie. Kroma racconta questa storia, e molte altre, nell'app.",
+  "Tocca una fantasia, un colore o un tessuto e si apre la sua attribuzione: da dove viene davvero, come ha viaggiato e cosa racconta il suo nome. Indaco, seta Banarasi, tessuto Kuba, Tatreez, Bandhani, Phulkari, Huipil, Mola, Kente, Aran, Sashiko: 74 tradizioni tessili, ognuna citata con onestà.",
+  "Se abbiamo sbagliato qualcosa, soprattutto sulla tradizione della tua comunità, ogni scheda ha un pulsante che apre un'email già compilata per scriverci. Preferiamo ascoltarti e correggere piuttosto che indovinare."
+ ],
+ "privacy_h2": "Come funziona davvero la privacy",
+ "privacy_paras": [
+  "Kroma non ha un backend. I dati del tuo guardaroba restano sul telefono. Niente account, niente analisi, niente ID pubblicitari, niente report sugli arresti anomali. I pochi posti in cui i dati <em>possono</em> andare — il provider IA scelto, il servizio meteo che attivi, una pagina prodotto che condividi con l'app — sono tutti elencati nell'<a href=\"/privacy/\" hreflang=\"en\">informativa sulla privacy</a> (in inglese).",
+  "Non è una frase di marketing. È l'architettura. Non c'è un server da spegnere per una richiesta di cancellazione, perché il server non c'è."
+ ],
+ "getapp_h2": "Scarica l'app",
+ "getapp_p": "L'app per Android arriva a breve, in italiano fin dal primo giorno. Seguirà la versione per iOS.",
+ "footer_tag": "Kroma — fatto con cura",
+ "footer_compare": "Confronta le app",
+ "footer_terms": "Termini",
+ "footer_feedback": "Feedback",
+ "en_only": "in inglese"
+}

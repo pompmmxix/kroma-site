@@ -493,3 +493,37 @@ a.feature:focus-visible { border-color: var(--accent); }
   .opinion .claim { font-size: 1.25rem; }
   hr, .divider { margin: 36px 0; }
 }
+
+/* ────────── language selector (_includes/lang-switch.html) ──────────
+   A <details> dropdown: works without script, keyboard-accessible,
+   and closes like any disclosure. */
+.lang-switch { position: relative; font-size: 0.9rem; }
+.lang-switch summary {
+  list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 6px;
+  color: var(--text-soft); padding: 6px 10px; min-height: 36px;
+  border: 1px solid var(--border); border-radius: 999px; background: var(--bg-card);
+}
+.lang-switch summary::-webkit-details-marker { display: none; }
+.lang-switch summary:hover, .lang-switch[open] summary { color: var(--accent); border-color: var(--accent-soft); }
+.lang-switch ul {
+  position: absolute; right: 0; top: calc(100% + 6px); z-index: 20; margin: 0; padding: 6px;
+  list-style: none; min-width: 190px; background: var(--bg-card);
+  border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 8px 24px rgba(34,29,24,0.12);
+}
+.lang-switch li a {
+  display: block; padding: 9px 12px; border-radius: 8px; color: var(--text); text-decoration: none; border: 0;
+}
+.lang-switch li a:hover { background: var(--bg-soft); color: var(--accent); }
+.lang-switch li a[aria-current] { color: var(--accent); font-weight: 600; }
+header.site .lang-switch li a, header.site-hd .lang-switch li a { border-bottom: 0; padding-bottom: 9px; }
+.header-end { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.en-note { font-size: 0.78em; color: var(--text-mute); }
+/* Nav links never break mid-label (long Japanese/Portuguese labels wrap
+   as whole links instead). */
+header.site nav { flex-wrap: wrap; row-gap: 8px; }
+header.site nav a { white-space: nowrap; }
+@media (max-width: 560px) {
+  /* On phones the selector sits at the start of its row, so open the
+     list to the right instead of off the left edge. */
+  .lang-switch ul { left: 0; right: auto; }
+}

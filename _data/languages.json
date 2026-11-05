@@ -1,0 +1,12 @@
+[
+  {"code": "en", "name": "English",            "html": "en",      "hreflang": "en",      "locale": "en_GB", "home": "/"},
+  {"code": "es", "name": "Español",            "html": "es",      "hreflang": "es",      "locale": "es_ES", "home": "/es/"},
+  {"code": "fr", "name": "Français",           "html": "fr",      "hreflang": "fr",      "locale": "fr_FR", "home": "/fr/"},
+  {"code": "pt", "name": "Português (Brasil)", "html": "pt-BR",   "hreflang": "pt-BR",   "locale": "pt_BR", "home": "/pt/"},
+  {"code": "de", "name": "Deutsch",            "html": "de",      "hreflang": "de",      "locale": "de_DE", "home": "/de/"},
+  {"code": "it", "name": "Italiano",           "html": "it",      "hreflang": "it",      "locale": "it_IT", "home": "/it/"},
+  {"code": "hi", "name": "हिन्दी",              "html": "hi",      "hreflang": "hi",      "locale": "hi_IN", "home": "/hi/"},
+  {"code": "ja", "name": "日本語",              "html": "ja",      "hreflang": "ja",      "locale": "ja_JP", "home": "/ja/"},
+  {"code": "ko", "name": "한국어",              "html": "ko",      "hreflang": "ko",      "locale": "ko_KR", "home": "/ko/"},
+  {"code": "zh", "name": "简体中文",            "html": "zh-Hans", "hreflang": "zh-Hans", "locale": "zh_CN", "home": "/zh/"}
+]
