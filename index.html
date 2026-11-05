@@ -1,3 +1,10 @@
+---
+# English homepage. Front matter only so Liquid adds the language
+# selector and hreflang links; layout null keeps the page exactly as written.
+layout: null
+lang: en
+i18n: home
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +16,7 @@
 <!-- Canonical URL.  Helps search engines pick a single authoritative URL
      when the site is reachable via apex + www + http variants. -->
 <link rel="canonical" href="https://kroma.fit/">
+{% include lang-alternates.html %}
 
 <!-- Open Graph — controls how the page renders when shared into iMessage,
      WhatsApp, Slack, LinkedIn, Facebook etc.  Without these the platforms
@@ -80,6 +88,7 @@
 
   <header class="site">
     <a class="brand" href="/">Kroma</a>
+    <div class="header-end">
     <nav>
       <a href="/" class="active">Home</a>
       <a href="/guides/">Guides</a>
@@ -87,6 +96,8 @@
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
     </nav>
+    {% include lang-switch.html %}
+    </div>
   </header>
 
   <main>
@@ -291,8 +302,7 @@
           travelled, what its English name is really a record of.
           Indigo, Banarasi silk, Kuba cloth, Tatreez, Bandhani,
           Phulkari, Huipil, Mola, Kente, Aran, Sashiko — 74 textile
-          traditions, each credited honestly, each translated into all
-          seven app languages.
+          traditions, each credited honestly.
         </p>
         <p>
           If we got something wrong, especially about your community's

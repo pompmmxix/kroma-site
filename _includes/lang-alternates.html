@@ -1,0 +1,18 @@
+{%- comment -%}
+  hreflang links for pages that exist in more than one language. A page
+  joins a group with front matter `i18n: <group>` plus `lang: <code>`
+  (codes from _data/languages.json). Pages outside a group get none:
+  hreflang must only point at true equivalents. English is x-default.
+{%- endcomment -%}
+{%- if page.i18n -%}
+{%- assign i18n_alts = site.pages | where: "i18n", page.i18n -%}
+{%- for l in site.data.languages -%}
+{%- assign alt = i18n_alts | where: "lang", l.code | first -%}
+{%- if alt %}
+<link rel="alternate" hreflang="{{ l.hreflang }}" href="{{ site.url }}{{ alt.url }}">
+{%- if l.code == "en" %}
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ alt.url }}">
+{%- endif -%}
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}

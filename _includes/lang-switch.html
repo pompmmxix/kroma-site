@@ -1,0 +1,22 @@
+{%- comment -%}
+  Language selector. No script and no automatic redirect: visitors pick.
+  On a page that exists in several languages (front matter `i18n`), it
+  lists those versions. Elsewhere it lists the homepage in every
+  language. Each link carries lang/hreflang so screen readers and search
+  engines know what they lead to.
+{%- endcomment -%}
+{%- assign cur_code = page.lang | default: "en" -%}
+{%- assign cur = site.data.languages | where: "code", cur_code | first -%}
+{%- if page.i18n -%}{%- assign i18n_alts = site.pages | where: "i18n", page.i18n -%}{%- endif -%}
+<details class="lang-switch">
+  <summary aria-label="Language: {{ cur.name }}"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span>{{ cur.name }}</span></summary>
+  <ul>
+  {%- for l in site.data.languages -%}
+    {%- assign href = l.home -%}
+    {%- if page.i18n -%}{%- assign alt = i18n_alts | where: "lang", l.code | first -%}{%- if alt -%}{%- assign href = alt.url -%}{%- else -%}{%- assign href = nil -%}{%- endif -%}{%- endif -%}
+    {%- if href %}
+    <li><a href="{{ href }}" lang="{{ l.html }}" hreflang="{{ l.hreflang }}"{% if l.code == cur_code %} aria-current="true"{% endif %}>{{ l.name }}</a></li>
+    {%- endif -%}
+  {%- endfor %}
+  </ul>
+</details>
