@@ -22,16 +22,16 @@
 <meta property="og:title" content="{{ t.title | escape }}">
 <meta property="og:description" content="{{ t.description | escape }}">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="https://kroma.fit/images/og-image.jpg">
+<meta property="og:image" content="https://kroma.fit/images/og-image-{{ page.lang }}.jpg">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="500">
 <meta property="og:locale" content="{{ lang.locale }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ t.title | escape }}">
 <meta name="twitter:description" content="{{ t.description | escape }}">
-<meta name="twitter:image" content="https://kroma.fit/images/og-image.jpg">
+<meta name="twitter:image" content="https://kroma.fit/images/og-image-{{ page.lang }}.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kroma","description":{{ t.description | jsonify }},"inLanguage":"{{ lang.html }}","applicationCategory":"LifestyleApplication","operatingSystem":"Android","url":"{{ site.url }}{{ page.url }}","image":"https://kroma.fit/images/og-image.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kroma","description":{{ t.description | jsonify }},"inLanguage":"{{ lang.html }}","applicationCategory":"LifestyleApplication","operatingSystem":"Android","url":"{{ site.url }}{{ page.url }}","image":"https://kroma.fit/images/og-image-{{ page.lang }}.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
 </script>
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -63,7 +63,7 @@
         <p class="lede">{{ t.hero_lede }}</p>
       </div>
       <div class="hero-visual">
-        <img src="/images/hero-wardrobe.webp" alt="{{ t.hero_alt | escape }}" width="678" height="1430" loading="eager" decoding="async">
+        <img src="/images/hero-wardrobe-{{ page.lang }}.webp" alt="{{ t.hero_alt | escape }}" width="678" height="1430" loading="eager" decoding="async">
       </div>
     </section>
 
