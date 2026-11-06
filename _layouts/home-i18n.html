@@ -106,12 +106,11 @@
 
     <section>
       <h2>{{ t.screens_h2 }}</h2>
-      <p class="muted">{{ t.screens_note }}</p>
       <div class="screens" tabindex="0" role="region" aria-label="{{ t.screens_aria | escape }}">
         {%- assign shots = "1-wardrobe,2-outfits,3-analysis,4-wishlist,5-colours,6-story" | split: "," -%}
         {%- for s in shots %}
         <figure>
-          <img src="/images/screens/{{ s }}.webp" width="540" height="960" loading="lazy" decoding="async" alt="{{ t.screens_alt[forloop.index0] | escape }}">
+          <img src="/images/screens/{{ page.lang }}/{{ s }}.webp" width="540" height="960" loading="lazy" decoding="async" alt="{{ t.screens_alt[forloop.index0] | escape }}">
         </figure>
         {%- endfor %}
       </div>
