@@ -1,0 +1,95 @@
+---
+layout: guide
+---
+{%- comment -%}
+  One 12-season palette page. The colour lists come straight from the
+  app's palette data (_data/palettes.json, copied from
+  wardrobe-app/src/palettes.json), so the site and the app always agree.
+  Everything else is front matter on the page.
+{%- endcomment -%}
+{%- assign pal = site.data.palettes[page.palette] -%}
+
+<div class="strip" aria-hidden="true">
+  {%- for group in pal.colour_groups %}{% for c in group.colours %}{% if c.hex %}<i style="background:{{ c.hex }}" title="{{ c.colour }}"></i>{% endif %}{% endfor %}{% endfor -%}
+</div>
+
+<dl class="traits">
+  <div><dt>Undertone</dt><dd>{{ page.undertone }}</dd></div>
+  <div><dt>Depth</dt><dd>{{ page.depth }}</dd></div>
+  <div><dt>Chroma</dt><dd>{{ page.chroma }}</dd></div>
+  <div><dt>Leading trait</dt><dd>{{ page.dominant }}</dd></div>
+</dl>
+
+{{ content }}
+
+{%- if page.signs %}
+<h2>Signs you might be {{ page.short_title }}</h2>
+<ul class="checks">
+  {%- for s in page.signs %}
+  <li>{{ s }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+<h2>The {{ page.short_title }} palette</h2>
+<p class="muted">These are the same colours Kroma uses when it scores your clothes as {{ page.short_title }}.</p>
+{%- for group in pal.colour_groups %}
+<section class="palette-group palette-{{ group.role }}">
+  <h3>{{ group.name }}</h3>
+  <p>{{ group.description }}</p>
+  <ul class="palette-list">
+    {%- for c in group.colours %}
+    <li><i class="swatch"{% if c.hex %} style="background:{{ c.hex }}"{% endif %} aria-hidden="true"></i><strong>{{ c.colour }}</strong><span>{{ c.note }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endfor %}
+
+<aside class="inline-cta">
+  <p><strong>Which of your clothes are {{ page.short_title }}?</strong> Photograph them in Kroma and every garment gets a score against this palette.</p>
+  {% include app-buttons.html %}
+</aside>
+
+{%- if page.wearing %}
+<h2>How to wear it</h2>
+<ul>
+  {%- for w in page.wearing %}
+  <li>{{ w }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+{%- if page.makeup %}
+<h2>{{ page.short_title }} makeup</h2>
+<p>Makeup follows the same three traits as your clothes. Start here, then adjust for your own skin.</p>
+<dl class="makeup">
+  <div><dt>Lips</dt><dd>{{ page.makeup.lips }}</dd></div>
+  <div><dt>Cheeks</dt><dd>{{ page.makeup.cheeks }}</dd></div>
+  <div><dt>Eyes</dt><dd>{{ page.makeup.eyes }}</dd></div>
+</dl>
+<p class="muted">In Kroma, a skin analysis from your selfie adds a "Makeup that suits you" row with shades matched to your own skin. It's opt-in and stays tucked away until you open it.</p>
+{%- endif %}
+
+{%- for d in page.details %}
+<h2>{{ d.heading }}</h2>
+{{ d.body | markdownify }}
+{%- endfor %}
+
+{%- if page.faq %}
+<h2>{{ page.short_title }} questions</h2>
+{%- for q in page.faq %}
+<h3>{{ q.q }}</h3>
+{{ q.a | markdownify }}
+{%- endfor %}
+{%- endif %}
+
+{%- if page.sisters %}
+<h2>Not quite right? Try a neighbouring season</h2>
+<ul class="sisters">
+  {%- for s in page.sisters %}
+  <li><a href="{{ s.url }}">{{ s.name }}</a> — {{ s.why }}</li>
+  {%- endfor %}
+</ul>
+{%- endif %}
+
+<p class="back-link"><a href="/colour-analysis/#quiz">Take the free colour analysis quiz</a> · <a href="/colour-analysis/#seasons">All 12 seasons</a></p>

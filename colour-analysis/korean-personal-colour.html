@@ -1,0 +1,80 @@
+---
+layout: guide
+permalink: /colour-analysis/korean-personal-colour/
+last_modified_at: 2026-11-03
+title: "Korean Personal Colour (Color) Analysis: The 8 Types and Their Palettes"
+short_title: Korean personal colour
+description: "Korean personal colour analysis (퍼스널 컬러) explained: spring warm, summer cool, autumn warm and winter cool, each split into two types, with the best colours for all eight."
+image: /images/og-image.jpg
+kicker: Colour analysis
+heading: "Korean personal colour analysis (퍼스널 컬러)"
+lede: "Korea's personal colour system splits warm and cool into four seasons and eight types. Here's how it works, and the best colours for each type."
+breadcrumbs:
+  - { name: Guides, url: /guides/ }
+  - { name: Colour analysis, url: /colour-analysis/ }
+related:
+  - { name: "Free colour analysis quiz (12 seasons)", url: /colour-analysis/ }
+  - { name: "Colours for Indian and brown skin tones", url: /colour-analysis/indian-skin-tones/ }
+---
+
+<p>
+  Personal colour (퍼스널 컬러) is hugely popular in Korean beauty culture.
+  Studios in Seoul drape you in dozens of coloured fabrics under controlled
+  light and tell you your tone. The system starts with one question, warm
+  (웜톤) or cool (쿨톤), then splits each season by depth and clarity:
+</p>
+<ul>
+  <li><strong>Spring and autumn are always warm</strong>; summer and winter are always cool.</li>
+  <li><strong>Light (라이트)</strong> and <strong>bright (브라이트)</strong> types suit clear colours.</li>
+  <li><strong>Mute (뮤트)</strong> types suit soft, greyed colours.</li>
+  <li><strong>Deep (딥)</strong> types suit dark, rich colours.</li>
+</ul>
+
+<h2>The 8 types at a glance</h2>
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Type</th><th>Undertone</th><th>Closest 12-season match</th></tr></thead>
+  <tbody>
+    <tr><td>봄 웜 라이트 Spring Warm Light</td><td>Warm</td><td><a href="/colour-analysis/light-spring/">Light Spring</a></td></tr>
+    <tr><td>봄 웜 브라이트 Spring Warm Bright</td><td>Warm</td><td><a href="/colour-analysis/bright-spring/">Bright Spring</a></td></tr>
+    <tr><td>여름 쿨 라이트 Summer Cool Light</td><td>Cool</td><td><a href="/colour-analysis/light-summer/">Light Summer</a></td></tr>
+    <tr><td>여름 쿨 뮤트 Summer Cool Mute</td><td>Cool</td><td><a href="/colour-analysis/soft-summer/">Soft Summer</a></td></tr>
+    <tr><td>가을 웜 뮤트 Autumn Warm Mute</td><td>Warm</td><td><a href="/colour-analysis/soft-autumn/">Soft Autumn</a></td></tr>
+    <tr><td>가을 웜 딥 Autumn Warm Deep</td><td>Warm</td><td><a href="/colour-analysis/deep-autumn/">Deep Autumn</a></td></tr>
+    <tr><td>겨울 쿨 브라이트 Winter Cool Bright</td><td>Cool</td><td><a href="/colour-analysis/bright-winter/">Bright Winter</a></td></tr>
+    <tr><td>겨울 쿨 딥 Winter Cool Deep</td><td>Cool</td><td><a href="/colour-analysis/deep-winter/">Deep Winter</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Best colours for each type</h2>
+<p class="muted">These are the palettes Kroma uses for the Korean Tonal system.</p>
+{%- assign types = "korean-tonal.spring warm light,korean-tonal.spring warm bright,korean-tonal.summer cool light,korean-tonal.summer cool mute,korean-tonal.autumn warm mute,korean-tonal.autumn warm deep,korean-tonal.winter cool bright,korean-tonal.winter cool deep" | split: "," %}
+{%- for key in types %}
+{%- assign pal = site.data.palettes[key] %}
+<h3>{{ pal.seasonLabel }}</h3>
+{%- for group in pal.colour_groups %}
+{%- if group.role == "primary" %}
+<section class="palette-group palette-primary">
+  <p>{{ group.description }}</p>
+  <ul class="palette-list">
+    {%- for c in group.colours %}
+    <li><i class="swatch"{% if c.hex %} style="background:{{ c.hex }}"{% endif %} aria-hidden="true"></i><strong>{{ c.colour }}</strong><span>{{ c.note }}</span></li>
+    {%- endfor %}
+  </ul>
+</section>
+{%- endif %}
+{%- endfor %}
+{%- endfor %}
+
+<h2>Korean personal colour test at home</h2>
+<ol>
+  <li>Sit facing a window in daylight, with no makeup.</li>
+  <li>Hold gold, then silver, under your chin. Gold that makes your skin glow points to 웜톤 (warm). Silver that makes it look clearer points to 쿨톤 (cool).</li>
+  <li>Compare a vivid colour with a greyed version of the same colour. If the vivid one looks better, you're light or bright; if the soft one does, you're mute; if dark colours look best, you're deep.</li>
+</ol>
+<p>
+  In-person Korean analysis uses fabric draping, which Kroma approximates
+  from your selfie. You can switch between Korean Tonal and the other four
+  systems in the app at any time.
+</p>

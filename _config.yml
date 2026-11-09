@@ -7,6 +7,9 @@ lang: en
 theme: null
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
 
 # Jekyll will render markdown files through _layouts/default.html.
 # Raw .html files (like index.html) are served as-is.
@@ -16,6 +19,38 @@ defaults:
       type: pages
     values:
       layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+# Posts live at /blog/<slug>/.  Default Jekyll permalink is
+# /YYYY/MM/DD/title/ which is ugly and time-stamps the URL; we want
+# the post URL to be timeless so we can revise dates without breaking
+# inbound links.
+permalink: /blog/:slug/
+
+# jekyll-feed config.  Generates /feed.xml on build.  Title and author
+# pulled from this file so the feed reader shows "Kroma" rather than
+# the post title only.
+feed:
+  path: feed.xml
+
+author:
+  name: Kroma
+  url: https://kroma.fit
+
+# ───────── App store links ─────────
+# Used by the "Get Kroma" buttons on every guide page and the quiz
+# result (_includes/app-buttons.html). Leave a link empty and its
+# button shows as "coming soon" instead of a broken link. Paste the
+# store URL here on launch day; nothing else needs to change.
+#   android: https://play.google.com/store/apps/details?id=fit.kroma.app
+#   ios:     the App Store URL from App Store Connect → App Information
+app_links:
+  android: ""
+  ios: ""
 
 # ───────── Feedback page wiring ─────────
 # kroma.fit/feedback posts to a Cloudflare Worker that proxies the
@@ -41,3 +76,5 @@ exclude:
   - node_modules
   - vendor
   - "cloudflare-worker"
+  - "*.gen.js"
+  - "compress-*.mjs"

@@ -1,0 +1,211 @@
+---
+layout: guide
+permalink: /colour-analysis/
+title: "Free Colour Analysis Quiz (Color Analysis Test): What Season Am I?"
+last_modified_at: 2026-11-03
+short_title: Colour analysis
+description: "Find your colour season with a free 10-question colour analysis quiz. No email, no sign-up: it runs in your browser. Then see your 12-season palette."
+image: /images/og-image.jpg
+kicker: Free colour analysis
+heading: "What season am I? Free colour analysis quiz"
+lede: "Ten questions, about two minutes. No email, no sign-up, and nothing you pick leaves your browser."
+breadcrumbs:
+  - { name: Guides, url: /guides/ }
+scripts:
+  - /colour-analysis/quiz.js
+cta_heading: "Want an analysis from your own photo?"
+related:
+  - { name: "Colours for Indian, brown and dusky skin tones", url: /colour-analysis/indian-skin-tones/ }
+  - { name: "Korean personal colour analysis: the 8 types", url: /colour-analysis/korean-personal-colour/ }
+  - { name: "Kibbe body types explained", url: /kibbe-body-types/ }
+  - { name: "What glasses suit my face shape?", url: /glasses-for-face-shape/ }
+---
+
+<p>
+  Colour analysis (also called seasonal colour analysis or personal colour
+  analysis) matches clothes and makeup to the natural colouring of your skin,
+  hair and eyes. Colours that share your colouring make your skin look clearer
+  and your eyes brighter. Colours that fight it can make you look tired, even
+  when the clothes fit perfectly.
+</p>
+<p>
+  The 12-season system reads three traits and names your season after the
+  strongest one:
+</p>
+<ul>
+  <li><strong>Undertone (temperature):</strong> does your colouring lean warm and golden, or cool and pink-blue?</li>
+  <li><strong>Depth (value):</strong> is your overall colouring light, medium or deep?</li>
+  <li><strong>Chroma (clarity):</strong> is it bright and clear, or soft and blended?</li>
+</ul>
+
+<h2 id="quiz">The quiz</h2>
+<p class="muted">Answer in natural daylight, without makeup if you can, and think about your natural hair colour.</p>
+
+<form id="quiz-form" class="quiz" novalidate>
+  <p id="quiz-progress" class="quiz-progress" aria-live="polite"></p>
+
+  <fieldset>
+    <legend>1. Look at the veins on the inside of your wrist. What colour are they?</legend>
+    <label><input type="radio" name="q1" data-t="-2"> Blue or purple</label>
+    <label><input type="radio" name="q1" data-t="2"> Green or olive</label>
+    <label><input type="radio" name="q1" data-t="0"> A mix, or I can't tell</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>2. Which jewellery looks better against your skin?</legend>
+    <label><input type="radio" name="q2" data-t="-2"> Silver, platinum or white gold</label>
+    <label><input type="radio" name="q2" data-t="2"> Yellow gold, brass or copper</label>
+    <label><input type="radio" name="q2" data-t="0"> Both look about the same</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>3. Hold something crisp white, then something cream, under your chin. Which flatters you?</legend>
+    <label><input type="radio" name="q3" data-t="-1" data-c="1"> Crisp white</label>
+    <label><input type="radio" name="q3" data-t="1" data-c="-0.5"> Cream or ivory</label>
+    <label><input type="radio" name="q3"> No real difference</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>4. How would you describe your skin depth?</legend>
+    <label><input type="radio" name="q4" data-v="-2"> Very fair</label>
+    <label><input type="radio" name="q4" data-v="-1"> Light</label>
+    <label><input type="radio" name="q4" data-v="0"> Medium</label>
+    <label><input type="radio" name="q4" data-v="1"> Medium-deep</label>
+    <label><input type="radio" name="q4" data-v="2"> Deep</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>5. What is your natural hair colour?</legend>
+    <p class="hint">If you're grey or colour your hair, pick the colour it was in your twenties.</p>
+    <label><input type="radio" name="q5" data-v="-2"> Light blonde</label>
+    <label><input type="radio" name="q5" data-v="-1"> Dark blonde or light brown</label>
+    <label><input type="radio" name="q5" data-v="0"> Medium brown or auburn</label>
+    <label><input type="radio" name="q5" data-v="1"> Dark brown</label>
+    <label><input type="radio" name="q5" data-v="2"> Black or near-black</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>6. Does your natural hair have a warm or cool cast?</legend>
+    <label><input type="radio" name="q6" data-t="1"> Warm: golden, copper, red or chestnut glints</label>
+    <label><input type="radio" name="q6" data-t="-1"> Cool: ashy, smoky, or blue-black</label>
+    <label><input type="radio" name="q6" data-t="0"> Hard to say</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>7. How would you describe your eyes?</legend>
+    <label><input type="radio" name="q7" data-c="2"> Bright and clear, with a sharp edge between colours</label>
+    <label><input type="radio" name="q7" data-c="-2"> Soft and blended, like grey-blue, grey-green or muted hazel</label>
+    <label><input type="radio" name="q7" data-c="0"> Somewhere in between</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>8. How much contrast is there between your hair, skin and eyes?</legend>
+    <label><input type="radio" name="q8" data-c="1.5"> High: they stand apart (e.g. dark hair and light skin, or bright eyes)</label>
+    <label><input type="radio" name="q8" data-c="0"> Medium</label>
+    <label><input type="radio" name="q8" data-c="-1.5"> Low: everything blends together</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>9. When people compliment what you're wearing, it's usually…</legend>
+    <label><input type="radio" name="q9" data-c="1"> Bright, vivid colours</label>
+    <label><input type="radio" name="q9" data-c="-1"> Soft, dusty colours</label>
+    <label><input type="radio" name="q9" data-v="1"> Dark, rich colours</label>
+    <label><input type="radio" name="q9" data-v="-1"> Light, airy colours</label>
+  </fieldset>
+
+  <fieldset>
+    <legend>10. How do you look in black near your face?</legend>
+    <label><input type="radio" name="q10" data-v="1" data-c="0.5"> Striking and natural</label>
+    <label><input type="radio" name="q10" data-v="-1" data-c="-0.5"> Heavy: it shows shadows or makes me look tired</label>
+    <label><input type="radio" name="q10"> Fine either way</label>
+  </fieldset>
+
+  <button type="submit" class="btn" disabled>Show my season</button>
+  <p class="quiz-note">This runs entirely in your browser. No email, nothing stored, nothing sent.</p>
+
+  <div id="quiz-result" class="quiz-result" tabindex="-1" hidden aria-live="polite">
+    <p class="kicker">Your likely season</p>
+    <h3 data-season></h3>
+    <ul class="quiz-bars" aria-label="Your three traits">
+      <li><span>Cool</span><span class="quiz-bar"><i id="bar-t"></i></span><span>Warm</span></li>
+      <li><span>Light</span><span class="quiz-bar"><i id="bar-v"></i></span><span>Deep</span></li>
+      <li><span>Soft</span><span class="quiz-bar"><i id="bar-c"></i></span><span>Bright</span></li>
+    </ul>
+    <p><a class="btn" data-link href="#"></a></p>
+    <p data-alt-wrap hidden>Close second: <a data-alt href="#"></a>. If your result doesn't feel right, read both pages and see which palette you already reach for.</p>
+    <div class="quiz-app">
+      <p><strong>Check this against your selfie, then against your wardrobe.</strong> Kroma reads your colouring from a photo and scores every piece you own against your palette. Free, no account.</p>
+      {% include app-buttons.html %}
+    </div>
+  </div>
+</form>
+
+<h2 id="seasons">The 12 seasons</h2>
+<p>Each season is named after its leading trait. Light, Deep, Bright and Soft seasons come in pairs, one warm and one cool. Warm and Cool seasons are split by depth.</p>
+<ul class="season-grid">
+  <li><a href="/colour-analysis/light-spring/"><strong>Light Spring</strong><span>Light first, then warm. Fresh, delicate and golden.</span>{% include swatch-strip.html key="twelve-season.light spring" %}</a></li>
+  <li><a href="/colour-analysis/warm-spring/"><strong>Warm Spring</strong><span>Warm first, then clear. Sunny and lively. Also called True Spring.</span>{% include swatch-strip.html key="twelve-season.warm spring" %}</a></li>
+  <li><a href="/colour-analysis/bright-spring/"><strong>Bright Spring</strong><span>Bright first, then warm. Vivid and high-contrast. Also called Clear Spring.</span>{% include swatch-strip.html key="twelve-season.bright spring" %}</a></li>
+  <li><a href="/colour-analysis/light-summer/"><strong>Light Summer</strong><span>Light first, then cool. Airy pastels.</span>{% include swatch-strip.html key="twelve-season.light summer" %}</a></li>
+  <li><a href="/colour-analysis/cool-summer/"><strong>Cool Summer</strong><span>Cool first, then soft. Rose and blue-grey. Also called True Summer.</span>{% include swatch-strip.html key="twelve-season.cool summer" %}</a></li>
+  <li><a href="/colour-analysis/soft-summer/"><strong>Soft Summer</strong><span>Soft first, then cool. Dusty, smoky and gentle.</span>{% include swatch-strip.html key="twelve-season.soft summer" %}</a></li>
+  <li><a href="/colour-analysis/soft-autumn/"><strong>Soft Autumn</strong><span>Soft first, then warm. Muted, earthy and blended.</span>{% include swatch-strip.html key="twelve-season.soft autumn" %}</a></li>
+  <li><a href="/colour-analysis/warm-autumn/"><strong>Warm Autumn</strong><span>Warm first, then soft. Rich spice and earth. Also called True Autumn.</span>{% include swatch-strip.html key="twelve-season.warm autumn" %}</a></li>
+  <li><a href="/colour-analysis/deep-autumn/"><strong>Deep Autumn</strong><span>Deep first, then warm. Rich and dark. Also called Dark Autumn.</span>{% include swatch-strip.html key="twelve-season.deep autumn" %}</a></li>
+  <li><a href="/colour-analysis/deep-winter/"><strong>Deep Winter</strong><span>Deep first, then cool. Dark and dramatic. Also called Dark Winter.</span>{% include swatch-strip.html key="twelve-season.deep winter" %}</a></li>
+  <li><a href="/colour-analysis/cool-winter/"><strong>Cool Winter</strong><span>Cool first, then bright. Icy and crisp. Also called True Winter.</span>{% include swatch-strip.html key="twelve-season.cool winter" %}</a></li>
+  <li><a href="/colour-analysis/bright-winter/"><strong>Bright Winter</strong><span>Bright first, then cool. Jewel tones. Also called Clear Winter.</span>{% include swatch-strip.html key="twelve-season.bright winter" %}</a></li>
+</ul>
+
+<h2>Other colour systems</h2>
+<p>
+  The 12-season system descends from Johannes Itten's colour theory and
+  Carole Jackson's four seasons. It's the most common system in Western
+  colour analysis, but it isn't the only way to think about colour.
+  Kroma treats five systems as equals:
+</p>
+<ul>
+  <li><strong>Ritu</strong>, drawn from the six seasons of the Indian calendar and the colours of Indian textiles and festivals. <a href="/colour-analysis/indian-skin-tones/">Colours for Indian and brown skin tones</a></li>
+  <li><strong>Korean Tonal</strong> (퍼스널 컬러), which splits warm and cool into eight types and is huge in Korean beauty culture. <a href="/colour-analysis/korean-personal-colour/">Korean personal colour analysis</a></li>
+  <li><strong>Shikisai</strong> (色彩), drawn from Japanese traditional colour and the kasane layering of kimono dress</li>
+  <li><strong>Wu Xing</strong> (五行), the five Chinese elements of Wood, Fire, Earth, Metal and Water, each with its own colours</li>
+</ul>
+<p class="muted">Ritu, Shikisai and Wu Xing as personal colour systems are Kroma's own interpretations of these traditions, not established practices. We say so in the app too.</p>
+
+<h2>How to do a colour analysis at home</h2>
+<ol>
+  <li><strong>Use daylight.</strong> Stand facing a window, out of direct sun. Indoor bulbs are usually warm and will push you towards a warm result.</li>
+  <li><strong>Take off makeup</strong> and pull your hair back if it's dyed.</li>
+  <li><strong>Drape and compare.</strong> Hold two colours under your chin, one at a time: silver against gold, white against cream, then a bright colour against a muted one. Look at your skin, not the fabric. The better colour evens out redness and shadows. The worse one makes them stand out.</li>
+  <li><strong>Check your wardrobe.</strong> The clothes you get compliments in usually share your traits.</li>
+</ol>
+
+<h2>Common questions</h2>
+<h3>Is a free colour analysis as good as a paid one?</h3>
+<p>
+  A trained analyst draping fabric on you in good light is the gold standard,
+  and if you can book one, it's a lovely experience. A quiz like this one
+  points you to the right family of seasons. Read your result page and the
+  close-second page, then check them against your own wardrobe.
+</p>
+<h3>Can I do a colour analysis with ChatGPT?</h3>
+<p>
+  Many people paste a selfie into ChatGPT with a colour analysis prompt.
+  Kroma is built for exactly this: you add your own key for Gemini, Claude,
+  ChatGPT, Mistral or a local Ollama model, and Kroma sends your selfie to
+  that provider with a structured prompt that corrects for lighting and makeup.
+  The result is then used across your wardrobe, outfits and wishlist instead
+  of living in a chat.
+</p>
+<h3>What does "true winter" or "dark autumn" mean?</h3>
+<p>
+  Different analysts use different names for the same 12 seasons. True =
+  Warm or Cool, Clear = Bright, Dark = Deep. Kroma uses Light, Warm, Bright,
+  Cool, Soft and Deep.
+</p>
+<h3>Do I have to stick to my palette?</h3>
+<p>
+  No. Kroma gives every colour a way to wear it, with no "avoid" lists.
+  Colours outside your palette work well away from your face: on trousers,
+  shoes and bags.
+</p>

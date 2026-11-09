@@ -1,0 +1,18 @@
+{%- comment -%}
+  Call-to-action used at the foot of every guide page. One place to
+  change when the Play Store / App Store links go live: replace the
+  "coming soon" line with the store badges.
+{%- endcomment -%}
+<aside class="get-kroma">
+  <h2>{{ include.heading | default: "Do this with your own photo, in Kroma" }}</h2>
+  <p>
+    {{ include.text | default: "Kroma reads your colouring from a selfie in five colour systems (12-season, Ritu, Korean Tonal, Shikisai and Wu Xing), then scores every garment you own and every one you're thinking of buying against your palette." }}
+  </p>
+  <ul class="get-kroma-points">
+    <li>No account, no email, no ads</li>
+    <li>Your wardrobe and photos stay on your phone</li>
+    <li>Use your own AI key, or enter everything by hand</li>
+  </ul>
+  {% include app-buttons.html %}
+  <p class="get-kroma-status">Free, with no account. <a href="/">More about Kroma →</a></p>
+</aside>

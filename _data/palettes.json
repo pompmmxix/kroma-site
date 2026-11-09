@@ -1,0 +1,3777 @@
+{
+  "twelve-season.light spring": {
+    "systemId": "twelve-season",
+    "seasonId": "light spring",
+    "seasonLabel": "Light Spring",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These colours are truly your best, making you glow and enhancing your natural radiance.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Its light, warm undertone beautifully complements Light Spring's delicate brightness.",
+            "hex": "#97d5ed"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A clear, warm yellow mirrors Light Spring's sunny disposition and light quality.",
+            "hex": "#fdd47e"
+          },
+          {
+            "colour": "Coral",
+            "note": "This vibrant, warm hue enhances Light Spring's natural glow and fresh appearance.",
+            "hex": "#fea27c"
+          },
+          {
+            "colour": "Light Green",
+            "note": "A fresh, clear green reflects Light Spring's gentle warmth and low depth.",
+            "hex": "#cce796"
+          },
+          {
+            "colour": "Pink",
+            "note": "A clear, warm pink brightens the face without overpowering Light Spring's lightness.",
+            "hex": "#fdbacb"
+          },
+          {
+            "colour": "Red",
+            "note": "A vibrant, warm red adds joyful energy without appearing too heavy for Light Spring.",
+            "hex": "#f95f16"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and versatility, forming the backbone of your wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A brighter, warmer navy provides depth without overwhelming Light Spring's lightness.",
+            "hex": "#404c74"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A softer alternative to black, providing subtle depth that respects Light Spring's low contrast.",
+            "hex": "#64615d"
+          },
+          {
+            "colour": "Cream",
+            "note": "This soft, warm neutral provides a luminous foundation, ideal for Light Spring's warmth.",
+            "hex": "#f3ecde"
+          },
+          {
+            "colour": "Beige",
+            "note": "A light, warm beige offers a natural, grounding base for Light Spring's palette.",
+            "hex": "#e8cc9c"
+          },
+          {
+            "colour": "Camel",
+            "note": "Its rich, warm golden undertone perfectly complements Light Spring's natural warmth.",
+            "hex": "#daad7a"
+          },
+          {
+            "colour": "Grey",
+            "note": "A warm, clear light grey serves as a delicate and balanced neutral for Light Spring.",
+            "hex": "#b7b1a9"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "Use these colours to add intrigue and accent, pairing them thoughtfully to enhance your overall look.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Orange",
+            "note": "A vibrant, clear orange adds playful warmth, best as an accent for Light Spring.",
+            "hex": "#fc9b46"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Its golden richness adds a touch of earthy warmth, ideal as an intentional accent.",
+            "hex": "#e9ae38"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A rich, warm burgundy adds depth, best worn as an accent or away from the face.",
+            "hex": "#843a35"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A delicate, warm lavender introduces a sophisticated accent without overpowering Light Spring.",
+            "hex": "#c9aae3"
+          },
+          {
+            "colour": "Brown",
+            "note": "A light, warm brown provides gentle grounding, suitable for intentional, subtle accents.",
+            "hex": "#936a41"
+          },
+          {
+            "colour": "Teal",
+            "note": "A brighter, warmer teal provides a lively accent, enhancing Light Spring's clear, warm features.",
+            "hex": "#43ada0"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.warm spring": {
+    "systemId": "twelve-season",
+    "seasonId": "warm spring",
+    "seasonLabel": "Warm Spring",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These vibrant, clear, and warm hues illuminate your complexion, making you glow effortlessly.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Coral",
+            "note": "Its vibrant warmth and clarity perfectly harmonize with your radiant Spring glow.",
+            "hex": "#fe7023"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A clear, sunny yellow reflects your golden undertones and brings out your natural brightness.",
+            "hex": "#ffc155"
+          },
+          {
+            "colour": "Green",
+            "note": "This fresh, clear green echoes the vibrancy and warmth of new growth, enhancing your clarity.",
+            "hex": "#347445"
+          },
+          {
+            "colour": "Teal",
+            "note": "A bright, warm blue-green that brings a sparkling freshness and enhances your luminous quality.",
+            "hex": "#168c79"
+          },
+          {
+            "colour": "Orange",
+            "note": "Its clear, energetic warmth beautifully complements your golden complexion and effervescent spirit.",
+            "hex": "#d08406"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "A clear, warm sky blue that feels refreshing and adds a lovely luminosity to your face.",
+            "hex": "#74c2d9"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and sophistication, working seamlessly with your vibrant palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, warm-leaning neutral that offers sophisticated contrast without overwhelming your brightness.",
+            "hex": "#24244b"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A softer, clear dark grey that provides grounding depth while maintaining your clear quality.",
+            "hex": "#3f3a33"
+          },
+          {
+            "colour": "Cream",
+            "note": "A rich, warm off-white that perfectly complements your golden undertones, softer than stark white.",
+            "hex": "#f6efe1"
+          },
+          {
+            "colour": "Beige",
+            "note": "A clear, warm medium neutral that provides a sophisticated base and gentle warmth.",
+            "hex": "#ddb682"
+          },
+          {
+            "colour": "Brown",
+            "note": "A clear, warm medium brown that adds earthy depth and a rich, grounded feel to your palette.",
+            "hex": "#664108"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours add intriguing accents and depth when paired thoughtfully, particularly away from the face.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A clear, warm tomato red provides an energetic accent, worn with a bright intention.",
+            "hex": "#bd5410"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A deeper, rich, warm burgundy can add sophisticated depth as an accent, ensuring clear warmth.",
+            "hex": "#782416"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A vibrant, deep warm yellow that adds a unique and earthy accent, complementing your warmth.",
+            "hex": "#d59000"
+          },
+          {
+            "colour": "Pink",
+            "note": "A clear, warm peachy-pink that provides a gentle and fresh accent, harmonizing with your glow.",
+            "hex": "#ff9cad"
+          },
+          {
+            "colour": "Purple",
+            "note": "A clear, warm purple, like a rich violet, adds a lively, distinctive touch as an accent.",
+            "hex": "#7d2386"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.bright spring": {
+    "systemId": "twelve-season",
+    "seasonId": "bright spring",
+    "seasonLabel": "Bright Spring",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These are your radiant core colours, amplifying your natural warmth and clarity.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "Vibrant, clear, warm red enhances Bright Spring's natural glow.",
+            "hex": "#ba4312"
+          },
+          {
+            "colour": "Coral",
+            "note": "Its bright, warm, and clear nature perfectly complements a Bright Spring's vibrancy.",
+            "hex": "#fd6109"
+          },
+          {
+            "colour": "Yellow",
+            "note": "Sunny, clear yellow mirrors the light and bright quality of this season.",
+            "hex": "#fec634"
+          },
+          {
+            "colour": "Green",
+            "note": "A lively, warm, and clear green amplifies the fresh essence of Bright Spring.",
+            "hex": "#186e3c"
+          },
+          {
+            "colour": "Teal",
+            "note": "This clear, bright, and warm blue-green brings out Bright Spring's sparkle.",
+            "hex": "#038278"
+          },
+          {
+            "colour": "Pink",
+            "note": "A vibrant, clear, and warm pink harmonizes with a Bright Spring's luminous complexion.",
+            "hex": "#fc95b3"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and sophistication without dulling your brightness.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A clear, warm navy offers a sophisticated, grounding foundation without overwhelming Bright Spring.",
+            "hex": "#1e2557"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "This softer neutral provides depth while maintaining the clarity a Bright Spring needs.",
+            "hex": "#3f3d3a"
+          },
+          {
+            "colour": "Cream",
+            "note": "Its warm, soft luminescence makes it a perfect, gentle neutral for Bright Spring.",
+            "hex": "#f6efe1"
+          },
+          {
+            "colour": "Camel",
+            "note": "A clear, warm medium neutral that provides elegant balance for Bright Spring.",
+            "hex": "#cf954c"
+          },
+          {
+            "colour": "Beige",
+            "note": "A warm, clear beige works as a light, foundational neutral that brightens Bright Springs.",
+            "hex": "#dfbb7a"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "Use these colours as accents or away from the face to add depth and harmonious interest.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Brown",
+            "note": "A clear, medium-warm brown offers earthy depth without being too heavy for Bright Spring.",
+            "hex": "#714000"
+          },
+          {
+            "colour": "Mustard",
+            "note": "This rich, warm, and clear hue provides an exciting, vibrant accent for Bright Spring.",
+            "hex": "#c08e1b"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "A clear, warm light blue offers a refreshing accent to Bright Spring's palette.",
+            "hex": "#70c5e7"
+          },
+          {
+            "colour": "Purple",
+            "note": "A clear, warm, medium-depth purple adds a sophisticated and vibrant touch for Bright Spring.",
+            "hex": "#7f1e9b"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "This rich, warm, and clear hue provides depth as an intentional accent for Bright Spring.",
+            "hex": "#791017"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.light summer": {
+    "systemId": "twelve-season",
+    "seasonId": "light summer",
+    "seasonLabel": "Light Summer",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These delicate, light, and cool colours will make a Light Summer complexion glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Its delicate coolness enhances the inherent lightness of this season.",
+            "hex": "#a4cdeb"
+          },
+          {
+            "colour": "Lavender",
+            "note": "Perfectly captures the cool, muted, and light essence.",
+            "hex": "#acabd1"
+          },
+          {
+            "colour": "Pink",
+            "note": "A soft, cool, and light shade that brightens the complexion beautifully.",
+            "hex": "#e1b2cf"
+          },
+          {
+            "colour": "Teal",
+            "note": "A muted, cool-leaning shade that adds a touch of sophisticated colour.",
+            "hex": "#60939a"
+          },
+          {
+            "colour": "Light Green",
+            "note": "A gentle, cool, and soft hue that harmonizes with the season's lightness.",
+            "hex": "#b2d1ac"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, off-white that provides a gentle, light base without harshness.",
+            "hex": "#deeaf6"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and versatility for your wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A grounding, cool neutral that offers depth without overwhelming lightness.",
+            "hex": "#384364"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Provides cool, muted depth for structure, a great alternative to harsh black.",
+            "hex": "#575d63"
+          },
+          {
+            "colour": "Grey",
+            "note": "A versatile, cool mid-tone that perfectly complements the season's softness.",
+            "hex": "#9da4ab"
+          },
+          {
+            "colour": "White",
+            "note": "A clean, crisp choice that works best in softer or off-white versions for lightness.",
+            "hex": "#eff3f7"
+          },
+          {
+            "colour": "Beige",
+            "note": "A soft, muted, and light-leaning neutral that provides gentle warmth.",
+            "hex": "#cac3a3"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours serve best as thoughtful accents or worn away from the face.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "A richer, muted red that adds depth and sophistication when used as an accent.",
+            "hex": "#87565d"
+          },
+          {
+            "colour": "Blue",
+            "note": "A deeper, yet still soft and cool, blue that provides versatile accent opportunities.",
+            "hex": "#6d85b1"
+          },
+          {
+            "colour": "Purple",
+            "note": "A medium, muted purple offering a more saturated cool tone for deliberate use.",
+            "hex": "#7860ad"
+          },
+          {
+            "colour": "Olive",
+            "note": "A cool-leaning, muted olive green that adds earthy depth as an accent.",
+            "hex": "#7e956e"
+          },
+          {
+            "colour": "Brown",
+            "note": "A cool, muted brown that works well for grounding elements away from the face.",
+            "hex": "#836154"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.cool summer": {
+    "systemId": "twelve-season",
+    "seasonId": "cool summer",
+    "seasonLabel": "Cool Summer",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "Colours that make this season glow — reach for these first.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "A gentle, cool blue mirroring Cool Summer's serene, soft nature.",
+            "hex": "#97abc2"
+          },
+          {
+            "colour": "Pink",
+            "note": "A soft, muted cool pink that brightens without overwhelming delicate features.",
+            "hex": "#cea8c4"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A cool, muted purple enhancing the season's gentle harmony and coolness.",
+            "hex": "#8e91b2"
+          },
+          {
+            "colour": "Teal",
+            "note": "A medium, soft blue-green that subtly complements Cool Summer's cool undertones.",
+            "hex": "#558089"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A rich, cool-toned red with a purple hint, offering sophisticated depth.",
+            "hex": "#6a3447"
+          },
+          {
+            "colour": "Green",
+            "note": "A soft, cool, and slightly muted green that harmonizes naturally with the season.",
+            "hex": "#487168"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational shades provide balance and structure to any Cool Summer wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A sophisticated cool dark neutral providing excellent depth and foundation for Cool Summers.",
+            "hex": "#252e4a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A deep, muted cool grey, a soft alternative to black, complementing cool undertones.",
+            "hex": "#3f4851"
+          },
+          {
+            "colour": "Grey",
+            "note": "A versatile medium cool grey that harmonizes with the muted and cool aspects of the season.",
+            "hex": "#848e98"
+          },
+          {
+            "colour": "White",
+            "note": "A crisp, cool white that brings refreshing brightness without overwhelming the complexion.",
+            "hex": "#e9f2fc"
+          },
+          {
+            "colour": "Brown",
+            "note": "A cool, muted brown that grounds the palette subtly, offering an earthy feel.",
+            "hex": "#71534a"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours work best as accents or when paired strategically, away from the face.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "A stark neutral best used for accessories or lower garments to avoid overwhelming the face.",
+            "hex": "#1f2226"
+          },
+          {
+            "colour": "Red",
+            "note": "A cool-leaning, medium-intensity red that can be used sparingly as a vibrant accent.",
+            "hex": "#c73856"
+          },
+          {
+            "colour": "Olive",
+            "note": "A muted, cool-toned olive green, adding earthy sophistication when paired away from the face.",
+            "hex": "#6a8363"
+          },
+          {
+            "colour": "Blue",
+            "note": "A deeper, more saturated cool blue, suitable for intentional, controlled use.",
+            "hex": "#566daf"
+          },
+          {
+            "colour": "Purple",
+            "note": "A richer, deeper cool purple, excellent for adding depth and luxury as an accent.",
+            "hex": "#5e5099"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.soft summer": {
+    "systemId": "twelve-season",
+    "seasonId": "soft summer",
+    "seasonLabel": "Soft Summer",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These colours are perfectly aligned with your natural muted, cool, and gentle appearance, making you glow effortlessly.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Soft, cool, and light, perfectly echoing Soft Summer's gentle nature.",
+            "hex": "#99aab8"
+          },
+          {
+            "colour": "Lavender",
+            "note": "Muted, cool, and delicate, enhancing Soft Summer's soft glow.",
+            "hex": "#9594ab"
+          },
+          {
+            "colour": "Pink",
+            "note": "A dusty, muted rose pink, bringing out the natural flush of Soft Summer.",
+            "hex": "#bb9eac"
+          },
+          {
+            "colour": "Teal",
+            "note": "A softened, muted teal, providing gentle depth while staying cool and harmonious.",
+            "hex": "#5e7b7f"
+          },
+          {
+            "colour": "Green",
+            "note": "A muted, dusty sage green, reflecting Soft Summer's tranquil, cool essence.",
+            "hex": "#546d65"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A soft, muted berry burgundy, adds gentle richness without being overpowering.",
+            "hex": "#6d4f53"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and sophistication, forming the backbone of your Soft Summer wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "Essential cool neutral, provides depth without harshness, a Soft Summer staple.",
+            "hex": "#3d4352"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A muted, deep grey, perfect cool neutral for Soft Summer's soft depth.",
+            "hex": "#474d52"
+          },
+          {
+            "colour": "Grey",
+            "note": "A soft, medium grey, wonderfully complements the cool and muted palette.",
+            "hex": "#82888e"
+          },
+          {
+            "colour": "Cream",
+            "note": "A cool-toned, soft cream, gentler than stark white, ideal for Soft Summer's delicacy.",
+            "hex": "#d7e3ef"
+          },
+          {
+            "colour": "Beige",
+            "note": "A cool, muted taupe-beige, providing a subtle, sophisticated neutral base.",
+            "hex": "#aba895"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "Use these colours thoughtfully as accents or away from the face to add interest and expand your palette.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Brown",
+            "note": "A cool, muted taupe-brown, offers grounding without adding unwanted warmth.",
+            "hex": "#6b574e"
+          },
+          {
+            "colour": "White",
+            "note": "A very soft, slightly off-white, used as an accent for gentle, harmonious contrast.",
+            "hex": "#e3e6ea"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A soft, cool lemon yellow, used sparingly as a gentle, harmonious accent.",
+            "hex": "#b9b685"
+          },
+          {
+            "colour": "Red",
+            "note": "A muted berry red, used as an accent for a gentle pop of cool colour.",
+            "hex": "#9c6362"
+          },
+          {
+            "colour": "Olive",
+            "note": "A soft, desaturated olive, works as an earthy, cool-leaning, muted accent.",
+            "hex": "#6f7d65"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.soft autumn": {
+    "systemId": "twelve-season",
+    "seasonId": "soft autumn",
+    "seasonLabel": "Soft Autumn",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These colours are intrinsically harmonious with Soft Autumn's muted warmth and bring out their natural glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Olive",
+            "note": "A foundational earthy green that perfectly complements Soft Autumn's muted warmth.",
+            "hex": "#757b61"
+          },
+          {
+            "colour": "Teal",
+            "note": "A deep, soft blue-green that is both warm and gentle, enhancing natural depth.",
+            "hex": "#56736f"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A rich, muted golden yellow that reflects Soft Autumn's warm undertones beautifully.",
+            "hex": "#a28e69"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A sophisticated, deep, and warm red that adds richness without being overpowering.",
+            "hex": "#69403c"
+          },
+          {
+            "colour": "Brown",
+            "note": "An essential warm, earthy neutral that provides grounding and natural harmony.",
+            "hex": "#69523e"
+          },
+          {
+            "colour": "Coral",
+            "note": "A soft, warm, and gentle peachy-pink that brightens without being too vivid.",
+            "hex": "#c3826a"
+          },
+          {
+            "colour": "Camel",
+            "note": "A classic warm tan, offering a sophisticated and natural medium depth.",
+            "hex": "#af967b"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These colours form the backbone of a Soft Autumn wardrobe, providing balance and allowing other colours to shine.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A soft, muted navy provides depth without being stark, aligning with Soft Autumn's low chroma.",
+            "hex": "#3d4352"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A gentle, muted grey that offers excellent depth without the harshness of true black.",
+            "hex": "#52504d"
+          },
+          {
+            "colour": "Beige",
+            "note": "A warm, natural neutral that seamlessly blends with the earthy palette of Soft Autumn.",
+            "hex": "#b0a694"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm off-white that is much more flattering than pure white for Soft Autumn.",
+            "hex": "#ebe4d6"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours can be used as accents or worn away from the face, adding variety while maintaining harmony.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A muted, earthy red (like brick) works well as a grounding accent, not too bright.",
+            "hex": "#a65c4a"
+          },
+          {
+            "colour": "Pink",
+            "note": "A soft, warm, peachy pink can be used sparingly for a gentle touch of colour.",
+            "hex": "#be9da5"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A soft, muted yellow brightens without overpowering, best used in smaller doses.",
+            "hex": "#c3b283"
+          },
+          {
+            "colour": "Green",
+            "note": "A soft, mossy or sage green can add a lighter, delicate touch to an outfit.",
+            "hex": "#607668"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "A dusty, muted light blue brings a subtle coolness that still harmonises with warmth.",
+            "hex": "#96abb6"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.warm autumn": {
+    "systemId": "twelve-season",
+    "seasonId": "warm autumn",
+    "seasonLabel": "Warm Autumn",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These colours make a Warm Autumn glow, enhancing their natural warmth and depth.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "A deep, warm red that harmonizes with Autumn's rich, deep undertones.",
+            "hex": "#652f25"
+          },
+          {
+            "colour": "Olive",
+            "note": "An earthy, muted green that perfectly complements Warm Autumn's natural warmth.",
+            "hex": "#74724c"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A rich, golden yellow that enhances the warm and deep aspects of the season.",
+            "hex": "#b68335"
+          },
+          {
+            "colour": "Teal",
+            "note": "A deep, warm blue-green that brings out the glow in warm skin tones.",
+            "hex": "#2d6b5f"
+          },
+          {
+            "colour": "Brown",
+            "note": "A rich, warm chocolate brown; a fundamental deep and earthy staple.",
+            "hex": "#593f1f"
+          },
+          {
+            "colour": "Orange",
+            "note": "A deep, fiery rust orange; vibrant and perfectly in sync with Autumn's warmth.",
+            "hex": "#ad680f"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These colours form the backbone of a Warm Autumn wardrobe, providing balance and sophistication.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, slightly softened blue that serves as a versatile foundation neutral.",
+            "hex": "#252a46"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A soft, deep grey that provides a grounding, sophisticated neutral base.",
+            "hex": "#46413a"
+          },
+          {
+            "colour": "Beige",
+            "note": "A warm, golden-undertoned neutral, excellent for lighter layering.",
+            "hex": "#c1a887"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm off-white that brightens without clashing with warm undertones.",
+            "hex": "#ece5d7"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours work beautifully as accents or away from the face, adding interest and harmony.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A warm, earthy brick red that adds a confident pop of warmth and saturation.",
+            "hex": "#a84a0f"
+          },
+          {
+            "colour": "Pink",
+            "note": "A muted, warm rose pink that provides a gentle, flattering accent.",
+            "hex": "#c8989f"
+          },
+          {
+            "colour": "Green",
+            "note": "A rich, deep mossy green that harmonizes as a natural, grounding accent.",
+            "hex": "#345a3c"
+          },
+          {
+            "colour": "Purple",
+            "note": "A deep, warm plum that adds elegance and depth as a sophisticated accent.",
+            "hex": "#68326e"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.deep autumn": {
+    "systemId": "twelve-season",
+    "seasonId": "deep autumn",
+    "seasonLabel": "Deep Autumn",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These are your core colours that bring out your natural depth and warmth, making you glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "A rich, deep, and warm red that perfectly complements Deep Autumn's intensity.",
+            "hex": "#591b19"
+          },
+          {
+            "colour": "Olive",
+            "note": "This deep, earthy green highlights your warm undertones and rich appearance.",
+            "hex": "#515310"
+          },
+          {
+            "colour": "Teal",
+            "note": "A saturated, deep blue-green that harmonizes beautifully with your warmth.",
+            "hex": "#065753"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A golden, deep yellow that echoes the rich, earthy warmth of your season.",
+            "hex": "#a17406"
+          },
+          {
+            "colour": "Brown",
+            "note": "Essential deep, warm brown for your powerful, grounded aesthetic.",
+            "hex": "#4e2e08"
+          },
+          {
+            "colour": "Red",
+            "note": "A strong, warm, deep red that resonates with your natural intensity.",
+            "hex": "#7f2c06"
+          },
+          {
+            "colour": "Orange",
+            "note": "A vibrant, deep, and warm orange that reflects your fiery essence.",
+            "hex": "#95570a"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide balance and sophistication, serving as versatile anchors for any outfit.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, soft navy that works as a sophisticated, warmer alternative to black.",
+            "hex": "#242c44"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A deep, muted grey that provides a perfect balance of depth and softness.",
+            "hex": "#393632"
+          },
+          {
+            "colour": "Cream",
+            "note": "A rich, warm off-white that is more flattering than stark white for Deep Autumn.",
+            "hex": "#f5eee0"
+          },
+          {
+            "colour": "Camel",
+            "note": "This deep, golden beige is a true autumn neutral that adds warmth.",
+            "hex": "#967146"
+          },
+          {
+            "colour": "Beige",
+            "note": "A rich, warm, and medium-toned beige providing a versatile foundation.",
+            "hex": "#a38b64"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours add interest and variety; wear them strategically as accents or away from your face for best effect.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Purple",
+            "note": "A rich, deep, warm purple adds a touch of regal sophistication as an accent.",
+            "hex": "#561d66"
+          },
+          {
+            "colour": "Green",
+            "note": "A true, deep, warm green can brighten an outfit when used thoughtfully.",
+            "hex": "#1b4a2a"
+          },
+          {
+            "colour": "Coral",
+            "note": "A deep, warm coral can inject a pop of vibrant warmth, especially away from the face.",
+            "hex": "#ba490b"
+          },
+          {
+            "colour": "Blue",
+            "note": "A clear, deep, warm blue works well to complement your primary palette.",
+            "hex": "#224283"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A vibrant, golden yellow can be a lively accent, adding warmth and cheer.",
+            "hex": "#d9a412"
+          },
+          {
+            "colour": "Black",
+            "note": "Wear strategically as an accent, especially with other warm, deep colours.",
+            "hex": "#1e1a17"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.deep winter": {
+    "systemId": "twelve-season",
+    "seasonId": "deep winter",
+    "seasonLabel": "Deep Winter",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "Colours that make this season glow — reach for these first.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "Intense, clear, and cool, perfectly matches Deep Winter's high chroma and depth.",
+            "hex": "#8c0825"
+          },
+          {
+            "colour": "Blue",
+            "note": "A deep, clear royal blue enhances the cool and vivid nature of Deep Winters.",
+            "hex": "#1d418a"
+          },
+          {
+            "colour": "Green",
+            "note": "A rich, clear emerald green beautifully complements Deep Winter's striking features.",
+            "hex": "#054936"
+          },
+          {
+            "colour": "Purple",
+            "note": "A deep, vibrant purple adds a regal and sophisticated touch to Deep Winters.",
+            "hex": "#4b1180"
+          },
+          {
+            "colour": "Pink",
+            "note": "A clear, bold fuchsia-like pink provides vivid contrast for Deep Winters.",
+            "hex": "#c1709e"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A rich, deep, and cool wine red, ideal for Deep Winter's sophisticated depth.",
+            "hex": "#59132b"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "Foundation colours that provide balance and versatility for any outfit.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "The ultimate deep, cool neutral, essential for Deep Winter's striking contrast.",
+            "hex": "#181a1e"
+          },
+          {
+            "colour": "Navy",
+            "note": "A versatile deep cool blue, a softer yet still impactful neutral for Deep Winters.",
+            "hex": "#151e41"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A rich, deep, cool grey, providing sophisticated depth to Deep Winter palettes.",
+            "hex": "#272c32"
+          },
+          {
+            "colour": "White",
+            "note": "A crisp, clear pure white perfectly mirrors Deep Winter's bright, cool clarity.",
+            "hex": "#eff5fc"
+          },
+          {
+            "colour": "Grey",
+            "note": "A clear, cool medium grey offering versatility and complementing Deep Winter's coolness.",
+            "hex": "#5e636a"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "Accent colours to wear away from the face or as small intentional pops.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "A clear, icy light blue provides a refreshing, cool touch as an accent.",
+            "hex": "#77a7d2"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A delicate yet clear cool purple tone, excellent for accessories or lower body.",
+            "hex": "#837dbf"
+          },
+          {
+            "colour": "Teal",
+            "note": "A deep, clear blue-green, adding depth and a cool vibrancy in small doses.",
+            "hex": "#08555d"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A clear, true lemon yellow used sparingly for a pop of bright, intentional contrast.",
+            "hex": "#c2af00"
+          },
+          {
+            "colour": "Brown",
+            "note": "A deep, cool-toned brown works well for accessories or shoes, away from the face.",
+            "hex": "#542511"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.bright winter": {
+    "systemId": "twelve-season",
+    "seasonId": "bright winter",
+    "seasonLabel": "Bright Winter",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These are your most impactful colours, bringing brilliant clarity and energy to your features.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A pure, vivid red brings essential high chroma and cool vibrancy.",
+            "hex": "#cd1538"
+          },
+          {
+            "colour": "Green",
+            "note": "This bright, clear emerald green beautifully mirrors Bright Winter's jewel-toned intensity.",
+            "hex": "#0d6d51"
+          },
+          {
+            "colour": "Blue",
+            "note": "A saturated, deep royal blue enhances Bright Winter's natural depth and clarity.",
+            "hex": "#175cb1"
+          },
+          {
+            "colour": "Pink",
+            "note": "A vibrant, clear fuchsia-pink provides exciting contrast and coolness.",
+            "hex": "#f793c9"
+          },
+          {
+            "colour": "Purple",
+            "note": "A true, clear purple showcases the season's bold, cool vibrancy.",
+            "hex": "#662db1"
+          },
+          {
+            "colour": "Teal",
+            "note": "This rich, bright blue-green resonates with Bright Winter's clear, cool character.",
+            "hex": "#06717a"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational shades provide crisp contrast and elegant balance for your vibrant palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "Creates essential sharp contrast and depth, perfect for Bright Winter.",
+            "hex": "#191a1c"
+          },
+          {
+            "colour": "White",
+            "note": "Offers crisp, cool purity, highlighting Bright Winter's clear complexion.",
+            "hex": "#f0f5fb"
+          },
+          {
+            "colour": "Navy",
+            "note": "A deep, cool neutral that provides sophisticated depth and versatility.",
+            "hex": "#19234f"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A dark, cool-toned grey that supports vibrant colours without dulling them.",
+            "hex": "#33383d"
+          },
+          {
+            "colour": "Grey",
+            "note": "A medium, clear cool grey for versatile, balanced styling.",
+            "hex": "#858b91"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "Use these colours strategically as accents or away from the face to add variety and nuance.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "A deep, cool red that adds richness and sophistication when worn thoughtfully.",
+            "hex": "#721937"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A soft, clear cool pastel that provides a gentle, harmonious accent.",
+            "hex": "#9d96db"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "An icy, clear cool shade that can refresh an outfit or act as a soft contrast.",
+            "hex": "#8bbfeb"
+          },
+          {
+            "colour": "Brown",
+            "note": "A deep, cool-toned brown provides earthy depth when used as an intentional accent.",
+            "hex": "#6c3216"
+          },
+          {
+            "colour": "Cream",
+            "note": "A very light, cool-leaning cream can offer a softer alternative to white, used sparingly.",
+            "hex": "#e6f2fe"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.vasant": {
+    "systemId": "ritu",
+    "seasonId": "vasant",
+    "seasonLabel": "Vasant (वसंत) — spring",
+    "colour_groups": [
+      {
+        "name": "Colours of Vasant (वसंत) — spring",
+        "description": "These vibrant and clear colours are inspired by the blooming landscapes and sunny days of spring, making the Vasant individual glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Yellow",
+            "note": "Bright and sunny, reflecting abundant spring light and joy.",
+            "hex": "#feca4c"
+          },
+          {
+            "colour": "Coral",
+            "note": "Lively and warm, mirroring vibrant spring blossoms and festivities.",
+            "hex": "#ff6e2e"
+          },
+          {
+            "colour": "Green",
+            "note": "Energetic and fresh, like new leaves emerging in the Vasant landscape.",
+            "hex": "#337350"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "Clear and serene, like a bright, expansive spring sky.",
+            "hex": "#7bbfe0"
+          },
+          {
+            "colour": "Pink",
+            "note": "Festive and cheerful, reminiscent of blooming flowers and celebrations.",
+            "hex": "#f4a1be"
+          },
+          {
+            "colour": "Orange",
+            "note": "Radiant and joyful, capturing the season's inherent warmth and zest.",
+            "hex": "#dd7a1b"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance",
+        "description": "These tones, drawn from complementary ritus, offer depth and harmony, ensuring a well-rounded and sophisticated look.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Teal",
+            "note": "Adds sophisticated depth, harmonizing with Vasant's brightness without dulling it.",
+            "hex": "#258984"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Provides a richer, grounded warmth, complementing Vasant's lighter yellows.",
+            "hex": "#d4a412"
+          },
+          {
+            "colour": "Brown",
+            "note": "Offers earthy stability, anchoring the palette with natural depth.",
+            "hex": "#754924"
+          },
+          {
+            "colour": "Purple",
+            "note": "Imparts a royal richness, balancing Vasant's exuberance with calm elegance.",
+            "hex": "#793e9a"
+          },
+          {
+            "colour": "Olive",
+            "note": "A muted, sophisticated green, offering a grounding counterpoint to vibrant spring greens.",
+            "hex": "#77833c"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These essential neutrals provide versatile bases and elegant backdrops for the vibrant Vasant palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A classic, deep neutral offering a universal base for Vasant's brights.",
+            "hex": "#1c274c"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A versatile, sophisticated dark neutral that grounds any spring outfit.",
+            "hex": "#3c3a38"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm neutral that harmonizes gently with Vasant's palette.",
+            "hex": "#f4eddf"
+          },
+          {
+            "colour": "Beige",
+            "note": "An earthy, versatile neutral, perfect for effortless layering and base.",
+            "hex": "#d2bb88"
+          },
+          {
+            "colour": "White",
+            "note": "Crisp and clean, providing a fresh, bright contrast to Vasant hues.",
+            "hex": "#f7f4f0"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.grishma": {
+    "systemId": "ritu",
+    "seasonId": "grishma",
+    "seasonLabel": "Grishma (ग्रीष्म) — summer",
+    "colour_groups": [
+      {
+        "name": "Colours of Grishma",
+        "description": "These colours capture the vibrant warmth, intense light, and abundant life of the Indian summer season.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "Embodies the intense heat and vibrant energy of the Grishma sun.",
+            "hex": "#c5170b"
+          },
+          {
+            "colour": "Orange",
+            "note": "Reflects ripe fruits and the glowing warmth of summer sunsets.",
+            "hex": "#de782e"
+          },
+          {
+            "colour": "Yellow",
+            "note": "Captures the bright, cheerful, and abundant sunshine of the season.",
+            "hex": "#efcb20"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A deeper, earthy yellow, reminiscent of sun-baked earth and spices.",
+            "hex": "#cba830"
+          },
+          {
+            "colour": "Pink",
+            "note": "A fresh, lively shade, echoing vibrant summer blooms like lotuses.",
+            "hex": "#f49fc5"
+          },
+          {
+            "colour": "Coral",
+            "note": "A warm, inviting hue, reflecting the joyous and lively spirit of summer.",
+            "hex": "#f17957"
+          },
+          {
+            "colour": "Teal",
+            "note": "Brings a vibrant, cooling depth, like deep waters or lush, hidden groves.",
+            "hex": "#0b7b7b"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance",
+        "description": "These shades offer a soothing contrast and depth, balancing Grishma's vibrant energy with a refreshing calm.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Blue",
+            "note": "Offers refreshing contrast, reminiscent of clear skies after summer showers.",
+            "hex": "#3676b8"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "Provides a soothing coolness, perfect for balancing intense summer warmth.",
+            "hex": "#80b1cf"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A soft, calming hue, bringing a tranquil and refined touch.",
+            "hex": "#9d91bc"
+          },
+          {
+            "colour": "Purple",
+            "note": "Adds depth and richness, a sophisticated cool tone against summer's heat.",
+            "hex": "#6d469d"
+          },
+          {
+            "colour": "Olive",
+            "note": "A grounded, earthy green that brings a natural, steadying influence.",
+            "hex": "#738444"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These essential neutrals provide a versatile and elegant base, harmonizing with both vibrant and balancing palettes.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "White",
+            "note": "Crisp and clean, essential for staying cool and reflecting summer light.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm neutral that harmonizes with summer's gentle glow.",
+            "hex": "#f1eadc"
+          },
+          {
+            "colour": "Beige",
+            "note": "An adaptable, natural tone, grounding the vibrant summer palette beautifully.",
+            "hex": "#cfbc85"
+          },
+          {
+            "colour": "Brown",
+            "note": "A rich, earthy neutral, offering a solid base to lighter summer hues.",
+            "hex": "#683e21"
+          },
+          {
+            "colour": "Navy",
+            "note": "A universally flattering deep neutral, providing sophisticated contrast.",
+            "hex": "#192849"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A versatile deep grey, offering a modern alternative to black.",
+            "hex": "#3b3b3b"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.varsha": {
+    "systemId": "ritu",
+    "seasonId": "varsha",
+    "seasonLabel": "Varsha (वर्षा) — monsoon",
+    "colour_groups": [
+      {
+        "name": "Colours of Varsha (वर्षा)",
+        "description": "These are the core colours reflecting the rich, verdant, and dramatic beauty of the monsoon season.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Green",
+            "note": "Represents the lush, vibrant foliage and thriving nature after the rains.",
+            "hex": "#126140"
+          },
+          {
+            "colour": "Teal",
+            "note": "Evokes deep, rain-filled bodies of water and the mysterious stormy skies.",
+            "hex": "#066463"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "Reflects the rich, moist earth and the deep, ripened colours of the season.",
+            "hex": "#621e26"
+          },
+          {
+            "colour": "Purple",
+            "note": "Symbolizes the deep, regal hues of gathering storm clouds and profound depth.",
+            "hex": "#592679"
+          },
+          {
+            "colour": "Brown",
+            "note": "Grounding and earthy, mirroring the fertile, wet soil of the monsoon landscapes.",
+            "hex": "#623a1a"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A warm glimmer of sun breaking through the monsoon clouds, adding vibrancy.",
+            "hex": "#bf8f0c"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance",
+        "description": "These foundational neutrals provide a grounding depth and sophisticated backdrop for the vibrant monsoon palette.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "The expansive, deep monsoon sky, offering a sense of stability and depth.",
+            "hex": "#162243"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Reflects the dramatic, heavy monsoon clouds, a versatile and elegant neutral.",
+            "hex": "#383736"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, natural neutral, like the gentle mist or diffused light of the season.",
+            "hex": "#f1eadc"
+          },
+          {
+            "colour": "Beige",
+            "note": "Offers an organic, earthy neutrality, connecting to the natural Indian textile tradition.",
+            "hex": "#bca97b"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These versatile shades offer a refreshing contrast or subtle harmony, best used as accents or away from the face.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Suggests the clear skies after the rain, bringing lightness and freshness.",
+            "hex": "#6faacb"
+          },
+          {
+            "colour": "White",
+            "note": "Provides crispness and clarity, making the deeper monsoon colours truly pop.",
+            "hex": "#f7f4f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "Mirrors the nuanced, diffused light of the monsoon, subtle and adaptable.",
+            "hex": "#8b8a88"
+          },
+          {
+            "colour": "Coral",
+            "note": "A lively accent, bringing a vibrant, unexpected tropical bloom to the palette.",
+            "hex": "#e35a3a"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A gentle, ethereal shade, like the soft, mystical mist in the monsoon air.",
+            "hex": "#8c7ea7"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.sharad": {
+    "systemId": "ritu",
+    "seasonId": "sharad",
+    "seasonLabel": "Sharad (शरद) — autumn",
+    "colour_groups": [
+      {
+        "name": "Colours of Sharad (शरद) — autumn",
+        "description": "These rich, warm, and earthy tones reflect the golden light and bountiful harvest of Sharad, creating a radiant and harmonious glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Deep, rich warmth mirrors festive textiles and autumn leaves, enhancing Sharad depth.",
+            "hex": "#672c2d"
+          },
+          {
+            "colour": "Olive",
+            "note": "Earthy, grounding green harmonizes with natural landscapes and traditional dyes of Sharad.",
+            "hex": "#6d753e"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Golden-yellow evokes harvest fields and warm light, brightening Sharad complexions.",
+            "hex": "#cfa14a"
+          },
+          {
+            "colour": "Brown",
+            "note": "Deep, foundational earthy tone, perfect for capturing Sharad's grounding warmth and elegance.",
+            "hex": "#5e3d21"
+          },
+          {
+            "colour": "Orange",
+            "note": "Deep orange reflects ripe fruits and vibrant sunsets, adding natural warmth and glow.",
+            "hex": "#b86508"
+          },
+          {
+            "colour": "Teal",
+            "note": "Rich, deep blue-green brings sophisticated depth, like precious stones in traditional jewellery.",
+            "hex": "#266d69"
+          },
+          {
+            "colour": "Camel",
+            "note": "Warm, sophisticated neutral, perfect for elegant layering and a rich, golden autumnal feel.",
+            "hex": "#a9875f"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance from Grishma (ग्रीष्म) — summer",
+        "description": "These softer, clearer hues from the summer palette provide a refreshing contrast, balancing Sharad's depth with lightness and clarity.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Cream",
+            "note": "A soft, warm off-white that offers gentle contrast and brightens without being stark.",
+            "hex": "#ede6d8"
+          },
+          {
+            "colour": "Beige",
+            "note": "Versatile, soft warm neutral providing understated elegance, lighter than Sharad's deeper browns.",
+            "hex": "#b8a78c"
+          },
+          {
+            "colour": "Grey",
+            "note": "Sophisticated mid-tone neutral, offering cool contrast to Sharad's warmth, enhancing versatility.",
+            "hex": "#858483"
+          },
+          {
+            "colour": "Blue",
+            "note": "Medium, clear blue offers a crisp, refreshing note, harmonizing with Sharad's deeper tones.",
+            "hex": "#3b66a4"
+          },
+          {
+            "colour": "Coral",
+            "note": "Vibrant, warm pink-orange adds cheerful, fresh touch, lifting deeper autumn palette.",
+            "hex": "#e36e3a"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These essential neutrals and versatile accents provide a solid base for any Sharad outfit, offering structure and versatility.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "Deep, sophisticated neutral, soft yet strong alternative to black, perfect for Sharad.",
+            "hex": "#2d344a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Grounding, deep grey provides elegant structure and depth to complement autumn's warmth.",
+            "hex": "#3b3835"
+          },
+          {
+            "colour": "White",
+            "note": "Crisp, clean foundational neutral, offering sharp contrast and freshness with deeper hues.",
+            "hex": "#f4f1ed"
+          },
+          {
+            "colour": "Red",
+            "note": "Vibrant, clear red, offering a bold accent that celebrates the festive spirit of Sharad.",
+            "hex": "#b9360e"
+          },
+          {
+            "colour": "Pink",
+            "note": "Muted, warm rose adds feminine, lively touch, harmonizing with autumn's depth.",
+            "hex": "#cc9aa6"
+          },
+          {
+            "colour": "Purple",
+            "note": "Rich, deep plum purple adds regal elegance and depth, complementing Sharad's jewel tones.",
+            "hex": "#63297e"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.hemant": {
+    "systemId": "ritu",
+    "seasonId": "hemant",
+    "seasonLabel": "Hemant (हेमंत) — pre-winter",
+    "colour_groups": [
+      {
+        "name": "Colours of Hemant (हेमंत)",
+        "description": "These colours embody the rich, comforting essence of the pre-winter season, reflecting its gentle warmth and grounded depth.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Reflects the deep, warm richness and grounding feel of pre-winter.",
+            "hex": "#651d26"
+          },
+          {
+            "colour": "Olive",
+            "note": "Captures the earthiness and subdued green tones of the transitioning landscape.",
+            "hex": "#61733e"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Adds a comforting, golden warmth, reminiscent of late autumn harvests.",
+            "hex": "#bc9515"
+          },
+          {
+            "colour": "Brown",
+            "note": "Provides a grounding, natural depth, perfect for the cozy pre-winter feel.",
+            "hex": "#67391c"
+          },
+          {
+            "colour": "Teal",
+            "note": "Offers a sophisticated depth, blending the richness of blue with a touch of earthiness.",
+            "hex": "#027578"
+          },
+          {
+            "colour": "Red",
+            "note": "A deep, rich red provides warmth and vibrancy, perfect for festive textile traditions.",
+            "hex": "#a51316"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm off-white provides a gentle lightness and cozy contrast.",
+            "hex": "#f3ecde"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These classic, versatile neutrals provide a strong base for any Hemant (हेमंत) wardrobe, offering enduring elegance.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A classic deep neutral that offers sophistication and depth for pre-winter.",
+            "hex": "#162346"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Provides an excellent cool-leaning deep neutral base for the season.",
+            "hex": "#2f3337"
+          },
+          {
+            "colour": "White",
+            "note": "Offers crisp contrast and a clean, refreshing balance to warmer tones.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Beige",
+            "note": "A gentle, warm neutral that harmonizes with the earthy tones of Hemant.",
+            "hex": "#bfac7a"
+          },
+          {
+            "colour": "Camel",
+            "note": "Brings a rich, golden warmth and luxurious feel, perfect for pre-winter fabrics.",
+            "hex": "#aa804e"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance",
+        "description": "Drawing inspiration from complementary ritu, these colours add harmonious balance and thoughtful accents to the Hemant (हेमंत) palette.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Offers a gentle, cooling contrast to the deeper warm Hemant palette.",
+            "hex": "#76adca"
+          },
+          {
+            "colour": "Lavender",
+            "note": "Provides a soft, ethereal touch, balancing the earthy depth with subtle coolness.",
+            "hex": "#8c81af"
+          },
+          {
+            "colour": "Pink",
+            "note": "A muted, dusty pink adds a gentle, romantic softness to the palette.",
+            "hex": "#d395b2"
+          },
+          {
+            "colour": "Purple",
+            "note": "A rich, warm purple adds sophisticated depth and complements the pre-winter warmth.",
+            "hex": "#5c257e"
+          },
+          {
+            "colour": "Green",
+            "note": "A clear, medium-depth green offers a fresh balance against Hemant's richness.",
+            "hex": "#0b6347"
+          }
+        ]
+      }
+    ]
+  },
+  "ritu.shishir": {
+    "systemId": "ritu",
+    "seasonId": "shishir",
+    "seasonLabel": "Shishir (शिशिर) — winter",
+    "colour_groups": [
+      {
+        "name": "Colours of Shishir (शिशिर) — winter",
+        "description": "These deeply saturated, cool, and clear hues capture the serene intensity and high contrast of the Shishir season, making them ideal for Shishir complexions.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Rich and deep, it reflects winter's profound elegance and adds luxurious warmth.",
+            "hex": "#631b2c"
+          },
+          {
+            "colour": "Red",
+            "note": "A clear, true red provides vibrant contrast, enhancing Shishir's crisp clarity.",
+            "hex": "#b71623"
+          },
+          {
+            "colour": "Purple",
+            "note": "Deep and regal, this cool shade embodies the sophisticated depth of winter.",
+            "hex": "#4e2985"
+          },
+          {
+            "colour": "Blue",
+            "note": "A pure, intense blue mirrors the clear, expansive skies of the Shishir months.",
+            "hex": "#195197"
+          },
+          {
+            "colour": "Green",
+            "note": "A vivid, deep green, like evergreen foliage, brings fresh clarity and coolness.",
+            "hex": "#05553e"
+          },
+          {
+            "colour": "White",
+            "note": "Crisp and pure, white offers striking high contrast, characteristic of Shishir's aesthetic.",
+            "hex": "#f1f5f9"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours",
+        "description": "These essential neutrals provide a sophisticated and versatile base, perfectly complementing the cool, clear palette of Shishir.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, cool blue neutral that offers elegance and strong definition.",
+            "hex": "#182145"
+          },
+          {
+            "colour": "Black",
+            "note": "The ultimate high-contrast neutral, sharp and defining for Shishir types.",
+            "hex": "#191a1c"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A deep, cool grey that provides a softer yet commanding alternative to black.",
+            "hex": "#2d3237"
+          },
+          {
+            "colour": "Grey",
+            "note": "A clear, medium cool grey that offers understated sophistication and versatility.",
+            "hex": "#787d83"
+          }
+        ]
+      },
+      {
+        "name": "Colours for balance",
+        "description": "Drawing from complementary palettes, these hues offer refreshing contrast or gentle softening, used intentionally as accents or away from the face to create harmonious depth.",
+        "role": "balance",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "A clear, icy hue that brings a touch of refreshing coolness and brightness.",
+            "hex": "#83b6e0"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A delicate, cool purple providing a soft, ethereal accent, balancing deep colours.",
+            "hex": "#8480af"
+          },
+          {
+            "colour": "Pink",
+            "note": "A clear, vibrant pink adds a lively, cheerful contrast to deep winter tones.",
+            "hex": "#d17eaa"
+          },
+          {
+            "colour": "Yellow",
+            "note": "A bright, clear yellow for a surprising, energetic pop of colour and warmth.",
+            "hex": "#d3bd25"
+          },
+          {
+            "colour": "Olive",
+            "note": "A deep, cool olive adds earthy, grounded balance when used strategically.",
+            "hex": "#466527"
+          }
+        ]
+      }
+    ]
+  },
+  "shikisai.haru": {
+    "systemId": "shikisai",
+    "seasonId": "haru",
+    "seasonLabel": "Haru (春) — spring",
+    "colour_groups": [
+      {
+        "name": "Seasonal palette (季節の色)",
+        "description": "These are the core colours that capture the fresh, vibrant energy of Haru (春) — spring.",
+        "role": "seasonal",
+        "colours": [
+          {
+            "colour": "Yellow",
+            "note": "Brings out the bright, warm undertones of Haru (春) with its cheerful clarity.",
+            "hex": "#fec427"
+          },
+          {
+            "colour": "Coral",
+            "note": "Its warm, lively glow harmonizes beautifully with Haru (春)'s naturally radiant complexion.",
+            "hex": "#f67b49"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "A clear, refreshing shade that mirrors the bright, open skies of a Haru (春) day.",
+            "hex": "#7fc1e1"
+          },
+          {
+            "colour": "Green",
+            "note": "Evokes the fresh, youthful new growth of Haru (春), adding natural vibrancy.",
+            "hex": "#377553"
+          },
+          {
+            "colour": "Cream",
+            "note": "A soft, warm neutral that is gentle and luminous, perfect for Haru (春)'s bright clarity.",
+            "hex": "#f6efe1"
+          },
+          {
+            "colour": "Pink",
+            "note": "Its clear, blooming warmth complements the youthful, vibrant spirit of Haru (春).",
+            "hex": "#fb9fc0"
+          }
+        ]
+      },
+      {
+        "name": "Foundation (基本色)",
+        "description": "These versatile foundational shades provide balance and structure to any Haru (春) — spring palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, warm-leaning neutral that offers sophisticated depth without overwhelming Haru (春)'s brightness.",
+            "hex": "#20274c"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A muted, sophisticated deep grey that grounds Haru (春)'s vibrant colours beautifully.",
+            "hex": "#3e3b39"
+          },
+          {
+            "colour": "Camel",
+            "note": "A rich, warm neutral that provides an elegant and earthy base for Haru (春) ensembles.",
+            "hex": "#c19663"
+          },
+          {
+            "colour": "Beige",
+            "note": "A soft, warm neutral that offers a subtle, versatile base for Haru (春)'s brighter shades.",
+            "hex": "#ceb892"
+          },
+          {
+            "colour": "Brown",
+            "note": "A warm, grounding earth tone that complements Haru (春)'s natural warmth and clarity.",
+            "hex": "#754d26"
+          }
+        ]
+      },
+      {
+        "name": "Kasane pairings (重ね)",
+        "description": "Inspired by the art of kasane, these colours are perfect for intentional layering or accenting.",
+        "role": "layering",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A clear, bright red that acts as a vibrant accent, bringing energy and contrast to Haru (春) outfits.",
+            "hex": "#d73706"
+          },
+          {
+            "colour": "Teal",
+            "note": "A lively, warm-leaning teal that provides an exciting splash of colour for accessories or layering.",
+            "hex": "#308c82"
+          },
+          {
+            "colour": "Purple",
+            "note": "A clear, vivid purple that offers a sophisticated, yet playful, accent for Haru (春) palettes.",
+            "hex": "#7f3ba3"
+          },
+          {
+            "colour": "Mustard",
+            "note": "A warm, earthy yellow that adds depth and a unique accent, perfect for thoughtful layering.",
+            "hex": "#dba325"
+          },
+          {
+            "colour": "White",
+            "note": "A crisp, clean contrast colour that can brighten Haru (春) palettes, especially in accessories or lower layers.",
+            "hex": "#f7f4f0"
+          }
+        ]
+      }
+    ]
+  },
+  "shikisai.natsu": {
+    "systemId": "shikisai",
+    "seasonId": "natsu",
+    "seasonLabel": "Natsu (夏) — summer",
+    "colour_groups": [
+      {
+        "name": "Seasonal palette (季節の色)",
+        "description": "These are the core colours that embody the fresh, gentle essence of summer, making you glow.",
+        "role": "seasonal",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Reflects the clear summer sky; soft and cooling, enhancing Natsu's delicate features.",
+            "hex": "#99bdd7"
+          },
+          {
+            "colour": "Lavender",
+            "note": "Gentle and cool, harmonizes beautifully with Natsu's muted, romantic aesthetic.",
+            "hex": "#9492b3"
+          },
+          {
+            "colour": "Pink",
+            "note": "Soft and diffused, it enhances the natural rosy glow typical of Natsu.",
+            "hex": "#cca3bb"
+          },
+          {
+            "colour": "Teal",
+            "note": "Muted and refreshing, providing a sophisticated cool accent for summer's gentle depth.",
+            "hex": "#568388"
+          },
+          {
+            "colour": "Grey",
+            "note": "A soft, cool neutral that blends seamlessly, reflecting summer's gentle, diffused light.",
+            "hex": "#949aa0"
+          },
+          {
+            "colour": "Cream",
+            "note": "A delicate, soft neutral that is less stark than pure white, enhancing Natsu's natural glow.",
+            "hex": "#e1edf9"
+          }
+        ]
+      },
+      {
+        "name": "Kasane pairings (重ね)",
+        "description": "Inspired by layered kimono colours, these combinations offer harmonious depth and refined elegance.",
+        "role": "layering",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A classic cool neutral, offering depth without harshness, perfect for soft contrast.",
+            "hex": "#384055"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A sophisticated, soft dark neutral that complements Natsu's cool undertones beautifully.",
+            "hex": "#43484e"
+          },
+          {
+            "colour": "White",
+            "note": "Crisp and clean, providing a bright, refreshing contrast that elevates Natsu's palette.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Light Green",
+            "note": "A gentle, muted green that evokes summer foliage without overwhelming Natsu's softness.",
+            "hex": "#afc6a2"
+          }
+        ]
+      },
+      {
+        "name": "Foundation (基本色)",
+        "description": "These fundamental shades provide a stable base, easily paired for versatility and timeless style.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "A deeper, muted red-purple, offering rich elegance without being overly warm for Natsu.",
+            "hex": "#6d4346"
+          },
+          {
+            "colour": "Purple",
+            "note": "A soft, medium purple that is cool and harmonious for Natsu's naturally delicate palette.",
+            "hex": "#746499"
+          },
+          {
+            "colour": "Brown",
+            "note": "A cool-toned, muted brown provides an earthy, sophisticated neutral base for Natsu.",
+            "hex": "#735549"
+          },
+          {
+            "colour": "Beige",
+            "note": "A cool-toned beige offers a sophisticated, adaptable neutral base for Natsu's palette.",
+            "hex": "#c0ba92"
+          },
+          {
+            "colour": "Olive",
+            "note": "A soft, muted green-grey, bringing an earthy, cool tone that complements Natsu's softness.",
+            "hex": "#718462"
+          }
+        ]
+      }
+    ]
+  },
+  "twelve-season.cool winter": {
+    "systemId": "twelve-season",
+    "seasonId": "cool winter",
+    "seasonLabel": "Cool Winter",
+    "colour_groups": [
+      {
+        "name": "Power Colours",
+        "description": "These colours are at the core of the Cool Winter palette, making you glow with depth, coolness, and clarity.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "Its ultimate depth and coolness perfectly harmonize with Cool Winter's strong characteristics.",
+            "hex": "#161a21"
+          },
+          {
+            "colour": "White",
+            "note": "Crisp and pure, this cool white provides stunning contrast and clarity for Cool Winters.",
+            "hex": "#edf6ff"
+          },
+          {
+            "colour": "Red",
+            "note": "A true, clear red complements Cool Winter's natural intensity and cool undertones.",
+            "hex": "#c21649"
+          },
+          {
+            "colour": "Green",
+            "note": "Deep emerald green mirrors the cool, jewel-toned vibrancy that enlivens this season.",
+            "hex": "#095b4e"
+          },
+          {
+            "colour": "Blue",
+            "note": "A clear, vibrant blue echoes the cool clarity and depth found in Cool Winter's features.",
+            "hex": "#4660b3"
+          },
+          {
+            "colour": "Pink",
+            "note": "A bold fuchsia or clear cool pink adds a playful yet sophisticated brightness.",
+            "hex": "#e395d2"
+          },
+          {
+            "colour": "Purple",
+            "note": "Deep and clear, royal purple enhances the cool, intense glow of a Cool Winter.",
+            "hex": "#4d2a9d"
+          }
+        ]
+      },
+      {
+        "name": "Neutrals",
+        "description": "These foundational colours provide elegant balance and versatility, forming the backbone of any Cool Winter wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A classic dark neutral, providing cool depth as a sophisticated alternative to black.",
+            "hex": "#192349"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "This deep, cool grey offers a strong yet versatile foundation, complementing Cool Winter's coolness.",
+            "hex": "#2d363f"
+          },
+          {
+            "colour": "Grey",
+            "note": "A medium, true grey provides a crisp, cool neutral base without warmth.",
+            "hex": "#7c8690"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "A clear, icy light blue provides a fresh, cool, gentle neutral base.",
+            "hex": "#8db9ea"
+          }
+        ]
+      },
+      {
+        "name": "Wear with Intention",
+        "description": "These colours serve as striking accents or can be worn strategically to add variety and personal expression.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Teal",
+            "note": "This cool, deep blue-green provides a vibrant accent, complementing the depth and coolness.",
+            "hex": "#0f6a79"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A clear, cool pale purple offers a delicate accent, harmonizing with cool undertones.",
+            "hex": "#9094da"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A deep, rich, cool-toned red-purple, adding sophistication and depth as an accent.",
+            "hex": "#671e3d"
+          }
+        ]
+      }
+    ]
+  },
+  "shikisai.aki": {
+    "systemId": "shikisai",
+    "seasonId": "aki",
+    "seasonLabel": "Aki (秋) — autumn",
+    "colour_groups": [
+      {
+        "name": "Seasonal palette (季節の色)",
+        "description": "Colours that make this season glow — reach for these first.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Deep, rich, reflecting autumn's warmth and sophisticated depth.",
+            "hex": "#632c2e"
+          },
+          {
+            "colour": "Olive",
+            "note": "Muted, earthy green, perfect for autumn's natural, grounded essence.",
+            "hex": "#6b724d"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Warm, golden yellow, embodying autumn leaves and cozy warmth.",
+            "hex": "#bb913d"
+          },
+          {
+            "colour": "Brown",
+            "note": "Rich, grounding neutral, essential for autumn's deep, earthy feel.",
+            "hex": "#5b3b21"
+          },
+          {
+            "colour": "Camel",
+            "note": "Warm, sophisticated tan, adding gentle richness and approachability.",
+            "hex": "#b08e68"
+          },
+          {
+            "colour": "Teal",
+            "note": "Deep, warm blue-green, adding a jewel-toned richness to the palette.",
+            "hex": "#016860"
+          },
+          {
+            "colour": "Orange",
+            "note": "Warm, vibrant, embodying the richness of autumn leaves and harvest.",
+            "hex": "#bd7018"
+          }
+        ]
+      },
+      {
+        "name": "Foundation (基本色)",
+        "description": "These foundational neutrals provide balance and anchor your autumn palette.",
+        "role": "foundation/balance",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "Deep, warm neutral providing sophisticated depth and balance.",
+            "hex": "#232946"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Soft, rich dark neutral that anchors autumn's deep tones.",
+            "hex": "#43413e"
+          },
+          {
+            "colour": "Cream",
+            "note": "Soft, warm neutral that harmonizes with autumn's rich palette.",
+            "hex": "#ece5d7"
+          },
+          {
+            "colour": "Beige",
+            "note": "Classic warm neutral, perfect for building versatile outfits.",
+            "hex": "#bba783"
+          },
+          {
+            "colour": "Grey",
+            "note": "A medium, warm grey, offering a sophisticated and balanced neutral.",
+            "hex": "#847f78"
+          }
+        ]
+      },
+      {
+        "name": "Kasane pairings (重ね)",
+        "description": "Colours for intentional pairing, used as accents or away from the face to create harmony.",
+        "role": "accent/harmony",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "A rich, warm red provides a vibrant pop of energy.",
+            "hex": "#96340b"
+          },
+          {
+            "colour": "Purple",
+            "note": "A deep, warm plum purple adds a luxurious and sophisticated touch.",
+            "hex": "#613272"
+          },
+          {
+            "colour": "Green",
+            "note": "A deep forest green for grounding, earthy accents.",
+            "hex": "#2c593f"
+          },
+          {
+            "colour": "Coral",
+            "note": "A muted, warm coral provides a cheerful yet grounded accent.",
+            "hex": "#bc795f"
+          },
+          {
+            "colour": "Pink",
+            "note": "A warm, dusty rose pink for a soft, feminine accent.",
+            "hex": "#c495a1"
+          }
+        ]
+      }
+    ]
+  },
+  "shikisai.fuyu": {
+    "systemId": "shikisai",
+    "seasonId": "fuyu",
+    "seasonLabel": "Fuyu (冬) — winter",
+    "colour_groups": [
+      {
+        "name": "Seasonal palette (季節の色)",
+        "description": "Colours that define the essence of the Fuyu season, making the wearer shine with clarity and depth.",
+        "role": "seasonal",
+        "colours": [
+          {
+            "colour": "White",
+            "note": "Provides crisp contrast and bright clarity, essential for Fuyu's vibrant appeal.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Red",
+            "note": "A true, vivid red that complements Fuyu's high contrast and cool intensity.",
+            "hex": "#bb1232"
+          },
+          {
+            "colour": "Pink",
+            "note": "A clear, vibrant fuchsia-pink that brightens and invigorates Fuyu's cool complexion.",
+            "hex": "#e18ec2"
+          },
+          {
+            "colour": "Purple",
+            "note": "A rich, royal purple that enhances Fuyu's depth and cool, sophisticated elegance.",
+            "hex": "#502a89"
+          },
+          {
+            "colour": "Blue",
+            "note": "A clear, vivid royal blue that harmonises with Fuyu's cool undertones and intensity.",
+            "hex": "#345eab"
+          },
+          {
+            "colour": "Green",
+            "note": "A brilliant emerald green that mirrors Fuyu's cool, clear, and powerful presence.",
+            "hex": "#0e624f"
+          }
+        ]
+      },
+      {
+        "name": "Kasane pairings (重ね)",
+        "description": "Colours chosen for harmonious layered combinations, referencing the art of traditional kimono aesthetics.",
+        "role": "layering",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "An icy, clear blue, perfect for subtle accents or light, refreshing layers for Fuyu.",
+            "hex": "#84b8e3"
+          },
+          {
+            "colour": "Lavender",
+            "note": "A cool, muted purple that provides gentle contrast or a soft, artistic accent for Fuyu.",
+            "hex": "#8782b3"
+          },
+          {
+            "colour": "Teal",
+            "note": "A deep, rich blue-green that adds luxurious depth and sophisticated harmony for Fuyu's layering.",
+            "hex": "#03676b"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A deep, cool-leaning red that offers rich, complex elegance when paired for Fuyu.",
+            "hex": "#651b32"
+          },
+          {
+            "colour": "Brown",
+            "note": "A very deep, cool-toned brown that offers earthy depth in accessories or subtle layers for Fuyu.",
+            "hex": "#602f18"
+          }
+        ]
+      },
+      {
+        "name": "Foundation (基本色)",
+        "description": "Essential core colours that provide a stable and versatile base for any Fuyu wardrobe.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A deep, cool neutral that offers a sophisticated alternative to black for Fuyu.",
+            "hex": "#182247"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A strong, cool grey that provides depth and elegant neutrality for Fuyu.",
+            "hex": "#34393e"
+          },
+          {
+            "colour": "Black",
+            "note": "The ultimate deep, clear neutral, creating powerful contrast central to Fuyu.",
+            "hex": "#191a1c"
+          },
+          {
+            "colour": "Grey",
+            "note": "A cool, clear mid-tone neutral that supports Fuyu's crispness without overpowering.",
+            "hex": "#7b8086"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.spring warm bright": {
+    "systemId": "korean-tonal",
+    "seasonId": "spring warm bright",
+    "seasonLabel": "봄 웜 브라이트 (Spring Warm Bright)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "description": "봄 웜톤의 매력을 가장 잘 살려주며 얼굴을 화사하게 밝혀주는 핵심 컬러 그룹입니다.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Yellow",
+            "note": "밝고 선명한 기운으로 얼굴을 화사하게 밝혀주어 생기를 더합니다.",
+            "hex": "#f8c30c"
+          },
+          {
+            "colour": "Coral",
+            "note": "따뜻하고 화사한 코랄빛이 봄 웜톤의 사랑스러운 매력을 극대화합니다.",
+            "hex": "#fb6831"
+          },
+          {
+            "colour": "Pink",
+            "note": "따뜻한 복숭아빛 핑크가 피부 톤을 화사하고 생기 있게 연출합니다.",
+            "hex": "#f899b8"
+          },
+          {
+            "colour": "Green",
+            "note": "신선하고 밝은 녹색이 봄 웜톤의 자연 친화적이고 활기찬 분위기를 더합니다.",
+            "hex": "#266f46"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "맑고 투명한 하늘색이 깨끗하면서도 부드러운 봄 웜톤의 이미지를 강조합니다.",
+            "hex": "#76bcdb"
+          },
+          {
+            "colour": "Cream",
+            "note": "부드럽고 따뜻한 아이보리 톤이 피부에 자연스러운 광채와 안정감을 선사합니다.",
+            "hex": "#f6efe1"
+          },
+          {
+            "colour": "Beige",
+            "note": "따뜻하고 부드러운 베이지가 편안하면서도 세련된 봄 웜톤의 매력을 돋보이게 합니다.",
+            "hex": "#d3b67d"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "description": "봄 웜톤 베스트 컬러와 조화롭게 어우러지며, 스타일에 개성과 깊이를 더해주는 악센트 컬러 그룹입니다.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Mustard",
+            "note": "깊이감 있는 따뜻한 겨자색이 세련되고 지적인 악센트 컬러로 활용하기 좋습니다.",
+            "hex": "#d39e04"
+          },
+          {
+            "colour": "Red",
+            "note": "선명하고 따뜻한 토마토 레드 계열이 생동감과 활력을 불어넣는 포인트가 됩니다.",
+            "hex": "#c63b04"
+          },
+          {
+            "colour": "Orange",
+            "note": "활기차고 생기 넘치는 오렌지색이 얼굴에 화사한 혈색과 에너지를 더합니다.",
+            "hex": "#d67700"
+          },
+          {
+            "colour": "Teal",
+            "note": "따뜻한 청록색 계열이 시원하면서도 안정적인 느낌을 주어 매력적인 악센트가 됩니다.",
+            "hex": "#0b857d"
+          },
+          {
+            "colour": "Brown",
+            "note": "따뜻하고 부드러운 브라운이 고급스러운 안정감을 주며 자연스러운 악센트로 좋습니다.",
+            "hex": "#724312"
+          },
+          {
+            "colour": "Olive",
+            "note": "자연 친화적이며 따뜻한 올리브 그린이 차분하면서도 세련된 분위기를 연출합니다.",
+            "hex": "#757e22"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "description": "어떤 컬러와도 잘 어울리며, 전체적인 룩에 안정감과 균형을 잡아주는 기본 컬러 그룹입니다.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "차분하고 깊이 있는 네이비가 세련된 분위기를 연출하며 다양한 컬러와 조화롭습니다.",
+            "hex": "#1f2955"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "시크하고 안정감 있는 챠콜 그레이가 세련된 베이스 컬러로 활용하기 좋습니다.",
+            "hex": "#423f3b"
+          },
+          {
+            "colour": "White",
+            "note": "깨끗하고 명료한 화이트가 봄 웜톤의 화사하고 맑은 이미지를 돋보이게 합니다.",
+            "hex": "#f7f4ef"
+          },
+          {
+            "colour": "Camel",
+            "note": "깊이 있고 따뜻한 카멜이 우아하면서도 편안한 분위기를 연출하는 데 적합합니다.",
+            "hex": "#cc995c"
+          },
+          {
+            "colour": "Grey",
+            "note": "따뜻한 뉴트럴 그레이가 부드러운 분위기를 연출하며 안정적인 베이스로 좋습니다.",
+            "hex": "#908c87"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "깊이감 있는 붉은 포도주색이 우아하면서도 따뜻한 분위기를 더해주는 베이직입니다.",
+            "hex": "#7f282b"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.spring warm light": {
+    "systemId": "korean-tonal",
+    "seasonId": "spring warm light",
+    "seasonLabel": "봄 웜 라이트 (Spring Warm Light)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "role": "primary",
+        "description": "Soft, warm pastels that lift a light warm complexion without overpowering its delicacy.",
+        "colours": [
+          {
+            "colour": "Cream",
+            "note": "The signature light-warm base — luminous against soft warm skin.",
+            "hex": "#f2ebdd"
+          },
+          {
+            "colour": "Peach",
+            "note": "Gentle warmth that echoes the complexion's own glow.",
+            "hex": "#fed6ae"
+          },
+          {
+            "colour": "Coral",
+            "note": "Wear in its lighter, milky range rather than fully saturated.",
+            "hex": "#fd8a60"
+          },
+          {
+            "colour": "Pink",
+            "note": "Warm salmon-pinks flatter; keep them light and clean.",
+            "hex": "#feb8c7"
+          },
+          {
+            "colour": "Yellow",
+            "note": "Soft butter yellow rather than bold saturation.",
+            "hex": "#fdcd52"
+          },
+          {
+            "colour": "Sage",
+            "note": "A quiet warm-leaning green that stays in the light range.",
+            "hex": "#dccb9b"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "role": "foundation",
+        "description": "Everyday bases that keep the light-warm palette grounded.",
+        "colours": [
+          {
+            "colour": "Beige",
+            "note": "Warmer than grey as a daily base.",
+            "hex": "#dcc394"
+          },
+          {
+            "colour": "Camel",
+            "note": "A light-warm classic for outer layers.",
+            "hex": "#e2b684"
+          },
+          {
+            "colour": "Navy",
+            "note": "The universal dark that never fights the palette.",
+            "hex": "#293156"
+          },
+          {
+            "colour": "White",
+            "note": "Soft white reads friendlier than stark optic white here.",
+            "hex": "#f3f0ea"
+          },
+          {
+            "colour": "Light Grey",
+            "note": "Keep it pale and warm-washed.",
+            "hex": "#ded7cd"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "role": "accent",
+        "description": "Supporting colours — best in small doses or paired with a best colour.",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "Fresh contrast; keep it powder-soft.",
+            "hex": "#9dcadf"
+          },
+          {
+            "colour": "Mint",
+            "note": "Cool-fresh accent that stays light.",
+            "hex": "#b3e9bb"
+          },
+          {
+            "colour": "Green",
+            "note": "Choose spring-leaf greens over deep forest.",
+            "hex": "#3d7450"
+          },
+          {
+            "colour": "Orange",
+            "note": "Apricot-soft rather than vivid.",
+            "hex": "#ea8d2e"
+          },
+          {
+            "colour": "Brown",
+            "note": "Light golden browns as accents and accessories.",
+            "hex": "#8e683f"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.summer cool mute": {
+    "systemId": "korean-tonal",
+    "seasonId": "summer cool mute",
+    "seasonLabel": "여름 쿨 뮤트 (Summer Cool Mute)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "role": "primary",
+        "description": "Greyed, softened cool tones that harmonise with muted cool colouring.",
+        "colours": [
+          {
+            "colour": "Powder Blue",
+            "note": "The signature soft-cool shade — misty rather than bright.",
+            "hex": "#aecad1"
+          },
+          {
+            "colour": "Lavender",
+            "note": "Greyed lilac tones flatter without glare.",
+            "hex": "#8e8ba2"
+          },
+          {
+            "colour": "Mauve",
+            "note": "Dusty rose-purple, a muted-cool signature.",
+            "hex": "#928496"
+          },
+          {
+            "colour": "Pink",
+            "note": "Rose-pink in its dusty range, never neon.",
+            "hex": "#bb9ead"
+          },
+          {
+            "colour": "Sage",
+            "note": "Grey-green reads as a soft neutral here.",
+            "hex": "#a6a794"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "Softened sky blue, low saturation.",
+            "hex": "#90abc0"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "role": "foundation",
+        "description": "Everyday bases — soft darks and greys over harsh black.",
+        "colours": [
+          {
+            "colour": "Grey",
+            "note": "The palette's natural base — mid to light grey.",
+            "hex": "#909397"
+          },
+          {
+            "colour": "Navy",
+            "note": "Softer than black for dark pieces.",
+            "hex": "#2e354c"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "Gentler than true black for tailoring.",
+            "hex": "#46494c"
+          },
+          {
+            "colour": "White",
+            "note": "Soft white over stark optic white.",
+            "hex": "#e3e6ea"
+          },
+          {
+            "colour": "Stone",
+            "note": "A cool-greyed light base.",
+            "hex": "#8d949b"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "role": "accent",
+        "description": "Supporting colours — best in small doses or paired with a best colour.",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Muted berry depth for contrast moments.",
+            "hex": "#6d4f53"
+          },
+          {
+            "colour": "Teal",
+            "note": "Greyed teal, not tropical turquoise.",
+            "hex": "#5e7c7e"
+          },
+          {
+            "colour": "Purple",
+            "note": "Soft plum over vivid violet.",
+            "hex": "#665386"
+          },
+          {
+            "colour": "Blue",
+            "note": "Dusty denim blues fit; electric blues don't.",
+            "hex": "#587195"
+          },
+          {
+            "colour": "Lilac",
+            "note": "A lighter echo of the lavender best colour.",
+            "hex": "#b59fba"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.summer cool light": {
+    "systemId": "korean-tonal",
+    "seasonId": "summer cool light",
+    "seasonLabel": "여름 쿨 라이트 (Summer Cool Light)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "description": "피부 톤을 환하게 밝혀주고 안색을 가장 생기 있게 만들어주는 당신의 시그니처 컬러 그룹입니다.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Light Blue",
+            "note": "부드럽고 시원한 하늘색이 여름 쿨톤의 청량하고 깨끗한 이미지를 강조합니다.",
+            "hex": "#9cc3e4"
+          },
+          {
+            "colour": "Lavender",
+            "note": "차분하고 부드러운 라벤더는 쿨톤 피부에 조화롭게 어우러져 우아함을 더합니다.",
+            "hex": "#a8a1d6"
+          },
+          {
+            "colour": "Pink",
+            "note": "뮤트하고 차가운 톤의 핑크는 여름 쿨톤의 사랑스럽고 여성스러운 매력을 부각시킵니다.",
+            "hex": "#efaed4"
+          },
+          {
+            "colour": "Green",
+            "note": "은은하고 차가운 민트 또는 세이지 그린은 여름 쿨톤의 편안하고 세련된 분위기를 연출합니다.",
+            "hex": "#41826e"
+          },
+          {
+            "colour": "Purple",
+            "note": "회색빛이 감도는 중간 톤의 퍼플은 여름 쿨톤의 부드러움을 돋보이게 합니다.",
+            "hex": "#785aad"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "차가운 적포도주색 버건디는 깊이감을 주며 고급스럽고 세련된 느낌을 더합니다.",
+            "hex": "#894756"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "description": "어떤 컬러와도 잘 어울리며 안정감 있는 베이스를 제공하는 기본 컬러 그룹입니다.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "깊고 차가운 네이비는 여름 쿨톤에게 세련되면서도 안정적인 베이직 컬러입니다.",
+            "hex": "#353f61"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "차가운 회색빛 차콜은 부드러운 카리스마를 더하며 어떤 스타일에도 잘 어울립니다.",
+            "hex": "#505459"
+          },
+          {
+            "colour": "Grey",
+            "note": "밝고 부드러운 그레이는 여름 쿨톤의 청량감을 유지하면서도 편안함을 선사합니다.",
+            "hex": "#9da2a7"
+          },
+          {
+            "colour": "White",
+            "note": "순수하고 깨끗한 화이트는 여름 쿨톤의 맑은 안색을 더욱 돋보이게 하는 핵심 베이직 컬러입니다.",
+            "hex": "#f0f4f9"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "description": "개성을 표현하거나 스타일에 활력을 불어넣을 때 사용하는 포인트 또는 보조 컬러 그룹입니다.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Blue",
+            "note": "채도 있는 미디엄 블루는 여름 쿨톤에 시원하고 활기찬 포인트를 줍니다.",
+            "hex": "#5f83be"
+          },
+          {
+            "colour": "Teal",
+            "note": "깊고 차가운 틸 컬러는 신비롭고 세련된 느낌을 주며 특별한 악센트가 됩니다.",
+            "hex": "#49969d"
+          },
+          {
+            "colour": "Red",
+            "note": "차가운 베리 톤의 레드는 여름 쿨톤에 생동감과 시크함을 더하는 포인트 컬러입니다.",
+            "hex": "#da5459"
+          },
+          {
+            "colour": "Black",
+            "note": "얼굴에서 멀리 매치하거나 패턴으로 활용하면 세련된 무게감을 더합니다.",
+            "hex": "#26282c"
+          },
+          {
+            "colour": "Brown",
+            "note": "회색빛이 감도는 쿨톤 브라운은 부드러우면서도 차분한 악센트를 줍니다.",
+            "hex": "#855843"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.autumn warm deep": {
+    "systemId": "korean-tonal",
+    "seasonId": "autumn warm deep",
+    "seasonLabel": "가을 웜 딥 (Autumn Warm Deep)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "description": "가을 웜톤의 따뜻하고 풍부한 매력을 가장 잘 살려주는 핵심 색상들입니다.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "깊고 풍부한 붉은색이 가을 웜톤의 우아함과 따뜻함을 강조합니다.",
+            "hex": "#632424"
+          },
+          {
+            "colour": "Mustard",
+            "note": "따뜻하고 채도 높은 노란색이 생기 있고 활력 있는 인상을 줍니다.",
+            "hex": "#b28412"
+          },
+          {
+            "colour": "Olive",
+            "note": "깊이 있고 차분한 올리브색은 가을 웜톤의 자연스러운 매력을 더합니다.",
+            "hex": "#5d6223"
+          },
+          {
+            "colour": "Camel",
+            "note": "부드럽고 따뜻한 낙타색은 가을 웜톤의 편안하고 고급스러운 분위기와 잘 어울립니다.",
+            "hex": "#a78156"
+          },
+          {
+            "colour": "Brown",
+            "note": "깊고 따뜻한 갈색은 가을 웜톤의 안정적이고 포근한 이미지를 완성합니다.",
+            "hex": "#593715"
+          },
+          {
+            "colour": "Orange",
+            "note": "활기차고 따뜻한 오렌지는 가을 웜톤의 건강하고 생기 있는 에너지를 줍니다.",
+            "hex": "#af6200"
+          },
+          {
+            "colour": "Red",
+            "note": "따뜻하고 강렬한 레드는 가을 웜톤에게 활력과 시크함을 선사합니다.",
+            "hex": "#9a3106"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "description": "어떤 컬러와도 조화롭게 어우러져 전체적인 룩의 안정감을 주는 기본 색상들입니다.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "깊고 차분한 네이비는 가을 웜톤에게 지적이고 세련된 느낌을 선사합니다.",
+            "hex": "#1d2444"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "부드러운 차콜 그레이는 가을 웜톤의 차분함과 깊이를 더해줍니다.",
+            "hex": "#37332e"
+          },
+          {
+            "colour": "Cream",
+            "note": "따뜻하고 부드러운 크림색은 가을 웜톤의 포근한 분위기와 잘 어울립니다.",
+            "hex": "#f5eee0"
+          },
+          {
+            "colour": "Beige",
+            "note": "따뜻한 베이지는 가을 웜톤의 온화하고 자연스러운 이미지를 부각합니다.",
+            "hex": "#b29c73"
+          },
+          {
+            "colour": "Grey",
+            "note": "부드러운 중간 톤 그레이는 가을 웜톤의 깊이감을 해치지 않으며 조화롭게 어울립니다.",
+            "hex": "#76726c"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "description": "주로 악센트나 하의에 활용하여 개성을 더하고 룩에 활력을 불어넣는 보조 색상들입니다.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Green",
+            "note": "자연의 싱그러움이 느껴지는 그린은 가을 웜톤의 차분하면서도 생기 있는 매력을 더합니다.",
+            "hex": "#255637"
+          },
+          {
+            "colour": "Teal",
+            "note": "신비롭고 깊이 있는 틸은 가을 웜톤의 독특하고 세련된 분위기를 연출합니다.",
+            "hex": "#136861"
+          },
+          {
+            "colour": "Coral",
+            "note": "따뜻하고 부드러운 코랄은 가을 웜톤의 혈색을 밝히고 화사함을 더합니다.",
+            "hex": "#c85e36"
+          },
+          {
+            "colour": "Pink",
+            "note": "따뜻한 톤의 핑크는 가을 웜톤의 부드럽고 여성스러운 매력을 강조합니다.",
+            "hex": "#ce879c"
+          },
+          {
+            "colour": "Yellow",
+            "note": "밝고 따뜻한 옐로우는 가을 웜톤의 긍정적이고 활동적인 이미지를 더합니다.",
+            "hex": "#d7a822"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.autumn warm mute": {
+    "systemId": "korean-tonal",
+    "seasonId": "autumn warm mute",
+    "seasonLabel": "가을 웜 뮤트 (Autumn Warm Mute)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "role": "primary",
+        "description": "Soft, muted warm tones that blend with low-contrast golden colouring instead of shouting over it.",
+        "colours": [
+          {
+            "colour": "Camel",
+            "note": "The quiet hero of the muted-warm wardrobe.",
+            "hex": "#a49380"
+          },
+          {
+            "colour": "Sage",
+            "note": "Greyed green that harmonises with softened warm skin.",
+            "hex": "#a9a391"
+          },
+          {
+            "colour": "Olive",
+            "note": "Muted and grounding — a signature autumn-mute colour.",
+            "hex": "#74795f"
+          },
+          {
+            "colour": "Coral",
+            "note": "In its dusty, muted range — terracotta-adjacent.",
+            "hex": "#b48374"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Soft antique mustard rather than vivid yellow.",
+            "hex": "#b3985f"
+          },
+          {
+            "colour": "Beige",
+            "note": "Warm sand tones sit beautifully near the face.",
+            "hex": "#baaa8f"
+          },
+          {
+            "colour": "Brown",
+            "note": "Soft mid-browns blend with the palette's low contrast.",
+            "hex": "#68574a"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "role": "foundation",
+        "description": "Everyday bases — softened darks beat harsh black here.",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "Softer than black against muted-warm colouring.",
+            "hex": "#3e4251"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "The gentler dark neutral for tailoring.",
+            "hex": "#45423e"
+          },
+          {
+            "colour": "Cream",
+            "note": "Warms up shirting and knitwear bases.",
+            "hex": "#ede6d8"
+          },
+          {
+            "colour": "Taupe",
+            "note": "A muted-warm staple base.",
+            "hex": "#584f42"
+          },
+          {
+            "colour": "Grey",
+            "note": "Mid-grey works when worn with a warm best colour.",
+            "hex": "#8b857e"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "role": "accent",
+        "description": "Supporting colours — best in small doses or paired with a best colour.",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "Muted wine depths for colder months.",
+            "hex": "#6c4e4d"
+          },
+          {
+            "colour": "Teal",
+            "note": "Greyed teal bridges toward cooler pieces.",
+            "hex": "#5d7a77"
+          },
+          {
+            "colour": "Terracotta",
+            "note": "Earthy red-orange in soft doses.",
+            "hex": "#b08273"
+          },
+          {
+            "colour": "Green",
+            "note": "Mossy, muted greens over vivid ones.",
+            "hex": "#4b6a56"
+          },
+          {
+            "colour": "Pink",
+            "note": "Dusty rose rather than clear pink.",
+            "hex": "#ca9cab"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.winter cool deep": {
+    "systemId": "korean-tonal",
+    "seasonId": "winter cool deep",
+    "seasonLabel": "겨울 쿨 딥 (Winter Cool Deep)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "description": "Winter Warm 톤의 피부를 환하게 밝혀주고 생기 넘치게 만들어주는 메인 컬러들입니다.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Burgundy",
+            "note": "깊고 풍부한 톤으로 피부를 고급스럽고 생기 있게 만듭니다.",
+            "hex": "#641d30"
+          },
+          {
+            "colour": "Teal",
+            "note": "따뜻한 깊이와 선명함이 얼굴에 활력을 더해줍니다.",
+            "hex": "#0b666c"
+          },
+          {
+            "colour": "Green",
+            "note": "선명하고 깊은 에메랄드 그린이 강렬한 에너지를 부여합니다.",
+            "hex": "#045742"
+          },
+          {
+            "colour": "Purple",
+            "note": "깊고 풍부한 보라색은 우아하면서도 세련된 인상을 줍니다.",
+            "hex": "#532a86"
+          },
+          {
+            "colour": "Red",
+            "note": "선명하고 채도 높은 레드가 겨울 웜톤의 피부를 빛나게 합니다.",
+            "hex": "#a51025"
+          },
+          {
+            "colour": "Pink",
+            "note": "깊고 생생한 핑크가 겨울 웜톤의 독특한 매력을 강조합니다.",
+            "hex": "#cd85ae"
+          },
+          {
+            "colour": "Blue",
+            "note": "맑고 깊은 로얄 블루 계열이 이목구비를 또렷하게 살려줍니다.",
+            "hex": "#2a5392"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "description": "다양한 스타일의 바탕이 되는 기본 컬러들로, 안정감 있고 조화로운 룩을 연출하는 데 필수적입니다.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "선명하고 깊은 블랙은 겨울 웜톤의 대비감을 강조합니다.",
+            "hex": "#181a1d"
+          },
+          {
+            "colour": "Navy",
+            "note": "깊고 차분한 네이비는 세련되면서도 안정적인 분위기를 줍니다.",
+            "hex": "#182246"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "블랙에 가까운 차콜 그레이는 도시적이고 시크한 인상을 줍니다.",
+            "hex": "#2f3337"
+          },
+          {
+            "colour": "White",
+            "note": "깨끗하고 선명한 화이트는 맑은 피부 톤을 돋보이게 합니다.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Brown",
+            "note": "깊이 있고 따뜻한 브라운은 차분하면서도 부드러운 분위기를 더합니다.",
+            "hex": "#5f3018"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "description": "개성을 더하고 룩에 활력을 불어넣는 컬러들로, 얼굴에서 멀리 또는 액세서리로 활용하면 좋습니다.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Mustard",
+            "note": "깊고 따뜻한 겨자색은 포인트로 활용하기 좋으며 개성을 더합니다.",
+            "hex": "#a18d15"
+          },
+          {
+            "colour": "Yellow",
+            "note": "선명하고 생기 있는 옐로우는 룩에 활기찬 에너지를 부여합니다.",
+            "hex": "#c3b313"
+          },
+          {
+            "colour": "Orange",
+            "note": "깊이감 있는 오렌지는 생동감과 따뜻한 매력을 더해줍니다.",
+            "hex": "#c15005"
+          },
+          {
+            "colour": "Lavender",
+            "note": "맑고 선명한 라벤더는 청량감 있는 포인트 컬러로 좋습니다.",
+            "hex": "#7c73ac"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "깨끗하고 선명한 라이트 블루는 시원하고 경쾌한 느낌을 줍니다.",
+            "hex": "#6f9cc0"
+          }
+        ]
+      }
+    ]
+  },
+  "korean-tonal.winter cool bright": {
+    "systemId": "korean-tonal",
+    "seasonId": "winter cool bright",
+    "seasonLabel": "겨울 쿨 브라이트 (Winter Cool Bright)",
+    "colour_groups": [
+      {
+        "name": "베스트 컬러 (Best Colours)",
+        "description": "이 계절의 특징을 가장 잘 살려주는 핵심 색상으로, 얼굴을 환하게 밝혀줍니다.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Blue",
+            "note": "선명하고 깊은 로얄블루 계열이 겨울 쿨톤의 시크함을 강조합니다.",
+            "hex": "#386ab6"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "깊고 차가운 레드 계열로, 우아하고 고혹적인 매력을 더합니다.",
+            "hex": "#7a243b"
+          },
+          {
+            "colour": "Green",
+            "note": "선명하고 짙은 에메랄드 그린은 피부 톤을 깨끗하고 또렷하게 합니다.",
+            "hex": "#086d54"
+          },
+          {
+            "colour": "Pink",
+            "note": "선명한 마젠타 핑크나 푸시아 핑크가 생기 있고 화사함을 선사합니다.",
+            "hex": "#ef99ca"
+          },
+          {
+            "colour": "Purple",
+            "note": "선명하고 깊은 바이올렛이나 퍼플은 겨울 쿨톤의 고급스러움을 부각시킵니다.",
+            "hex": "#6735a4"
+          },
+          {
+            "colour": "White",
+            "note": "순수하고 깨끗한 화이트는 높은 명도 대비로 얼굴을 선명하게 합니다.",
+            "hex": "#f1f5f9"
+          },
+          {
+            "colour": "Lavender",
+            "note": "차가운 맑은 라벤더는 겨울 쿨톤의 섬세하고 세련된 매력을 표현합니다.",
+            "hex": "#9489ce"
+          }
+        ]
+      },
+      {
+        "name": "베이직 컬러 (Basic Colours)",
+        "description": "어떤 컬러와도 잘 어울리며, 안정적인 스타일링의 기반이 되는 기본 색상입니다.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "겨울 쿨톤의 선명한 대비감을 극대화하는 최고의 기본 색상입니다.",
+            "hex": "#181a1d"
+          },
+          {
+            "colour": "Navy",
+            "note": "깊고 시크한 네이비는 겨울 쿨톤에게 세련된 기본 색상입니다.",
+            "hex": "#1c2752"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "깊고 차가운 차콜 그레이는 안정적이면서도 세련된 베이스를 제공합니다.",
+            "hex": "#3a3e41"
+          },
+          {
+            "colour": "Grey",
+            "note": "중간 톤의 차가운 그레이는 베스트 컬러와 조화롭게 어우러집니다.",
+            "hex": "#868b8f"
+          }
+        ]
+      },
+      {
+        "name": "서브 컬러 (Sub Colours)",
+        "description": "악센트나 보조적인 역할로 사용되어 전체적인 컬러 팔레트에 활력을 불어넣습니다.",
+        "role": "accent",
+        "colours": [
+          {
+            "colour": "Teal",
+            "note": "깊고 시원한 청록색으로, 신비롭고 세련된 포인트를 줍니다.",
+            "hex": "#138087"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "맑고 차가운 라이트 블루는 시원하고 깨끗한 이미지를 연출합니다.",
+            "hex": "#80b6e1"
+          },
+          {
+            "colour": "Red",
+            "note": "선명한 트루 레드는 얼굴에 활력을 불어넣고 강렬한 인상을 줍니다.",
+            "hex": "#cd1931"
+          },
+          {
+            "colour": "Yellow",
+            "note": "차가운 레몬 옐로우 계열은 생동감 있고 독특한 악센트로 활용하기 좋습니다.",
+            "hex": "#dfcd1e"
+          },
+          {
+            "colour": "Olive",
+            "note": "깊고 채도가 높은 올리브는 독특하고 세련된 서브 컬러로 활용됩니다.",
+            "hex": "#5f8033"
+          }
+        ]
+      }
+    ]
+  },
+  "wu-xing.wood": {
+    "systemId": "wu-xing",
+    "seasonId": "wood",
+    "seasonLabel": "Wood (木)",
+    "colour_groups": [
+      {
+        "name": "Element colours (本元素色)",
+        "description": "These are the core colours that represent the Wood element's vitality, growth, and natural essence.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Green",
+            "note": "Represents lush growth, vitality, and Wood's natural essence.",
+            "hex": "#2d6a4f"
+          },
+          {
+            "colour": "Olive",
+            "note": "Earthy and grounded, reflecting the deep, rooted aspect of Wood.",
+            "hex": "#5e6f31"
+          },
+          {
+            "colour": "Teal",
+            "note": "Rich, vibrant blue-green, like deep forest pools and dense foliage.",
+            "hex": "#007373"
+          },
+          {
+            "colour": "Blue",
+            "note": "Expansive and serene, like the sky seen through strong tree branches.",
+            "hex": "#3a6ea5"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "Freshness of new shoots and the clarity of spring skies.",
+            "hex": "#87b7d4"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "Deep, mature warmth, like rich bark or robust autumn leaves.",
+            "hex": "#692730"
+          }
+        ]
+      },
+      {
+        "name": "Harmony colours (相生色)",
+        "description": "Colours of the element that generates yours — Water (水生木 — Water nourishes Wood). Wearing them strengthens your own element.",
+        "role": "harmony",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "Deep water blue that feeds Wood's growth.",
+            "hex": "#182646"
+          },
+          {
+            "colour": "Black",
+            "note": "Water's core colour — steadies and nourishes Wood.",
+            "hex": "#1a1a1a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A softer water-dark for tailoring.",
+            "hex": "#373737"
+          },
+          {
+            "colour": "Indigo",
+            "note": "Deep blue-violet in Water's register.",
+            "hex": "#440077"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours (基础色)",
+        "description": "Universal wardrobe bases that never fight the element palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "White",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f5f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "A dependable base under any element colour.",
+            "hex": "#8a8a8a"
+          },
+          {
+            "colour": "Cream",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f0e1"
+          }
+        ]
+      }
+    ]
+  },
+  "wu-xing.fire": {
+    "systemId": "wu-xing",
+    "seasonId": "fire",
+    "seasonLabel": "Fire (火)",
+    "colour_groups": [
+      {
+        "name": "Element colours (本元素色)",
+        "description": "These vibrant colours directly reflect Fire's passionate energy and inherent warmth, making you glow.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "Classic Fire, embodying your passion and dynamic energy.",
+            "hex": "#c0392b"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "Deep, rich warmth that reflects Fire's sophisticated and intense depth.",
+            "hex": "#692730"
+          },
+          {
+            "colour": "Orange",
+            "note": "Joyful and energetic, perfectly captures Fire's radiant and spirited nature.",
+            "hex": "#d4722a"
+          },
+          {
+            "colour": "Coral",
+            "note": "A lively blend of warmth and brightness, reflecting Fire's vibrant spark.",
+            "hex": "#f26951"
+          },
+          {
+            "colour": "Pink",
+            "note": "Adds a vibrant warmth and playful passion, highlighting Fire's magnetic charm.",
+            "hex": "#ee9cc0"
+          },
+          {
+            "colour": "Yellow",
+            "note": "Bright and radiant, reflecting Fire's joyful spirit and illuminating presence.",
+            "hex": "#ebc726"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Earthy warmth with rich depth, resonant with Fire's vibrant intensity.",
+            "hex": "#b69412"
+          }
+        ]
+      },
+      {
+        "name": "Harmony colours (相生色)",
+        "description": "Colours of the element that generates yours — Wood (木生火 — Wood feeds Fire). Wearing them strengthens your own element.",
+        "role": "harmony",
+        "colours": [
+          {
+            "colour": "Green",
+            "note": "Wood's core colour — fuel for Fire's radiance.",
+            "hex": "#2d6a4f"
+          },
+          {
+            "colour": "Olive",
+            "note": "Grounded wood green for everyday wear.",
+            "hex": "#6b7c3e"
+          },
+          {
+            "colour": "Teal",
+            "note": "Blue-green wood tone that cools without dousing.",
+            "hex": "#2a7f7f"
+          },
+          {
+            "colour": "Forest",
+            "note": "Deep wood green for outer layers.",
+            "hex": "#184625"
+          },
+          {
+            "colour": "Sage",
+            "note": "A soft wood green for lighter pieces.",
+            "hex": "#b4b18e"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours (基础色)",
+        "description": "Universal wardrobe bases that never fight the element palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1b2a4a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A dependable base under any element colour.",
+            "hex": "#3d3d3d"
+          },
+          {
+            "colour": "Black",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1a1a1a"
+          },
+          {
+            "colour": "White",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f5f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "A dependable base under any element colour.",
+            "hex": "#8a8a8a"
+          },
+          {
+            "colour": "Cream",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f0e1"
+          }
+        ]
+      }
+    ]
+  },
+  "wu-xing.earth": {
+    "systemId": "wu-xing",
+    "seasonId": "earth",
+    "seasonLabel": "Earth (土)",
+    "colour_groups": [
+      {
+        "name": "Element colours (本元素色)",
+        "description": "These colours directly represent the essence of Earth (土), enhancing its natural depth and warmth.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Brown",
+            "note": "Deep, rich, and grounding, reflecting Earth's stable and nurturing character.",
+            "hex": "#623a1e"
+          },
+          {
+            "colour": "Beige",
+            "note": "A warm, neutral foundation, echoing Earth's quiet strength and stability.",
+            "hex": "#cbb78a"
+          },
+          {
+            "colour": "Camel",
+            "note": "A sophisticated, warm neutral that embodies Earth's grounded elegance.",
+            "hex": "#c29a6b"
+          },
+          {
+            "colour": "Cream",
+            "note": "Soft, warm, and inviting, symbolizing nourishing soil and gentle warmth.",
+            "hex": "#f0e9db"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Rich, deep yellow, reminiscent of fertile harvest and Earth's inherent warmth.",
+            "hex": "#b69419"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A deep, earthy red, representing grounded strength and a rich, stable core.",
+            "hex": "#692730"
+          }
+        ]
+      },
+      {
+        "name": "Harmony colours (相生色)",
+        "description": "Colours of the element that generates yours — Fire (火生土 — Fire creates Earth). Wearing them strengthens your own element.",
+        "role": "harmony",
+        "colours": [
+          {
+            "colour": "Red",
+            "note": "Fire's core colour — energises Earth's steadiness.",
+            "hex": "#c0392b"
+          },
+          {
+            "colour": "Coral",
+            "note": "A warm fire tone that lifts earthy bases.",
+            "hex": "#e77453"
+          },
+          {
+            "colour": "Pink",
+            "note": "Fire's softer register for lighter looks.",
+            "hex": "#e8a0bf"
+          },
+          {
+            "colour": "Orange",
+            "note": "Radiant fire warmth beside ochres and browns.",
+            "hex": "#d4722a"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours (基础色)",
+        "description": "Universal wardrobe bases that never fight the element palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1b2a4a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A dependable base under any element colour.",
+            "hex": "#3d3d3d"
+          },
+          {
+            "colour": "Black",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1a1a1a"
+          },
+          {
+            "colour": "White",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f5f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "A dependable base under any element colour.",
+            "hex": "#8a8a8a"
+          }
+        ]
+      }
+    ]
+  },
+  "wu-xing.metal": {
+    "systemId": "wu-xing",
+    "seasonId": "metal",
+    "seasonLabel": "Metal (金)",
+    "colour_groups": [
+      {
+        "name": "Element colours (本元素色)",
+        "description": "These colours embody the essence of Metal, reflecting its clarity, strength, and refined elegance.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "White",
+            "note": "Purity and clarity, enhancing Metal's inherent luminescence.",
+            "hex": "#f5f5f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "Sophisticated and structural, reflecting Metal's balanced elegance.",
+            "hex": "#8a8a8a"
+          },
+          {
+            "colour": "Cream",
+            "note": "Provides a soft, refined glow, characteristic of polished Metal.",
+            "hex": "#efeadb"
+          },
+          {
+            "colour": "Light Blue",
+            "note": "Evokes cool precision and clear, reflective surfaces for Metal.",
+            "hex": "#83b7db"
+          },
+          {
+            "colour": "Teal",
+            "note": "A deep, rich jewel tone that complements Metal's depth and refined sheen.",
+            "hex": "#007373"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A luxurious, polished hue that signifies Metal's mature strength and richness.",
+            "hex": "#722f37"
+          }
+        ]
+      },
+      {
+        "name": "Harmony colours (相生色)",
+        "description": "Colours of the element that generates yours — Earth (土生金 — Earth bears Metal). Wearing them strengthens your own element.",
+        "role": "harmony",
+        "colours": [
+          {
+            "colour": "Beige",
+            "note": "Earth's quiet base that supports Metal's clarity.",
+            "hex": "#c8b88a"
+          },
+          {
+            "colour": "Camel",
+            "note": "Warm earth tone that softens metallic cools.",
+            "hex": "#c29a6b"
+          },
+          {
+            "colour": "Brown",
+            "note": "Grounding earth depth for structure.",
+            "hex": "#6b4226"
+          },
+          {
+            "colour": "Mustard",
+            "note": "Earth's ochre register as an accent.",
+            "hex": "#c4a22f"
+          },
+          {
+            "colour": "Sand",
+            "note": "A pale earth neutral for layering.",
+            "hex": "#caba88"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours (基础色)",
+        "description": "Universal wardrobe bases that never fight the element palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1b2a4a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A dependable base under any element colour.",
+            "hex": "#3d3d3d"
+          },
+          {
+            "colour": "Black",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1a1a1a"
+          }
+        ]
+      }
+    ]
+  },
+  "wu-xing.water": {
+    "systemId": "wu-xing",
+    "seasonId": "water",
+    "seasonLabel": "Water (水)",
+    "colour_groups": [
+      {
+        "name": "Element colours (本元素色)",
+        "description": "These colours embody the depth and flow of Water, making them your most impactful and harmonious choices.",
+        "role": "primary",
+        "colours": [
+          {
+            "colour": "Black",
+            "note": "Represents water's ultimate depth and mysterious nature.",
+            "hex": "#1a1a1a"
+          },
+          {
+            "colour": "Blue",
+            "note": "Evokes the vastness, serenity, and profound depth of the ocean.",
+            "hex": "#3a6ea5"
+          },
+          {
+            "colour": "Teal",
+            "note": "A rich, deep blend reflecting watery depths with vibrant life.",
+            "hex": "#007373"
+          },
+          {
+            "colour": "Purple",
+            "note": "Connects to water's mysterious depth and regal, introspective quality.",
+            "hex": "#6a3d8f"
+          },
+          {
+            "colour": "Burgundy",
+            "note": "A rich, cool-toned hue echoing water's hidden currents and intensity.",
+            "hex": "#692734"
+          }
+        ]
+      },
+      {
+        "name": "Harmony colours (相生色)",
+        "description": "Colours of the element that generates yours — Metal (金生水 — Metal collects Water). Wearing them strengthens your own element.",
+        "role": "harmony",
+        "colours": [
+          {
+            "colour": "White",
+            "note": "Metal's core colour — clarifies Water's depth.",
+            "hex": "#f5f5f0"
+          },
+          {
+            "colour": "Grey",
+            "note": "Metal's cool neutral, a natural pairing.",
+            "hex": "#888a8d"
+          },
+          {
+            "colour": "Silver",
+            "note": "Literal metal — luminous against deep water tones.",
+            "hex": "#b2b2b2"
+          },
+          {
+            "colour": "Light Grey",
+            "note": "A pale metal wash for lighter pieces.",
+            "hex": "#cecece"
+          }
+        ]
+      },
+      {
+        "name": "Foundation colours (基础色)",
+        "description": "Universal wardrobe bases that never fight the element palette.",
+        "role": "foundation",
+        "colours": [
+          {
+            "colour": "Navy",
+            "note": "A dependable base under any element colour.",
+            "hex": "#1b2a4a"
+          },
+          {
+            "colour": "Charcoal",
+            "note": "A dependable base under any element colour.",
+            "hex": "#3d3d3d"
+          },
+          {
+            "colour": "Cream",
+            "note": "A dependable base under any element colour.",
+            "hex": "#f5f0e1"
+          }
+        ]
+      }
+    ]
+  }
+}

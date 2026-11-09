@@ -1,0 +1,76 @@
+---
+layout: guide
+permalink: /kibbe-body-types/
+title: "Kibbe Body Types Explained: All 10 Types, Plus Kitchener Essences"
+short_title: Kibbe body types
+description: "The Kibbe body types explained: what yin and yang mean, how to find your type, and the best fits, necklines and fabrics for all ten, from Dramatic to Romantic."
+image: /images/og-image.jpg
+kicker: Body type
+heading: "Kibbe body types explained"
+lede: "Kibbe isn't about weight or measurements. It's about the overall line of your body, from sharp and long to soft and rounded, and which shapes and fabrics follow it."
+breadcrumbs:
+  - { name: Guides, url: /guides/ }
+cta_heading: "Get your Kibbe type, then see which of your clothes fit it"
+cta_text: "Kroma can suggest your Kibbe type from a full-body photo, or you can enter it yourself. It then marks which of your clothes and wishlist pieces suit your lines, by fit, neckline, sleeve, length and fabric."
+related:
+  - { name: "Free colour analysis quiz", url: /colour-analysis/ }
+  - { name: "What glasses suit my face shape?", url: /glasses-for-face-shape/ }
+---
+
+<p>
+  The system comes from stylist David Kibbe's 1987 book <em>Metamorphosis</em>.
+  It places you on a scale between <strong>yang</strong> (long, narrow, sharp,
+  angular) and <strong>yin</strong> (soft, rounded, curved, delicate). Most
+  people are a mix. Your type tells you which clothing lines echo your own.
+</p>
+
+<h2>How to find your Kibbe type</h2>
+<p>Look at your whole frame rather than one feature, and answer honestly. It helps to use photos taken straight on, full length, in fitted clothes.</p>
+<ol>
+  <li><strong>Vertical line:</strong> do you look tall and long (even if you're not), moderate, or compact?</li>
+  <li><strong>Bone structure:</strong> are your shoulders, hands and face angular and sharp, wide and blunt, moderate, or narrow and delicate?</li>
+  <li><strong>Flesh:</strong> is your body lean and straight, or soft and rounded, at any weight?</li>
+  <li><strong>Face:</strong> sharp, angular features, or rounded, soft ones?</li>
+</ol>
+<p>Mostly long and sharp points to the Dramatic types. Wide and blunt points to the Naturals. Moderate and balanced points to the Classics. Compact with mixed features points to the Gamines. Soft and rounded points to the Romantics.</p>
+
+<h2>The 10 Kibbe types</h2>
+<p class="muted">These are the same recommendations Kroma uses to score your clothes for each type.</p>
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Type</th><th>Lines</th><th>Fits and necklines</th><th>Sleeves and lengths</th><th>Fabrics</th></tr></thead>
+  <tbody>
+    {%- for k in site.data.style.kibbe %}
+    <tr id="{{ k.id }}"><td><strong>{{ k.name }}</strong></td><td>{{ k.desc }}</td><td>{{ k.fits | join: ", " }}<br>{{ k.necklines | join: ", " }}</td><td>{{ k.sleeves | join: ", " }}<br>{{ k.lengths | join: ", " }}</td><td>{{ k.weaves | join: ", " }}</td></tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2 id="kitchener">Kitchener essences</h2>
+<p>
+  Stylist John Kitchener's essence system looks at the overall impression
+  you give, from your features, presence and energy, rather than your
+  frame. Kroma offers it alongside Kibbe; pick a main essence and an
+  optional second one.
+</p>
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Essence</th><th>Impression</th><th>Fits and necklines</th><th>Sleeves and lengths</th><th>Fabrics</th></tr></thead>
+  <tbody>
+    {%- for k in site.data.style.kitchener %}
+    <tr id="essence-{{ k.id }}"><td><strong>{{ k.name }}</strong></td><td>{{ k.desc }}</td><td>{{ k.fits | join: ", " }}<br>{{ k.necklines | join: ", " }}</td><td>{{ k.sleeves | join: ", " }}<br>{{ k.lengths | join: ", " }}</td><td>{{ k.weaves | join: ", " }}</td></tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>Common questions</h2>
+<h3>Is Kibbe about body size?</h3>
+<p>No. Weight changes your flesh, not your bone structure or vertical line, so your type usually stays the same. Any type can be any size or height.</p>
+<h3>What's the difference between Kibbe and body shape (hourglass, pear and so on)?</h3>
+<p>Body shapes compare bust, waist and hip measurements. Kibbe looks at your whole line and bone structure, so two people with the same measurements can be different Kibbe types.</p>
+<h3>Can men use Kibbe?</h3>
+<p>Yes. The yin and yang lines apply to everyone, whatever you wear. A Dramatic man suits long, sharp tailoring just as a Dramatic woman does.</p>
+<h3>Are there other body systems?</h3>
+<p>Kroma also supports <a href="#kitchener">Kitchener essences</a> and proportion-based options. Pick whichever matches how you think about your style.</p>

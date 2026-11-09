@@ -1,0 +1,175 @@
+{%- comment -%}
+  Translated homepage. Each language has a page at /<code>/ (front matter:
+  layout home-i18n, lang, i18n: home) and its text in _data/home/<code>.json.
+  Structure mirrors the English index.html: when that page changes, update
+  this layout and the data files together.
+  Guides, privacy and terms are English-only for now and are labelled so.
+{%- endcomment -%}
+{%- assign t = site.data.home[page.lang] -%}
+{%- assign lang = site.data.languages | where: "code", page.lang | first -%}
+<!DOCTYPE html>
+<html lang="{{ lang.html }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ t.title }}</title>
+<meta name="description" content="{{ t.description | escape }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% include lang-alternates.html %}
+<meta name="twitter:site" content="@kromafit">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kroma">
+<meta property="og:title" content="{{ t.title | escape }}">
+<meta property="og:description" content="{{ t.description | escape }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="https://kroma.fit/images/og-image-{{ page.lang }}.jpg">
+<meta property="og:image:width" content="1024">
+<meta property="og:image:height" content="500">
+<meta property="og:locale" content="{{ lang.locale }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ t.title | escape }}">
+<meta name="twitter:description" content="{{ t.description | escape }}">
+<meta name="twitter:image" content="https://kroma.fit/images/og-image-{{ page.lang }}.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kroma","description":{{ t.description | jsonify }},"inLanguage":"{{ lang.html }}","applicationCategory":"LifestyleApplication","operatingSystem":"Android","url":"{{ site.url }}{{ page.url }}","image":"https://kroma.fit/images/og-image-{{ page.lang }}.jpg","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}
+</script>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#8b5a2b">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="{{ page.url }}">Kroma</a>
+    <div class="header-end">
+      <nav>
+        <a href="{{ page.url }}" class="active">{{ t.nav_home }}</a>
+        {%- if t.local_pages and t.local_pages.size > 0 %}
+        <a href="{{ t.local_pages[0].href }}">{{ t.local_pages[0].nav }}</a>
+        {%- endif %}
+        <a href="/guides/" hreflang="en">{{ t.nav_guides }} <span class="en-note">(EN)</span></a>
+        <a href="/privacy/" hreflang="en">{{ t.nav_privacy }} <span class="en-note">(EN)</span></a>
+      </nav>
+      {% include lang-switch.html %}
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>{{ t.hero_h1 }}</h1>
+        <p class="lede">{{ t.hero_lede }}</p>
+      </div>
+      <div class="hero-visual">
+        <img src="/images/hero-wardrobe-{{ page.lang }}.webp" alt="{{ t.hero_alt | escape }}" width="678" height="1430" loading="eager" decoding="async">
+      </div>
+    </section>
+
+    <div class="divider">
+      <img src="/images/divider-weft.webp" alt="{{ t.divider_weft_alt | escape }}" width="300" height="300" loading="lazy" decoding="async">
+      <span class="divider-term">{{ t.divider_weft }}</span>
+    </div>
+
+    <section>
+      <h2>{{ t.features_h2 }}</h2>
+      <div class="features">
+        {%- for f in t.features %}
+        <div class="feature">
+          <h3>{{ f.h }}</h3>
+          <p>{{ f.p }}</p>
+        </div>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2>{{ t.guides_h2 }}</h2>
+      <p class="muted">{{ t.guides_lede }}</p>
+      <div class="features">
+        {%- for g in t.local_pages %}
+        <a class="feature" href="{{ g.href }}">
+          <h3>{{ g.h }}</h3>
+          <p>{{ g.p }}</p>
+        </a>
+        {%- endfor %}
+        {%- for g in t.guides %}
+        <a class="feature" href="{{ g.href }}" hreflang="en">
+          <h3>{{ g.h }} <span class="en-note">(EN)</span></h3>
+          <p>{{ g.p }}</p>
+        </a>
+        {%- endfor %}
+      </div>
+      <p><a href="/guides/" hreflang="en">{{ t.guides_all }}</a></p>
+    </section>
+
+    <section>
+      <h2>{{ t.screens_h2 }}</h2>
+      <div class="screens" tabindex="0" role="region" aria-label="{{ t.screens_aria | escape }}">
+        {%- assign shots = "1-wardrobe,2-outfits,3-analysis,4-wishlist,5-colours,6-story" | split: "," -%}
+        {%- for s in shots %}
+        <figure>
+          <img src="/images/screens/{{ page.lang }}/{{ s }}.webp" width="540" height="960" loading="lazy" decoding="async" alt="{{ t.screens_alt[forloop.index0] | escape }}">
+        </figure>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <div class="divider">
+      <img src="/images/divider-warp.webp" alt="{{ t.divider_warp_alt | escape }}" width="300" height="300" loading="lazy" decoding="async">
+      <span class="divider-term">{{ t.divider_warp }}</span>
+    </div>
+
+    <section>
+      <h2>{{ t.attr_h2 }}</h2>
+      <div class="opinion">
+        <p class="claim">{{ t.attr_claim }}</p>
+        {%- for p in t.attr_paras %}
+        <p>{{ p }}</p>
+        {%- endfor %}
+      </div>
+    </section>
+
+    <div class="divider">
+      <img src="/images/divider-selvedge.webp" alt="{{ t.divider_selvedge_alt | escape }}" width="300" height="300" loading="lazy" decoding="async">
+      <span class="divider-term">{{ t.divider_selvedge }}</span>
+    </div>
+
+    <section>
+      <h2>{{ t.privacy_h2 }}</h2>
+      {%- for p in t.privacy_paras %}
+      <p>{{ p }}</p>
+      {%- endfor %}
+    </section>
+
+    <div class="divider">·</div>
+
+    <section>
+      <h2>{{ t.getapp_h2 }}</h2>
+      <p class="muted">{{ t.getapp_p }}</p>
+      {%- if site.app_links.android != "" and site.app_links.android %}
+      <div class="app-buttons"><a class="app-btn" href="{{ site.app_links.android }}" rel="noopener"><span class="app-btn-small">Android</span><span class="app-btn-big">Google Play</span></a></div>
+      {%- endif %}
+    </section>
+  </main>
+
+  <footer class="site">
+    <span>{{ t.footer_tag }}</span>
+    <span>
+      <a href="/guides/" hreflang="en">{{ t.nav_guides }}</a> &middot;
+      <a href="/compare/" hreflang="en">{{ t.footer_compare }}</a> &middot;
+      <a href="/privacy/" hreflang="en">{{ t.nav_privacy }}</a> &middot;
+      <a href="/terms/" hreflang="en">{{ t.footer_terms }}</a> &middot;
+      <a href="/feedback/" hreflang="en">{{ t.footer_feedback }}</a>
+      <span class="en-note">({{ t.en_only }})</span>
+    </span>
+    <span class="social">
+      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="Kroma on LinkedIn">LinkedIn</a> &middot;
+      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="Kroma on X">X</a> &middot;
+      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="Kroma on Instagram">Instagram</a> &middot; <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>
+    </span>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{
+ "title": "Kroma: digitaler Kleiderschrank & kostenlose Farbanalyse",
+ "description": "Eine private Kleiderschrank-App: Erfasse deine Kleidung, trag ein, was du anziehst, und bekomm Farb- und Stiltipps – ohne Konto. Kostenlos, ohne Werbung, deine Daten bleiben auf deinem Handy.",
+ "nav_home": "Start",
+ "nav_guides": "Ratgeber",
+ "nav_privacy": "Datenschutz",
+ "hero_h1": "Die meisten Kleiderschrank-Apps wollen deine Daten. Kroma will dir nur helfen, zu tragen, was du hast.",
+ "hero_lede": "Kroma ist eine private Kleiderschrank-App, die alles auf deinem Handy speichert. Erfasse deine Kleidung, trag ein, was du wirklich anziehst, und bekomm Outfit-Ideen passend zu Wetter, Körper und Farbpalette – <strong>alles auf deinem Gerät, ohne Tracking, ohne Konto.</strong>",
+ "hero_alt": "Der Kleiderschrank-Tab von Kroma: ein Raster aus Kleidungsstücken – ein terrakottafarbenes Paisley-Tuch, ein senfgelber Punkterock, schwarze Jeans und ein bordeauxroter Hoodie – jeweils mit Passt-Wert, Preis und Tragehäufigkeit.",
+ "divider_weft": "Schuss",
+ "divider_weft_alt": "Nahaufnahme von gewebtem Leinen mit einem warmbraunen Faden, der waagerecht durch den cremefarbenen Schuss läuft.",
+ "divider_warp": "Kette",
+ "divider_warp_alt": "Nahaufnahme von gewebtem Leinen mit einem warmbraunen senkrechten Faden zwischen den cremefarbenen Kettfäden.",
+ "divider_selvedge": "Webkante",
+ "divider_selvedge_alt": "Nahaufnahme der Webkante des Leinens, wo die Schussfäden umkehren, neben einer senkrechten braunen Kordel.",
+ "features_h2": "Was die App kann",
+ "features": [
+  {
+   "h": "Alles erfassen",
+   "p": "Fotografiere jedes Kleidungsstück. Die KI erkennt Art, Farbe, Muster, Webart und Stoff, soweit sichtbar. Über 120 Kleidungsarten aus Traditionen der ganzen Welt, nicht nur westliche."
+  },
+  {
+   "h": "Eintragen, was du trägst",
+   "p": "Fotografiere dein Outfit, und die App erkennt, welche Teile aus deinem Kleiderschrank du trägst. Echte Kosten pro Tragen statt Schätzungen. Ehrliche Daten darüber, wozu du wirklich greifst."
+  },
+  {
+   "h": "Outfits passend zum Wetter",
+   "p": "Standardmäßig tippst du an, wie sich der Tag anfühlt – ganz ohne Netz. Oder du aktivierst Open-Meteo einmal morgens für eine Stadt deiner Wahl. Eine persönliche Wohlfühl-Kalibrierung, damit dein „warm“ nicht das von jemand anderem ist."
+  },
+  {
+   "h": "Fünf Farbanalyse-Systeme",
+   "p": "Das westliche 12-Typen-System, Ritu (Südasien), Shikisai (Japan), Korean Tonal und Wu Xing (China). Dazu Körperanalyse nach Kibbe und nach Proportionen – wähle das Modell, das zu dir passt."
+  },
+  {
+   "h": "Deine eigene KI",
+   "p": "Nutze deinen eigenen Schlüssel für Gemini, Claude, OpenAI, Mistral oder OpenRouter oder einen eigenen Ollama-Server. Fotos gehen direkt von deinem Handy an den Anbieter deiner Wahl, und Kroma fragt, bevor das erste gesendet wird. Wir sehen sie nie."
+  },
+  {
+   "h": "Keine Konten, keine Server",
+   "p": "App öffnen und loslegen: keine Registrierung, keine E-Mail, kein Profil in fremden Datenbanken. Dein Kleiderschrank liegt verschlüsselt auf deinem Handy. Es gibt keinen Server, den wir für eine Löschanfrage abschalten müssten, weil es keinen Server gibt."
+  }
+ ],
+ "guides_h2": "Kostenlose Ratgeber",
+ "guides_lede": "Ohne Anmeldung, ohne E-Mail. Die Ratgeber sind vorerst auf Englisch.",
+ "local_pages": [],
+ "guides": [
+  {
+   "href": "/colour-analysis/",
+   "h": "Kostenloser Farbtyp-Test",
+   "p": "Welcher Farbtyp bin ich? Zehn Fragen im Browser, dann deine Palette aus 12 Typen."
+  },
+  {
+   "href": "/colour-analysis/#seasons",
+   "h": "Alle 12 Farbpaletten",
+   "p": "Farben, Neutraltöne, Make-up, Haare und Metalle für jeden Farbtyp."
+  },
+  {
+   "href": "/kibbe-body-types/",
+   "h": "Kibbe-Körpertypen",
+   "p": "Alle zehn Typen, von Dramatic bis Romantic, mit passenden Schnitten und Stoffen."
+  },
+  {
+   "href": "/glasses-for-face-shape/",
+   "h": "Brillen für deine Gesichtsform",
+   "p": "Die Gestellformen und -farben, die zu jeder Gesichtsform passen."
+  },
+  {
+   "href": "/laundry-symbols/",
+   "h": "Pflegesymbole erklärt",
+   "p": "Jedes Symbol auf dem Pflegeetikett und was es bedeutet."
+  },
+  {
+   "href": "/compare/",
+   "h": "Kleiderschrank-Apps im Vergleich",
+   "p": "Kroma, Whering, Indyx, Acloset und Stylebook im direkten Vergleich."
+  }
+ ],
+ "guides_all": "Alle Ratgeber (auf Englisch) →",
+ "screens_h2": "Ein Blick in die App",
+ "screens_aria": "Screenshots der App, zur Seite wischen für mehr",
+ "screens_alt": [
+  "Dein ganzer Kleiderschrank an einem Ort: das Raster mit Passt-Werten.",
+  "Outfit-Ideen aus dem, was du wirklich trägst, mit dem Wetter von heute.",
+  "Was du trägst und was es kostet: Kosten pro Tragen, vergessene Teile, Palettenpassung.",
+  "Vor dem Kauf: geplante Ausgaben, Durchschnittswert und Doppelungen auf der Wunschliste.",
+  "Deine Farben in fünf Traditionen, mit einer Farbgeschichte für den Warmen Herbst.",
+  "Die wahre Geschichte deiner Kleidung: das Paisley-Infoblatt mit seiner indischen Herkunft."
+ ],
+ "attr_h2": "Woher deine Kleidung wirklich kommt",
+ "attr_claim": "Viele Apps behandeln <em>Paisley</em> als schottisches Muster. Ist es nicht.",
+ "attr_paras": [
+  "Das Tropfenmotiv – <em>Boteh, Ambi, Kairi</em> – stammt vom indischen Subkontinent und erreichte in den Kaschmirschals der Mogulzeit seine feinste Form. Seinen englischen Namen hat es, weil schottische Webereien im 19. Jahrhundert billige Kopien in Massen herstellten. Kroma erzählt diese Geschichte und viele weitere in der App.",
+  "Tippe auf ein Muster, eine Farbe oder einen Stoff, und die Herkunft öffnet sich: woher es wirklich stammt, wie es gereist ist und wovon sein Name eigentlich erzählt. Indigo, Banarasi-Seide, Kuba-Stoff, Tatreez, Bandhani, Phulkari, Huipil, Mola, Kente, Aran, Sashiko: 74 Textiltraditionen, jede ehrlich gewürdigt.",
+  "Wenn wir etwas falsch haben, besonders bei der Tradition deiner Gemeinschaft, öffnet ein Knopf in jedem Infoblatt eine vorausgefüllte E-Mail an uns. Wir hören lieber von dir und korrigieren es, als zu raten."
+ ],
+ "privacy_h2": "Wie der Datenschutz wirklich funktioniert",
+ "privacy_paras": [
+  "Kroma hat kein Backend. Deine Kleiderschrank-Daten liegen auf deinem Handy. Keine Konten, keine Analysen, keine Werbe-IDs, keine Absturzberichte. Die wenigen Stellen, an die Daten das Gerät verlassen <em>können</em> – der gewählte KI-Anbieter, der aktivierte Wetterdienst, eine Produktseite, die du mit der App teilst – stehen vollständig in der <a href=\"/privacy/\" hreflang=\"en\">Datenschutzerklärung</a> (auf Englisch).",
+  "Das ist keine Marketingaussage. Das ist die Architektur. Es gibt keinen Server, den wir für eine Löschanfrage abschalten müssten, weil es keinen Server gibt."
+ ],
+ "getapp_h2": "Die App holen",
+ "getapp_p": "Die Android-App erscheint in Kürze, von Anfang an auf Deutsch. Die iOS-Version folgt.",
+ "footer_tag": "Kroma – mit Sorgfalt gemacht",
+ "footer_compare": "Apps vergleichen",
+ "footer_terms": "Nutzungsbedingungen",
+ "footer_feedback": "Feedback",
+ "en_only": "auf Englisch"
+}

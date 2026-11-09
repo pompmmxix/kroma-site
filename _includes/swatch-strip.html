@@ -1,0 +1,5 @@
+{%- comment -%} Power colours of one palette as a thin strip. key = palettes.json key. {%- endcomment -%}
+{%- assign pal = site.data.palettes[include.key] -%}
+<span class="strip strip-mini" aria-hidden="true">
+  {%- for group in pal.colour_groups %}{% if group.role == "primary" %}{% for c in group.colours %}{% if c.hex %}<i style="background:{{ c.hex }}"></i>{% endif %}{% endfor %}{% endif %}{% endfor -%}
+</span>

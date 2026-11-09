@@ -1,0 +1,83 @@
+---
+layout: guide
+permalink: /glasses-for-face-shape/
+title: "What Glasses Suit My Face Shape? Frames for Every Face"
+short_title: Glasses for your face shape
+description: "Which glasses suit your face shape? The best frames for oval, round, square, heart, oblong, diamond and triangle faces, plus which frame colour suits your skin's undertone."
+image: /images/og-image.jpg
+kicker: Finishing touches
+heading: "What glasses suit my face shape?"
+lede: "The rule is contrast: frames that balance your face's strongest line. Angular frames soften a round face; round frames soften a square one."
+breadcrumbs:
+  - { name: Guides, url: /guides/ }
+cta_heading: "See frames for your face, in Kroma"
+cta_text: "Pick your face shape in Kroma and the Finishing Touches section shows frame shapes for it, in a frame colour matched to your undertone, alongside jewellery, watch and hair ideas."
+face_why:
+  oval: "Balanced proportions suit almost any frame. Keep the frame about as wide as the widest part of your face."
+  round: "Straight lines and upswept corners add definition and make the face look longer."
+  square: "Curves soften a strong jaw. A heavier top line draws the eye upwards."
+  heart: "Frames with detail at the bottom, or light lower rims, balance a wider forehead."
+  oblong: "Deep frames break up length and add width."
+  rectangle: "Deep, rounded frames soften straight sides and break up length."
+  diamond: "Detail on the top line widens the forehead and softens the cheekbones."
+  triangle: "A strong top line widens the upper face to balance the jaw."
+frame_images:
+  "Rectangular": { file: rectangular_black, alt: "Black rectangular glasses" }
+  "Round": { file: round_tortoiseshell, alt: "Tortoiseshell round glasses" }
+  "Cat-eye": { file: cat-eye_tortoiseshell, alt: "Tortoiseshell cat-eye glasses" }
+  "Aviator": { file: aviator_gold, alt: "Gold aviator glasses" }
+  "Browline": { file: browline_tortoiseshell, alt: "Tortoiseshell browline glasses" }
+  "Oversized square": { file: oversized-square_crystal, alt: "Clear crystal oversized square glasses" }
+related:
+  - { name: "Free colour analysis quiz", url: /colour-analysis/ }
+  - { name: "Kibbe body types explained", url: /kibbe-body-types/ }
+---
+
+<h2>How to find your face shape</h2>
+<p>Pull your hair back, look straight into a mirror, and compare four measurements: forehead width, cheekbone width, jaw width and face length.</p>
+<ul>
+  <li><strong>Oval:</strong> longer than wide, with a forehead slightly wider than a gently rounded jaw.</li>
+  <li><strong>Round:</strong> about as wide as long, with full cheeks and a soft jaw.</li>
+  <li><strong>Square:</strong> about as wide as long, with a strong, angular jaw and a wide forehead.</li>
+  <li><strong>Heart:</strong> a wide forehead and cheekbones narrowing to a pointed chin.</li>
+  <li><strong>Oblong or rectangle:</strong> clearly longer than wide, with straight sides.</li>
+  <li><strong>Diamond:</strong> cheekbones are the widest point, with a narrower forehead and jaw.</li>
+  <li><strong>Triangle:</strong> the jaw is the widest point and the forehead is narrower.</li>
+</ul>
+
+<h2>The best glasses for each face shape</h2>
+<p class="muted">Best first. These are the frames Kroma shows for each face shape.</p>
+<div class="table-scroll">
+<table>
+  <thead><tr><th>Face shape</th><th>Frames to try</th><th>Why</th></tr></thead>
+  <tbody>
+    {%- for f in site.data.style.glasses.by_face %}
+    <tr><td><strong>{{ f[0] | capitalize }}</strong></td><td>{{ f[1] | join: ", " }}</td><td>{{ page.face_why[f[0]] }}</td></tr>
+    {%- endfor %}
+  </tbody>
+</table>
+</div>
+
+<h2>The six frame shapes</h2>
+<ul class="season-grid frames">
+  {%- for shape in site.data.style.glasses.shapes %}
+  {%- assign img = page.frame_images[shape] %}
+  {%- capture faces %}{% for f in site.data.style.glasses.by_face %}{% if f[1] contains shape %}{{ f[0] | capitalize }}, {% endif %}{% endfor %}{% endcapture %}
+  <li><figure><img src="/images/glasses/{{ img.file }}.webp" alt="{{ img.alt }}" width="640" height="640" loading="lazy"><figcaption><strong>{{ shape }}</strong>{{ faces | strip | remove_last: "," }}</figcaption></figure></li>
+  {%- endfor %}
+</ul>
+
+<h2>Which frame colour suits you?</h2>
+<p>Shape is half the answer. Frame colour should follow your undertone, just like clothes and jewellery. These are the frame colours Kroma suggests:</p>
+<ul>
+  <li><strong>Warm undertones:</strong> {{ site.data.style.glasses.material.warm | join: ", " | downcase }}.</li>
+  <li><strong>Cool undertones:</strong> {{ site.data.style.glasses.material.cool | join: ", " | downcase }}.</li>
+  <li><strong>Neutral undertones:</strong> {{ site.data.style.glasses.material.neutral | join: ", " | downcase }}.</li>
+</ul>
+<p>Not sure of your undertone? <a href="/colour-analysis/#quiz">The free colour analysis quiz</a> works it out in two minutes.</p>
+
+<h2>Common questions</h2>
+<h3>Can I find my face shape from a photo?</h3>
+<p>You can, but camera angle and hair throw it off easily. A straight-on mirror check with your hair back is more reliable. Kroma asks you to choose your face shape with a guided comparison for the same reason.</p>
+<h3>How wide should my glasses be?</h3>
+<p>The frame should be about as wide as your face at the temples, with your eyes roughly centred in each lens. The top of the frame should follow your brow line.</p>

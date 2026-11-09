@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{%- comment -%}
+  Guide pages (colour analysis, season palettes, body type, care
+  symbols). jekyll-seo-tag writes <title>, description, canonical,
+  Open Graph and Twitter tags from the front matter (title,
+  description, image). No analytics or third-party requests, same
+  as the rest of the site.
+{%- endcomment -%}
+{% seo %}
+{% include lang-alternates.html %}
+<meta name="twitter:site" content="@kromafit">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#8b5a2b">
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/guides.css">
+{%- if page.breadcrumbs %}
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+{%- for crumb in page.breadcrumbs -%}
+{"@type":"ListItem","position":{{ forloop.index }},"name":{{ crumb.name | jsonify }},"item":"{{ site.url }}{{ crumb.url }}"},
+{%- endfor -%}
+{"@type":"ListItem","position":{{ page.breadcrumbs.size | plus: 1 }},"name":{{ page.short_title | default: page.title | jsonify }}}]}
+</script>
+{%- endif %}
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="/">Kroma</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/guides/"{% if page.url contains '/guides' or page.breadcrumbs %} class="active"{% endif %}>Guides</a>
+      <a href="/feedback/">Feedback</a>
+      <a href="/privacy/">Privacy</a>
+    </nav>
+    {% include lang-switch.html %}
+  </header>
+
+  <main class="guide">
+    {%- if page.breadcrumbs %}
+    <nav class="crumbs" aria-label="Breadcrumb">
+      {%- for crumb in page.breadcrumbs %}<a href="{{ crumb.url }}">{{ crumb.name }}</a><span aria-hidden="true">›</span>{% endfor -%}
+      <span aria-current="page">{{ page.short_title | default: page.title }}</span>
+    </nav>
+    {%- endif %}
+
+    <header class="guide-head">
+      {%- if page.kicker %}<p class="kicker">{{ page.kicker }}</p>{% endif %}
+      <h1>{{ page.heading | default: page.title }}</h1>
+      {%- if page.lede %}<p class="lede">{{ page.lede }}</p>{% endif %}
+    </header>
+
+    {{ content }}
+
+    {%- unless page.no_cta %}
+    {% include get-kroma.html heading=page.cta_heading text=page.cta_text %}
+    {%- endunless %}
+
+    {%- if page.related %}
+    <nav class="related" aria-label="Related guides">
+      <h2>Related guides</h2>
+      <ul>
+        {%- for r in page.related %}
+        <li><a href="{{ r.url }}">{{ r.name }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
+    {%- endif %}
+  </main>
+
+  <footer class="site">
+    <span>Kroma — made with care</span>
+    <span>
+      <a href="/guides/">Guides</a> &middot;
+      <a href="/compare/">Compare apps</a> &middot;
+      <a href="/privacy/">Privacy</a> &middot;
+      <a href="/terms/">Terms</a> &middot;
+      <a href="/feedback/">Feedback</a>
+    </span>
+    <span class="social">
+      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="Kroma on LinkedIn">LinkedIn</a> &middot;
+      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="Kroma on X">X</a> &middot;
+      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="Kroma on Instagram">Instagram</a> &middot; <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>
+    </span>
+  </footer>
+
+</div>
+{%- if page.scripts %}{% for s in page.scripts %}
+<script src="{{ s }}" defer></script>{% endfor %}{% endif %}
+</body>
+</html>

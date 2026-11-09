@@ -1,0 +1,115 @@
+{
+ "title": "Kroma : garde-robe virtuelle et colorimétrie gratuite",
+ "description": "Une application de garde-robe privée : cataloguez vos vêtements, notez ce que vous portez et recevez des conseils couleur et style, sans compte. Gratuite, sans publicité, vos données restent sur votre téléphone.",
+ "nav_home": "Accueil",
+ "nav_guides": "Guides",
+ "nav_privacy": "Confidentialité",
+ "hero_h1": "La plupart des applis de garde-robe veulent vos données. Kroma veut seulement vous aider à porter ce que vous avez.",
+ "hero_lede": "Kroma est une application de garde-robe privée qui garde tout sur votre téléphone. Cataloguez vos vêtements, notez ce que vous portez vraiment, recevez des idées de tenues adaptées à votre météo, votre morphologie et votre palette — <strong>tout sur votre appareil, sans pistage, sans compte.</strong>",
+ "hero_alt": "L'onglet Garde-robe de Kroma : une grille de vêtements — un foulard cachemire terracotta, une jupe à pois moutarde, un jean noir et un sweat bordeaux — chacun avec son score, son prix et son nombre de ports.",
+ "divider_weft": "trame",
+ "divider_weft_alt": "Gros plan de lin tissé avec un fil brun chaud qui traverse horizontalement la trame crème.",
+ "divider_warp": "chaîne",
+ "divider_warp_alt": "Gros plan de lin tissé avec un fil brun chaud vertical parmi les fils de chaîne crème.",
+ "divider_selvedge": "lisière",
+ "divider_selvedge_alt": "Gros plan de la lisière du lin, le bord fini où les fils de trame font demi-tour, à côté d'un cordon brun vertical.",
+ "features_h2": "Ce qu'elle fait",
+ "features": [
+  {
+   "h": "Tout cataloguer",
+   "p": "Photographiez chaque vêtement. L'IA note le type, la couleur, le motif, le tissage et la matière quand ils sont visibles. Plus de 120 types de vêtements issus des traditions du monde entier, pas seulement occidentales."
+  },
+  {
+   "h": "Notez ce que vous portez",
+   "p": "Photographiez votre tenue et l'appli reconnaît les pièces de votre garde-robe que vous portez. Un vrai coût par port, pas des estimations. Des données honnêtes sur ce que vous choisissez vraiment."
+  },
+  {
+   "h": "Des tenues selon la météo",
+   "p": "Par défaut, vous indiquez le ressenti du jour, sans réseau. Ou activez Open-Meteo une fois le matin avec la ville de votre choix. Un réglage de confort personnel pour que votre « chaud » ne soit pas celui d'un autre."
+  },
+  {
+   "h": "Cinq systèmes de colorimétrie",
+   "p": "12 saisons occidental, Ritu (Asie du Sud), Shikisai (japonais), Tonal coréen et Wu Xing (chinois). Plus l'analyse morphologique Kibbe et par proportions : choisissez le cadre qui vous ressemble."
+  },
+  {
+   "h": "Votre propre IA",
+   "p": "Utilisez votre clé Gemini, Claude, OpenAI, Mistral ou OpenRouter, ou un serveur Ollama à vous. Les photos vont directement de votre téléphone au fournisseur choisi, et Kroma vous demande avant d'envoyer la première. Nous ne les voyons jamais."
+  },
+  {
+   "h": "Ni compte, ni serveur",
+   "p": "Ouvrez l'appli et commencez : pas d'inscription, pas d'e-mail, pas de profil dans la base de données de quelqu'un d'autre. Votre garde-robe vit dans un stockage chiffré sur votre téléphone. Pas de serveur à éteindre pour supprimer vos données, puisqu'il n'y a pas de serveur."
+  }
+ ],
+ "guides_h2": "Guides gratuits",
+ "guides_lede": "Sans inscription ni e-mail. Le guide en français vient d'abord ; les autres sont pour l'instant en anglais.",
+ "local_pages": [
+  {
+   "href": "/fr/application-garde-robe/",
+   "nav": "Appli garde-robe",
+   "h": "Application garde-robe gratuite",
+   "p": "Organiser ses vêtements sur son téléphone : catalogue, tenues, coût par port et colorimétrie, sans compte."
+  }
+ ],
+ "guides": [
+  {
+   "href": "/colour-analysis/",
+   "h": "Test de colorimétrie",
+   "p": "Quelle saison suis-je ? Dix questions dans votre navigateur, puis votre palette parmi 12 saisons."
+  },
+  {
+   "href": "/colour-analysis/#seasons",
+   "h": "Les 12 palettes de saison",
+   "p": "Couleurs, neutres, maquillage, cheveux et métaux pour chaque saison."
+  },
+  {
+   "href": "/kibbe-body-types/",
+   "h": "Morphotypes Kibbe",
+   "p": "Les dix types, de Dramatic à Romantic, avec les coupes et matières qui leur vont."
+  },
+  {
+   "href": "/glasses-for-face-shape/",
+   "h": "Lunettes selon la forme du visage",
+   "p": "Les montures et couleurs qui vont à chaque forme de visage."
+  },
+  {
+   "href": "/laundry-symbols/",
+   "h": "Symboles d'entretien",
+   "p": "Chaque symbole de l'étiquette et sa signification."
+  },
+  {
+   "href": "/compare/",
+   "h": "Applis de garde-robe comparées",
+   "p": "Kroma, Whering, Indyx, Acloset et Stylebook côte à côte."
+  }
+ ],
+ "guides_all": "Tous les guides (en anglais) →",
+ "screens_h2": "Un aperçu",
+ "screens_aria": "Captures de l'appli, faites défiler pour en voir plus",
+ "screens_alt": [
+  "Toute votre garde-robe au même endroit : la grille de vêtements avec leurs scores.",
+  "Des idées de tenues à partir de ce que vous portez vraiment, avec la météo du jour.",
+  "Ce que vous portez et ce que ça coûte : coût par port, pièces oubliées et accord avec votre palette.",
+  "Avant d'acheter : dépenses prévues, score moyen et doublons dans la liste d'envies.",
+  "Vos couleurs dans cinq traditions, avec une histoire de couleur Automne Chaud.",
+  "La vraie histoire de vos vêtements : la fiche du motif paisley et son origine indienne."
+ ],
+ "attr_h2": "D'où viennent vraiment vos vêtements",
+ "attr_claim": "Beaucoup d'applis présentent le <em>paisley</em> comme un motif écossais. Ce n'en est pas un.",
+ "attr_paras": [
+  "Le motif en goutte — <em>boteh, ambi, kairi</em> — vient du sous-continent indien et a atteint sa forme la plus raffinée dans les châles du Cachemire de l'époque moghole. Son nom anglais vient des filatures écossaises du XIXe siècle qui en ont produit des copies bon marché en masse. Kroma raconte cette histoire, et bien d'autres, dans l'appli.",
+  "Touchez un motif, une couleur ou une matière sur un vêtement et son attribution s'ouvre : d'où il vient vraiment, comment il a voyagé, ce que son nom raconte. Indigo, soie Banarasi, tissu Kuba, Tatreez, Bandhani, Phulkari, Huipil, Mola, Kente, Aran, Sashiko : 74 traditions textiles, chacune créditée honnêtement.",
+  "Si nous nous sommes trompés, surtout sur la tradition de votre communauté, chaque fiche a un bouton qui ouvre un e-mail prérempli pour nous écrire. Nous préférons vous entendre et corriger plutôt que deviner."
+ ],
+ "privacy_h2": "Comment la confidentialité fonctionne vraiment",
+ "privacy_paras": [
+  "Kroma n'a pas de serveur. Les données de votre garde-robe restent sur votre téléphone. Pas de compte, pas de statistiques, pas d'identifiant publicitaire, pas de rapport de plantage. Les rares endroits où vos données <em>peuvent</em> aller — le fournisseur d'IA choisi, le service météo activé, une page produit que vous partagez avec l'appli — sont tous listés dans la <a href=\"/privacy/\" hreflang=\"en\">politique de confidentialité</a> (en anglais).",
+  "Ce n'est pas un argument marketing. C'est l'architecture. Il n'y a pas de serveur à éteindre pour honorer une demande de suppression, puisqu'il n'y a pas de serveur."
+ ],
+ "getapp_h2": "Obtenir l'appli",
+ "getapp_p": "L'appli Android arrive très bientôt, en français dès le premier jour. La version iOS suivra.",
+ "footer_tag": "Kroma — fait avec soin",
+ "footer_compare": "Comparer les applis",
+ "footer_terms": "Conditions",
+ "footer_feedback": "Avis",
+ "en_only": "en anglais"
+}
