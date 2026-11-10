@@ -105,7 +105,7 @@ faq:
   a: >-
     Navy, charcoal, beige, cream, camel, khaki and soft chocolate. Build a capsule wardrobe from these, then add power colours like olive, soft teal, mustard and coral.
 cta_heading: Check your clothes against the Soft Autumn palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Soft Autumn pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Soft Autumn pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/soft-autumn/
 last_modified_at: 2026-11-03
 ---

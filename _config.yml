@@ -1,4 +1,4 @@
-title: Kroma
+title: kroma
 description: Catalogue what you own. Wear what you have. Style with intention.
 url: https://kroma.fit
 lang: en
@@ -32,17 +32,17 @@ defaults:
 permalink: /blog/:slug/
 
 # jekyll-feed config.  Generates /feed.xml on build.  Title and author
-# pulled from this file so the feed reader shows "Kroma" rather than
+# pulled from this file so the feed reader shows "kroma" rather than
 # the post title only.
 feed:
   path: feed.xml
 
 author:
-  name: Kroma
+  name: kroma
   url: https://kroma.fit
 
 # ───────── App store links ─────────
-# Used by the "Get Kroma" buttons on every guide page and the quiz
+# Used by the "Get kroma" buttons on every guide page and the quiz
 # result (_includes/app-buttons.html). Leave a link empty and its
 # button shows as "coming soon" instead of a broken link. Paste the
 # store URL here on launch day; nothing else needs to change.

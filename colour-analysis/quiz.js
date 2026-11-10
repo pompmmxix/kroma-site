@@ -1,4 +1,4 @@
-/* Kroma free colour analysis quiz.
+/* kroma free colour analysis quiz.
    Runs entirely in the browser: no network requests, no storage,
    nothing leaves the page. Scores three traits (temperature, depth,
    chroma) and maps the strongest one to a 12-season result. */

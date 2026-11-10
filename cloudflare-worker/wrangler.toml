@@ -1,4 +1,4 @@
-# Cloudflare Worker config for the Kroma feedback proxy.
+# Cloudflare Worker config for the kroma feedback proxy.
 #
 # Deploy:
 #   cd cloudflare-worker

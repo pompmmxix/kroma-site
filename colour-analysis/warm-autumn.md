@@ -105,7 +105,7 @@ faq:
   a: >-
     Navy, charcoal, beige, cream, camel, chocolate and olive. Build a capsule wardrobe from these, then add power colours like rust, mustard, olive, teal and burgundy.
 cta_heading: Check your clothes against the Warm Autumn palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Warm Autumn pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Warm Autumn pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/warm-autumn/
 last_modified_at: 2026-11-03
 ---
