@@ -35,6 +35,10 @@ a.oe-item.off .oe-text, a.oe-item.off img { opacity: 0.6; }
 .oe-name { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .oe-meta { font-size: 0.86rem; color: var(--text-soft); }
 .oe-demo figcaption { font-size: 0.9rem; margin-top: 10px; }
+@media (max-width: 600px) {
+  .oe-win { padding: 18px 14px 8px; }
+  .oe-name { white-space: normal; }
+}
 </style>
 </head>
 <body>
@@ -61,7 +65,7 @@ a.oe-item.off .oe-text, a.oe-item.off img { opacity: 0.6; }
     <section>
       <h2>How it works</h2>
       <ol>
-        <li><strong>Connect Gmail.</strong> Open the extension, choose how far back to look, and sign in with Google. Access is read-only: the extension cannot send, delete or change any email.</li>
+        <li><strong>Connect Gmail.</strong> Open the extension, choose how far back to look, and sign in with Google. Access is read-only, and it is removed again as soon as the scan has read your emails. The extension cannot send, delete or change any email.</li>
         <li><strong>It finds your orders.</strong> It searches for order, receipt and dispatch emails, reads the items in each one, and joins the several emails a shop sends about the same order. Orders you returned or cancelled are marked.</li>
         <li><strong>You choose what to keep.</strong> Clothing is listed first, each item with its picture, size and price. Tick what you still own. Things that aren't clothing start unticked.</li>
         <li><strong>Download the file and import it.</strong> Move the file to your phone, then in Kroma open Settings, Backup &amp; Restore, Import an order file. Nothing is added to your wardrobe until you confirm it there.</li>
@@ -147,7 +151,7 @@ a.oe-item.off .oe-text, a.oe-item.off img { opacity: 0.6; }
 
     <section>
       <h2>Removing access</h2>
-      <p>Click <strong>Disconnect Gmail</strong> in the extension, remove it at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>, or remove the extension from Chrome. The extension stores nothing, so there is nothing else to delete.</p>
+      <p>The extension removes its own access to your Gmail at the end of every scan, so there is normally nothing to do. If a scan was cut short, you can remove access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> or by removing the extension from Chrome. The extension stores nothing, so there is nothing else to delete.</p>
     </section>
 
     <hr>

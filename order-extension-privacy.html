@@ -71,7 +71,7 @@ permalink: /order-extension/privacy/
     <p>The extension contacts three kinds of service. We list them exhaustively.</p>
 
     <h3>1. Google</h3>
-    <p>To sign you in and to read your mail through the Gmail API. This is a direct connection between your browser and Google, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. If you click <strong>Disconnect Gmail</strong>, the extension asks Google to revoke its access.</p>
+    <p>To sign you in and to read your mail through the Gmail API. This is a direct connection between your browser and Google, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. As soon as a scan has read your emails, the extension gives up its access and asks Google to revoke it.</p>
 
     <h3>2. The shops named in your order emails</h3>
     <p>To get a picture of each item you tick, the extension may request, from the shop's own website or picture server:</p>
@@ -93,7 +93,7 @@ permalink: /order-extension/privacy/
     <h2>What is stored</h2>
     <ul>
       <li><strong>By the extension: nothing.</strong> It keeps no copy of your emails, your orders or your pictures after you close the tab.</li>
-      <li><strong>By Chrome: your Google sign-in for the extension</strong>, so you don't have to sign in for every scan. Click <strong>Disconnect Gmail</strong> to remove it.</li>
+      <li><strong>Your Google sign-in is not kept.</strong> Access to your Gmail lasts for one scan. When the scan has read your emails, the extension drops its access and asks Google to revoke it, so you sign in again for each scan.</li>
       <li><strong>On your computer, when you choose to download it: the order file</strong> (<code>kroma-orders-…json</code>). It holds the items you ticked: shop, order number, order date, item name, type, colour, size, quantity, price, product link and picture. It stays in your Downloads folder until you move or delete it. You import it into Kroma yourself; Kroma reads it on your phone and sends it nowhere.</li>
       <li><strong>On your computer, only if you ask for it: a diagnostic report.</strong> It lists every order and item the scan found, how each was read, and the subject lines of order emails the extension could not read. It has no email content and no pictures. It is for troubleshooting, and it is sent to us only if you choose to attach it to an email.</li>
     </ul>
@@ -118,6 +118,7 @@ permalink: /order-extension/privacy/
     <ul>
       <li><strong>Sign in with Google (identity)</strong>: to ask for your consent to read-only Gmail access.</li>
       <li><strong>gmail.googleapis.com</strong>: to read your mail through the Gmail API.</li>
+      <li><strong>oauth2.googleapis.com</strong>: to ask Google to revoke the extension's access when a scan ends.</li>
       <li><strong>All websites (optional, asked when you scan)</strong>: to fetch product pictures from the shops in your orders and from the Internet Archive. Nothing else.</li>
     </ul>
     <p>The extension adds nothing to the web pages you visit, runs nothing in the background, and loads no code from the internet.</p>
@@ -130,7 +131,7 @@ permalink: /order-extension/privacy/
       <li><strong>The extension answers to no one else.</strong> It adds nothing to the web pages you visit, and websites and other extensions cannot ask it for your data.</li>
       <li><strong>Email content is treated as untrusted.</strong> Emails are read as text; nothing inside an email is ever run. The extension loads no code from the internet.</li>
       <li><strong>Requests go only to public web addresses, over an encrypted connection (https).</strong> The extension refuses any address in an email that points at your own computer or a device on your home network.</li>
-      <li><strong>Access to Gmail is read-only</strong>, and your Google sign-in for the extension is held by Chrome, not by us. Click <strong>Disconnect Gmail</strong> when you have finished and the access is revoked.</li>
+      <li><strong>Access to Gmail is read-only and lasts for one scan.</strong> It is revoked as soon as your emails have been read, so the extension holds no standing access to your mailbox between scans.</li>
       <li><strong>Your order file is an ordinary, unencrypted file.</strong> Anyone who can open it can see what you bought. Treat it like any personal document: delete it from your Downloads folder, and from wherever you used to move it to your phone, once it is imported.</li>
     </ul>
     <p>No software can promise to be free of flaws. If you find a security problem, email <a href="mailto:hello@kroma.fit?subject=Security%20report">hello@kroma.fit</a> and we will act on it.</p>
@@ -138,9 +139,10 @@ permalink: /order-extension/privacy/
     <hr>
 
     <h2>Removing access</h2>
-    <p>You can stop the extension's access at any time, in any of these ways:</p>
+    <p>You don't normally need to do anything: the extension removes its own access to your Gmail at the end of every scan, and the results page tells you that it has.</p>
+    <p>If a scan is cut short, for example because the tab was closed or the connection dropped, the extension tries to remove its access but may not manage to. You can always remove it yourself, in any of these ways:</p>
     <ul>
-      <li>Click <strong>Disconnect Gmail</strong> at the top of the extension's page.</li>
+      <li>Open the extension and click <strong>Disconnect Gmail</strong>, which appears at the top if any access is left.</li>
       <li>Remove "Kroma Orders" at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
       <li>Remove the extension from Chrome at <code>chrome://extensions</code>.</li>
     </ul>
