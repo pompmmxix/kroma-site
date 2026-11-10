@@ -1,0 +1,175 @@
+---
+layout: null
+permalink: /order-extension/privacy/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Kroma order extension</title>
+<link rel="canonical" href="https://kroma.fit/order-extension/privacy/">
+<meta name="description" content="How the Kroma order extension handles your email. Short version: it is read in your browser and never sent to us.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#8b5a2b">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="/">Kroma</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/privacy/">App privacy</a>
+      <a href="/terms/">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Privacy Policy: Kroma order extension</h1>
+    <p class="muted"><em>Last updated: 10 November 2026</em></p>
+    <p class="muted"><em>Applies to: the Kroma order extension for Google Chrome ("the extension"). The Kroma app and this website have <a href="/privacy/">their own policy</a>.</em></p>
+
+    <p>The extension finds the clothes in your order emails and makes a file you can import into the Kroma app. The short version: <strong>your emails are read inside your own browser. They are not sent to us, to an AI service, or to anyone else.</strong> We don't run a server, so there is nowhere for them to go.</p>
+    <p>This page sets out exactly what the extension reads, what it sends and to whom, and what it keeps.</p>
+
+    <hr>
+
+    <h2>Who we are</h2>
+    <p>Kroma is operated by <strong>Pomp Clothing</strong>, <strong>United Kingdom</strong>. You can contact us at <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>.</p>
+    <p>We receive none of the data the extension handles, so for that data we are not a <em>data controller</em> under UK GDPR or EU GDPR. If you email us, we are the controller for that email; the <a href="/privacy/">main privacy policy</a> covers it.</p>
+
+    <hr>
+
+    <h2>What the extension reads</h2>
+    <p>When you click <strong>Connect Gmail and scan</strong>, you sign in with Google and grant the extension <strong>read-only</strong> access to your Gmail (<code>gmail.readonly</code>). It then:</p>
+    <ul>
+      <li><strong>Searches your mail for orders.</strong> It asks Gmail for messages in Gmail's "Purchases" category, or whose subject contains words such as order, receipt, purchase, invoice, refund or return, within the period you chose. Mail in Spam and Bin is not searched.</li>
+      <li><strong>Reads those messages</strong> (sender, subject, date and content) to find the items you bought: name, size, colour, price, quantity, order number, order date, the shop's name, and the picture and link for each item.</li>
+      <li><strong>Reads the address of the Gmail account</strong> you connected, only so that the "Open in Gmail" links on the results page open the right account.</li>
+    </ul>
+    <p>The extension <strong>cannot</strong> send, delete, move, label or change any email, or mark one as read. Gmail does not offer a narrower permission that covers only receipts, so read-only access to your mail is the least the extension can ask for. It does not read your contacts, calendar, files or any other Google data.</p>
+
+    <hr>
+
+    <h2>Where your email is processed</h2>
+    <p>Everything is worked out by code running in the extension's page in your browser. Email content is held in your browser's memory while the page is open and is gone when you close the tab.</p>
+    <ul>
+      <li>Email content is <strong>not</strong> sent to Kroma. We have no server to receive it.</li>
+      <li>Email content is <strong>not</strong> sent to any AI or machine-learning service, and is not used to train or improve any AI model.</li>
+      <li>No person at Kroma can read your email or the list of what you bought.</li>
+      <li>The extension has no analytics, no advertising, no trackers and no accounts.</li>
+    </ul>
+
+    <hr>
+
+    <h2>What the extension sends, and to whom</h2>
+    <p>The extension contacts three kinds of service. We list them exhaustively.</p>
+
+    <h3>1. Google</h3>
+    <p>To sign you in and to read your mail through the Gmail API. This is a direct connection between your browser and Google, under <a href="https://policies.google.com/privacy">Google's privacy policy</a>. If you click <strong>Disconnect Gmail</strong>, the extension asks Google to revoke its access.</p>
+
+    <h3>2. The shops named in your order emails</h3>
+    <p>To get a picture of each item you tick, the extension may request, from the shop's own website or picture server:</p>
+    <ul>
+      <li>the product picture whose address is in the email;</li>
+      <li>the product page whose link is in the email;</li>
+      <li>on some shops, a search of the shop's site for the product's name, to find the picture the shop shows today.</li>
+    </ul>
+    <p>These requests carry the picture address, the product link or the product name. They do not carry your email, your name or the rest of your order, and they are sent without your cookies for that shop. Like any web request, they show the shop your IP address.</p>
+    <p><strong>One thing to know about links in emails.</strong> Shops usually put tracking links in their emails, which are personal to you. When the extension follows such a link to find the product page, the shop (or the email service it uses) can record that the link in your email was opened, exactly as if you had clicked it yourself. If you would rather that did not happen, decline the "read and change your data on all websites" request when you start a scan: the extension will then build your file without pictures and make none of these requests.</p>
+
+    <h3>3. The Internet Archive</h3>
+    <p>If a shop has removed a picture, the extension asks the Internet Archive's Wayback Machine (<a href="https://archive.org">archive.org</a>) whether it saved a copy. Those requests carry the address or file name of the product picture, or the address of the product page, and show the Internet Archive your IP address. They carry nothing else from your email. The Internet Archive's <a href="https://archive.org/about/terms.php">terms and privacy policy</a> apply.</p>
+
+    <p>Requests of kinds 2 and 3 are made only after you allow them. Chrome asks for this when you start a scan, as permission to "read and change your data on all websites". The extension needs that broad wording because it cannot know in advance which shops are in your mail. It uses the permission only to make the requests described here. It does not read, record or change the web pages you visit, and it collects no browsing history.</p>
+
+    <hr>
+
+    <h2>What is stored</h2>
+    <ul>
+      <li><strong>By the extension: nothing.</strong> It keeps no copy of your emails, your orders or your pictures after you close the tab.</li>
+      <li><strong>By Chrome: your Google sign-in for the extension</strong>, so you don't have to sign in for every scan. Click <strong>Disconnect Gmail</strong> to remove it.</li>
+      <li><strong>On your computer, when you choose to download it: the order file</strong> (<code>kroma-orders-…json</code>). It holds the items you ticked: shop, order number, order date, item name, type, colour, size, quantity, price, product link and picture. It stays in your Downloads folder until you move or delete it. You import it into Kroma yourself; Kroma reads it on your phone and sends it nowhere.</li>
+      <li><strong>On your computer, only if you ask for it: a diagnostic report.</strong> It lists every order and item the scan found, how each was read, and the subject lines of order emails the extension could not read. It has no email content and no pictures. It is for troubleshooting, and it is sent to us only if you choose to attach it to an email.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Google's Limited Use requirements</h2>
+    <p>The extension's use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>The use of information received from Google APIs will adhere to the <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>In plain terms, for the data the extension reads from your Gmail:</p>
+    <ul>
+      <li>It is used only to give you the feature you asked for: listing the clothes in your order emails and making your order file.</li>
+      <li>It is not transferred to anyone, other than the limited product details sent to shops and the Internet Archive to fetch pictures, as described above.</li>
+      <li>It is not used for advertising, and is never sold.</li>
+      <li>It is not read by any person at Kroma.</li>
+      <li>It is not used to develop, improve or train AI or machine-learning models.</li>
+    </ul>
+
+    <hr>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Sign in with Google (identity)</strong>: to ask for your consent to read-only Gmail access.</li>
+      <li><strong>gmail.googleapis.com</strong>: to read your mail through the Gmail API.</li>
+      <li><strong>All websites (optional, asked when you scan)</strong>: to fetch product pictures and pages from the shops in your orders and from the Internet Archive. Nothing else.</li>
+    </ul>
+    <p>The extension adds nothing to the web pages you visit, runs nothing in the background, and loads no code from the internet.</p>
+
+    <hr>
+
+    <h2>Removing access</h2>
+    <p>You can stop the extension's access at any time, in any of these ways:</p>
+    <ul>
+      <li>Click <strong>Disconnect Gmail</strong> at the top of the extension's page.</li>
+      <li>Remove "Kroma Orders" at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.</li>
+      <li>Remove the extension from Chrome at <code>chrome://extensions</code>.</li>
+    </ul>
+    <p>Because the extension stores nothing, there is nothing further to delete. Delete the order file from your Downloads folder when you no longer need it.</p>
+
+    <hr>
+
+    <h2>Children</h2>
+    <p>The extension is not directed at children under 13 (or under 16, in jurisdictions where that is the applicable age of digital consent). We do not knowingly process personal data from children, and the extension sends us no data about anyone.</p>
+
+    <hr>
+
+    <h2>Your rights (UK GDPR / EU GDPR)</h2>
+    <p>We hold no data about you from the extension, so there is nothing for us to give you access to, correct, export or erase. Your order file and any diagnostic report are on your own computer and under your control.</p>
+    <p>If you have emailed us, your rights over that correspondence are set out in the <a href="/privacy/">main privacy policy</a>. You can complain to the UK Information Commissioner's Office (<a href="https://ico.org.uk">ico.org.uk</a>) or your local EU data protection authority.</p>
+
+    <hr>
+
+    <h2>Changes to this policy</h2>
+    <p>We'll update this page before any change to how the extension handles data takes effect, and change the "Last updated" date at the top. If the extension ever asks for more access than described here, it will ask you first.</p>
+
+    <hr>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@kroma.fit?subject=Order%20extension%20privacy%20question">hello@kroma.fit</a></p>
+
+  </main>
+
+  <footer class="site">
+    <span>Kroma — made with care</span>
+    <span>
+      <a href="/privacy/">Privacy</a> &middot;
+      <a href="/terms/">Terms</a> &middot;
+      <a href="mailto:hello@kroma.fit">Contact</a>
+    </span>
+    <span class="social">
+      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="Kroma on LinkedIn">LinkedIn</a> &middot;
+      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="Kroma on X">X</a> &middot;
+      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="Kroma on Instagram">Instagram</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
