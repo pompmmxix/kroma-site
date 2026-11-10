@@ -15,6 +15,27 @@ permalink: /order-extension/
 <link rel="apple-touch-icon" href="/favicon.svg">
 <meta name="theme-color" content="#8b5a2b">
 <link rel="stylesheet" href="/style.css">
+<style>
+/* Example of the extension's review page (order-extension only). */
+.oe-demo { margin: 28px 0; }
+.oe-win { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 22px 22px 14px; box-shadow: 0 6px 24px rgba(30, 27, 22, 0.06); }
+.oe-title { font-family: var(--ff-display); font-size: 1.35rem; line-height: 1.25; margin: 0 0 6px; }
+.oe-sub { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 4px; }
+.oe-order { margin: 18px 0 8px; font-size: 0.86rem; color: var(--text-soft); }
+.oe-order strong { font-family: var(--ff-display); font-weight: 500; font-size: 1.02rem; color: var(--text); margin-right: 8px; }
+a.oe-item { display: flex; align-items: center; gap: 14px; padding: 10px 12px; margin-bottom: 8px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text); text-decoration: none; }
+a.oe-item:hover, a.oe-item:focus-visible { border-color: var(--accent-soft); }
+a.oe-item.off { background: transparent; }
+a.oe-item.off .oe-text, a.oe-item.off img { opacity: 0.6; }
+.oe-item img { width: 56px; height: 70px; object-fit: cover; border-radius: 6px; background: var(--bg-soft); flex-shrink: 0; }
+.oe-tick { width: 20px; height: 20px; border-radius: 4px; border: 1.5px solid var(--text-mute); flex-shrink: 0; position: relative; }
+.oe-tick.on { background: var(--accent); border-color: var(--accent); }
+.oe-tick.on::after { content: ""; position: absolute; left: 6px; top: 2px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.oe-text { display: flex; flex-direction: column; min-width: 0; }
+.oe-name { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.oe-meta { font-size: 0.86rem; color: var(--text-soft); }
+.oe-demo figcaption { font-size: 0.9rem; margin-top: 10px; }
+</style>
 </head>
 <body>
 <div class="wrap">
@@ -47,12 +68,41 @@ permalink: /order-extension/
       </ol>
     </section>
 
-    <figure style="margin: 28px 0;">
-      <img src="/images/order-extension-review.webp"
-           alt="The extension's review page: orders grouped by shop, each item with a picture, type, colour, size and price and a tick box. A mug in the same order as a cap is unticked and marked 'Not clothing?'."
-           width="1290" height="1500" loading="lazy" decoding="async"
-           style="display:block; width:100%; height:auto; border:1px solid var(--border); border-radius:12px;">
-      <figcaption class="muted" style="font-size:0.9rem; margin-top:8px;">The review page, with made-up shops. You choose what goes into the file.</figcaption>
+    <figure class="oe-demo">
+      <div class="oe-win" aria-label="Example of the extension's review page">
+        <p class="oe-title">Found 4 items of clothing in 2 orders</p>
+        <p class="oe-sub">Tick what you still own. Things that don't look like clothing start unticked.</p>
+
+        <p class="oe-order"><strong>POMP MMXIX</strong> <span>2026-10-02 · Order #1140</span></p>
+        <a class="oe-item" href="https://pomp.store/products/mens-showyourstripes-hoodie" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/hoodie.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's #ShowYourStripes hoodie</span><span class="oe-meta">Hoodie · M · £50</span></span>
+        </a>
+        <a class="oe-item" href="https://pomp.store/products/mens-circular-showyourstripes-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/circular-tee.png" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's circular #ShowYourStripes t-shirt</span><span class="oe-meta">T-Shirt · M · £30</span></span>
+        </a>
+        <a class="oe-item off" href="https://pomp.store/products/showyourstripes-sticker" target="_blank" rel="noopener">
+          <span class="oe-tick" aria-hidden="true"></span>
+          <img src="/images/order-extension/sticker.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">#ShowYourStripes sticker</span><span class="oe-meta">Not clothing? · £3</span></span>
+        </a>
+
+        <p class="oe-order"><strong>POMP MMXIX</strong> <span>2026-06-14 · Order #1127 · 2 emails</span></p>
+        <a class="oe-item" href="https://pomp.store/products/mens-recycled-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/essential-tee.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's sustainable essential t-shirt</span><span class="oe-meta">T-Shirt · M · £30</span></span>
+        </a>
+        <a class="oe-item" href="https://pomp.store/products/womens-showyourstripes-long-sleeve-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/long-sleeve-tee.png" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Women's #ShowYourStripes long sleeve t-shirt</span><span class="oe-meta">T-Shirt · S · £30</span></span>
+        </a>
+      </div>
+      <figcaption class="muted">An example of the review page. The clothes are from <a href="https://pomp.store" target="_blank" rel="noopener">Pomp</a>, our own clothing shop; select one to see it there. The orders are made up.</figcaption>
     </figure>
 
     <hr>
@@ -74,7 +124,7 @@ permalink: /order-extension/
         </div>
         <div class="feature">
           <h3>Pictures from the shops</h3>
-          <p>With your permission, it fetches each item's picture from the shop's website, or from the Internet Archive if the shop has removed it. Those requests carry the product's link or name only.</p>
+          <p>With your permission, it fetches each item's picture from the shop's website, or from the Internet Archive if the shop has removed it. Those requests carry the picture's address or the product's name only. Links in your emails are never followed.</p>
         </div>
       </div>
       <p>The extension's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements. See the <a href="/order-extension/privacy/">privacy policy</a> for the full statement.</p>

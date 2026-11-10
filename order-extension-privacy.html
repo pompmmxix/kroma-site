@@ -77,11 +77,11 @@ permalink: /order-extension/privacy/
     <p>To get a picture of each item you tick, the extension may request, from the shop's own website or picture server:</p>
     <ul>
       <li>the product picture whose address is in the email;</li>
-      <li>the product page whose link is in the email;</li>
       <li>on some shops, a search of the shop's site for the product's name, to find the picture the shop shows today.</li>
     </ul>
-    <p>These requests carry the picture address, the product link or the product name. They do not carry your email, your name or the rest of your order, and they are sent without your cookies for that shop. Like any web request, they show the shop your IP address.</p>
-    <p><strong>One thing to know about links in emails.</strong> Shops usually put tracking links in their emails, which are personal to you. When the extension follows such a link to find the product page, the shop (or the email service it uses) can record that the link in your email was opened, exactly as if you had clicked it yourself. If you would rather that did not happen, decline the "read and change your data on all websites" request when you start a scan: the extension will then build your file without pictures and make none of these requests.</p>
+    <p>These requests carry the picture's address or the product's name. They do not carry your email, your name or the rest of your order, and they are sent without your cookies for that shop. Like any web request, they show the shop your IP address.</p>
+    <p><strong>The extension never follows the links in your emails.</strong> Those links are usually tracking links that are personal to you, and opening one tells the shop the email was clicked. A product link is saved in your order file only when it already points straight at the shop's own website; tracking links are discarded.</p>
+    <p>Some shops serve the pictures themselves from an address that records when a picture is loaded. Fetching such a picture can tell the shop that the email was opened, in the same way as opening the email in Gmail with pictures switched on. If you would rather avoid that, decline the "read and change your data on all websites" request when you start a scan: the extension will then build your file without pictures and make none of the requests in sections 2 and 3.</p>
 
     <h3>3. The Internet Archive</h3>
     <p>If a shop has removed a picture, the extension asks the Internet Archive's Wayback Machine (<a href="https://archive.org">archive.org</a>) whether it saved a copy. Those requests carry the address or file name of the product picture, or the address of the product page, and show the Internet Archive your IP address. They carry nothing else from your email. The Internet Archive's <a href="https://archive.org/about/terms.php">terms and privacy policy</a> apply.</p>
@@ -118,9 +118,22 @@ permalink: /order-extension/privacy/
     <ul>
       <li><strong>Sign in with Google (identity)</strong>: to ask for your consent to read-only Gmail access.</li>
       <li><strong>gmail.googleapis.com</strong>: to read your mail through the Gmail API.</li>
-      <li><strong>All websites (optional, asked when you scan)</strong>: to fetch product pictures and pages from the shops in your orders and from the Internet Archive. Nothing else.</li>
+      <li><strong>All websites (optional, asked when you scan)</strong>: to fetch product pictures from the shops in your orders and from the Internet Archive. Nothing else.</li>
     </ul>
     <p>The extension adds nothing to the web pages you visit, runs nothing in the background, and loads no code from the internet.</p>
+
+    <hr>
+
+    <h2>Security</h2>
+    <ul>
+      <li><strong>There is no Kroma server and no account.</strong> No copy of your emails or your orders exists anywhere but your own browser and computer, so there is no central store that could be broken into or leaked.</li>
+      <li><strong>The extension answers to no one else.</strong> It adds nothing to the web pages you visit, and websites and other extensions cannot ask it for your data.</li>
+      <li><strong>Email content is treated as untrusted.</strong> Emails are read as text; nothing inside an email is ever run. The extension loads no code from the internet.</li>
+      <li><strong>Requests go only to public web addresses, over an encrypted connection (https).</strong> The extension refuses any address in an email that points at your own computer or a device on your home network.</li>
+      <li><strong>Access to Gmail is read-only</strong>, and your Google sign-in for the extension is held by Chrome, not by us. Click <strong>Disconnect Gmail</strong> when you have finished and the access is revoked.</li>
+      <li><strong>Your order file is an ordinary, unencrypted file.</strong> Anyone who can open it can see what you bought. Treat it like any personal document: delete it from your Downloads folder, and from wherever you used to move it to your phone, once it is imported.</li>
+    </ul>
+    <p>No software can promise to be free of flaws. If you find a security problem, email <a href="mailto:hello@kroma.fit?subject=Security%20report">hello@kroma.fit</a> and we will act on it.</p>
 
     <hr>
 
