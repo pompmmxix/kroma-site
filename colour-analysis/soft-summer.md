@@ -100,7 +100,7 @@ faq:
 - q: What are the best neutrals for Soft Summer?
   a: Charcoal, soft navy, grey, cool taupe, greige and soft white. Build the base of a capsule wardrobe from these, then add power colours like dusty rose, sage and soft teal.
 cta_heading: Check your clothes against the Soft Summer palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Soft Summer pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Soft Summer pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/soft-summer/
 last_modified_at: 2026-11-03
 ---

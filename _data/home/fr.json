@@ -1,12 +1,12 @@
 {
- "title": "Kroma : garde-robe virtuelle et colorimétrie gratuite",
+ "title": "kroma : garde-robe virtuelle et colorimétrie gratuite",
  "description": "Une application de garde-robe privée : cataloguez vos vêtements, notez ce que vous portez et recevez des conseils couleur et style, sans compte. Gratuite, sans publicité, vos données restent sur votre téléphone.",
  "nav_home": "Accueil",
  "nav_guides": "Guides",
  "nav_privacy": "Confidentialité",
- "hero_h1": "La plupart des applis de garde-robe veulent vos données. Kroma veut seulement vous aider à porter ce que vous avez.",
- "hero_lede": "Kroma est une application de garde-robe privée qui garde tout sur votre téléphone. Cataloguez vos vêtements, notez ce que vous portez vraiment, recevez des idées de tenues adaptées à votre météo, votre morphologie et votre palette — <strong>tout sur votre appareil, sans pistage, sans compte.</strong>",
- "hero_alt": "L'onglet Garde-robe de Kroma : une grille de vêtements — un foulard cachemire terracotta, une jupe à pois moutarde, un jean noir et un sweat bordeaux — chacun avec son score, son prix et son nombre de ports.",
+ "hero_h1": "La plupart des applis de garde-robe veulent vos données. kroma veut seulement vous aider à porter ce que vous avez.",
+ "hero_lede": "kroma est une application de garde-robe privée qui garde tout sur votre téléphone. Cataloguez vos vêtements, notez ce que vous portez vraiment, recevez des idées de tenues adaptées à votre météo, votre morphologie et votre palette — <strong>tout sur votre appareil, sans pistage, sans compte.</strong>",
+ "hero_alt": "L'onglet Garde-robe de kroma : une grille de vêtements — un foulard cachemire terracotta, une jupe à pois moutarde, un jean noir et un sweat bordeaux — chacun avec son score, son prix et son nombre de ports.",
  "divider_weft": "trame",
  "divider_weft_alt": "Gros plan de lin tissé avec un fil brun chaud qui traverse horizontalement la trame crème.",
  "divider_warp": "chaîne",
@@ -33,7 +33,7 @@
   },
   {
    "h": "Votre propre IA",
-   "p": "Utilisez votre clé Gemini, Claude, OpenAI, Mistral ou OpenRouter, ou un serveur Ollama à vous. Les photos vont directement de votre téléphone au fournisseur choisi, et Kroma vous demande avant d'envoyer la première. Nous ne les voyons jamais."
+   "p": "Utilisez votre clé Gemini, Claude, OpenAI, Mistral ou OpenRouter, ou un serveur Ollama à vous. Les photos vont directement de votre téléphone au fournisseur choisi, et kroma vous demande avant d'envoyer la première. Nous ne les voyons jamais."
   },
   {
    "h": "Ni compte, ni serveur",
@@ -79,7 +79,7 @@
   {
    "href": "/compare/",
    "h": "Applis de garde-robe comparées",
-   "p": "Kroma, Whering, Indyx, Acloset et Stylebook côte à côte."
+   "p": "kroma, Whering, Indyx, Acloset et Stylebook côte à côte."
   }
  ],
  "guides_all": "Tous les guides (en anglais) →",
@@ -96,18 +96,18 @@
  "attr_h2": "D'où viennent vraiment vos vêtements",
  "attr_claim": "Beaucoup d'applis présentent le <em>paisley</em> comme un motif écossais. Ce n'en est pas un.",
  "attr_paras": [
-  "Le motif en goutte — <em>boteh, ambi, kairi</em> — vient du sous-continent indien et a atteint sa forme la plus raffinée dans les châles du Cachemire de l'époque moghole. Son nom anglais vient des filatures écossaises du XIXe siècle qui en ont produit des copies bon marché en masse. Kroma raconte cette histoire, et bien d'autres, dans l'appli.",
+  "Le motif en goutte — <em>boteh, ambi, kairi</em> — vient du sous-continent indien et a atteint sa forme la plus raffinée dans les châles du Cachemire de l'époque moghole. Son nom anglais vient des filatures écossaises du XIXe siècle qui en ont produit des copies bon marché en masse. kroma raconte cette histoire, et bien d'autres, dans l'appli.",
   "Touchez un motif, une couleur ou une matière sur un vêtement et son attribution s'ouvre : d'où il vient vraiment, comment il a voyagé, ce que son nom raconte. Indigo, soie Banarasi, tissu Kuba, Tatreez, Bandhani, Phulkari, Huipil, Mola, Kente, Aran, Sashiko : 74 traditions textiles, chacune créditée honnêtement.",
   "Si nous nous sommes trompés, surtout sur la tradition de votre communauté, chaque fiche a un bouton qui ouvre un e-mail prérempli pour nous écrire. Nous préférons vous entendre et corriger plutôt que deviner."
  ],
  "privacy_h2": "Comment la confidentialité fonctionne vraiment",
  "privacy_paras": [
-  "Kroma n'a pas de serveur. Les données de votre garde-robe restent sur votre téléphone. Pas de compte, pas de statistiques, pas d'identifiant publicitaire, pas de rapport de plantage. Les rares endroits où vos données <em>peuvent</em> aller — le fournisseur d'IA choisi, le service météo activé, une page produit que vous partagez avec l'appli — sont tous listés dans la <a href=\"/privacy/\" hreflang=\"en\">politique de confidentialité</a> (en anglais).",
+  "kroma n'a pas de serveur. Les données de votre garde-robe restent sur votre téléphone. Pas de compte, pas de statistiques, pas d'identifiant publicitaire, pas de rapport de plantage. Les rares endroits où vos données <em>peuvent</em> aller — le fournisseur d'IA choisi, le service météo activé, une page produit que vous partagez avec l'appli — sont tous listés dans la <a href=\"/privacy/\" hreflang=\"en\">politique de confidentialité</a> (en anglais).",
   "Ce n'est pas un argument marketing. C'est l'architecture. Il n'y a pas de serveur à éteindre pour honorer une demande de suppression, puisqu'il n'y a pas de serveur."
  ],
  "getapp_h2": "Obtenir l'appli",
  "getapp_p": "L'appli Android arrive très bientôt, en français dès le premier jour. La version iOS suivra.",
- "footer_tag": "Kroma — fait avec soin",
+ "footer_tag": "kroma — fait avec soin",
  "footer_compare": "Comparer les applis",
  "footer_terms": "Conditions",
  "footer_feedback": "Avis",

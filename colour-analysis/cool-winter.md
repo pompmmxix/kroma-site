@@ -105,7 +105,7 @@ faq:
   a: >-
     Black, pure white, charcoal, navy and cool grey. Build a capsule wardrobe from these, then add jewel tones like royal blue, emerald, fuchsia and true red.
 cta_heading: Check your clothes against the Cool Winter palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Cool Winter pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Cool Winter pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/cool-winter/
 last_modified_at: 2026-11-03
 ---

@@ -105,7 +105,7 @@ faq:
   a: >-
     Soft navy, grey, light charcoal, soft white and cool beige. Build a capsule wardrobe from these, then add power colours like powder blue, lavender, soft pink and light teal.
 cta_heading: Check your clothes against the Light Summer palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Light Summer pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Light Summer pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/light-summer/
 last_modified_at: 2026-11-03
 ---

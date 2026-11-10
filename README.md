@@ -1,7 +1,7 @@
 # kroma-site
 
 Static website for **kroma.fit** — landing page, privacy policy, and terms
-of use for the Kroma wardrobe app.
+of use for the kroma wardrobe app.
 
 Hosted on GitHub Pages from the `main` branch. Custom domain is set via
 the `CNAME` file. GitHub Pages builds it with Jekyll on every push (layouts in `_layouts/`,
@@ -56,5 +56,5 @@ custom domain.
 
 ## Related
 
-The Kroma app itself lives at
+The kroma app itself lives at
 [pompmmxix/wardrobe-app](https://github.com/pompmmxix/wardrobe-app).

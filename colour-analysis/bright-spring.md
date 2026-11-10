@@ -105,7 +105,7 @@ faq:
   a: >-
     Navy, charcoal, cream, camel and beige, worn with plenty of colour. Build a capsule wardrobe from these, then add power colours like poppy red, coral, kelly green and bright turquoise.
 cta_heading: Check your clothes against the Bright Spring palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Bright Spring pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Bright Spring pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/bright-spring/
 last_modified_at: 2026-11-03
 ---

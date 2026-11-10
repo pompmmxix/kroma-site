@@ -105,7 +105,7 @@ faq:
   a: >-
     Navy, charcoal, grey, soft white and cool cocoa brown. Build a capsule wardrobe from these, then add power colours like soft blue, rose, lavender and soft teal.
 cta_heading: Check your clothes against the Cool Summer palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Cool Summer pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Cool Summer pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/cool-summer/
 last_modified_at: 2026-11-03
 ---

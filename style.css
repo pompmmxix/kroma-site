@@ -91,7 +91,7 @@ header.site {
    clamp gives min 2.8rem on tiny screens, max 4rem on wide screens,
    growing with viewport so the brand never looks lost or oversized.
    text-transform on CSS rather than changing the HTML literal so
-   SEO / screen readers still see "Kroma" as a proper noun. */
+   SEO / screen readers still see "kroma" as a proper noun. */
 header.site .brand {
   font-family: var(--ff-brand);
   font-size: clamp(2.8rem, 6.5vw, 4rem);

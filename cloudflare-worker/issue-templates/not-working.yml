@@ -14,7 +14,7 @@ body:
 
         **Don't paste photos or screenshots.** We don't accept attachments — describe what was on the screen in words instead.
 
-        If the issue is that the AI mis-read your photo (wrong colour / fabric / type), please don't file it here. That's a limit of whichever AI model you've configured, not a Kroma bug. See the AI accuracy note on [kroma.fit/feedback](https://kroma.fit/feedback/).
+        If the issue is that the AI mis-read your photo (wrong colour / fabric / type), please don't file it here. That's a limit of whichever AI model you've configured, not a kroma bug. See the AI accuracy note on [kroma.fit/feedback](https://kroma.fit/feedback/).
   - type: textarea
     id: what
     attributes:

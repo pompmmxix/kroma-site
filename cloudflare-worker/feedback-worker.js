@@ -1,5 +1,5 @@
 /**
- * Kroma feedback proxy — Cloudflare Worker
+ * kroma feedback proxy — Cloudflare Worker
  * ─────────────────────────────────────────
  *
  * Purpose

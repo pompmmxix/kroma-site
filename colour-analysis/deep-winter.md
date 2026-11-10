@@ -106,7 +106,7 @@ faq:
   a: >-
     Black, navy, charcoal, pure white and grey. Build a capsule wardrobe from these, then add power colours like true red, sapphire, emerald, purple and burgundy.
 cta_heading: Check your clothes against the Deep Winter palette
-cta_text: Photograph what you own and Kroma tags each garment's colour and scores it against your palette, so you can see your best Deep Winter pieces at a glance, and check wishlist items before you buy.
+cta_text: Photograph what you own and kroma tags each garment's colour and scores it against your palette, so you can see your best Deep Winter pieces at a glance, and check wishlist items before you buy.
 permalink: /colour-analysis/deep-winter/
 last_modified_at: 2026-11-03
 ---

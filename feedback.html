@@ -10,13 +10,13 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Send feedback · Kroma</title>
+<title>Send feedback · kroma</title>
 <meta name="description" content="{{ page.description }}">
 
 <link rel="canonical" href="https://kroma.fit/feedback/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Kroma">
-<meta property="og:title" content="Send feedback — Kroma">
+<meta property="og:site_name" content="kroma">
+<meta property="og:title" content="Send feedback — kroma">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:url" content="https://kroma.fit/feedback/">
 <meta property="og:image" content="https://kroma.fit/favicon.svg">
@@ -231,7 +231,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 <div class="wrap">
 
   <header class="site">
-  <a class="brand" href="/">Kroma</a>
+  <a class="brand" href="/">kroma</a>
   <nav>
     <a href="/">Home</a>
     <a href="/feedback/" class="active">Feedback</a>
@@ -312,7 +312,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
       + captcha + send button). Hidden until the user picks one of the
       first three radio options.
 
-      #aiNote holds the "this isn't a Kroma issue" explanation. Shown
+      #aiNote holds the "this isn't a kroma issue" explanation. Shown
       ONLY when the user picks the fourth option (AI mis-read). No
       submission UI here — there's nothing to file because nothing in
       the report would be actionable on our side.
@@ -350,7 +350,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 
     <div id="aiNote" class="ai-note" hidden>
       <p>
-        That's not something we can help with from the Kroma side. Kroma
+        That's not something we can help with from the kroma side. kroma
         connects you to whichever AI model you've configured (Gemini, Claude,
         OpenAI, or a local model). We don't train, run, or improve any of
         them — they belong to their respective providers.
@@ -361,7 +361,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
         <li><strong>Use a more capable model.</strong> If you're on a free tier (e.g. Gemini Flash), a paid tier of the same provider often reads photos far better. That usually means an API key with credits — costs vary by provider, and what you pay goes to them, not to us.</li>
       </ul>
       <p class="ai-note-foot">
-        If your concern is actually about something Kroma controls — a UI
+        If your concern is actually about something kroma controls — a UI
         bug, a missing tradition, a factual error on our side — pick one of
         the other three options instead.
       </p>
@@ -382,16 +382,16 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
 </main>
 
   <footer class="site">
-    <span>Kroma — made with care</span>
+    <span>kroma — made with care</span>
     <span>
       <a href="/privacy/">Privacy</a> &middot;
       <a href="/terms/">Terms</a> &middot;
       <a href="/feedback/">Feedback</a>
     </span>
     <span class="social">
-      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="Kroma on LinkedIn">LinkedIn</a> &middot;
-      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="Kroma on X">X</a> &middot;
-      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="Kroma on Instagram">Instagram</a>
+      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="kroma on LinkedIn">LinkedIn</a> &middot;
+      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="kroma on X">X</a> &middot;
+      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="kroma on Instagram">Instagram</a>
     </span>
   </footer>
 
@@ -425,7 +425,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   var description = document.getElementById('description');
   var apiUrl      = form.getAttribute('data-api-url');
 
-  // Read optional app context from URL params. Kroma's "Send feedback"
+  // Read optional app context from URL params. kroma's "Send feedback"
   // button in Settings appends ?v= and ?l= so we can attach the app
   // version and locale to the issue body without asking the user.
   var search = new URLSearchParams(window.location.search);

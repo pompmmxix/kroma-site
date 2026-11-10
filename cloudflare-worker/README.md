@@ -1,4 +1,4 @@
-# Kroma feedback worker
+# kroma feedback worker
 
 A small Cloudflare Worker that proxies submissions from
 `kroma.fit/feedback` to GitHub Issues, so users can give us feedback
@@ -29,7 +29,7 @@ not the user.
 
 ## Architecture note: two repos
 
-The main Kroma app code lives in a **private** repo
+The main kroma app code lives in a **private** repo
 (`pompmmxix/wardrobe-app`). Private issues can't be a public feedback
 list — submitters wouldn't be able to see what's been raised, and the
 "public, transparent" promise on the website wouldn't hold.
