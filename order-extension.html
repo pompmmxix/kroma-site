@@ -1,0 +1,187 @@
+---
+layout: null
+permalink: /order-extension/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kroma order extension: add clothes from your order emails</title>
+<link rel="canonical" href="https://kroma.fit/order-extension/">
+<meta name="description" content="A Chrome extension that finds the clothes in your Gmail order emails and makes a file to import into the kroma wardrobe app. Your emails are read in your browser and never sent to us.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#8b5a2b">
+<link rel="stylesheet" href="/style.css">
+<style>
+/* Example of the extension's review page (order-extension only). */
+.oe-demo { margin: 28px 0; }
+.oe-win { background: var(--bg); border: 1px solid var(--border); border-radius: 14px; padding: 22px 22px 14px; box-shadow: 0 6px 24px rgba(30, 27, 22, 0.06); }
+.oe-title { font-family: var(--ff-display); font-size: 1.35rem; line-height: 1.25; margin: 0 0 6px; }
+.oe-sub { color: var(--text-soft); font-size: 0.92rem; margin: 0 0 4px; }
+.oe-order { margin: 18px 0 8px; font-size: 0.86rem; color: var(--text-soft); }
+.oe-order strong { font-family: var(--ff-display); font-weight: 500; font-size: 1.02rem; color: var(--text); margin-right: 8px; }
+a.oe-item { display: flex; align-items: center; gap: 14px; padding: 10px 12px; margin-bottom: 8px; background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; color: var(--text); text-decoration: none; }
+a.oe-item:hover, a.oe-item:focus-visible { border-color: var(--accent-soft); }
+a.oe-item.off { background: transparent; }
+a.oe-item.off .oe-text, a.oe-item.off img { opacity: 0.6; }
+.oe-item img { width: 56px; height: 70px; object-fit: cover; border-radius: 6px; background: var(--bg-soft); flex-shrink: 0; }
+.oe-tick { width: 20px; height: 20px; border-radius: 4px; border: 1.5px solid var(--text-mute); flex-shrink: 0; position: relative; }
+.oe-tick.on { background: var(--accent); border-color: var(--accent); }
+.oe-tick.on::after { content: ""; position: absolute; left: 6px; top: 2px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0; transform: rotate(45deg); }
+.oe-text { display: flex; flex-direction: column; min-width: 0; }
+.oe-name { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.oe-meta { font-size: 0.86rem; color: var(--text-soft); }
+.oe-demo figcaption { font-size: 0.9rem; margin-top: 10px; }
+@media (max-width: 600px) {
+  .oe-win { padding: 18px 14px 8px; }
+  .oe-name { white-space: normal; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="/">kroma</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/order-extension/" class="active">Order extension</a>
+      <a href="/order-extension/privacy/">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <h1>Fill your wardrobe from your order emails</h1>
+    <p>The kroma order extension is a free add-on for Google Chrome. It reads the order confirmations in your Gmail, lists the clothes you bought, and makes one file you import into the <a href="/">kroma wardrobe app</a>. Years of orders become a wardrobe in a few minutes, with pictures, sizes, prices and purchase dates.</p>
+    <p><strong>Your emails are read inside your own browser. They are not sent to us, to an AI service, or to anyone else.</strong> kroma has no server and no accounts. The full detail is in the <a href="/order-extension/privacy/">extension's privacy policy</a>.</p>
+    <p class="muted"><em>The extension is in testing and is not yet on the Chrome Web Store. To try it, email <a href="mailto:hello@kroma.fit?subject=Order%20extension%20testing">hello@kroma.fit</a>.</em></p>
+
+    <hr>
+
+    <section>
+      <h2>How it works</h2>
+      <ol>
+        <li><strong>Connect Gmail.</strong> Open the extension, choose how far back to look, and sign in with Google. Access is read-only, and it is removed again as soon as the scan has read your emails. The extension cannot send, delete or change any email.</li>
+        <li><strong>It finds your orders.</strong> It searches for order, receipt and dispatch emails, reads the items in each one, and joins the several emails a shop sends about the same order. Orders you returned or cancelled are marked.</li>
+        <li><strong>You choose what to keep.</strong> Clothing is listed first, each item with its picture, size and price. Tick what you still own. Things that aren't clothing start unticked.</li>
+        <li><strong>Download the file and import it.</strong> Move the file to your phone, then in kroma open Settings, Backup &amp; Restore, Import an order file. Nothing is added to your wardrobe until you confirm it there.</li>
+      </ol>
+    </section>
+
+    <figure class="oe-demo">
+      <div class="oe-win" aria-label="Example of the extension's review page">
+        <p class="oe-title">Found 4 items of clothing in 2 orders</p>
+        <p class="oe-sub">Tick what you still own. Things that don't look like clothing start unticked.</p>
+
+        <p class="oe-order"><strong>POMP MMXIX</strong> <span>2026-10-02 · Order #1140</span></p>
+        <a class="oe-item" href="https://pomp.store/products/mens-showyourstripes-hoodie" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/hoodie.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's #ShowYourStripes hoodie</span><span class="oe-meta">Hoodie · M · £50</span></span>
+        </a>
+        <a class="oe-item" href="https://pomp.store/products/mens-circular-showyourstripes-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/circular-tee.png" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's circular #ShowYourStripes t-shirt</span><span class="oe-meta">T-Shirt · M · £30</span></span>
+        </a>
+        <a class="oe-item off" href="https://pomp.store/products/showyourstripes-sticker" target="_blank" rel="noopener">
+          <span class="oe-tick" aria-hidden="true"></span>
+          <img src="/images/order-extension/sticker.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">#ShowYourStripes sticker</span><span class="oe-meta">Not clothing? · £3</span></span>
+        </a>
+
+        <p class="oe-order"><strong>POMP MMXIX</strong> <span>2026-06-14 · Order #1127 · 2 emails</span></p>
+        <a class="oe-item" href="https://pomp.store/products/mens-recycled-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/essential-tee.jpg" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Men's sustainable essential t-shirt</span><span class="oe-meta">T-Shirt · M · £30</span></span>
+        </a>
+        <a class="oe-item" href="https://pomp.store/products/womens-showyourstripes-long-sleeve-t-shirt" target="_blank" rel="noopener">
+          <span class="oe-tick on" aria-hidden="true"></span>
+          <img src="/images/order-extension/long-sleeve-tee.png" alt="" width="56" height="70" loading="lazy" decoding="async">
+          <span class="oe-text"><span class="oe-name">Women's #ShowYourStripes long sleeve t-shirt</span><span class="oe-meta">T-Shirt · S · £30</span></span>
+        </a>
+      </div>
+      <figcaption class="muted">An example of the review page. The clothes are from <a href="https://pomp.store" target="_blank" rel="noopener">Pomp</a>, our own clothing shop; select one to see it there. The orders are made up.</figcaption>
+    </figure>
+
+    <hr>
+
+    <section>
+      <h2>What it reads, and why</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Read-only access to Gmail</h3>
+          <p>Used to find and read your order emails: sender, subject, date and content. Gmail offers no narrower permission that covers only receipts.</p>
+        </div>
+        <div class="feature">
+          <h3>Only to build your file</h3>
+          <p>What it reads is used for one thing: listing the clothes you bought. It is not used for advertising, never sold, and never used to train AI.</p>
+        </div>
+        <div class="feature">
+          <h3>Processed in your browser</h3>
+          <p>The reading is done by code in the extension, on your computer. No email content leaves it, and nothing is kept when you close the tab.</p>
+        </div>
+        <div class="feature">
+          <h3>Pictures from the shops</h3>
+          <p>With your permission, it fetches each item's picture from the shop's website, or from the Internet Archive if the shop has removed it. Those requests carry the picture's address or the product's name only. Links in your emails are never followed.</p>
+        </div>
+      </div>
+      <p>The extension's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes">Google API Services User Data Policy</a>, including the Limited Use requirements. See the <a href="/order-extension/privacy/">privacy policy</a> for the full statement.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>What to expect</h2>
+      <ul>
+        <li><strong>It gets you most of the way, not all of it.</strong> Shops lay out their emails in many ways. Orders it can't read are listed with a link to open each one, so you can add them in kroma from a screenshot instead.</li>
+        <li><strong>Older orders may have no picture.</strong> When a shop has deleted a product's picture and no archive kept it, the item imports without one. Replace it with your own photo in kroma.</li>
+        <li><strong>Gmail only.</strong> Other email services are not supported.</li>
+        <li><strong>Google Chrome on a computer.</strong> The extension does not run on phones.</li>
+        <li><strong>Product names in English work best.</strong> In other languages, items are still found, but you may need to set the garment type in kroma.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Removing access</h2>
+      <p>The extension removes its own access to your Gmail at the end of every scan, so there is normally nothing to do. If a scan was cut short, you can remove access at <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> or by removing the extension from Chrome. The extension stores nothing, so there is nothing else to delete.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Get the kroma app</h2>
+      <p>The order file is for the kroma wardrobe app, which keeps your wardrobe on your phone, with no account and nothing tracked. <a href="/">See what kroma does and where to get it</a>.</p>
+    </section>
+
+    <hr>
+
+    <p class="muted">Questions: <a href="mailto:hello@kroma.fit?subject=Order%20extension">hello@kroma.fit</a></p>
+
+  </main>
+
+  <footer class="site">
+    <span>kroma — made with care</span>
+    <span>
+      <a href="/privacy/">Privacy</a> &middot;
+      <a href="/order-extension/privacy/">Extension privacy</a> &middot;
+      <a href="/terms/">Terms</a> &middot;
+      <a href="mailto:hello@kroma.fit">Contact</a>
+    </span>
+    <span class="social">
+      <a href="https://www.linkedin.com/company/kroma-fit/" rel="me noopener" target="_blank" aria-label="kroma on LinkedIn">LinkedIn</a> &middot;
+      <a href="https://x.com/kromafit" rel="me noopener" target="_blank" aria-label="kroma on X">X</a> &middot;
+      <a href="https://www.instagram.com/kroma.fit.app" rel="me noopener" target="_blank" aria-label="kroma on Instagram">Instagram</a> &middot; <a href="mailto:hello@kroma.fit">hello@kroma.fit</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
