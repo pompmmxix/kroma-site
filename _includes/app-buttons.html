@@ -1,6 +1,7 @@
 {%- comment -%}
   Store buttons. Links come from app_links in _config.yml; an empty
-  link renders a non-clickable "coming soon" placeholder. Swap the
+  link renders a "Join the test" button pointing at /test/ (the beta
+  sign-up page) until launch. Swap the
   text buttons for Google's and Apple's official badge images once
   the links are live (both companies publish badge artwork and usage
   rules: Google Play badges and Apple "Download on the App Store").
@@ -11,17 +12,17 @@
     <span class="app-btn-small">Get it on</span><span class="app-btn-big">Google Play</span>
   </a>
   {%- else %}
-  <span class="app-btn app-btn-soon" aria-disabled="true">
-    <span class="app-btn-small">Android</span><span class="app-btn-big">Coming soon</span>
-  </span>
+  <a class="app-btn" href="/test/">
+    <span class="app-btn-small">Android · beta</span><span class="app-btn-big">Join the test</span>
+  </a>
   {%- endif %}
   {%- if site.app_links.ios != "" and site.app_links.ios %}
   <a class="app-btn" href="{{ site.app_links.ios }}" rel="noopener">
     <span class="app-btn-small">Download on the</span><span class="app-btn-big">App Store</span>
   </a>
   {%- else %}
-  <span class="app-btn app-btn-soon" aria-disabled="true">
-    <span class="app-btn-small">iPhone</span><span class="app-btn-big">Coming soon</span>
-  </span>
+  <a class="app-btn" href="/test/">
+    <span class="app-btn-small">iPhone · beta</span><span class="app-btn-big">Join the test</span>
+  </a>
   {%- endif %}
 </div>
