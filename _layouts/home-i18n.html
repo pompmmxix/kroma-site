@@ -150,6 +150,8 @@
       <p class="muted">{{ t.getapp_p }}</p>
       {%- if site.app_links.android != "" and site.app_links.android %}
       <div class="app-buttons"><a class="app-btn" href="{{ site.app_links.android }}" rel="noopener"><span class="app-btn-small">Android</span><span class="app-btn-big">Google Play</span></a></div>
+      {%- else %}
+      <p><a href="/test/" hreflang="en">{{ t.beta_cta | default: "Join the beta test →" }}</a></p>
       {%- endif %}
     </section>
   </main>
