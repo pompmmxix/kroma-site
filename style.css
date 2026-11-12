@@ -527,3 +527,14 @@ header.site nav a { white-space: nowrap; }
      list to the right instead of off the left edge. */
   .lang-switch ul { left: 0; right: auto; }
 }
+
+/* ── "Test the app" call to action (home hero + Get the app) ── */
+.hero-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 22px; }
+.cta-btn {
+  display: inline-block; padding: 12px 24px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-weight: 600; text-decoration: none;
+  min-height: 44px; box-sizing: border-box; line-height: 20px;
+}
+.cta-btn:hover, .cta-btn:focus-visible { background: var(--accent-deep); color: #fff; }
+.cta-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.cta-note { font-size: 0.9rem; color: var(--text-soft); }
