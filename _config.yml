@@ -52,6 +52,11 @@ app_links:
   android: ""
   ios: ""
 
+# ───────── Website analytics ─────────
+# Umami Cloud (cookieless). Paste the Website ID from cloud.umami.is
+# → Settings → Websites → kroma.fit. Empty = no analytics script at all.
+umami_website_id: "c86842b1-99cd-4006-9c2a-d42efba46e6f"
+
 # ───────── Feedback page wiring ─────────
 # kroma.fit/feedback posts to a Cloudflare Worker that proxies the
 # submission into a public GitHub issue under a bot account. The page

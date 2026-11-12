@@ -1,0 +1,9 @@
+{%- comment -%}
+  Website analytics: Umami Cloud, cookieless. Renders nothing until
+  umami_website_id is set in _config.yml, so the privacy policy can go
+  live before tracking does. Clicks are counted with data-umami-event
+  attributes on links (see index.html, test.html, app-buttons.html).
+{%- endcomment -%}
+{%- if site.umami_website_id and site.umami_website_id != "" %}
+<script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umami_website_id }}" data-domains="kroma.fit" data-do-not-track="true"></script>
+{%- endif %}

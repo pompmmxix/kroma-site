@@ -17,6 +17,7 @@ redirect_from:
 <link rel="apple-touch-icon" href="/favicon.svg">
 <meta name="theme-color" content="#8b5a2b">
 <link rel="stylesheet" href="/style.css">
+{% include analytics.html %}
 </head>
 <body>
 <div class="wrap">
@@ -36,7 +37,7 @@ redirect_from:
     <p class="muted"><em>Last updated: 12 November 2026</em></p>
     <p class="muted"><em>Applies to: kroma (the "app") and <a href="https://kroma.fit">kroma.fit</a> (the "site").</em></p>
 
-    <p>kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and we don't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.</p>
+    <p>kroma is a local-first wardrobe app. The short version: your wardrobe data lives on your phone. We don't run a server that stores it, we don't have user accounts, and the app doesn't track your usage. This page explains the details — including the few places where data does leave your device, and what we do with any email you choose to send us.</p>
     <p>If you're reading this to decide whether to use the app, the most important sentence on the page is: <strong>nothing leaves your device unless you take an action that sends it.</strong></p>
 
     <hr>
@@ -142,10 +143,20 @@ redirect_from:
 
     <hr>
 
+    <h2 id="website-analytics">Website analytics</h2>
+    <p>This applies to the website <strong>kroma.fit</strong> only, not the app. The app has no analytics.</p>
+    <p>We count visits to kroma.fit with <strong>Umami Cloud</strong>, a cookieless analytics service run by Umami Software, which acts as our processor. It sets no cookies and doesn't follow you to other sites.</p>
+    <p><strong>What it records</strong>: the pages you view, the site that linked you here, campaign tags in the link you followed (for example, which Instagram post it came from), clicks on a few buttons (such as "Test the app"), your browser, operating system, device type and country. It doesn't store your IP address or identify you, and we can't use it to tell who you are.</p>
+    <p><strong>Why</strong>: to learn which posts and pages bring people to kroma.fit and to the beta, so we can improve them.</p>
+    <p><strong>Your choice</strong>: if your browser sends a Do Not Track signal, your visit isn't counted. Ad and tracker blockers will usually stop it too.</p>
+    <p><strong>Lawful basis (GDPR)</strong>: legitimate interest in understanding, in aggregate, how the site is used.</p>
+
+    <hr>
+
     <h2>Cookies and local storage</h2>
     <ul>
       <li>The mobile app uses the device's native storage (Capacitor Filesystem on Android, equivalent elsewhere) to save your wardrobe data. No cookies are set by the app.</li>
-      <li>The website at <strong>kroma.fit</strong> does not use cookies, analytics, or embedded trackers. If that ever changes, this policy will be updated before the change goes live.</li>
+      <li>The website at <strong>kroma.fit</strong> does not set cookies or use embedded trackers. It counts visits with a cookieless analytics service; see <a href="#website-analytics">Website analytics</a>.</li>
     </ul>
 
     <hr>

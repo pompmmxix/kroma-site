@@ -27,6 +27,7 @@
 {"@type":"ListItem","position":{{ page.breadcrumbs.size | plus: 1 }},"name":{{ page.short_title | default: page.title | jsonify }}}]}
 </script>
 {%- endif %}
+{% include analytics.html %}
 </head>
 <body>
 <div class="wrap">
