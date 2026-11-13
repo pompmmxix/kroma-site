@@ -1,11 +1,12 @@
 {
  "title": "kroma: guardaroba digitale e armocromia gratis",
- "description": "Un'app di guardaroba privata: cataloga i tuoi vestiti, registra cosa indossi e ricevi consigli su colori e stile, senza account. Gratis, senza pubblicità e con i dati sul tuo telefono.",
+ "description": "Scopri con un selfie i colori che ti valorizzano, vedi quali capi che hai e desideri si abbinano alla tua palette e ricevi outfit per il meteo e la tua giornata. Senza account, senza pubblicità e con i dati sul tuo telefono.",
  "nav_home": "Home",
  "nav_guides": "Guide",
  "nav_privacy": "Privacy",
- "hero_h1": "La maggior parte delle app di guardaroba vuole i tuoi dati. kroma vuole solo aiutarti a indossare ciò che hai.",
- "hero_lede": "kroma è un'app di guardaroba privata che tiene tutto sul tuo telefono. Cataloga i tuoi vestiti, registra quello che indossi davvero e ricevi idee di outfit adatte al meteo, al tuo corpo e alla tua palette — <strong>tutto sul tuo dispositivo, senza tracciamento e senza account.</strong>",
+ "hero_h1": "Scopri i tuoi colori. Vestiti meglio con ciò che hai.",
+ "hero_lede": "kroma analizza la tua armocromia da un selfie, valuta i capi che hai e quelli che desideri in base alla tua palette e ti suggerisce outfit per il meteo e la tua giornata.",
+ "hero_trust": "Niente account, niente tracciamento. Il tuo guardaroba resta sul tuo telefono.",
  "hero_alt": "La scheda Guardaroba di kroma: una griglia di capi — un foulard paisley terracotta, una gonna a pois senape, jeans neri e una felpa bordeaux — ognuno con punteggio, prezzo e numero di utilizzi.",
  "divider_weft": "trama",
  "divider_weft_alt": "Primo piano di lino tessuto con un filo marrone caldo che attraversa in orizzontale la trama color crema.",
@@ -16,20 +17,20 @@
  "features_h2": "Cosa fa",
  "features": [
   {
-   "h": "Cataloga tutto",
-   "p": "Fotografa ogni capo. L'IA ne riconosce tipo, colore, fantasia, armatura e tessuto quando sono visibili. Oltre 120 tipi di capo dalle tradizioni di tutto il mondo, non solo occidentali."
+   "h": "Scopri i tuoi colori",
+   "p": "Scatta un selfie e l'IA analizza la tua armocromia in cinque sistemi: 12 stagioni occidentale, Ritu (Asia meridionale), Shikisai (giapponese), Tonale coreano e Wu Xing (cinese). In più analisi del corpo Kibbe e per proporzioni: scegli il modello che ti somiglia."
   },
   {
-   "h": "Registra cosa indossi",
-   "p": "Fotografa il tuo outfit e l'app riconosce quali capi del tuo guardaroba indossi. Costo per utilizzo reale, non stime. Dati onesti su ciò che scegli davvero."
+   "h": "Sai cosa ti sta bene prima di comprare",
+   "p": "Ogni capo del tuo guardaroba e tutto ciò che è nella tua lista dei desideri riceve un punteggio in base alla tua palette. Vedi cosa ti valorizza, scopri i quasi doppioni di ciò che hai già e tieni d'occhio la spesa prima di comprare."
   },
   {
-   "h": "Outfit in base al meteo",
-   "p": "Di base indichi tu la sensazione della giornata, senza rete. Oppure attiva Open-Meteo una volta al mattino per la città che scrivi. Una calibrazione del comfort personale, perché il tuo \"caldo\" non è quello di un altro."
+   "h": "Outfit per il meteo e la tua giornata",
+   "p": "Suggerimenti quotidiani con i tuoi vestiti: per tutti i giorni, il lavoro, le occasioni eleganti o per uscire. Di base indichi tu il meteo, senza rete, oppure attivi Open-Meteo una volta al mattino per la città che scrivi. Una calibrazione del comfort personale, perché il tuo \"caldo\" non è quello di un altro."
   },
   {
-   "h": "Cinque sistemi di armocromia",
-   "p": "12 stagioni occidentale, Ritu (Asia meridionale), Shikisai (giapponese), Tonale coreano e Wu Xing (cinese). In più analisi del corpo Kibbe e per proporzioni: scegli il modello che ti somiglia."
+   "h": "Il tuo guardaroba, catalogato",
+   "p": "Fotografa ogni capo e l'IA ne riconosce tipo, colore, fantasia, armatura e tessuto quando sono visibili: oltre 120 tipi di capo dalle tradizioni di tutto il mondo. Fotografa il tuo outfit e kroma registra cosa indossi: costo per utilizzo reale, non stime."
   },
   {
    "h": "La tua IA",

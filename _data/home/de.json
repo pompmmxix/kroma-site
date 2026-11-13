@@ -1,11 +1,12 @@
 {
  "title": "kroma: digitaler Kleiderschrank & kostenlose Farbanalyse",
- "description": "Eine private Kleiderschrank-App: Erfasse deine Kleidung, trag ein, was du anziehst, und bekomm Farb- und Stiltipps – ohne Konto. Kostenlos, ohne Werbung, deine Daten bleiben auf deinem Handy.",
+ "description": "Finde per Selfie die Farben, die dir stehen, sieh, welche Kleidung du hast und dir wünschst zu deiner Palette passt, und bekomm Outfits für Wetter und Tag. Ohne Konto, ohne Werbung, deine Daten bleiben auf deinem Handy.",
  "nav_home": "Start",
  "nav_guides": "Ratgeber",
  "nav_privacy": "Datenschutz",
- "hero_h1": "Die meisten Kleiderschrank-Apps wollen deine Daten. kroma will dir nur helfen, zu tragen, was du hast.",
- "hero_lede": "kroma ist eine private Kleiderschrank-App, die alles auf deinem Handy speichert. Erfasse deine Kleidung, trag ein, was du wirklich anziehst, und bekomm Outfit-Ideen passend zu Wetter, Körper und Farbpalette – <strong>alles auf deinem Gerät, ohne Tracking, ohne Konto.</strong>",
+ "hero_h1": "Finde deine Farben. Zieh dich besser an – mit dem, was du hast.",
+ "hero_lede": "kroma erkennt deinen Farbtyp anhand eines Selfies, bewertet die Kleidung, die du hast, und die, die du dir wünschst, anhand deiner Farbpalette und schlägt Outfits für das Wetter und deinen Tag vor.",
+ "hero_trust": "Kein Konto, kein Tracking. Dein Kleiderschrank bleibt auf deinem Handy.",
  "hero_alt": "Der Kleiderschrank-Tab von kroma: ein Raster aus Kleidungsstücken – ein terrakottafarbenes Paisley-Tuch, ein senfgelber Punkterock, schwarze Jeans und ein bordeauxroter Hoodie – jeweils mit Passt-Wert, Preis und Tragehäufigkeit.",
  "divider_weft": "Schuss",
  "divider_weft_alt": "Nahaufnahme von gewebtem Leinen mit einem warmbraunen Faden, der waagerecht durch den cremefarbenen Schuss läuft.",
@@ -16,20 +17,20 @@
  "features_h2": "Was die App kann",
  "features": [
   {
-   "h": "Alles erfassen",
-   "p": "Fotografiere jedes Kleidungsstück. Die KI erkennt Art, Farbe, Muster, Webart und Stoff, soweit sichtbar. Über 120 Kleidungsarten aus Traditionen der ganzen Welt, nicht nur westliche."
+   "h": "Finde deine Farben",
+   "p": "Mach ein Selfie, und die KI bestimmt deinen Farbtyp in fünf Systemen: dem westlichen 12-Typen-System, Ritu (Südasien), Shikisai (Japan), Korean Tonal und Wu Xing (China). Dazu Körperanalyse nach Kibbe und nach Proportionen – wähle das Modell, das zu dir passt."
   },
   {
-   "h": "Eintragen, was du trägst",
-   "p": "Fotografiere dein Outfit, und die App erkennt, welche Teile aus deinem Kleiderschrank du trägst. Echte Kosten pro Tragen statt Schätzungen. Ehrliche Daten darüber, wozu du wirklich greifst."
+   "h": "Wissen, was dir steht – vor dem Kauf",
+   "p": "Jedes Teil in deinem Kleiderschrank und alles auf deiner Wunschliste wird anhand deiner Farbpalette bewertet. Sieh, was zu dir passt, entdecke fast doppelte Teile, die du schon hast, und behalte die Kosten im Blick, bevor du Geld ausgibst."
   },
   {
-   "h": "Outfits passend zum Wetter",
-   "p": "Standardmäßig tippst du an, wie sich der Tag anfühlt – ganz ohne Netz. Oder du aktivierst Open-Meteo einmal morgens für eine Stadt deiner Wahl. Eine persönliche Wohlfühl-Kalibrierung, damit dein „warm“ nicht das von jemand anderem ist."
+   "h": "Outfits für das Wetter und deinen Tag",
+   "p": "Tägliche Vorschläge aus deiner eigenen Kleidung – für Alltag, Arbeit, schick oder zum Ausgehen. Das Wetter tippst du standardmäßig selbst an, ganz ohne Netz, oder du aktivierst Open-Meteo einmal morgens für eine Stadt deiner Wahl. Eine persönliche Wohlfühl-Kalibrierung, damit dein „warm“ nicht das von jemand anderem ist."
   },
   {
-   "h": "Fünf Farbanalyse-Systeme",
-   "p": "Das westliche 12-Typen-System, Ritu (Südasien), Shikisai (Japan), Korean Tonal und Wu Xing (China). Dazu Körperanalyse nach Kibbe und nach Proportionen – wähle das Modell, das zu dir passt."
+   "h": "Dein Kleiderschrank, erfasst",
+   "p": "Fotografiere jedes Kleidungsstück, und die KI erkennt Art, Farbe, Muster, Webart und Stoff, soweit sichtbar – über 120 Kleidungsarten aus Traditionen der ganzen Welt. Fotografiere dein Outfit, und kroma trägt ein, was du anhattest: echte Kosten pro Tragen statt Schätzungen."
   },
   {
    "h": "Deine eigene KI",

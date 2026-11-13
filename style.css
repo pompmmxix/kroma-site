@@ -538,3 +538,5 @@ header.site nav a { white-space: nowrap; }
 .cta-btn:hover, .cta-btn:focus-visible { background: var(--accent-deep); color: #fff; }
 .cta-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .cta-note { font-size: 0.9rem; color: var(--text-soft); }
+/* Privacy as a one-line promise under the hero, not the headline. */
+.hero-trust { margin-top: 14px; font-size: 0.95rem; color: var(--text-soft); }

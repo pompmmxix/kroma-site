@@ -1,11 +1,12 @@
 {
  "title": "kroma : garde-robe virtuelle et colorimétrie gratuite",
- "description": "Une application de garde-robe privée : cataloguez vos vêtements, notez ce que vous portez et recevez des conseils couleur et style, sans compte. Gratuite, sans publicité, vos données restent sur votre téléphone.",
+ "description": "Trouvez avec un selfie les couleurs qui vous vont, voyez quels vêtements, possédés ou convoités, s'accordent à votre palette, et recevez des tenues pour la météo et votre journée. Sans compte, sans publicité, vos données restent sur votre téléphone.",
  "nav_home": "Accueil",
  "nav_guides": "Guides",
  "nav_privacy": "Confidentialité",
- "hero_h1": "La plupart des applis de garde-robe veulent vos données. kroma veut seulement vous aider à porter ce que vous avez.",
- "hero_lede": "kroma est une application de garde-robe privée qui garde tout sur votre téléphone. Cataloguez vos vêtements, notez ce que vous portez vraiment, recevez des idées de tenues adaptées à votre météo, votre morphologie et votre palette — <strong>tout sur votre appareil, sans pistage, sans compte.</strong>",
+ "hero_h1": "Trouvez vos couleurs. Habillez-vous mieux avec ce que vous avez.",
+ "hero_lede": "kroma analyse votre colorimétrie à partir d'un selfie, note les vêtements que vous avez et ceux que vous convoitez selon votre palette, et vous propose des tenues adaptées à la météo et à votre journée.",
+ "hero_trust": "Sans compte, sans pistage. Votre garde-robe reste sur votre téléphone.",
  "hero_alt": "L'onglet Garde-robe de kroma : une grille de vêtements — un foulard cachemire terracotta, une jupe à pois moutarde, un jean noir et un sweat bordeaux — chacun avec son score, son prix et son nombre de ports.",
  "divider_weft": "trame",
  "divider_weft_alt": "Gros plan de lin tissé avec un fil brun chaud qui traverse horizontalement la trame crème.",
@@ -16,20 +17,20 @@
  "features_h2": "Ce qu'elle fait",
  "features": [
   {
-   "h": "Tout cataloguer",
-   "p": "Photographiez chaque vêtement. L'IA note le type, la couleur, le motif, le tissage et la matière quand ils sont visibles. Plus de 120 types de vêtements issus des traditions du monde entier, pas seulement occidentales."
+   "h": "Trouvez vos couleurs",
+   "p": "Prenez un selfie et l'IA analyse votre colorimétrie selon cinq systèmes : 12 saisons occidental, Ritu (Asie du Sud), Shikisai (japonais), Tonal coréen et Wu Xing (chinois). Plus l'analyse morphologique Kibbe et par proportions : choisissez le cadre qui vous ressemble."
   },
   {
-   "h": "Notez ce que vous portez",
-   "p": "Photographiez votre tenue et l'appli reconnaît les pièces de votre garde-robe que vous portez. Un vrai coût par port, pas des estimations. Des données honnêtes sur ce que vous choisissez vraiment."
+   "h": "Sachez ce qui vous va avant d'acheter",
+   "p": "Chaque vêtement de votre garde-robe et tout ce qui figure sur votre liste d'envies reçoit une note selon votre palette. Voyez ce qui vous va, repérez les quasi-doublons de ce que vous avez déjà et gardez un œil sur la dépense avant d'acheter."
   },
   {
-   "h": "Des tenues selon la météo",
-   "p": "Par défaut, vous indiquez le ressenti du jour, sans réseau. Ou activez Open-Meteo une fois le matin avec la ville de votre choix. Un réglage de confort personnel pour que votre « chaud » ne soit pas celui d'un autre."
+   "h": "Des tenues pour la météo et votre journée",
+   "p": "Des suggestions quotidiennes avec vos propres vêtements : au quotidien, au travail, en tenue habillée ou pour sortir. Par défaut, vous indiquez la météo vous-même, sans réseau, ou vous activez Open-Meteo une fois le matin pour la ville de votre choix. Un réglage de confort personnel pour que votre « chaud » ne soit pas celui d'un autre."
   },
   {
-   "h": "Cinq systèmes de colorimétrie",
-   "p": "12 saisons occidental, Ritu (Asie du Sud), Shikisai (japonais), Tonal coréen et Wu Xing (chinois). Plus l'analyse morphologique Kibbe et par proportions : choisissez le cadre qui vous ressemble."
+   "h": "Votre garde-robe, cataloguée",
+   "p": "Photographiez chaque vêtement et l'IA note le type, la couleur, le motif, le tissage et la matière quand ils sont visibles : plus de 120 types de vêtements issus des traditions du monde entier. Photographiez votre tenue et kroma note ce que vous portez : un vrai coût par port, pas des estimations."
   },
   {
    "h": "Votre propre IA",
