@@ -62,6 +62,9 @@
       <div class="hero-content">
         <h1>{{ t.hero_h1 }}</h1>
         <p class="lede">{{ t.hero_lede }}</p>
+        {%- if t.hero_trust %}
+        <p class="hero-trust">{{ t.hero_trust }}</p>
+        {%- endif %}
       </div>
       <div class="hero-visual">
         <img src="/images/hero-wardrobe-{{ page.lang }}.webp" alt="{{ t.hero_alt | escape }}" width="678" height="1430" loading="eager" decoding="async">

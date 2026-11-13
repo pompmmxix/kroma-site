@@ -1,11 +1,12 @@
 {
  "title": "kroma: armário virtual e análise de cores grátis",
- "description": "Um app de guarda-roupa privado: organize suas roupas, registre o que você usa e receba dicas de cor e estilo, sem conta. Grátis, sem anúncios e com seus dados no seu celular.",
+ "description": "Descubra com uma selfie as cores que valorizam você, veja quais roupas que você tem e deseja combinam com sua paleta e receba looks para o clima e o seu dia. Sem conta, sem anúncios e com seus dados no seu celular.",
  "nav_home": "Início",
  "nav_guides": "Guias",
  "nav_privacy": "Privacidade",
- "hero_h1": "A maioria dos apps de guarda-roupa quer seus dados. O kroma só quer ajudar você a usar o que já tem.",
- "hero_lede": "O kroma é um app de guarda-roupa privado que guarda tudo no seu celular. Organize suas roupas, registre o que você realmente usa e receba ideias de looks de acordo com o clima, seu corpo e sua paleta — <strong>tudo no seu aparelho, sem rastreamento e sem conta.</strong>",
+ "hero_h1": "Descubra suas cores. Vista-se melhor com o que você já tem.",
+ "hero_lede": "O kroma analisa sua coloração a partir de uma selfie, avalia as roupas que você tem e as que deseja de acordo com sua paleta e sugere looks para o clima e o seu dia.",
+ "hero_trust": "Sem conta, sem rastreamento. Seu guarda-roupa fica no seu celular.",
  "hero_alt": "A aba Guarda-roupa do kroma: uma grade de peças — um lenço paisley terracota, uma saia de poá mostarda, uma calça jeans preta e um moletom bordô — cada uma com nota, preço e número de usos.",
  "divider_weft": "trama",
  "divider_weft_alt": "Close de linho tecido com um fio marrom quente atravessando na horizontal a trama creme.",
@@ -16,20 +17,20 @@
  "features_h2": "O que ele faz",
  "features": [
   {
-   "h": "Organize tudo",
-   "p": "Fotografe cada peça. A IA marca tipo, cor, estampa, trama e tecido quando aparecem. Mais de 120 tipos de peça de tradições de vestuário do mundo todo, não só ocidentais."
+   "h": "Descubra suas cores",
+   "p": "Tire uma selfie e a IA analisa sua coloração em cinco sistemas: 12 estações ocidental, Ritu (sul da Ásia), Shikisai (japonês), Tonal coreano e Wu Xing (chinês). Além de análise corporal Kibbe e por proporções: escolha o sistema que combina com você."
   },
   {
-   "h": "Registre o que você usa",
-   "p": "Fotografe seu look e o app identifica quais peças do seu guarda-roupa você está usando. Custo por uso real, sem chute. Dados honestos sobre o que você realmente escolhe."
+   "h": "Saiba o que combina com você antes de comprar",
+   "p": "Cada peça do seu guarda-roupa e tudo na sua lista de desejos recebe uma nota de acordo com sua paleta. Veja o que valoriza você, encontre peças quase iguais às que já tem e acompanhe o gasto antes de comprar."
   },
   {
-   "h": "Looks de acordo com o clima",
-   "p": "Por padrão você indica como está o dia, sem internet. Ou ative o Open-Meteo uma vez pela manhã com a cidade que digitar. Ajuste de conforto pessoal para que o seu \"calor\" não seja o de outra pessoa."
+   "h": "Looks para o clima e o seu dia",
+   "p": "Sugestões diárias com suas próprias roupas: para o dia a dia, o trabalho, ocasiões arrumadas ou para sair. Por padrão você indica o clima, sem internet, ou ativa o Open-Meteo uma vez pela manhã com a cidade que digitar. Ajuste de conforto pessoal para que o seu \"calor\" não seja o de outra pessoa."
   },
   {
-   "h": "Cinco sistemas de análise de cores",
-   "p": "12 estações ocidental, Ritu (sul da Ásia), Shikisai (japonês), Tonal coreano e Wu Xing (chinês). Além de análise corporal Kibbe e por proporções: escolha o sistema que combina com você."
+   "h": "Seu guarda-roupa, organizado",
+   "p": "Fotografe cada peça e a IA marca tipo, cor, estampa, trama e tecido quando aparecem: mais de 120 tipos de peça de tradições do mundo todo. Fotografe seu look e o kroma registra o que você usou: custo por uso real, sem chute."
   },
   {
    "h": "Use sua própria IA",
