@@ -32,11 +32,20 @@ permalink: /order-extension/privacy/
   <main>
 
     <h1>Privacy Policy: kroma order extension</h1>
-    <p class="muted"><em>Last updated: 10 November 2026</em></p>
+    <p class="muted"><em>Last updated: 14 November 2026</em></p>
     <p class="muted"><em>Applies to: the <a href="/order-extension/">kroma order extension</a> for Google Chrome ("the extension"). The kroma app and this website have <a href="/privacy/">their own policy</a>.</em></p>
 
     <p>The extension finds the clothes in your order emails and makes a file you can import into the kroma app. The short version: <strong>your emails are read inside your own browser. They are not sent to us, to an AI service, or to anyone else.</strong> We don't run a server, so there is nowhere for them to go.</p>
     <p>This page sets out exactly what the extension reads, what it sends and to whom, and what it keeps.</p>
+
+    <h2>At a glance</h2>
+    <ul>
+      <li><strong>Data accessed:</strong> read-only access to your Gmail. The extension reads order, receipt and dispatch emails (sender, subject, date and content) and the address of the account you connect. <a href="#data-accessed">Details</a>.</li>
+      <li><strong>Data use:</strong> only to list the clothes in your order emails and make the order file you import into kroma. Nothing else. <a href="#data-use">Details</a>.</li>
+      <li><strong>Data sharing:</strong> none with kroma, AI services, advertisers or data brokers. Only a product picture's address or a product's name goes to the shop it came from, or to the Internet Archive, to fetch the item's picture. <a href="#data-sharing">Details</a>.</li>
+      <li><strong>Data protection:</strong> processed only in your browser, over encrypted (https) connections, with no server, no account, no analytics and no logging. <a href="#data-protection">Details</a>.</li>
+      <li><strong>Data retention and deletion:</strong> nothing is kept after you close the tab, and Gmail access is revoked at the end of every scan. The only thing kept is the order file you choose to download, on your own computer. <a href="#data-retention">Details</a>.</li>
+    </ul>
 
     <hr>
 
@@ -46,19 +55,20 @@ permalink: /order-extension/privacy/
 
     <hr>
 
-    <h2>What the extension reads</h2>
+    <h2 id="data-accessed">Data accessed: what the extension reads</h2>
     <p>When you click <strong>Connect Gmail and scan</strong>, you sign in with Google and grant the extension <strong>read-only</strong> access to your Gmail (<code>gmail.readonly</code>). It then:</p>
     <ul>
       <li><strong>Searches your mail for orders.</strong> It asks Gmail for messages in Gmail's "Purchases" category, or whose subject contains words such as order, receipt, purchase, invoice, refund or return, within the period you chose. Mail in Spam and Bin is not searched.</li>
       <li><strong>Reads those messages</strong> (sender, subject, date and content) to find the items you bought: name, size, colour, price, quantity, order number, order date, the shop's name, and the picture and link for each item.</li>
       <li><strong>Reads the address of the Gmail account</strong> you connected, only so that the "Open in Gmail" links on the results page open the right account.</li>
     </ul>
+    <p>From these emails the extension builds a list of your orders and the items in them. That list is derived from your Gmail data, and it is used, shared, protected and kept exactly as this page describes for the emails themselves. The extension creates no other aggregated or anonymised data from your mail.</p>
     <p>The extension <strong>cannot</strong> send, delete, move, label or change any email, or mark one as read. Gmail does not offer a narrower permission that covers only receipts, so read-only access to your mail is the least the extension can ask for. It does not read your contacts, calendar, files or any other Google data.</p>
 
     <hr>
 
-    <h2>Where your email is processed</h2>
-    <p>Everything is worked out by code running in the extension's page in your browser. Email content is held in your browser's memory while the page is open and is gone when you close the tab.</p>
+    <h2 id="data-use">Data use: where and how your email is processed</h2>
+    <p>Your Gmail data is used for one purpose only: to show you the clothes in your order emails, let you choose which to keep, and make your order file. Everything is worked out by code running in the extension's page in your browser. Email content is held in your browser's memory while the page is open and is gone when you close the tab.</p>
     <ul>
       <li>Email content is <strong>not</strong> sent to kroma. We have no server to receive it.</li>
       <li>Email content is <strong>not</strong> sent to any AI or machine-learning service, and is not used to train or improve any AI model.</li>
@@ -68,7 +78,7 @@ permalink: /order-extension/privacy/
 
     <hr>
 
-    <h2>What the extension sends, and to whom</h2>
+    <h2 id="data-sharing">Data sharing: what the extension sends, and to whom</h2>
     <p>The extension contacts three kinds of service. We list them exhaustively.</p>
 
     <h3>1. Google</h3>
@@ -91,7 +101,7 @@ permalink: /order-extension/privacy/
 
     <hr>
 
-    <h2>What is stored</h2>
+    <h2 id="data-retention">Data retention: what is stored</h2>
     <ul>
       <li><strong>By the extension: nothing.</strong> It keeps no copy of your emails, your orders or your pictures after you close the tab.</li>
       <li><strong>Your Google sign-in is not kept.</strong> Access to your Gmail lasts for one scan. When the scan has read your emails, the extension drops its access and asks Google to revoke it, so you sign in again for each scan.</li>
@@ -126,7 +136,7 @@ permalink: /order-extension/privacy/
 
     <hr>
 
-    <h2>Security</h2>
+    <h2 id="data-protection">Data protection: security</h2>
     <ul>
       <li><strong>There is no kroma server and no account.</strong> No copy of your emails or your orders exists anywhere but your own browser and computer, so there is no central store that could be broken into or leaked.</li>
       <li><strong>The extension answers to no one else.</strong> It adds nothing to the web pages you visit, and websites and other extensions cannot ask it for your data.</li>
@@ -139,7 +149,7 @@ permalink: /order-extension/privacy/
 
     <hr>
 
-    <h2>Removing access</h2>
+    <h2 id="data-deletion">Data deletion: removing access</h2>
     <p>You don't normally need to do anything: the extension removes its own access to your Gmail at the end of every scan, and the results page tells you that it has.</p>
     <p>If a scan is cut short, for example because the tab was closed or the connection dropped, the extension tries to remove its access but may not manage to. You can always remove it yourself, in any of these ways:</p>
     <ul>
