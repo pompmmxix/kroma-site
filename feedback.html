@@ -235,6 +235,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
   <a class="brand" href="/">kroma</a>
   <nav>
     <a href="/">Home</a>
+    <a href="/test/">Beta</a>
     <a href="/feedback/" class="active">Feedback</a>
     <a href="/privacy/">Privacy</a>
     <a href="/terms/">Terms</a>
@@ -247,6 +248,7 @@ description: Tell us about gaps, mistakes, or things that aren't working — ano
     Tell us what's up. Pick a category to begin — the form expands once
     you've chosen.
   </p>
+  {% include test-cta.html where="feedback-top" note="Not using kroma yet? Join the free beta on Android or iPhone." %}
 
   {% comment %}
     The form is only rendered if both the Worker URL and the Turnstile

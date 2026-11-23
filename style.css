@@ -540,3 +540,6 @@ header.site nav a { white-space: nowrap; }
 .cta-note { font-size: 0.9rem; color: var(--text-soft); }
 /* Privacy as a one-line promise under the hero, not the headline. */
 .hero-trust { margin-top: 14px; font-size: 0.95rem; color: var(--text-soft); }
+
+/* "Test the app" button on non-guide pages (feedback). guides.css has the same rule. */
+.test-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 18px 0 28px; }
