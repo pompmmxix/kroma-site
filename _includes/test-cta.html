@@ -1,0 +1,12 @@
+{%- comment -%}
+  Compact "Test the app" button, same look as the homepage hero CTA.
+  Sits near the top of guide pages and the feedback page, so search and
+  AI-referral visitors see the beta before scrolling a long guide.
+  Pass where= so Umami can tell the placements apart, e.g.
+  {% include test-cta.html where="guide-top" %}. Clicks also record the
+  page they came from (data-umami-event-page).
+{%- endcomment -%}
+<p class="test-cta">
+  <a class="cta-btn" href="/test/" data-umami-event="cta-test-{{ include.where | default: 'inline' }}" data-umami-event-page="{{ page.url }}">Test the app</a>
+  <span class="cta-note">{{ include.note | default: "Free beta on Android and iPhone. No account." }}</span>
+</p>

@@ -243,3 +243,6 @@ ul.checks li::before { content: "✓"; position: absolute; left: 0; color: var(-
 .compare tbody th { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-mute); width: 9rem; }
 .compare td:nth-child(2) { background: var(--bg-card); }
 .sources { font-size: 0.9rem; }
+
+/* ── "Test the app" button under the guide heading ── */
+.test-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 18px 0 0; }

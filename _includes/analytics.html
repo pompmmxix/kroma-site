@@ -3,6 +3,14 @@
   umami_website_id is set in _config.yml, so the privacy policy can go
   live before tracking does. Clicks are counted with data-umami-event
   attributes on links (see index.html, test.html, app-buttons.html).
+
+  Campaign tags for links we post elsewhere (one spelling each, so
+  Umami doesn't split a source in two):
+    utm_source: instagram (never "ig"), x, linkedin, pinterest, email
+    utm_medium: social, email
+    utm_campaign: bio, story, post, dm, outreach
+  Instagram bio link:
+    https://kroma.fit/test/?utm_source=instagram&utm_medium=social&utm_campaign=bio
 {%- endcomment -%}
 {%- if site.umami_website_id and site.umami_website_id != "" %}
 <script defer src="https://cloud.umami.is/script.js" data-website-id="{{ site.umami_website_id }}" data-domains="kroma.fit" data-do-not-track="true"></script>
