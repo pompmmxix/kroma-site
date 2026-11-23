@@ -18,7 +18,7 @@
  "features": [
   {
    "h": "Trouvez vos couleurs",
-   "p": "Prenez un selfie et l'IA analyse votre colorimétrie selon cinq systèmes : 12 saisons occidental, Ritu (Asie du Sud), Shikisai (japonais), Tonal coréen et Wu Xing (chinois). Plus l'analyse morphologique Kibbe et par proportions : choisissez le cadre qui vous ressemble."
+   "p": "Prenez un selfie et l'IA analyse votre colorimétrie selon trois systèmes : 12 saisons occidental, Tonal coréen et Wu Xing (chinois). Les calendriers de saison Ritu (Inde) et Shikisai (Japon) montrent quelles couleurs vous vont selon la période de l'année. Plus l'analyse morphologique Kibbe et par proportions : choisissez le cadre qui vous ressemble."
   },
   {
    "h": "Sachez ce qui vous va avant d'acheter",
